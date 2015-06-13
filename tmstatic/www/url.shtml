@@ -1,0 +1,7 @@
+<head>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+<meta http-equiv="expires" content="0">
+</head>
+<body bgcolor=#eeeeee><font color=#eeeeee face=verdana size=1>.......................
+<br><br><font color=#eeeeee face=verdana size=1>.......................<img src=/img/trail.gif><br><table border=0><tr><td valign=top><img src=/img/url.gif border=0></td><td colspan=10></td><td valign=top><form action=/cgi-mod/btm/login.pl method=post><br><font face=verdana size=1>Trainername :<br><input type=text lenght=25 name=trainer><br><br>Passwort :<br><input type=password lenght=25 name=pass><br><br><input type=hidden name=first value=1><input type=image src=/img/log_in.jpg border=0></form><br><br><br><br>Haben Sie Ihr Passwort vergessen ?<br> Kein Problem ! Wir mailen es Ihnen ...<form action=/cgi-bin/btm/pass_sent.pl method=post><br><font face=verdana size=1>Trainername :<br><input type=text lenght=25 name=trainer><br><br><input type=submit value="Passwort zuschicken"></form></td><td><br><br><br><font color=#eeeeee face=verdana size=1>.................<img src=/img/header.gif valign=top></td></tr></table>

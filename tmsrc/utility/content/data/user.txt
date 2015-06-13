@@ -1,0 +1,9 @@
+2|1|1|1|1|1|0|0|Wally Dresel|thomas@tipmaster.de|
+2|2|1|1|1|1|0|0|Bodo Pfannenschwarz|bodo@tipmaster.de
+0|2|1|1|2|2|0|0|Stefan Imhoff|stefan@imhoff.de|
+0|0|0|0|0|2|0|0|Mick Goeske|mick@tipmaster.de|
+1|1|1|1|1|1|0|0|Werner Stengl|werner@tipmaster.de|
+0|0|2|0|0|0|0|0|Olaf Best|olaf@tipmaster,de|
+0|0|2|0|0|0|0|0|Carsten Holzhauer|carsten@tipmaster.de|
+0|0|0|2|0|0|0|0|Reimund Breucker|reimund@tipmaster.de|
+0|0|0|2|0|0|0|0|Ralph Mathes|ralph@tipmaster.de|

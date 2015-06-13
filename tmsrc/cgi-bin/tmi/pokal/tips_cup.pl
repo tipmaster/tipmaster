@@ -1,0 +1,374 @@
+#!/usr/bin/perl
+
+=head1 NAME
+	TMI tips_cup.pl
+
+=head1 SYNOPSIS
+	TBD
+	
+=head1 AUTHOR
+	admin@socapro.com
+
+=head1 CHANGELOG
+	2015-06-09 Thomas: Added Session Management
+
+=head1 COPYRIGHT
+	Copyright (c) 2015, SocaPro Inc.
+	Created 2015-06-09
+
+=cut
+
+use lib '/tmapp/tmsrc/cgi-bin/'; 
+use TMSession;
+my $session = TMSession::getSession(tmi_login => 1);
+my $trainer = $session->getUser();
+my $leut = $trainer;
+
+use CGI;
+$query = new CGI;
+$line1 = $query->param('row1');
+$line2 = $query->param('row2');
+$verein1 = $query->param('ve1');
+$verein2 = $query->param('ve2');
+$ru = $query->param('ru');
+$pokal = $query->param('po');
+
+require "/tmapp/tmsrc/cgi-bin/runde.pl" ;
+
+
+open(D7,"/tmdata/tmi/pokal/tip_status.txt");
+$tip_status = <D7> ;
+chomp $tip_status;
+close(D7);
+
+
+
+print "Content-Type: text/html \n\n";
+
+
+$xx="";
+if ( $line1 < 1000 ) { $xx = "0" }
+if ( $line1 < 100 ) { $xx = "00" }
+if ( $line1 < 10 ) { $xx = "000" }
+$tip_datei = $xx . $line1 . '-' . $pokal . '-' . $ru .'.txt' ;
+$tip_datei = '/tmdata/tmi/pokal/tips/' . $tip_datei ;
+open (D1,"$tip_datei");
+$row1=<D1>;
+chomp $row1;
+close (D1);
+
+@ok1 = split (/\./,$row1);
+for ($x=0;$x<=9;$x++){
+if (( $ok1[$x] ne "0&0" )and( $ok1[$x] ne "" )) { 
+$tips_a++;
+@ii = split (/&/,$ok1[$x]);
+$pro1[$tips_a]=$ii[1];
+$sp1[$tips_a]=$x+1;
+}
+}
+
+
+$xx="";
+if ( $line2 < 1000 ) { $xx = "0" }
+if ( $line2 < 100 ) { $xx = "00" }
+if ( $line2 < 10 ) { $xx = "000" }
+$tip_datei = $xx . $line2 . '-' . $pokal . '-' . $ru .'.txt' ;
+$tip_datei = '/tmdata/tmi/pokal/tips/' . $tip_datei ;
+open (D1,"$tip_datei");
+$row2=<D1>;
+chomp $row2;
+close (D1);
+
+@ok1 = split (/\./,$row2);
+for ($x=0;$x<=9;$x++){
+if (( $ok1[$x] ne "0&0" )and( $ok1[$x] ne "" )) { 
+$tips_b++;
+@ii = split (/&/,$ok1[$x]);
+$pro2[$tips_b]=$ii[1];
+$sp2[$tips_b]=$x+1;
+}
+}
+
+#print "$row1 - $row2";
+
+
+$bx = "/tmdata/tmi/formular";
+$by =$cup_tmi_tf[$ru];
+$bv = ".txt";
+$datei_hier = $bx . $by . $bv ;
+
+open(DO,$datei_hier);
+while(<DO>) {
+@vereine = <DO>;
+}
+close(DO);
+$y = 0;
+for ( $x = 0; $x < 25;$x++ )
+{
+$y++;
+chomp $vereine[$y];
+@ega = split (/&/, $vereine[$y]);	
+$flagge[$y] = $ega[0] ;
+$paarung[$y] = $ega[1];
+$qu_1[$y] = $ega[2];
+$qu_0[$y] = $ega[3];
+$qu_2[$y] = $ega[4];
+$ergebnis[$y] = $ega[5];
+
+if ($ergebnis[$y] == 4 ) {
+$qu_1[$y] =10;
+$qu_0[$y] =10;
+$qu_2[$y] =10;
+}
+
+}
+
+
+#$row1 = $line1;
+#$row2 = $line2;
+
+#chomp $row1;
+#chomp $row2;
+
+#@tip1 = split (/,/, $row1);
+#@tip2 = split (/,/, $row2);
+#$y = 0;
+#for ( $x = 1; $x < 11;$x = $x + 2 )
+#{
+#$y = $y + 1;
+#$pro1[$y] = $tip1[$x];
+#$sp1[$y] = $tip1[$x-1];
+#$sp2[$y] = $tip2[$x-1];
+#$pro2[$y] = $tip2[$x];
+#}
+
+$su_1 = 0 ;
+$su_2 = 0 ;
+for ( $x = 1; $x <= 5; $x++ ) {
+if ( ($pro1[$x] == 1) and ( $ergebnis[$sp1[$x]] == 1 ) ) { $su_1 = $su_1 + $qu_1[$sp1[$x]] }
+if ( ($pro1[$x] == 2) and ( $ergebnis[$sp1[$x]] == 2 ) ) { $su_1 = $su_1 + $qu_0[$sp1[$x]] }
+if ( ($pro1[$x] == 3) and ( $ergebnis[$sp1[$x]] == 3 ) ) { $su_1 = $su_1 + $qu_2[$sp1[$x]] }
+if ( ($pro1[$x] == 1) and ( $ergebnis[$sp1[$x]] == 4 ) ) { $su_1 = $su_1 + 10 }
+if ( ($pro1[$x] == 2) and ( $ergebnis[$sp1[$x]] == 4 ) ) { $su_1 = $su_1 + 10 }
+if ( ($pro1[$x] == 3) and ( $ergebnis[$sp1[$x]] == 4 ) ) { $su_1 = $su_1 + 10 }
+
+
+if ( ($pro2[$x] == 1) and ( $ergebnis[$sp2[$x]] == 1 ) ) { $su_2 = $su_2 + $qu_1[$sp2[$x]] }
+if ( ($pro2[$x] == 2) and ( $ergebnis[$sp2[$x]] == 2 ) ) { $su_2 = $su_2 + $qu_0[$sp2[$x]] }
+if ( ($pro2[$x] == 3) and ( $ergebnis[$sp2[$x]] == 3 ) ) { $su_2 = $su_2 + $qu_2[$sp2[$x]] }
+if ( ($pro2[$x] == 1) and ( $ergebnis[$sp2[$x]] == 4 ) ) { $su_2 = $su_2 + 10 }
+if ( ($pro2[$x] == 2) and ( $ergebnis[$sp2[$x]] == 4 ) ) { $su_2 = $su_2 + 10 }
+if ( ($pro2[$x] == 3) and ( $ergebnis[$sp2[$x]] == 4 ) ) { $su_2 = $su_2 + 10 }
+
+}
+
+if ( $su_1 > 14 ) { $tora = 1 }
+if ( $su_1 > 39 ) { $tora = 2 }
+if ( $su_1 > 59 ) { $tora = 3 }
+if ( $su_1 > 79 ) { $tora = 4 }
+if ( $su_1 > 104 ) { $tora = 5 }
+if ( $su_1 > 129 ) { $tora = 6 }
+if ( $su_1 > 154 ) { $tora = 7 }
+
+if ( $su_2 > 14 ) { $torb = 1 }
+if ( $su_2 > 39 ) { $torb = 2 }
+if ( $su_2 > 59 ) { $torb = 3 }
+if ( $su_2 > 79 ) { $torb = 4 }
+if ( $su_2 > 104 ) { $torb = 5 }
+if ( $su_2 > 129 ) { $torb = 6 }
+if ( $su_2 > 154 ) { $torb = 7 }
+
+if ( $tora == 0 ) { $tora = 0 }
+if ( $torb == 0 ) { $torb = 0 }
+
+
+
+
+
+
+
+print "<html><title>Tipabgabe Pokalwettbewerb</title><body bgcolor=#eeeeee text=black vlink=blue link=blue><font face=verdana size=1><center>\n";
+
+require "/tmapp/tmsrc/cgi-bin/tag.pl" ;
+require "/tmapp/tmsrc/cgi-bin/tag_small.pl" ;
+print "<br><br>\n";
+
+$r=0;
+if (( $ru == $cup_tmi)and ($tip_status==1)){$r=1}
+if (( $ru > $cup_tmi)){$r=1}
+
+if ($r==1){
+print "<br><br><br><font face=verdana size=2><b>Die Tipabgabeeinsicht fuer diese Pokalrunde<br>ist noch nicht moeglich !";
+exit;
+}
+
+#if ( $pro1[1] == 0 ) {
+#print "<center><br><br><font face=verdana size=2><b>Die beiden Tipabgaben fuer dieses Spiel sind noch<br>nicht erfolgt bzw. noch nicht zur Einsicht freigegeben.<br><br><font color=darkred> Die Tipabgaben der aktuellen Spielrunde sind<br>ab Freitags 18.oo Uhr hier einsehbar.";
+#exit ;
+#}
+
+
+print "<table border=0 cellpadding=0 cellspacing=0 bgcolor=#eeeeee><tr>\n";
+print "<td></td><td bgcolor=white><font face=verdana size=1 color=#390505>&nbsp;&nbsp;$verein1</font></td><td bgcolor=white>&nbsp;</td><td align=right bgcolor=white><font face=verdana size=1>$tora &nbsp;</td><td bgcolor=white>&nbsp</td><td></td><td bgcolor=white><font face=verdana size=1 color=4E2F2F>&nbsp;&nbsp;$verein2</td><td bgcolor=white>&nbsp;</td><td align=right bgcolor=white><font face=verdana size=1>$torb &nbsp;</td><td bgcolor=white>&nbsp;</td></tr>\n";
+print "<tr><td align=left valign=top><font face=verdana size=1><img src=/img/tips.JPG><br>";
+for ( $x = 1; $x < 6; $x++ ) {
+
+if ( ($pro1[$x] == 1) and ( $ergebnis[$sp1[$x]] == 0 ) ) { $r = k1 }
+if ( ($pro1[$x] == 2) and ( $ergebnis[$sp1[$x]] == 0 ) ) { $r = k0 }
+if ( ($pro1[$x] == 3) and ( $ergebnis[$sp1[$x]] == 0 ) ) { $r = k2 }
+if ( ($pro1[$x] == 1) and ( $ergebnis[$sp1[$x]] == 1 ) ) { $r = k11 }
+if ( ($pro1[$x] == 2) and ( $ergebnis[$sp1[$x]] == 2 ) ) { $r = k00 }
+if ( ($pro1[$x] == 3) and ( $ergebnis[$sp1[$x]] == 3 ) ) { $r = k22 }
+if ( ($pro1[$x] == 1) and ( $ergebnis[$sp1[$x]] == 3 ) ) { $r = k12 }
+if ( ($pro1[$x] == 2) and ( $ergebnis[$sp1[$x]] == 3 ) ) { $r = k02 }
+if ( ($pro1[$x] == 3) and ( $ergebnis[$sp1[$x]] == 2 ) ) { $r = k20 }
+if ( ($pro1[$x] == 1) and ( $ergebnis[$sp1[$x]] == 2 ) ) { $r = k10 }
+if ( ($pro1[$x] == 2) and ( $ergebnis[$sp1[$x]] == 1 ) ) { $r = k01 }
+if ( ($pro1[$x] == 3) and ( $ergebnis[$sp1[$x]] == 1 ) ) { $r = k21 }
+if ( ($pro1[$x] == 1) and ( $ergebnis[$sp1[$x]] == 4 ) ) { $r = k1102 }
+if ( ($pro1[$x] == 2) and ( $ergebnis[$sp1[$x]] == 4 ) ) { $r = k0102 }
+if ( ($pro1[$x] == 3) and ( $ergebnis[$sp1[$x]] == 4 ) ) { $r = k2102 }
+
+if ($pro1[$x] == 0) { $r = k102 }
+
+print "<img src=/img/$r.JPG><br>\n";
+}
+print "</font></td>\n";
+print "<td width=250 align=left valign=middle><font face=verdana size=1><img src=/img/loch.JPG border=0><br><font color=black>\n";
+
+if ( $tips_a == 0 ) {
+print "&nbsp;&nbsp;Es ist keine Tipabgabe<br>&nbsp; von diesem Verein erfolgt";
+} else {
+for ( $x = 1; $x < 6;$x++ ) {
+
+$flag=$main_flags[$flagge[$sp1[$x]]];
+
+print "&nbsp;&nbsp;&nbsp;&nbsp;<img src=/img/$flag width=14 height=10 border=0>&nbsp;&nbsp;&nbsp;&nbsp;<a href=javascript:document.xr$x.submit()>$paarung[$sp1[$x]]</a><br>\n";
+}
+
+
+
+
+print "</font>\n";
+
+
+for ( $x = 1; $x < 6; $x++ ) {
+
+($verein1,$verein2) = split (/ \- /,$paarung[$sp1[$x]]);
+$verein1=~s/  //g;
+$verein2=~s/  //g;
+if ($flagge[$sp1[$x]] == 1) { $vv = "ger1" }
+if ($flagge[$sp1[$x]] == 2) { $vv = "ger2" }
+if ($flagge[$sp1[$x]] == 3) { $vv = "eng0" }
+if ($flagge[$sp1[$x]] == 4) { $vv = "fre0" }
+if ($flagge[$sp1[$x]] == 5) { $vv = "ita0" }
+
+}
+}
+
+
+
+
+print "</td>\n";
+print "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td align=left valign=top><font face=verdana size=1><img src=/img/loch.JPG><br>\n";
+
+for ( $x = 1; $x < 6;$x++ ) {
+
+if ( $pro1[$x] == $ergebnis[$sp1[$x]] ) { $r = black}
+if ( $pro1[$x] != $ergebnis[$sp1[$x]] ) { $r = silver}
+if ( $ergebnis[$sp1[$x]] == 4 ) { $r = black}
+
+if ( $ergebnis[$sp1[$x]] == 0 ) { $r = gray}
+
+print "<font color=$r>\n";
+
+if ( $pro1[$x] == 1 ) { print "&nbsp;&nbsp; $qu_1[$sp1[$x]] &nbsp;</font><br>\n" }
+if ( $pro1[$x] == 2 ) { print "&nbsp;&nbsp; $qu_0[$sp1[$x]] &nbsp;</font><br>\n" }
+if ( $pro1[$x] == 3 ) { print "&nbsp;&nbsp; $qu_2[$sp1[$x]] &nbsp;</font><br>\n" }
+if ( $pro1[$x] == 0 ) { print "<font face=verdana color=black size=1>&nbsp;&nbsp;&nbsp;**</font><br>\n" }
+}
+print "</font></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>\n";
+print "<td align=left valign=top><font face=verdana size=1><img src=/img/tips.JPG><br>\n";
+for ( $x =1; $x < 6; $x++ ) {
+if ( ($pro2[$x] == 1) and ( $ergebnis[$sp2[$x]] == 0 ) ) { $r = k1 }
+if ( ($pro2[$x] == 2) and ( $ergebnis[$sp2[$x]] == 0 ) ) { $r = k0 }
+if ( ($pro2[$x] == 3) and ( $ergebnis[$sp2[$x]] == 0 ) ) { $r = k2 }
+if ( ($pro2[$x] == 1) and ( $ergebnis[$sp2[$x]] == 1 ) ) { $r = k11 }
+if ( ($pro2[$x] == 2) and ( $ergebnis[$sp2[$x]] == 2 ) ) { $r = k00 }
+if ( ($pro2[$x] == 3) and ( $ergebnis[$sp2[$x]] == 3 ) ) { $r = k22 }
+if ( ($pro2[$x] == 1) and ( $ergebnis[$sp2[$x]] == 3 ) ) { $r = k12 }
+if ( ($pro2[$x] == 2) and ( $ergebnis[$sp2[$x]] == 3 ) ) { $r = k02 }
+if ( ($pro2[$x] == 3) and ( $ergebnis[$sp2[$x]] == 2 ) ) { $r = k20 }
+if ( ($pro2[$x] == 1) and ( $ergebnis[$sp2[$x]] == 2 ) ) { $r = k10 }
+if ( ($pro2[$x] == 2) and ( $ergebnis[$sp2[$x]] == 1 ) ) { $r = k01 }
+if ( ($pro2[$x] == 3) and ( $ergebnis[$sp2[$x]] == 1 ) ) { $r = k21 }
+if ( ($pro2[$x] == 1) and ( $ergebnis[$sp2[$x]] == 4 ) ) { $r = k1102 }
+if ( ($pro2[$x] == 2) and ( $ergebnis[$sp2[$x]] == 4 ) ) { $r = k0102 }
+if ( ($pro2[$x] == 3) and ( $ergebnis[$sp2[$x]] == 4 ) ) { $r = k2102 }
+if ($pro2[$x] == 0) { $r = k102 }
+
+print "<img src=/img/$r.JPG><br>\n";
+}
+print "</font></td>\n";
+print "<td width=250 align=left valign=middle><font face=verdana size=1><img src=/img/loch.JPG border=0><br><font color=black>\n";
+
+if ( $tips_b == 0 ) {
+print "&nbsp;&nbsp;Es ist keine Tipabgabe<br>&nbsp; von diesem Verein erfolgt";
+} else {
+for ( $x = 1; $x < 6;$x++ ) {
+
+$flag=$main_flags[$flagge[$sp2[$x]]];
+
+if ( $sp2[$x] == 0 ) { ($flag = "tip_leer.jpg")}
+
+print "&nbsp;&nbsp;&nbsp;&nbsp;<img width=14 height=10 src=/img/$flag border=0>&nbsp;&nbsp;&nbsp;&nbsp;<a href=javascript:document.xs$x.submit()>$paarung[$sp2[$x]]</a><br>\n";
+
+}
+
+
+print "</font>\n";
+for ( $x = 1; $x < 6; $x++ ) {
+
+($verein1,$verein2) = split (/ \- /,$paarung[$sp2[$x]]);
+$verein1=~s/  //g;
+$verein2=~s/  //g;
+if ($flagge[$sp2[$x]] == 1) { $vv = "ger1" }
+if ($flagge[$sp2[$x]] == 2) { $vv = "ger2" }
+if ($flagge[$sp2[$x]] == 3) { $vv = "eng0" }
+if ($flagge[$sp2[$x]] == 4) { $vv = "fre0" }
+if ($flagge[$sp2[$x]] == 5) { $vv = "ita0" }
+
+}
+}
+print "</td>\n";
+print "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td align=left valign=top><font face=verdana size=1><img src=/img/loch.JPG><br>\n";
+
+
+
+
+for ( $x = 1; $x < 6;$x++ ) {
+
+if ( $pro2[$x] == $ergebnis[$sp2[$x]] ) { $r = black }
+if ( $pro2[$x] != $ergebnis[$sp2[$x]] ) { $r = silver }
+if ( $ergebnis[$sp2[$x]] == 4 ) { $r = black }
+
+if ( $ergebnis[$sp2[$x]] == 0 ) { $r = gray}
+
+print "<font color=$r>\n";
+
+if ( $pro2[$x] == 1 ) { print "&nbsp;&nbsp; $qu_1[$sp2[$x]] &nbsp;</font><br>\n" }
+if ( $pro2[$x] == 2 ) { print "&nbsp;&nbsp; $qu_0[$sp2[$x]] &nbsp;</font><br>\n" }
+if ( $pro2[$x] == 3 ) { print "&nbsp;&nbsp; $qu_2[$sp2[$x]] &nbsp;</font><br>\n" }
+if ( $pro2[$x] == 0 ) { print "<font face=verdana color=black size=1>&nbsp;&nbsp;&nbsp;**</font><br>\n" }
+}
+
+print "</font></td></tr><tr><td></td><td></td><td></td><td bgcolor=#000000><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td>\n";
+print "<td></td><td></td><td></td><td></td><td bgcolor=#000000><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td></tr>\n";
+print "<tr><td></td><td></td><td></td><td align=right><font face=verdana size=1>$su_1&nbsp;&nbsp;</td><td></td><td></td><td></td><td></td>\n";
+print "<td align=right><font face=verdana size=1>$su_2&nbsp;&nbsp;</td></tr></table>\n";
+
+exit ;
+
+
+
+
