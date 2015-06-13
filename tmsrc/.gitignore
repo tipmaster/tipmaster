@@ -1,2 +1,5 @@
 cgi-bin/tmi/bodo_ip_track.log
 ../tmcommunity/www/chat/temp/appdata/appTime.txt
+.settings
+.project
+.includepath
