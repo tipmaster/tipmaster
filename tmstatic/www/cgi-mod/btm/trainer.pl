@@ -650,7 +650,7 @@ print "</td></tr>";
 
 }
 $award=0;
-open (D1,"/home/tipmaster/fuxx.txt");
+open (D1,"/tmapp/appdata/fuxx.txt");
 while (<D1>){
 @gop = split(/#/,$_);
 if ($gop[2] eq $coach){

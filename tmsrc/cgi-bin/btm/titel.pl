@@ -287,7 +287,7 @@ exit;
 
 sub special
 {
-open(A,"/tmdata/fuxx.txt");
+open(A,"/tmapp/appdata/fuxx.txt");
 while(<A>)
 {
 	@data = split(/#/,$_);
