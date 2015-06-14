@@ -67,7 +67,7 @@ if ( $ban == 1 ){
 $fehler++;
 $fault[$fehler] = "Betrifft E-Mail Adresse :<br>
 Registrierungen mit E-Mail Adresse der<br>
-Domain $ban_id k�nnen wir nicht akzeptieren";
+Domain $ban_id k&ouml;nnen wir nicht akzeptieren";
 }
 ###########################################################
 
@@ -174,7 +174,7 @@ Unter der IP ihres Internetzugangs wurde<br>
 erst vor kurzem eine Anmeldung beim TMI <br>
 vorgenommen. Mehrere Anmeldungen mit der<br>
 gleichen IP hintereinander sind nicht<br>
-m�glich. Versuchen Sie es bitte morgen erneut.<br>
+m&ouml;glich. Versuchen Sie es bitte morgen erneut.<br>
 Bitte beachten Sie: jeder Mitspieler <br>
 darf nur je einen Verein beim BTM und TMI betreuen.";
 }	
@@ -194,8 +194,8 @@ if ( $mail_ok == 1 ) {
 $fehler++;
 $fault[$fehler] = "<font color=darkred>Betrifft E-Mail Adresse :<font color=black><br>
 Ihr E-Mail Adresse hat kein gueltiges Format .<br>
-Bitte geben Sie ihre g�ltige E-Mail Adresse<br>
-an, da sonst auch keine Account Freischaltung m�glich ist.";
+Bitte geben Sie ihre g&uuml;ltige E-Mail Adresse<br>
+an, da sonst auch keine Account Freischaltung m&ouml;glich ist.";
 }	
 
 if ( $vorhanden_tmi == 1 ) { 
@@ -205,16 +205,16 @@ Unter dem angegebenen Trainernamen ist<br>
 bereits ein Trainer beim TipMaster international eingetragen. <br>
 Bitte modifizieren Sie Ihren Trainernamen leicht<br>
 indem Sie bspw. als Vornamen Ihren Spitz/Rufnamen<br>
-eintragen. Vielen Dank f�r Ihr Verst�ndnis.";
+eintragen. Vielen Dank f&uuml;r Ihr Verst&auml;ndnis.";
 }	
 
 if ( $mail_vorhanden == 1 ) { 
 $fehler++;
 $fault[$fehler] = "<font color=darkred>Betrifft Mail-Adresse :<font color=black><br>
 Unter der angegebenen Mail-Adresse ist bereits<br>
-ein Account beim TipMaster m�glich. Weitere <br>
+ein Account beim TipMaster m&ouml;glich. Weitere <br>
 Accounts unter dieser E-Mail Adresse sind nicht<br>
-m�glich. Bitte beachten Sie: jeder Mitspieler <br>
+m&ouml;glich. Bitte beachten Sie: jeder Mitspieler <br>
 darf nur je einen Verein beim BTM und TMI betreuen.";
 }	
 
@@ -222,15 +222,15 @@ if ( $pass1 ne $pass2 ) {
 $fehler++;
 $fault[$fehler] = "<font color=darkred>Betrifft Passwort :<font color=black><br>
 Ihr Wiederholungspasswort stimmt nicht mit dem<br>
-zuerst angegebenen Passwort �berein !";
+zuerst angegebenen Passwort &uml;berein !";
 }	
 
 if ( $pass_ok == 1 ) { 
 $fehler++;
 $fault[$fehler] = "<font color=darkred>Betrifft Passwort :<font color=black><br>
-Ihr gew�nschtes Passwort hat kein g�ltiges<br>
+Ihr gew&uuml;nschtes Passwort hat kein g&uuml;ltiges<br>
 Format. Entweder es ist zu kurz bzw. zu lang<br>
-oder es enth�lt nicht erlaubte Sonder- bzw.<br>
+oder es enth&auml;lt nicht erlaubte Sonder- bzw.<br>
 Leerzeichen.";
 }	
 
@@ -239,13 +239,13 @@ $fehler++;
 $fault[$fehler] = "<font color=darkred>Betrifft Trainername + Passwort + E-Mail:<font color=black><br>
 Unter diesem Trainername ist bereits ein<br>
 Account beim TipMaster registriert.<br>
-Um f�r diesen Account (Neu)Anmeldungen<br>
-zu t�tigen, m�ssen Sie sich mit dem identischen<br>
+Um f&uuml;r diesen Account (Neu)Anmeldungen<br>
+zu t&auml;tigen, m&uuml;ssen Sie sich mit dem identischen<br>
 Passwort und identischer E-Mail mit der<br>
 dieser Account beim ersten Mal registriert wurde<br>
 anmelden. Dies ist aktuell noch nicht der Fall.<br>
 Der Account wurde mit der E-Mail Adresse <br>
-$mail_richtig er�ffnet.
+$mail_richtig er&ouml;ffnet.
 ";
 
 }	
@@ -277,9 +277,9 @@ for ( $x = 1; $x < 19; $x++ )
 if ( $datb[$x] ne "Trainerposten frei" ) { 
 $fehler++;
 $fault[$fehler] = "<font color=darkred>Betrifft Vereinswahl :<font color=black><br>
-Der gew�nschte Verein ist mittlerweile<br>
+Der gew&uuml;schte Verein ist mittlerweile<br>
 bereits wieder vergeben. Bitte einen<br>
-anderen Verein w�hlen.";
+anderen Verein w&auml;hlen.";
 }
 $datb[$x] = $voller_name ;
 $datc[$x] = $adresse ;
@@ -513,7 +513,7 @@ if ($ENV{'HTTP_REFERER'} =~ m|https?://([^/]*)$referer|i) {$check= 1;}$check=1;
 if ( $check != 1 ) { 
 print "Content-type: text/html \n\n";
 print "<font face=verdana size=2><b>";
-print "<br>Der Request wurde nicht �ber den tipmaster Server aufgerufen .<br>";
+print "<br>Der Request wurde nicht &uml;ber den tipmaster Server aufgerufen .<br>";
 exit ;}
 ###########################################################
 }
@@ -674,16 +674,16 @@ wird Ihre Anmeldung spaeter wieder storniert .<br>
 <br><font face=verdana size=1>Ihre E-Mail Adresse:<br><input type=text lenght=25 name=adresse value=\"$mail\"><br><br>
 <font color=red>
 Die korrekte Angabe Ihrer E-Mail Adresse ist<br> 
-Vorraussetzung f�r die Teilnahme am TipMaster.<br>
+Vorraussetzung f&uuml;r die Teilnahme am TipMaster.<br>
 Nach Ihrer Anmeldung erhalten Sie eine Mail<br>
 an die angegebene E-Mailadresse die einen Link<br>
-zur Freischaltung Ihres Accounts enth�lt.<br>
+zur Freischaltung Ihres Accounts enth&auml;lt.<br>
 <br><br>
 <font color=black>
 ";
 
 #if ( $frei == 0 ) {
-#print "Im Moment sind leider alle Vereine<br>beim TipMaster international besetzt.<br><br>Besuchen Sie diese Seite vor allem<br>* Dienstags kurz nach 12.oo Uhr<br>* Donnerstags kurz nach 16.oo Uhr und<br>* Freitags kurz nach 18.oo Uhr<br>um beste Chancen f�r die Anmeldung<br>f�r einen freien TMI Verein zu haben !<br>";
+#print "Im Moment sind leider alle Vereine<br>beim TipMaster international besetzt.<br><br>Besuchen Sie diese Seite vor allem<br>* Dienstags kurz nach 12.oo Uhr<br>* Donnerstags kurz nach 16.oo Uhr und<br>* Freitags kurz nach 18.oo Uhr<br>um beste Chancen f&uuml;r die Anmeldung<br>f&uuml;r einen freien TMI Verein zu haben !<br>";
 #print "<br>Falls Sie national nocht nicht als TipMaster - Trainer taetig sind,<br>besuchen Sie die <a href=/cgi-bin/btm/anmeldung.pl>BTM - Anmeldungsseite</a> um dies zu aendern ...<br>";
 #print "</td><td><br><br><br><font color=#eeeeee face=verdana size=1>..................\n";
 #print "<img src=/img/header.gif valign=top></form></td></tr></table>\n";
@@ -751,7 +751,7 @@ Bitte beachten Sie: jeder Mitspieler darf nur jeweils <br>
 <b>einen</b> Verein beim Bundesliga Tipmaster und beim <br>
 Tipmaster International trainieren. Mehrfachaccounts<br>
 werden komplett und ohne Vorwarnung von der<br>
-Spielleitung gel�scht !
+Spielleitung gel&ouml;scht !
 </font>
 <br><br>
 <font color=black>

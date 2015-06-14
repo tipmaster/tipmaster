@@ -172,8 +172,8 @@ sub writeECMail {
         $msg->data;
         $msg->datasend("Subject: Tipmaster: Europacup-Tipabgabe!");
         $msg->datasend("\n");
-        $msg->datasend("Hallo Tipmaster-Trainer!\n\nSie spielen im Europa-Cup und diese Runde sollten Sie einen Tip abgeben!\nDas Formular f�r diese Woche ist fertig., ab jetzt k�nnen die Tips abgegeben werden.\n\n");
-        $msg->datasend("Falls Sie keine Europacup-Erinnerungsmails mehr bekommen wollen,\nk�nnen Sie diese Funktion auf Ihrer TM-Profilseite deaktivieren.\n\n");
+        $msg->datasend("Hallo Tipmaster-Trainer!\n\nSie spielen im Europa-Cup und diese Runde sollten Sie einen Tip abgeben!\nDas Formular f&uuml;r diese Woche ist fertig., ab jetzt k&ouml;nnen die Tips abgegeben werden.\n\n");
+        $msg->datasend("Falls Sie keine Europacup-Erinnerungsmails mehr bekommen wollen,\nk&ouml;nnen Sie diese Funktion auf Ihrer TM-Profilseite deaktivieren.\n\n");
         $msg->datasend("Viel Gl�ck!\nDas Tipmaster Team\n");
         $msg->dataend;
         $msg->quit;
@@ -190,9 +190,9 @@ sub writeMail {
         }
 
         $msg->data;
-        $msg->datasend("Subject: Das Tipmaster-Formular f�r diese Woche ist jetzt online!");
+        $msg->datasend("Subject: Das Tipmaster-Formular f&uuml;r diese Woche ist jetzt online!");
         $msg->datasend("\n");
-        $msg->datasend("Hallo Tipmaster-Trainer!\n\nDas Formular f�r diese Woche ist fertig.\nAb jetzt k�nnen die Tips abgegeben werden\n\n");
+        $msg->datasend("Hallo Tipmaster-Trainer!\n\nDas Formular f&uuml;r diese Woche ist fertig.\nAb jetzt k&ouml;nnen die Tips abgegeben werden\n\n");
         $msg->datasend("Viel Gl�ck!\nDas Tipmaster Team\n");
         $msg->dataend;
         $msg->quit;

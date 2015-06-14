@@ -425,7 +425,7 @@ require "/tmapp/tmsrc/cgi-bin/loc.pl" ;
 
 print "<font face=verdana size=2><br><br>\n";
 print "&nbsp;<b>Freundschaftsspiel Tipabgabe</b><br><br>&nbsp;<font color=darkred>$heim - $gegner<font color=black>\n";
-print "<font size=1><br><br> Ihr Freundschaftsspiel Angebot kann erst nach g�ltiger Tipabgabe registriert werden.<br> Eine Modifizierung Ihrer Tipabgabe ist nach dem Absenden des Tipformulars nicht mehr m�glich .<br>\n";
+print "<font size=1><br><br> Ihr Freundschaftsspiel Angebot kann erst nach g&uuml;ltiger Tipabgabe registriert werden.<br> Eine Modifizierung Ihrer Tipabgabe ist nach dem Absenden des Tipformulars nicht mehr m&ouml;glich .<br>\n";
 print "<br>\n";
 
 
@@ -1332,7 +1332,7 @@ print "<input type=hidden name=method value=liste>\n";
 
 print "&nbsp;<font face=verdana size=2><b>Bundesliga - TipMaster Freundschaftsspiele&nbsp;&nbsp;\n";
 #disabled again - no one cared anymore...
-#print "</b><font size=1 color=red><br><br>&nbsp; Aus noch nicht gekl�rten Gruenden wurden die errsten 114 angebotenenen Friendlys aus der Datenabnk gel�scht ! <br><br><font color=black>";
+#print "</b><font size=1 color=red><br><br>&nbsp; Aus noch nicht gekl�rten Gruenden wurden die errsten 114 angebotenenen Friendlys aus der Datenabnk gel&ouml;scht ! <br><br><font color=black>";
 print "<select style=\"font-family: Verdana; font-size: 11px; font-weight: normal; color: #000000;\" name=akt_runde>";
 
 for ($x=1;$x<=$rrunde;$x++){

@@ -425,7 +425,7 @@ require "/tmapp/tmsrc/cgi-bin/loc_tmi.pl" ;
 
 print "<font face=verdana size=2><br><br>\n";
 print "&nbsp;<b>Freundschaftsspiel Tipabgabe</b><br><br>&nbsp;<font color=darkred>$heim - $gegner<font color=black>\n";
-print "<font size=1><br><br> Ihr Freundschaftsspiel Angebot kann erst nach g�ltiger Tipabgabe registriert werden.<br> Eine Modifizierung Ihrer Tipabgabe ist nach dem Absenden des Tipformulars nicht mehr m�glich .<br>\n";
+print "<font size=1><br><br> Ihr Freundschaftsspiel Angebot kann erst nach g&uuml;ltiger Tipabgabe registriert werden.<br> Eine Modifizierung Ihrer Tipabgabe ist nach dem Absenden des Tipformulars nicht mehr m&ouml;glich .<br>\n";
 print "<br>\n";
 
 
