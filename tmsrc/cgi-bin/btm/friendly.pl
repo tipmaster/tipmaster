@@ -40,14 +40,7 @@ $verein_suche = $query->param('verein_suche');
 $suche_ja = $query->param('suche_ja');
 
 
-$such =~ s/�/ue/g ;
-$such =~ s/�/oe/g ;
-$such =~ s/�/ae/g ;
-$such =~ s/�/ss/g ;
 
-$such =~ s/�/UE/g ;
-$such =~ s/�/OE/g ;
-$such =~ s/�/AE/g ;
 
 require "/tmapp/tmsrc/cgi-bin/btm_ligen.pl" ;
 require "/tmapp/tmsrc/cgi-bin/runde.pl" ;

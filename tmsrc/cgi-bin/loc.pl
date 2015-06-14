@@ -28,7 +28,7 @@ use CGI;
 
 
 print "<table border=0 cellspacing=0><tr>\n";
-print "<td><a href=/cgi-$direct/btm/login.pl><img src=/img/b01.JPG border=0></a></td>\n";
+print "<td><a href=/cgi-mod/btm/login.pl><img src=/img/b01.JPG border=0></a></td>\n";
 print "<td><a href=/cgi-mod/btm/spiel.pl><img src=/img/b03.JPG border=0></a></td>\n";
 print "<td><a href=/cgi-mod/btm/tab.pl><img src=/img/b02.JPG border=0></a></td>\n";
 print "<td><a href=/cgi-bin/btm/boerse.pl><img src=/img/b05.JPG border=0></a></td>\n";
