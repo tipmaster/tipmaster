@@ -25,7 +25,7 @@ my $trainer = $session->getUser();
 my $leut = $trainer;
 
 use CGI;
-
+my $query = new CGI;
 #@todo replace password logic
 $pass1 = $query->param('pass1');
 $method  = $query->param('method');
