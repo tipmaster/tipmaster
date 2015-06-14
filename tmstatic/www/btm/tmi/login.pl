@@ -509,7 +509,7 @@ if ( $leut ne "Gast Zugang" ) {
 
 $neu_news=$mail_new;
 #print "<tr><td align=center colspan=2><br><font face=verdana size=1>
-#<i>Derzeit ist hier keine Information �ber ungelesene Messages in der Box m�glich</i></td></tr>\n";
+#<i>Derzeit ist hier keine Information &uml;ber ungelesene Messages in der Box m&ouml;glich</i></td></tr>\n";
 
 $datei = "/tmdata/tmi/newmail/".$trainer;
 if ( -e "$datei" ) {
@@ -705,34 +705,34 @@ $datei = "/tmdata/tmi/help/".$leut;
 if (-e $datei ) {
 
 @link_info = ( 
-"Hier k�nnen Sie die Tipabgabe f�r die aktuelle Tiprunde f�r den Ligabetrieb Ihres Vereins t�tigen . Ebenfalls gelangen Sie �ber diesen Link zur Blankotipabgabe Seite falls Sie einmal f�r einen Zeitraum keine Tipabgabe beim TipMaster t�tigen k�nnen .<br><br>Die Tipabgabe ist jeweils ab sp�testens Montag abend bis Freitag 18.oo Uhr m�glich ." ,
-"Hier k�nnen Sie die neusten und kompletten Resultate Ihres Vereins und Ihrer Liga samt der Tipabgaben der Trainer der aktuellen Saison einsehen . Am Wochenende k�nnen Sie live die Zwischenergebnisse der Partien Ihres Vereins verfolgen samt Livetabellen berechnet anhand der Zwischenergebnisse . Spannung pur ist angesagt ." ,
-"Hier k�nnen Sie die Tabellen der aktuellen Saison aller Ligen einsehen . Die Tabellen lassen sich nach diversen Kriterien sortieren ( Heim , Ausw�rts , Hinrunde etc. ) . Alles was das Statistikherz begehrt ist m�glich !" ,
+"Hier k&ouml;nnen Sie die Tipabgabe f&uuml;r die aktuelle Tiprunde f&uuml;r den Ligabetrieb Ihres Vereins t&auml;tigen . Ebenfalls gelangen Sie &uml;ber diesen Link zur Blankotipabgabe Seite falls Sie einmal f&uuml;r einen Zeitraum keine Tipabgabe beim TipMaster t&auml;tigen k&ouml;nnen .<br><br>Die Tipabgabe ist jeweils ab sp�testens Montag abend bis Freitag 18.oo Uhr m&ouml;glich ." ,
+"Hier k&ouml;nnen Sie die neusten und kompletten Resultate Ihres Vereins und Ihrer Liga samt der Tipabgaben der Trainer der aktuellen Saison einsehen . Am Wochenende k&ouml;nnen Sie live die Zwischenergebnisse der Partien Ihres Vereins verfolgen samt Livetabellen berechnet anhand der Zwischenergebnisse . Spannung pur ist angesagt ." ,
+"Hier k&ouml;nnen Sie die Tabellen der aktuellen Saison aller Ligen einsehen . Die Tabellen lassen sich nach diversen Kriterien sortieren ( Heim , Ausw�rts , Hinrunde etc. ) . Alles was das Statistikherz begehrt ist m&ouml;glich !" ,
 "",
-"Unter diesem Link k�nnen Sie zum einen Trainerkollegen Freundschaftsspielangebote machen bzw. unterbreitete Angebote wahrnehmen in dem Sie die Tipabgabe f�r das Freundschaftsspiel unter diesem Link t�tigen ." ,
-"Unter diesem Link finden Sie die Ansetzungen , Ergebnisse sowie den Link zur Tipabgabe f�r die Landespokalwettbewerbde der einzelnen L�nder. Welche Kriterien f�r den Startplatz in einem der Pokale erf�llt werden m�ssen entnehmen Sie bitte dem Regelbuch." ,
-"Unter diesem Link finden Sie die Ansetzungen , Ergebnisse sowie den Link zur Tipabgabe f�r den Europapokal. Welche Kriterien f�r den Startplatz in einem der Europapokal erf�llt werden m�ssen entnehmen Sie bitte dem Regelbuch." ,
-"Die Tipabgabe f�r die Nationalmannschft sowie alle wichtigen Informationen und Links zu den Nationalmannschaften finden Sie unter diesem Link.",
-"Bei der Job - B�rse k�nnen Sie sich f�r alle freien Vereine ( bis Kategorie 5 )  bewerben . Als Vergabekriterien wird Ihre Tipquote der vergangenen drei Saisons sowie Ihre aktuelle Vereinsplazierung unter Ber�cksichtigung des Liganiveaus herangezogen .<br><br>Die w�chentlichen Vergaberunden finden Dienstags um 12.oo Uhr und Donnerstags um 16.oo Uhr statt." ,
-"Wenn Sie sich mit einem Trainerkollegen �ber einen Vereinstausch geeinigt haben k�nnen Sie unter diesem Link Ihr Tuaschinteresse eintragen und offiziell machen . Die Vereinstauschgesch�ft werden w�chentlich mittwochs um 14.oo Uhr ausgef�hrt .",
-"Mit der TipMaster - Suchmaschine k�nnen Sie bsp. pr�fen ob Ihr gesuchter Verein beim TipMaster vetreten ist oder welchen Verein Ihr Bekannter beim TipMaster trainiert ." ,
+"Unter diesem Link k&ouml;nnen Sie zum einen Trainerkollegen Freundschaftsspielangebote machen bzw. unterbreitete Angebote wahrnehmen in dem Sie die Tipabgabe f&uuml;r das Freundschaftsspiel unter diesem Link t&auml;tigen ." ,
+"Unter diesem Link finden Sie die Ansetzungen , Ergebnisse sowie den Link zur Tipabgabe f&uuml;r die Landespokalwettbewerbde der einzelnen L�nder. Welche Kriterien f&uuml;r den Startplatz in einem der Pokale erf�llt werden m&uuml;ssen entnehmen Sie bitte dem Regelbuch." ,
+"Unter diesem Link finden Sie die Ansetzungen , Ergebnisse sowie den Link zur Tipabgabe f&uuml;r den Europapokal. Welche Kriterien f&uuml;r den Startplatz in einem der Europapokal erf�llt werden m&uuml;ssen entnehmen Sie bitte dem Regelbuch." ,
+"Die Tipabgabe f&uuml;r die Nationalmannschft sowie alle wichtigen Informationen und Links zu den Nationalmannschaften finden Sie unter diesem Link.",
+"Bei der Job - B�rse k&ouml;nnen Sie sich f&uuml;r alle freien Vereine ( bis Kategorie 5 )  bewerben . Als Vergabekriterien wird Ihre Tipquote der vergangenen drei Saisons sowie Ihre aktuelle Vereinsplazierung unter Ber�cksichtigung des Liganiveaus herangezogen .<br><br>Die w�chentlichen Vergaberunden finden Dienstags um 12.oo Uhr und Donnerstags um 16.oo Uhr statt." ,
+"Wenn Sie sich mit einem Trainerkollegen &uml;ber einen Vereinstausch geeinigt haben k&ouml;nnen Sie unter diesem Link Ihr Tuaschinteresse eintragen und offiziell machen . Die Vereinstauschgesch�ft werden w�chentlich mittwochs um 14.oo Uhr ausgef�hrt .",
+"Mit der TipMaster - Suchmaschine k&ouml;nnen Sie bsp. pr�fen ob Ihr gesuchter Verein beim TipMaster vetreten ist oder welchen Verein Ihr Bekannter beim TipMaster trainiert ." ,
 "",
-"Am TipMaster - Stammtisch wird rund um das aktuelle TipMaster sowie reale Fu�ball Geschehen diskutiert. Beachten Sie: wenn Sie selbst ein Posting im Stammtisch verfassen wollen m�ssen Sie sich zun�chst f�r den Stammtisch registrieren lassen ." ,
-"�ber die Message - Box k�nnen Sie einfach durch das Versenden von Messages mit Ihren Trainerkollegen Kontakt aufnehmen und pflegen." ,
-"Das Liga-Forum dient Ihnen und Ihren Ligakonkurrenten als weitere eigene Dikussionsplattform um bspw. �ber das aktuelle Spielgeschehen in Ihrer Liga zu diskutieren." ,
-"�ber den TipMaster-Chat k�nnen Sie sich schnell und ohne erneutes Einloggen mit Trainerkollegen ins Gespr�ch kommen . Sonntags um 21.oo Uhr ist der offizielle TM - Chat Termin , dann meist auch mit der Spielleitung." ,
+"Am TipMaster - Stammtisch wird rund um das aktuelle TipMaster sowie reale Fu�ball Geschehen diskutiert. Beachten Sie: wenn Sie selbst ein Posting im Stammtisch verfassen wollen m&uuml;ssen Sie sich zun�chst f&uuml;r den Stammtisch registrieren lassen ." ,
+"&uml;ber die Message - Box k&ouml;nnen Sie einfach durch das Versenden von Messages mit Ihren Trainerkollegen Kontakt aufnehmen und pflegen." ,
+"Das Liga-Forum dient Ihnen und Ihren Ligakonkurrenten als weitere eigene Dikussionsplattform um bspw. &uml;ber das aktuelle Spielgeschehen in Ihrer Liga zu diskutieren." ,
+"&uml;ber den TipMaster-Chat k&ouml;nnen Sie sich schnell und ohne erneutes Einloggen mit Trainerkollegen ins Gespr�ch kommen . Sonntags um 21.oo Uhr ist der offizielle TM - Chat Termin , dann meist auch mit der Spielleitung." ,
 "Jede Saison werden an die besten drei Trainer in den Kategorien Top League-Player, Quotenk�nig , Torsch�tzenk�nig , Top Optimizer und gr�sste Schiessbude die entspr. Saisonawards in Gold , Silber und Bronze verliehen.",
-"Gelistet nach unterschiedlichen Kriterien k�nnen Sie im Trainer-Ranking einsehen welche Trainer in der Vergangenheit in der entspr. Kategorie beim TipMaster auf sich aufmerksam machen konnten" ,
-"Gelistet nach unterschiedlichen Kriterien k�nnen Sie im Vereins-Ranking einsehen welche Vereine in der Vergangenheit in der entspr. Kategorie beim TipMaster auf sich aufmerksam machen konnten" ,
+"Gelistet nach unterschiedlichen Kriterien k&ouml;nnen Sie im Trainer-Ranking einsehen welche Trainer in der Vergangenheit in der entspr. Kategorie beim TipMaster auf sich aufmerksam machen konnten" ,
+"Gelistet nach unterschiedlichen Kriterien k&ouml;nnen Sie im Vereins-Ranking einsehen welche Vereine in der Vergangenheit in der entspr. Kategorie beim TipMaster auf sich aufmerksam machen konnten" ,
 "Das Liga-Ranking liefert Ihnen einen Vergleich wie stark tats�chlich in den einzelnen Ligen Tore erzielt,getippt oder optimiert wird." ,
-"Hier k�nnen Sie Ihr Passwort sowie Ihre E-Mail Adresse bei der Sie beim TipMaster registriert sind �ndern. Die �nderung Ihres Trainernamens oder Ihres Vereinsnamens ist nicht m�glich." ,
-"Um den TipMaster nicht allzu anonym werden zu lassen hat jeder Trainer die M�glichkeit ein Trainerprofil �ber sich anzulegen. Alle Angaben sind freiwillig und sollen allein der F�rderung der Kommunikation unter den Trainern dienen." ,
-"Wenn Sie keine Lust mehr haben am TipMaster teilzunehmen bzw. lange Zeit keinen Tip abgeben k�nnen, k�nnen Sie hier Ihren Trainer - Account unwiderrruflich l&ouml;schen lassen." ,
-"Sie haben fussballbegeisterte Bekannte und m�chten Sich mit diesen beim TipMaster messen ? Hier k�nnen Sie Ihre Freunde schnell und einfach via E-Mail mit allen notwendigen Infos zum TipMaster informieren.",
-"Zu jeder Liga beim TipMaster k�nnen Sie hier die entsprechende ewige Tabelle einsehen. Sortiert werden k�nnen die Tabellen nach absolut erzielten Punkten bzw. den relativen Punkten eines Vereins in der entspr.Liga." ,
-"Die Tabellen der vielen vergangenen Saisons k�nnen unter diesem Link nocheinmal abgerufen werden ." ,
-"Alle Meister der ersten Ligen des TMIs k�nnen hier eingesehen werden .",
-"Im Regelbuch k�nnen Sie alle wichtigen Regeln des TipMasters nachlesen. Egal ob Sie Fragen zur Tipabgabe, dem Spielsystem oder den Vergabekriterien f�r die Europapokalpl�tze haben - hier sollten Sie f�ndig werden." ,
+"Hier k&ouml;nnen Sie Ihr Passwort sowie Ihre E-Mail Adresse bei der Sie beim TipMaster registriert sind �ndern. Die �nderung Ihres Trainernamens oder Ihres Vereinsnamens ist nicht m&ouml;glich." ,
+"Um den TipMaster nicht allzu anonym werden zu lassen hat jeder Trainer die M�glichkeit ein Trainerprofil &uml;ber sich anzulegen. Alle Angaben sind freiwillig und sollen allein der F�rderung der Kommunikation unter den Trainern dienen." ,
+"Wenn Sie keine Lust mehr haben am TipMaster teilzunehmen bzw. lange Zeit keinen Tip abgeben k&ouml;nnen, k&ouml;nnen Sie hier Ihren Trainer - Account unwiderrruflich l&ouml;schen lassen." ,
+"Sie haben fussballbegeisterte Bekannte und m�chten Sich mit diesen beim TipMaster messen ? Hier k&ouml;nnen Sie Ihre Freunde schnell und einfach via E-Mail mit allen notwendigen Infos zum TipMaster informieren.",
+"Zu jeder Liga beim TipMaster k&ouml;nnen Sie hier die entsprechende ewige Tabelle einsehen. Sortiert werden k&ouml;nnen die Tabellen nach absolut erzielten Punkten bzw. den relativen Punkten eines Vereins in der entspr.Liga." ,
+"Die Tabellen der vielen vergangenen Saisons k&ouml;nnen unter diesem Link nocheinmal abgerufen werden ." ,
+"Alle Meister der ersten Ligen des TMIs k&ouml;nnen hier eingesehen werden .",
+"Im Regelbuch k&ouml;nnen Sie alle wichtigen Regeln des TipMasters nachlesen. Egal ob Sie Fragen zur Tipabgabe, dem Spielsystem oder den Vergabekriterien f&uuml;r die Europapokalpl�tze haben - hier sollten Sie f�ndig werden." ,
 "Sehr h�ufig gestellte Fragen und Antworten zum TipMaster finden Sie auf unserer FAQ Seite. Ein Besuch lohnt sich bei Unklarheiten immer.",
 "Der Bundesliga - TipMaster ist das nationale Pendant zum TipMaster international. In 256 Ligen und 9 Ligastufen k�mpfen die Trainer um die duetsche Meisterschaft bzw. um den Einzug in Bundesliga." ,
 "Bet-at-home.com bietet Ihnen mit Ihrem stets aktuellem Quoten-Channel die M�glichkeit Ihren Fussballsachverstand in bare M�nze zu wandeln." ,
@@ -1230,7 +1230,7 @@ Umlaute in Ihrem Trainernamen entsprechend<br>
 ersetzt haben und keine Leerzeichen am Anfang<br> 
 bzw. am Ende Ihrer Eingabe stehen .<br><br>
 Sollte der angegebene Trainername korrekt sein<br>
-ist evtl. Ihr Traineraccount gel�scht wurden .<br><br>
+ist evtl. Ihr Traineraccount gel&ouml;scht wurden .<br><br>
 Hauefigste Ursache hierfuer ist eine<br>
 den Regelbuch entsprechende Entlassung<br>
 aufgrund zwei verpasster Tipabgaben in Folge<br>
@@ -1325,8 +1325,8 @@ Haben Sie zwei Tipabgaben verpasst und<br>
 wollen aber trotzdem witerhin am Spielbetrieb<br>
 teilnehmen muessen Sie sich neu registrieren .<br>
 Eine Wiedereinstellung bei Ihrem alten Verein <br>
-ist nicht m�glich .<br><br>
-Bevor Sie sich wieder neu anmelden k�nnen, muss<br>
+ist nicht m&ouml;glich .<br><br>
+Bevor Sie sich wieder neu anmelden k&ouml;nnen, muss<br>
 Ihr Trainername freigeschaltet werden ; die Freischaltung<br>
 wird t�glich um 4.oo Uhr nachts vollzogen .<br><br>
 

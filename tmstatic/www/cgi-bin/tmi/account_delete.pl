@@ -92,7 +92,7 @@ close(A2);
 
 
 print "Content-type: text/html\n\n";
-print "<center><font face=verdana size=2><b><br><br><br><br>Ihr Traineraccount $trainer wurde<br>erfolgreich gel�scht !<br><br>Vielen Dank f�r Ihre Teilnahme<br>am TipMaster international .<br>";
+print "<center><font face=verdana size=2><b><br><br><br><br>Ihr Traineraccount $trainer wurde<br>erfolgreich gel&ouml;scht !<br><br>Vielen Dank f&uuml;r Ihre Teilnahme<br>am TipMaster international .<br>";
 print "<br>Sollten Sie die Absicht haben sich mit Ihrem Trainernamen<br>beim TipMaster neu zu registrieren , muessen Sie<br>bis zur (Wieder)Freischaltung Ihres Trainernamens<br>gedulden . Diese erfolgt t�glich um 4.oo Uhr nachts .<br><br>Mit freundlichen Gr�ssen<br>Die Spielleitung";
 require "/tmsrc/tmapp/cronjobs/tmi/neuvergabe.pl";
 exit ;
@@ -121,7 +121,7 @@ am TipMaster international koennen Sie nun mit<br>
 untem folgenden Formular Ihren Trainer Account l&ouml;schen .<br><br>
 Der w�chentliche Spielbetriebsnewsletter sowie die evtl.<br>
 Tip - Remindern werden Ihnen danach nicht mehr zugestellt .<br><br>
-Wir bedanken uns f�r Ihre Teilnahme am Tipmaster international .<br><br>
+Wir bedanken uns f&uuml;r Ihre Teilnahme am Tipmaster international .<br><br>
 
 
 Bitte geben Sie zur Best�tigung Ihrer L�schabsicht Ihres<br>
