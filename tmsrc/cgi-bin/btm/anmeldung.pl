@@ -149,7 +149,6 @@ $rr = length($vorname);if ( $rr < 3 ) {$ein = 1 }
 $rr = length($nachname);if ( $rr < 3 ) {$ein = 1 }
 
 $rr = length($pass);
-TMLogger::log("anmeldung.pl >>> ".$pass);
 if ( $rr < 4 || $rr > 16 || $pass =~ / / || $pass =~ /\&/ || $pass=~ /\!/ || $pass =~ /\#/ ) { $pass_ok=1 }
 
 #no longer working with varnish in front, tp, 11/28/13 - shoudl pick up on forward ip
