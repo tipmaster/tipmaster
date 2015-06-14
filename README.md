@@ -27,7 +27,7 @@ The TipMaster perl codebase is 20 years old and was developed by a very young, u
 If you would like to become a more dedicated contributor to the Tipmaster code base please email info@tipmaster.de and we can share details on how to stand up a local envirnoment and receive a local data dump.
 
 ## <a name="german"></a> Deutsche Erkl&auml;rung
-Auf dieser Seite finden Sie den Programmiercode der die TipMaster Seite seit 20 Jahren realisiert. Ueber das Github Protokol ist der Programmiercode nun Open Source und kann dadurch - unter Moderation - von Mitspielern mitgestaltet werden. So koennen Fehler schneller behoben werden und neue Funktionalitaet durch die Gemeinschaft hunzigef&uuml;gt werden. Um Dateien im Projekt zu &auml;ndern ist ein Pull Request n&ooml;tig. 
+Auf dieser Seite finden Sie den Programmiercode der die TipMaster Seite seit 20 Jahren realisiert. Ueber das Github Protokol ist der Programmiercode nun Open Source und kann dadurch - unter Moderation - von Mitspielern mitgestaltet werden. So koennen Fehler schneller behoben werden und neue Funktionalitaet durch die Gemeinschaft hunzigef&uuml;gt werden. Um Dateien im Projekt zu &auml;ndern ist ein Pull Request n&ouml;tig. 
 
 Eine [deutsche Anleitung](https://git-scm.com/book/de/v1/Distribuierte-Arbeit-mit-Git-xxx-An-einem-Projekt-mitarbeiten) zur Mitarbeit an einem Git Projekt finden Sie hier.
 
