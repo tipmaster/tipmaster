@@ -12,3 +12,5 @@ Quick introduction to the overall project strcuture
 ## Important Notes
 The TipMaster perl codebase is 20 years old and was developed by a very young, unexperienced developer not using OO standards, proper naming standards, or other development best practices.
 
+## Running a local version
+If you would like to become a more dedicated contributor to the Tipmaster code base please email info@tipmaster.de and we can share details on how to stand up a local envirnoment and receive a local data dump.
