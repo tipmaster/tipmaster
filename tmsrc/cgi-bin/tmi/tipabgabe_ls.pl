@@ -670,7 +670,7 @@ print "<br>den Teamchef oder den Praesidenten deines Landes. Falls fuer dein Lan
 print "<br><br>Aktuelle Infos zu den Nationalmannschaften findet hier auch im <a href=http://community.tipmaster.de target=new>Nationalmannschafts Forum</a>.<br><br>";
 print "<form name=back action=/cgi-bin/tmi/nm_edit.pl method=post></form>\n";
 print "<font face=verdana size=1>[ -> <a href=javascript:document.back.submit()>Nationalmannschafts Kaderverwaltung / Aufstellungen</a> ]<br>\n";
-print "<br>[ -> <a href=http://www.bur.li/~tm-nm/>
+print "<br>[ -> <a href=http://www.appmeier.eu>
 Zu den Nationalmannschafts-Ligen</a> ]<br><br>";
 print "[ -> <a href=/cgi-bin/tmi/tipabgabe_ls.pl?method=hps>Linksammlung der TMI Nationalmannschaften</a> ]
  &nbsp; <img src=/img/new.gif><br><br>";
