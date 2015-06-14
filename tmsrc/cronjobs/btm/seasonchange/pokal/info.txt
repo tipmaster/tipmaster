@@ -1,0 +1,25 @@
+# SCHRITTE UM DIE NEUE SAISON VORZUBEREITEN 
+
+STEP 1/3 DATEN IM ARCHIV SICHERN
+--------------------------------
+1) ARCHIV Verzeichnis erstellen
+2) Wichtige Saisondateien sichern DAT*.TXT history.txt heer.txt spieltag.txt datum.txt finals.txt formular*.txt pass.txt
+3) Pokaldaten komplett in archiv/saison/pokal sichern (ohne Tipps)
+
+STEP 2/3 NEUE SAISON VORBEREITEN
+--------------------------------
+1) Archivdaten schreiben auf Grundlage der heer.txt / Skript ns_sai_history.pl online gestellt ( umformungen im skript nötig ! )
+2) Ggf. neue xx1.txt erstellen die Auf- und Abstieg regelt / Skript sai_create xx.pl
+3) Neue history1.txt erstellen anhaned history.txt und xx1.txt / Skript ns_sai_wechsel.pl
+4) Neue DAT erzeugen mit /cgi-bin/sai_neudat.pl
+5) AWARDS auslesen ( cgi-bin/btm/award_readout.pl )
+6) Titelträger auslesen erfolge_readout.pl cup_winner_readout.pl
+7) Skripte verein.pl trainer.pl auf neue Saison umstellen
+8) Statistikskripte auf die neue Saison umstellen
+
+STEP 3/3 POKALWETTBEWERBE NEU AUFSTEZEN
+---------------------------------------
+1) Lösche Verliere aus finals.txt - lese id nr mit /btm/swechsel/pokal/readout_qu_nr.pl aus
+2) setze ein in dfb_runde1.pl und führ aus - erstellt pokal_id.txt und zufallsschmea dfb pokal
+3) pokal_quote_btm.txt in /btm/pokal kopieren
+4) btm_pokal_ansetzung.pl ausführen und in /btm/pokal rüberkopieren

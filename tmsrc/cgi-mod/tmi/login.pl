@@ -30,7 +30,7 @@ use TMLogger;
 
 my $output = '';open O, '>', \$output or die "Can't open OUTPUT: $!";select O;
 
-my $http_cookie = $ENV{'HTTP_COOKIE'};
+
 my $acc_other="";my $t="";my $chat_user = "";my $neu_news = "";my $mail_new = "";my @border = ();my @arte = ();my @tab_name = ();my @link_name = ();my @link_target = ();my @link_info = ();my $tab = "";my $table = "";
 my $ole = "";my $table = "";my $table = "";my %pop = "";my $table = "";
 my $table = "";my $click = "";my $sup = "";my $sup = "";my $sup = "";
@@ -40,7 +40,7 @@ my @wochen = ();my $uhr = "";my $game = "";my @ros = ();my @zeit = ();my @gegner
 my $fb = "";my $fc = "";my $offset = "";my @make = ();my %tore_a = ();my %tore_b = ();my $fd = "";my $error = "";my @error_fields = ();my $missing_field = "";
 my $missing_field_list = "";my $error = "";my $error = "";my $error = "";my $error = "";my $error = "";
 my $error = "";my $error = "";my $c6="";
-my $c5 = "";my @cookies = ();my $xx = "";my $trainer_evt = "";my $zeile = "";my $pi = "";my $vi = "";my $datei = "";my $visits = "";my $datum = "";my $hits = "";
+my $c5 = "";my $xx = "";my $trainer_evt = "";my $zeile = "";my $pi = "";my $vi = "";my $datei = "";my $visits = "";my $datum = "";my $hits = "";
 my $tage = "";my $monat = "";my $date = "";my @stern = ();my @img = ();my @img = ();my @img = ();
 my @img = ();my @img = ();my $run = "";my $xq = "";my @punkte_tip = ();my @bonus = ();my @punkte_bonus = ();
 my @richtig = ();my @tendenz = ();my $ok = "";my @ex_platz = ();my $platz_id = "";my $stand = "";my $sek = "";my $min = "";my $std = "";my $tag = "";
@@ -235,8 +235,6 @@ chomp $lor[$y];
 $datc[$x] = $lor[$y];
 }
 
-########################################################################
-#################### COOKIES SETZEN ####################################
 $trainer = $leut ;
 $leute = $leut ;
 $leute =~ s/\ /\_/g ;
