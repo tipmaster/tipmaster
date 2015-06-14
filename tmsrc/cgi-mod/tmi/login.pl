@@ -727,7 +727,7 @@ if (-e $datei ) {
 "Das Liga-Ranking liefert Ihnen einen Vergleich wie stark tats�chlich in den einzelnen Ligen Tore erzielt,getippt oder optimiert wird." ,
 "Hier k�nnen Sie Ihr Passwort sowie Ihre E-Mail Adresse bei der Sie beim TipMaster registriert sind �ndern. Die �nderung Ihres Trainernamens oder Ihres Vereinsnamens ist nicht m�glich." ,
 "Um den TipMaster nicht allzu anonym werden zu lassen hat jeder Trainer die M�glichkeit ein Trainerprofil �ber sich anzulegen. Alle Angaben sind freiwillig und sollen allein der F�rderung der Kommunikation unter den Trainern dienen." ,
-"Wenn Sie keine Lust mehr haben am TipMaster teilzunehmen bzw. lange Zeit keinen Tip abgeben k�nnen, k�nnen Sie hier Ihren Trainer - Account unwiderrruflich l�schen lassen." ,
+"Wenn Sie keine Lust mehr haben am TipMaster teilzunehmen bzw. lange Zeit keinen Tip abgeben k�nnen, k�nnen Sie hier Ihren Trainer - Account unwiderrruflich l&ouml;schen lassen." ,
 "Sie haben fussballbegeisterte Bekannte und m�chten Sich mit diesen beim TipMaster messen ? Hier k�nnen Sie Ihre Freunde schnell und einfach via E-Mail mit allen notwendigen Infos zum TipMaster informieren.",
 "Zu jeder Liga beim TipMaster k�nnen Sie hier die entsprechende ewige Tabelle einsehen. Sortiert werden k�nnen die Tabellen nach absolut erzielten Punkten bzw. den relativen Punkten eines Vereins in der entspr.Liga." ,
 "Die Tabellen der vielen vergangenen Saisons k�nnen unter diesem Link nocheinmal abgerufen werden ." ,

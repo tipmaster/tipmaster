@@ -207,7 +207,7 @@ if ( $in eq "keine" ) {
 print "<tr><td align=center bgcolor=#DDDFFF colspan=5 width=750><font face=verdana size=1><br>Es befindet sich keine Message<br>in Ihrem Posteingang<br><br></td></tr>";
 }
 if ( $in ne "keine" ) {
-print "<tr><td align=left bgcolor=#DEDFEC colspan=5 width=750><font face=verdana size=1> &nbsp;<input type=submit style=\"font-familiy:verdana;font-size=8px;\" value=\"-> Markierte Messages l�schen\"> &nbsp; &nbsp; [ PM = Personal Message | LM = Liga Message ]</td></tr>";
+print "<tr><td align=left bgcolor=#DEDFEC colspan=5 width=750><font face=verdana size=1> &nbsp;<input type=submit style=\"font-familiy:verdana;font-size=8px;\" value=\"-> Markierte Messages l$ouml;schen\"> &nbsp; &nbsp; [ PM = Personal Message | LM = Liga Message ]</td></tr>";
 }
 print "
 </form></table>
@@ -274,7 +274,7 @@ if ( $out eq "keine" ) {
 print "<tr><td align=center bgcolor=#DDDFFF colspan=5 width=750><font face=verdana size=1><br>Es befindet sich keine Message<br>in Ihrem Postausgang<br><br></td></tr>";
 }
 if ( $out ne "keine" ) {
-print "<tr><td align=left bgcolor=#DEDFEC colspan=5 width=750><font face=verdana size=1> &nbsp;<input type=submit style=\"font-familiy:verdana;font-size=8px;\" value=\"-> Markierte Messages l�schen\"></td></tr>";
+print "<tr><td align=left bgcolor=#DEDFEC colspan=5 width=750><font face=verdana size=1> &nbsp;<input type=submit style=\"font-familiy:verdana;font-size=8px;\" value=\"-> Markierte Messages l&ouml;schen\"></td></tr>";
 }
 print "
 </table>
@@ -345,9 +345,9 @@ if ( $out eq "keine" ) {
 print "<tr><td align=center bgcolor=#DDDFFF colspan=4 width=750><font face=verdana size=1><br>Sie haben noch keinen Trainer<br>in Ihr Adressbuch aufgenommen<br><br></td></tr>";
 }
 #if ( $out ne "keine" ) {
-print "<tr><td align=left bgcolor=#DEDFEC colspan=2><font face=verdana size=1> &nbsp;<input type=submit style=\"font-familiy:verdana;font-size=8px;\" value=\"-> Markierte Trainer l�schen\"></td></form>";
+print "<tr><td align=left bgcolor=#DEDFEC colspan=2><font face=verdana size=1> &nbsp;<input type=submit style=\"font-familiy:verdana;font-size=8px;\" value=\"-> Markierte Trainer l&ouml;schen\"></td></form>";
 print "<form action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"><input type=hidden name=method value=\"add_adress\">\n";
-print "<td align=left bgcolor=#DEDFEC colspan=2><font face=verdana size=1> &nbsp;<input type=text size=25 style=\"font-family:verdana;font-size:10px;\" name=add value=\"Trainername\"> &nbsp; <input type=submit style=\"font-familiy:verdana;font-size=8px;\" value=\"-> Tainer hinzuf�gen\">";
+print "<td align=left bgcolor=#DEDFEC colspan=2><font face=verdana size=1> &nbsp;<input type=text size=25 style=\"font-family:verdana;font-size:10px;\" name=add value=\"Trainername\"> &nbsp; <input type=submit style=\"font-familiy:verdana;font-size=8px;\" value=\"-> Tainer hinzuf&uuml;gen\">";
 if ( $error_a ne "" ) {
 print "<br> &nbsp;<font color=darkred>$error_a";
 }
@@ -372,7 +372,7 @@ print "
 print "<tr><td align=right bgcolor=#DDDFFF colspan=1><font face=verdana size=1> &nbsp;Senden an &nbsp; </td>
 
 <td align=left bgcolor=#DDDFFF colspan=1><font face=verdana size=1> &nbsp; <select name=auswahl_liga style=\"font-family:verdana;font-size:10px;\">
-<option value=none>Empfaenger ausw�hlen
+<option value=none>Empfaenger ausw&auml;hlen
 <option value=none>-------------------------------------------------
 ";
 foreach $x (@outbox) {
@@ -424,7 +424,7 @@ exit ;
 
 
 
-############ ROUTINE L�SCHEN POSTEINGANG MESSAGES #############
+############ ROUTINE L&OUML;SCHEN POSTEINGANG MESSAGES #############
 sub delete_inbox {
 
 &openDB(mbox);
@@ -454,7 +454,7 @@ $inbox_new=~s/$id\&2\#//;
 &closeDB;
 }
 
-############ ROUTINE L�SCHEN POSTAUSGANG MESSAGES #############
+############ ROUTINE L&OUML;SCHEN POSTAUSGANG MESSAGES #############
 sub delete_outbox {
 
 &openDB(mbox);
@@ -483,7 +483,7 @@ $outbox_new=~s/$id\#//;
 &closeDB;
 }
 
-############ ROUTINE L�SCHEN ADDRESSBUCH TRAINER #############
+############ ROUTINE L&OUML;SCHEN ADDRESSBUCH TRAINER #############
 sub delete_adress {
 
 &openDB(mbox);
@@ -596,7 +596,7 @@ print "
 <table border=0 cellpadding=5 cellspacing=1>
 <form name=back action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"></form>
 
-<tr><td align=left bgcolor=#DEDFEC colspan=3><font face=verdana size=1>&nbsp;<img src=/img/mail.gif> &nbsp; Message \"$go[0]\" vom $go[3] - $go[4] &nbsp; &nbsp; &nbsp; [ <a href=javascript:document.back.submit()>Zur�ck zur Message - Box</a> ] &nbsp; &nbsp; &nbsp;</td></tr>
+<tr><td align=left bgcolor=#DEDFEC colspan=3><font face=verdana size=1>&nbsp;<img src=/img/mail.gif> &nbsp; Message \"$go[0]\" vom $go[3] - $go[4] &nbsp; &nbsp; &nbsp; [ <a href=javascript:document.back.submit()>Zur&uuml;ck zur Message - Box</a> ] &nbsp; &nbsp; &nbsp;</td></tr>
 <tr>
 <td align=right bgcolor=#DDDFFF><font face=verdana size=1>Absender &nbsp;</td>
 <td align=left bgcolor=#EDF0F6><font face=verdana size=1>&nbsp;$go[1] &nbsp; &nbsp; </td>

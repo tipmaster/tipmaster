@@ -105,7 +105,7 @@ print "Content-type: text/html\n\n";
 print <<"(END ERROR HTML)";
 <html>
 <head>
-<title>TipMaster international: Trainer - Account l�schen</title>
+<title>TipMaster international: Trainer - Account l&ouml;schen</title>
 </head>
 <body bgcolor=#eeeeee text=black>
 <font color=#eeeeee face=verdana size=1>.......................<img src=/img/trail.gif>
@@ -114,11 +114,11 @@ print <<"(END ERROR HTML)";
 <td colspan=10></td><td valign=top>
 
 <br>
-<font face=verdana size=2><b>Trainer - Account l�schen</b><br><br>
+<font face=verdana size=2><b>Trainer - Account l&ouml;schen</b><br><br>
 <font face=verdana size=1 color=black><br>Guten Tag $trainer , <br><br>
 wenn Sie kein Interesse mehr an der Teilnahme<br>
 am TipMaster international koennen Sie nun mit<br>
-untem folgenden Formular Ihren Trainer Account l�schen .<br><br>
+untem folgenden Formular Ihren Trainer Account l&ouml;schen .<br><br>
 Der w�chentliche Spielbetriebsnewsletter sowie die evtl.<br>
 Tip - Remindern werden Ihnen danach nicht mehr zugestellt .<br><br>
 Wir bedanken uns f�r Ihre Teilnahme am Tipmaster international .<br><br>
@@ -134,7 +134,7 @@ Accounts kann nicht r�ckg�ngig gemacht werden .
 Passwort :<br><br>
 #@adjust
 <input type=text length=10 maxlength=15 name=pass1><br><br>
-<input type=submit value="Trainer Account l�schen"></form><br><br>
+<input type=submit value="Trainer Account l&ouml;schen"></form><br><br>
 </td><td><br>
 <br><br><font color=#eeeeee face=verdana size=1>..................
 <img src=/img/header.gif valign=top></td></tr></table>
