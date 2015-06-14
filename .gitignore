@@ -1,2 +1,4 @@
 deploy.sh
 migrate.sh
+.DS_Store
+.project
