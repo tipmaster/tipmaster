@@ -2,6 +2,7 @@ use lib '/tmapp/tmsrc/cgi-bin/';
 
 require "/tmapp/tmsrc/cgi-bin/btm/saison.pl";
 
+if (0) {
 $vold=$main_saison[$main_nr-1];
 $vold=~s/Saison 20//;
 $vold=~s/'//;
@@ -30,8 +31,7 @@ print "Setze Softlink /tmdata/btm/archiv/$new/ -> /tmdata/btm\n";
 `mv /tmdata/btm/formular*.t* /tmdata/btm/archiv/$old/`;
 `cp /tmdata/btm/spieltag.txt /tmdata/btm/archiv/$old/`;
 `cp /tmdata/btm/history.txt /tmdata/btm/archiv/$old/`;
-`cp /tmdata/btm/heer.txt /tmdata/btm/archiv/$old/`;
-`cp /tmdata/btm/pass.txt /tmdata/btm/archiv/$old/`;
+`cp /tmdata/btm/heer.txt /tmdata/btm/archiv/$old/`; 	
 `cp /tmdata/btm/finals.txt /tmdata/btm/archiv/$old/`;
 `cp /tmdata/btm/archiv/022/datum.txt /tmdata/btm/archiv/$old/`;
 `cp /tmdata/btm/pokal/*.* /tmdata/btm/archiv/$old/pokal/`;
@@ -98,7 +98,10 @@ open (D1,">/tmdata/btm/tip_datum.txt");print D1 "1";close(D1);
 open (D1,">/tmdata/rrunde.txt");print D1 "1";close(D1);
 open (D1,">/tmdata/btm/datum.txt");print D1 "1\n1\n";close(D1);
 open (D1,">/tmdata/btm/pokal/pokal_datum.txt");print D1 "1";close(D1);
-require "/tmapp/tmsrc/cgi/btm/saison.pl";
+
+}
+
+require "/tmapp/tmsrc/cgi-bin/btm/saison.pl";
 $sai_new=$main_nr +1 ;
 
 open (D1,">/tmdata/btm/main_nr.txt");print D1 "$sai_new\n";close(D1);
