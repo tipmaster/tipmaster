@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 `rm -r /tmdata/btm/trainer_db`;
-`mkdir /tmdata/btm/trainer_db`;
+`mkdir -p /tmdata/btm/trainer_db`;
 
 require "/tmapp/tmsrc/cgi-bin/btm/saison.pl";
 
