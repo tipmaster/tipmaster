@@ -94,12 +94,12 @@ if (0) {
 	print "... beendet.";
 }
 print "Schreibe Vereinshistorien\n";
-require "./ns_sai_history.pl";
+require "/tmapp/tmsrc/cronjobs/tmi/seasonchange/ns_sai_history.pl";
 print "Erstelle neue history.txt und lege Sie ab in /tmdata/tmi/swechsel\n";
-require "./ns_sai_wechsel.pl";
+require "/tmapp/tmsrc/cronjobs/tmi/seasonchange/ns_sai_wechsel.pl";
 
 print "Setze die /tmdata/tmi/DAT*.TXT Dateien auf Saisonbeginn \n";
-require "./sai_neudat.pl";
+require "/tmapp/tmsrc/cronjobs/tmi/seasonchange/sai_neudat.pl";
 
 print
   "Setze Saisonvariablen auf Saisonstart ( Spielrunde = 1 , Tipabgabe ab Sp.1 , Saisonnr ++ , Pokalrunde =1 etc. ) \n";
@@ -123,8 +123,8 @@ print "... beendet.";
 `cp /tmdata/tmi/swechsel/history.txt /tmdata/tmi/history.txt`;
 
 `perl /tmapp/tmsrc/cronjobs/tmi/heer.pl &`;    # berechnet Tabellenplazierung fuer Job-Boerse etc.
-`perl erfolge_readout.pl &`;                   # bisherige deutsche meister werden ausgelesen
-`perl cup_winner_readout.pl &`;                # bisherige dfb pokalsieger werden ausgelesen
+`perl /tmapp/tmsrc/cronjobs/tmi/seasonchange/erfolge_readout.pl &`;                   # bisherige deutsche meister werden ausgelesen
+`perl /tmapp/tmsrc/cronjobs/tmi/seasonchange/cup_winner_readout.pl &`;                # bisherige dfb pokalsieger werden ausgelesen
 `nice -15 perl /tmapp/tmsrc/cronjobs/tmi/db/stats_ns.pl &`;
 `nice -15 perl /tmapp/tmsrc/cronjobs/tmi/db/top_award.pl &`;
 
