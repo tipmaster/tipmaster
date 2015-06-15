@@ -24,8 +24,8 @@ use Crypt::PBKDF2;
 
 sub hashPassword {
 	my $clearPassword = shift;
-	my $user = shift;
-	
+	my $user          = shift;
+
 	my $pbkdf2 = Crypt::PBKDF2->new(
 		hash_class => 'HMACSHA1',
 		iterations => 100,          # so is this
@@ -38,23 +38,21 @@ sub hashPassword {
 }
 
 sub executeLoginAttempt {
-	my $user     = $_[0];
+	my $user          = $_[0];
 	my $clearPassword = $_[1];
-	my $session  = $_[2];
+	my $session       = $_[2];
 
-	my $hashedPassword = hashPassword($clearPassword, $user);
-	
+	my $hashedPassword = hashPassword( $clearPassword, $user );
+
 	my $loginSuccess = 0;
 	open( D2, "/tmdata/hashedPasswords.txt" );
 	while (<D2>) {
 		( undef, $line_user, $line_pass, undef ) = split( /&/, $_ );
-	
+
 		if ( ( $line_user eq $user ) && ( $line_pass eq $hashedPassword ) ) {
 			$loginSuccess = 1;
 			last;
 		}
-
-
 
 	}
 	close(D2);

@@ -18,11 +18,11 @@
 
 =cut
 
-use lib '/tmapp/tmsrc/cgi-bin/'; 
+use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
 my $session = TMSession::getSession();
 my $trainer = $session->getUser();
-my $leut = $trainer;
+my $leut    = $trainer;
 
 use CGI;
 

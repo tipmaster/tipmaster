@@ -18,14 +18,13 @@
 
 =cut
 
-use lib '/tmapp/tmsrc/cgi-bin/'; 
+use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
 my $session = TMSession::getSession();
 my $trainer = $session->getUser();
-my $leut = $trainer;
+my $leut    = $trainer;
 
 use CGI;
-
 
 print "<table border=0 cellspacing=0><tr>\n";
 print "<td><a href=/cgi-mod/btm/login.pl><img src=/img/b01.JPG border=0></a></td>\n";

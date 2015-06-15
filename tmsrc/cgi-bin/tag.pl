@@ -18,14 +18,13 @@
 
 =cut
 
-use lib '/tmapp/tmsrc/cgi-bin/'; 
+use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
 my $session = TMSession::getSession();
 my $trainer = $session->getUser();
-my $leut = $trainer;
+my $leut    = $trainer;
 
 use CGI;
-
 
 print '
 
@@ -84,9 +83,10 @@ sub createUserLogEntry {
 		$datei = "/tmdata/btm/logs/" . $trainer . '.txt';
 
 		if ( -e "$datei" ) { $ex_ex = 1 }
-		$gross      = -s $datei;
-		$datum      = $xd . $tag . '.' . $xe . $mon . '.' . $jahr;
-		$datum_voll = $xc . $std . ':' . $xb . $min . ':' . $xa . $sek . ' ' . $xd . $tag . '.' . $xe . $mon . '.' . $jahr;
+		$gross = -s $datei;
+		$datum = $xd . $tag . '.' . $xe . $mon . '.' . $jahr;
+		$datum_voll =
+		  $xc . $std . ':' . $xb . $min . ':' . $xa . $sek . ' ' . $xd . $tag . '.' . $xe . $mon . '.' . $jahr;
 
 		if ( -e "$datei" ) { $ex_ex = 1 }
 

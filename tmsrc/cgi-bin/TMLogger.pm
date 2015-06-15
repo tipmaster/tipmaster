@@ -18,7 +18,6 @@
 
 =cut
 
-
 package TMLogger;
 
 chdir("/tmdata");
@@ -29,13 +28,11 @@ use TMLogger;
 
 sub log {
 	my $msg = shift;
-	open (A,">>/tmdata/debug.log");
+	open( A, ">>/tmdata/debug.log" );
 	print A $msg . "\n";
 	close(A);
 	return;
-	
+
 }
-
-
 
 1;
