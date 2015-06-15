@@ -18,28 +18,30 @@
 
 =cut
 
-use lib '/tmapp/tmsrc/cgi-bin/'; 
+use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
-my $session = TMSession::getSession(btm_login => 1);
+my $session = TMSession::getSession( btm_login => 1 );
 my $trainer = $session->getUser();
-my $leut = $trainer;
+my $leut    = $trainer;
 
 use CGI;
 my $query = new CGI;
-#@todo replace password logic
-$pass1 = $query->param('pass1');
-$method  = $query->param('method');
-$referer = "tipmaster.de" ;
-if ($ENV{'HTTP_REFERER'} =~ m|https?://([^/]*)$referer|i) {
-$check= 1;
-}
-$check=1;
 
-if ( $check != 1 ) { 
-print "Content-type: text/html \n\n";
-print "<font face=verdana size=2><b>";
-print "<br><br><br>Der Request wurde nicht ueber den tipmaster Server aufgerufen .<br>Die versuchte Manipulation wurde getrackt !";
-exit ;
+#@todo replace password logic
+$pass1   = $query->param('pass1');
+$method  = $query->param('method');
+$referer = "tipmaster.de";
+if ( $ENV{'HTTP_REFERER'} =~ m|https?://([^/]*)$referer|i ) {
+	$check = 1;
+}
+$check = 1;
+
+if ( $check != 1 ) {
+	print "Content-type: text/html \n\n";
+	print "<font face=verdana size=2><b>";
+	print
+"<br><br><br>Der Request wurde nicht ueber den tipmaster Server aufgerufen .<br>Die versuchte Manipulation wurde getrackt !";
+	exit;
 
 }
 
@@ -48,54 +50,51 @@ exit ;
 #exit ;
 
 if ( $method eq "del" ) {
-$pass=$pass1;
+	$pass = $pass1;
 
-($sek, $min, $std, $tag, $mon, $jahr , $wo) =  localtime(time);
+	( $sek, $min, $std, $tag, $mon, $jahr, $wo ) = localtime(time);
 
-$mon++ ;
-if ( $sek <10 ) { $xa = "0" }
-if ( $min <10 ) { $xb = "0" }
-if ( $std <10 ) { $xc = "0" }
-if ( $tag <10 ) { $xd = "0" }
-if ( $mon <10 ) { $xe = "0" }
-if ( $liga <10 ) { $xf = "0" }
+	$mon++;
+	if ( $sek < 10 )  { $xa = "0" }
+	if ( $min < 10 )  { $xb = "0" }
+	if ( $std < 10 )  { $xc = "0" }
+	if ( $tag < 10 )  { $xd = "0" }
+	if ( $mon < 10 )  { $xe = "0" }
+	if ( $liga < 10 ) { $xf = "0" }
 
-$jahr = $jahr + 1900 ;
+	$jahr = $jahr + 1900;
 
-open (D1,">>/tmdata/account_kill.txt");
-print D1 "| BTM | $trainer | $xc$std:$xb$min:$xa$sek | $xd$tag.$xe$mon.$jahr | $ENV{'REMOTE_ADDR'} |\n";
-close (D1);
+	open( D1, ">>/tmdata/account_kill.txt" );
+	print D1 "| BTM | $trainer | $xc$std:$xb$min:$xa$sek | $xd$tag.$xe$mon.$jahr | $ENV{'REMOTE_ADDR'} |\n";
+	close(D1);
 
-$ersetz = '&' . $trainer . '&&' ;
-$l=0;
-open (D1,"</tmdata/btm/history.txt");
-while(<D1>) {
-$l++;
-$zeilen[$l]=$_;
-chomp $zeilen[$l];
-$zeilen[$l]=~s/$ersetz/&Trainerposten frei&&/;
+	$ersetz = '&' . $trainer . '&&';
+	$l      = 0;
+	open( D1, "</tmdata/btm/history.txt" );
+	while (<D1>) {
+		$l++;
+		$zeilen[$l] = $_;
+		chomp $zeilen[$l];
+		$zeilen[$l] =~ s/$ersetz/&Trainerposten frei&&/;
 
+	}
+	close(D1);
+
+	open( A2, ">/tmdata/btm/history.txt" );
+	flock( A2, 2 );
+	for ( $x = 1 ; $x <= 384 ; $x++ ) {
+		print A2 "$zeilen[$x]\n";
+	}
+	flock( A2, 8 );
+	close(A2);
+
+	print "Content-type: text/html\n\n";
+	print
+"<center><font face=verdana size=2><b><br><br><br><br>Ihr Traineraccount $trainer wurde<br>erfolgreich geloescht !<br><br>Vielen Dank fuer Ihre Teilnahme<br>am Bundesliga - TipMaster .<br>";
+	print
+"<br>Sollten Sie die Absicht haben sich mit Ihrem Trainernamen<br>beim TipMaster neu zu registrieren , muessen Sie<br>bis zur (Wieder)Freischaltung Ihres Trainernamens<br>gedulden . Diese erfolgt taeglich um 4.oo Uhr nachts .<br><br>Mit freundlichen Groessen<br>Die Spielleitung";
+	exit;
 }
-close (D1);
-
-
-open(A2,">/tmdata/btm/history.txt");
-flock (A2, 2);
-for ( $x = 1; $x <= 384; $x++ )
-{
-print A2 "$zeilen[$x]\n";
-}
-flock (A2, 8);
-close(A2);
-
-print "Content-type: text/html\n\n";
-print "<center><font face=verdana size=2><b><br><br><br><br>Ihr Traineraccount $trainer wurde<br>erfolgreich geloescht !<br><br>Vielen Dank fuer Ihre Teilnahme<br>am Bundesliga - TipMaster .<br>";
-print "<br>Sollten Sie die Absicht haben sich mit Ihrem Trainernamen<br>beim TipMaster neu zu registrieren , muessen Sie<br>bis zur (Wieder)Freischaltung Ihres Trainernamens<br>gedulden . Diese erfolgt taeglich um 4.oo Uhr nachts .<br><br>Mit freundlichen Groessen<br>Die Spielleitung";
-exit ;
-}
-
-
-
 
 print <<"(END ERROR HTML)";
 
@@ -142,8 +141,4 @@ Passwort :<br><br>
 (END ERROR HTML)
 
 exit;
-
-
-
-
 

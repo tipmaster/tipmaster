@@ -18,7 +18,6 @@
 
 =cut
 
-
 package TMSession;
 
 use lib '/tmapp/tmsrc/cgi-bin/';
@@ -38,10 +37,9 @@ sub new {
 	my ($type) = $_[0];
 	my ($self) = {};
 	bless( $self, $type );
-	$self->setCGISession($_[1]);	
+	$self->setCGISession( $_[1] );
 	return ($self);
 }
-
 
 sub getSession {
 	my $mode = shift;
@@ -50,22 +48,20 @@ sub getSession {
 	$sid = getSessionIDCookie();
 	my $cgisession = new CGI::Session( undef, $sid, { Directory => '/tmp' } );
 	$cgisession->expires("30m");
-	my $session = TMSession->new($cgisession);
-	my $query = new CGI;
-	my $user  = $query->param('user');
+	my $session  = TMSession->new($cgisession);
+	my $query    = new CGI;
+	my $user     = $query->param('user');
 	my $passwort = $query->param('pass');
-	my $logout = $query->param('logout');
-	
-	
-	
+	my $logout   = $query->param('logout');
+
 	if ( $logout eq "1" ) {
-		TMAuthenticationController::doLogout($session );
+		TMAuthenticationController::doLogout($session);
 	}
 	if ( $user ne "" || $passwort ne "" ) {
 		TMAuthenticationController::executeLoginAttempt( $user, $passwort, $session );
 	}
-	
-	if (($mode eq "btm_login" || $mode eq "tmi_login") && (!$session->isUserAuthenticated())) {
+
+	if ( ( $mode eq "btm_login" || $mode eq "tmi_login" ) && ( !$session->isUserAuthenticated() ) ) {
 		TMAuthenticationController::error_needslogin();
 	}
 	return $session;
@@ -99,9 +95,9 @@ sub setSessionIDCookie {
 }
 
 sub setSessionValue {
-	my $self 				= $_[0];
-	my $key                  = $_[1];
-	my $value                = $_[2];
+	my $self  = $_[0];
+	my $key   = $_[1];
+	my $value = $_[2];
 
 	$self->getCGISession()->param( $key, $value );
 	return;
@@ -110,11 +106,9 @@ sub setSessionValue {
 
 sub getSessionValue {
 	my $self = $_[0];
-	my $key                  = $_[1];
+	my $key  = $_[1];
 	return $self->getCGISession()->param($key);
 }
-
-
 
 sub getUser {
 	my $self = $_[0];
@@ -124,20 +118,20 @@ sub getUser {
 sub getBTMTeam {
 	my $self = $_[0];
 	return $self->getCGISession()->param('btm_team');
-}	
+}
 
 sub getTMITeam {
 	my $self = $_[0];
 	return $self->getCGISession()->param('tmi_team');
-}	
+}
 
 sub isUserAuthenticated {
 	my $self = $_[0];
-	return $self->getCGISession()->param('authenticated');	
+	return $self->getCGISession()->param('authenticated');
 }
 
-sub getCGISession { 
-	my $self  = shift;
+sub getCGISession {
+	my $self = shift;
 	return $self->{'CGISession'};
 }
 
@@ -147,7 +141,5 @@ sub setCGISession {
 	$self->{'CGISession'} = $value;
 	return;
 }
-
-
 
 1;
