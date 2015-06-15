@@ -325,7 +325,7 @@ print '
 
 
 <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
-<meta http-equiv="expires" content="0">
+<meta http-equiv="expires" content="-1">
 
 
 <META name="AUTHOR" content="info@tipmaster.net">

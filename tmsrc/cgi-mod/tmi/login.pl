@@ -1565,15 +1565,7 @@ verwendet haben, ist Ihr bisheriges BTM Passwort Ihr neues TMI<br>
 Passwort !<br><br></b>
 
 
-<br><br><br>
-Haben Sie Ihr Passwort vergessen ?<br> 
-Kein Problem ! Wir mailen es Ihnen ...
-<form action=/cgi-bin/tmi/pass_sent.pl method=post>
-<br><font face=verdana size=1>Trainername :<br><input type=text lenght=25 name=trainer value="$leut">
-<br><br><input type=submit value="Passwort zuschicken"></form>
-</td><td><br>
-<br><br><font color=#eeeeee face=verdana size=1>..................
-<img src=/img/header.gif valign=top></td></tr></table>
+
 
  </body>
 </html>
