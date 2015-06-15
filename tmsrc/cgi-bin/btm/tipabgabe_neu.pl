@@ -150,6 +150,8 @@ sub daten_lesen {
 	$fg          = "/tmdata/btm/";
 	$datei_hiero = $fg . $bx . $by . $bv;
 
+	TMLogger::log("tipabgabe_neu.pl >>> ".$datei_hiero);
+
 	open( DO, $datei_hiero );
 	while (<DO>) {
 		@ver = <DO>;
