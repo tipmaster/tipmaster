@@ -530,7 +530,7 @@ close(AA);
    $mail{Message} .= "bei $frei in der $liga_namen[$linie] .\n\n";
    $mail{Message} .= "Ihre Zugansdaten fuer den TipMaster LogIn :\n\n";
    $mail{Message} .= "Trainername  : $voller_name\n";
-   $mail{Message} .= "Passwort     : $pass\n\n
+   $mail{Message} .= "Passwort     : (Wie angegeben bei Ihrer Anmeldung)\n\n
 
 Bitte aktivieren Sie zum Freischalten Ihres Accounts folgenden Link :\n
 http://www.tipmaster.de/cgi-bin/tmi/anmeldung.pl?m=f&t=$tmp&nr=$nr\n\n";
