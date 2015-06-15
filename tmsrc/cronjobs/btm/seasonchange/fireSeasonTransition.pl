@@ -99,7 +99,7 @@ open (D1,">/tmdata/rrunde.txt");print D1 "1";close(D1);
 open (D1,">/tmdata/btm/datum.txt");print D1 "1\n1\n";close(D1);
 open (D1,">/tmdata/btm/pokal/pokal_datum.txt");print D1 "1";close(D1);
 
-}
+
 
 require "/tmapp/tmsrc/cgi-bin/btm/saison.pl";
 $sai_new=$main_nr +1 ;
@@ -113,6 +113,7 @@ print "... beendet.";
 `perl /tmapp/tmsrc/cronjobs/btm/heer.pl &`;                   # berechnet Tabellenplazierung fuer Job-Boerse etc.
 `perl /tmapp/tmsrc/cronjobs/btm/seasonchange/erfolge_readout.pl &`;  # bisherige deutsche meister werden ausgelesen
 `perl /tmapp/tmsrc/cronjobs/btm/seasonchange/dfb_winner_readout.pl &`;    # bisherige dfb pokalsieger werden ausgelesen
+}
 `nice -15 perl /tmapp/tmsrc/cronjobs/btm/db/stats_ns.pl &`; 
 `nice -15 perl /tmapp/tmsrc/cronjobs/btm/db/top_award.pl &`;
 
