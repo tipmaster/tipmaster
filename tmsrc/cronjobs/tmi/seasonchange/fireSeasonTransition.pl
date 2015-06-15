@@ -115,7 +115,7 @@ close(D1);
 
 require "/tmapp/tmsrc/cgi-bin/tmi/saison.pl";
 $sai_new = $main_nr + 1;
-open( D1, ">/tmdata/main_nr.txt" );
+open( D1, ">/tmdata/tmi/main_nr.txt" );
 print D1 "$sai_new\n";
 close(D1);
 print "... beendet.";
