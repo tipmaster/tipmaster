@@ -291,7 +291,7 @@ sub special {
 		print "<td><font face=verdana size=3><b>$data[2]</td>";
 		print "</tr>";
 	}
-	clsoe(A);
+	close(A);
 
 	print "</table>";
 
