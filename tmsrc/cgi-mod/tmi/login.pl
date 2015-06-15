@@ -1455,13 +1455,6 @@ in <a href="http://community.tipmaster.de/showthread.php?t=27483">diesem Posting
 
 
 <br/><br/>
-<div style="min-width:235px;max-width:235px;padding:10px;background-color:white;border:1px solid black">
-<b>Eine Woche Pause<br/><br/></b>
-Der TipMaster macht einen Woche Pause
-zwischen den Saisons um die Arbeiten zur
-Open Source Initiative abzuschliessen.
-Am 15.Juni 2015 gehts weiter.
-</div>
 
 </td>
 
