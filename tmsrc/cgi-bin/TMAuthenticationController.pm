@@ -117,7 +117,12 @@ sub error_needslogin {
 	<p align=center>
 	<div style="text-align:center;width:400px;border:1px solid black; font-family:tahoma; font-size:14px; padding:20px;margin:30px">
 	<b>Du bist nicht beim ' . $competition . ' eingeloggt oder Ihre Login Daten waren inkorrekt.</b><br/>
-	Bitte von der <a href="/">Startseite</a> aus einloggen.
+	Bitte von der <a href="/">Startseite</a> aus einloggen.<br/><br/><br><br/>
+	Im Fall von Login Problemen:<br>
+	1/ Bitte gehen Sie sicher dass Ihr Trainername und Passwort mit der richtigen Gross- und Kleinschreibung angegeben werden.<br/>
+	2/ Fordern Sie ein neues Passwort an. (Im Moment in Arbeit)<br/>
+	3/ Senden Sie eine E-Mail an info@tipmaster.de mit der Problembeschreibung.<br/>
+	
 	</div>
 	</p>
 	</body>
