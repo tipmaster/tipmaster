@@ -127,7 +127,7 @@ chomp $a;
 $ra=$saison+1;
 
 if ( $saison > 19 ) {
-require "/cgi/tmi_ligen.pl";
+require "/tmapp/tmsrc/cgi-bin/tmi_ligen.pl";
 $all[3]=$liga_namen[$all[1]];
 }
 
