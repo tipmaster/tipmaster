@@ -155,9 +155,10 @@ sub daten_lesen {
 	open( DO, $datei_hiero );
 	while (<DO>) {
 		@ver = <DO>;
+	
 	}
 	close(DO);
-
+	TMLogger::log("tipabgabe_neu.pl >>> ".@ver);
 	$y = 0;
 	for ( $x = 0 ; $x < 25 ; $x++ ) {
 		$y++;
