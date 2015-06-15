@@ -2,7 +2,7 @@ use GD::Graph::bars;
 use GD::Graph::colour;
 use GD::Graph::lines;
 
-require '/tmapp/tmsrc/cronjobs/seasonchange/save.pl';
+require '/tmapp/tmsrc/cronjobs/btm/seasonchange/save.pl';
 require "/tmapp/tmsrc/cgi-bin/runde.pl";
 require "/tmapp/tmsrc/cgi-bin/btm/saison.pl";
 
