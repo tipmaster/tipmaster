@@ -1,9 +1,9 @@
 #!/usr/bin/perl
 
 
-#nach saisonerh�hung ausf�hren !
+#nach saisonerhoehung ausfuehren !
 require "/tmapp/tmsrc/cgi-bin/tmi/saison.pl";
-open (D1,">/usr/home/amstec/home/tipmaster/tmi/erfolge.txt");
+open (D1,">/tmdata/tmi/erfolge.txt");
 
 print D1 "4#Italien Serie A#AC Venezia#Ralf Borkowski#\n";
 print D1 "5#Italien Serie A#AC Parma#Reinhold Abram#\n";
@@ -86,7 +86,7 @@ if ( $saison ==  13 ) { $saison_liga = 118 }
 if ( $saison ==  14 ) { $saison_liga = 118 }
 if ( $saison >  14 ) { $saison_liga = 203 }
 
-$datei_quoten = '/usr/home/amstec/home/tipmaster/tmi' . $url . "history.txt";
+$datei_quoten = '/tmdata/tmi' . $url . "history.txt";
 $rr = 0;
 $li=0;
 $liga=0;
@@ -116,7 +116,7 @@ $datc[$x] = $vereine[$y];
 }
 close(DQ2);
 
-$datei_quoten = '/usr/home/amstec/home/tipmaster/tmi' . $url . "heer.txt";
+$datei_quoten = '/tmdata/tmi' . $url . "heer.txt";
 print "$datei_quoten\n";
 open(D2,"$datei_quoten");
 for ($qq=1;$qq<=$saison_liga;$qq++){
