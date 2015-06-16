@@ -5,7 +5,7 @@
 
 #### Status des Wettbewerbs
 my $debug = 0;
-if ($debug) {print "<!--Starting to read Library!//-->\n";}
+if ($debug) {print "<!--Starting to fucking read Library!//-->\n";}
 
 # 0 = Spielrunde laeuft, Tipabgabe abgeschlossen
 # 1 = Tipabgabe ist noch offen
@@ -107,7 +107,7 @@ my @nsparm = split(/\//,$ecparms{"neueSaison"});
 my $lfdsais = $nsparm[1];
 # adjustment for saisons. 2013 had 5 saisons, 2014 had 6 seasons
 $lfdsais +=11;
-my $weekctr = ($lfdsais*9)+425+46+2+55+54;
+my $weekctr = ($lfdsais*9)+425+46+2+55+54+1;
 
 ### forget this after dec 30, 2013, then, increase weekctr statically
 my $dec28      = 1388271471; 
@@ -127,7 +127,7 @@ if ($nowis > $dec28_2014) {
 #####
 
 my $winterzeit = 0;
-$timeLimit = 1004112000+(($rundenfolge{$derzeitige_runde}+$weekctr)*7*86400+120+1+$winterzeit*3600); #primed for 04/1
+$timeLimit = 1004112000+(($rundenfolge{$derzeitige_runde}+$weekctr)*7*86400+120+$winterzeit*3600); #primed for 04/1
 
 
 #Changeme wenn die tipabgabe generell offen/zu sein soll
@@ -141,7 +141,7 @@ if ($immeroffen) {
   $tipabgabe_offen = 1;
 }
 
-#print "<!-- Runde: $derzeitige_runde  Abgabe: $tipabgabe_offen   Time: $currentTime  Limit: $timeLimit //-->\n";
+print "<!-- Runde: $derzeitige_runde  Abgabe: $tipabgabe_offen   Time: $currentTime  Limit: $timeLimit //-->\n";
 open (K,"<$verz/ID.dat");
 %id2team = ();%id2nat = ();%team2trainer = (); %trainer2team = (); %team2id = ();
 while(<K>) {
