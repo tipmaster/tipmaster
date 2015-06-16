@@ -39,11 +39,11 @@ error() if ( $user eq undef );
 
 my $newPassword = TMDao::createNewPasswordForUser($user);
 
-$mail{Message} .= "*** Neues Passwort TipMaster ***        / \n\n\n";
+$mail{Message} .= "*** Neues Passwort TipMaster ***\n\n\n";
 $mail{Message} .= "Sehr geehrte(r) $user ,  \n\n";
 $mail{Message} .= "Ihre angeforderten neuen Zugangsdaten lauten : \n\n";
-$mail{Message} .= "Trainername 		 : $user\n";
-$mail{Message} .= "Neues Passwort    : $newPassword\n\n\n\nMit freundlichen Gruessen\nIhr TipMaster - Team\n\n";
+$mail{Message} .= "Trainername: $user\n";
+$mail{Message} .= "Neues Passwort: $newPassword\n\n\nBitte beachten Sie Gross- und Kleinschreibung beim Login.\n\n\nMit freundlichen Gruessen\nIhr TipMaster - Team\n\n";
 
 $mailprog = '/usr/sbin/sendmail';
 
