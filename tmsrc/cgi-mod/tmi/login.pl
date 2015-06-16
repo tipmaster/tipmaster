@@ -252,10 +252,6 @@ $expire = $query->param('expire');
 $poll   = $query->param('poll');
 $wert   = $query->param('wert');
 
-open( D1, "</tmdata/master.txt" );
-$master = <D1>;
-chomp $master;
-close(D1);
 open( D1, "</tmdata/top_tip.txt" );
 $run = <D1>;
 my $top_tip_aktiv = <D1>;
