@@ -194,7 +194,7 @@ my $LABEL_AKT3 = &getTableHtml( "Die besten TMI Trainer", \@displaydata3 );
 my @linksoben = (
 	"Sportwetten",        "http://www.bet365.com/home/?affiliate=365_011411",
 	"Regelbuch",          "/Regeln.shtml",
-	"FAQ",                "/cgi-bin/list.pl?id=faq",
+	"FAQ",                "https://github.com/tipmaster/tipmaster/wiki/FAQs",
 	"Passwort vergessen", "/url.shtml",
 	"Anmelden",           "/cgi-bin/btm/anmeldung.pl",
 	"Kontakt",            "mailto:info\@tipmaster.de"

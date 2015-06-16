@@ -862,7 +862,7 @@ print <<"(END ERROR HTML)";
 	"javascript:document.link14.submit()",
 	"/cgi-bin/btm/titel.pl",
 	"/Regeln.shtml",
-	"/cgi-bin/list.pl?id=faq",
+	"https://github.com/tipmaster/tipmaster/wiki/FAQs",
 	"/",
 	"/cgi-bin/list.pl?id=links",
 

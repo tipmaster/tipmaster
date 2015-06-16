@@ -1008,7 +1008,7 @@ print <<"(END ERROR HTML)";
 	"javascript:document.link14.submit()",
 	"/cgi-bin/tmi/titel.pl?liga=$liga",
 	"/Regeln.shtml",
-	"/cgi-bin/list.pl?id=faq",
+	"https://github.com/tipmaster/tipmaster/wiki/FAQs",
 	"/btm/",
 	"/cgi-bin/list.pl?id=links",
 
