@@ -67,10 +67,10 @@ Falls dies nicht mehr ihre gueltige<br>
 E-Mail Adresse oder Sie diese Mail<br>
 nicht erreicht wenden Sie sich<br> 
 bitte an info\@tipmaster.de.<br/><br/>
-Emails and \@aol.com, \@gmx.de und \@web.de Adressen<br/>
-koennen im Moment nicht zugestellt werden.<br/>
-Bitte via info\@tipmaster.de eine alternative<br/> 
-Email Adresse mitteilen.
+Bitte gehen Sie sicher dass Sie Ihren<br/>
+Spamfolder fuer die E-Mail pruefen.<br/> 
+Sollten keine Emails ankommen bitte E-mail<br/>
+and info\@tipmaster.de senden.
 
 <br/><br/>
 <a href="/">Zur&uuml;ck zur Hauptseite</a>
