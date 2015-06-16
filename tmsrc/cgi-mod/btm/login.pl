@@ -21,13 +21,22 @@
 use strict;
 use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
+
 my $session = TMSession::getSession( btm_login => 1 );
 my $trainer = $session->getUser();
 my $leut    = $trainer;
 
 if ( $session->getBTMTeam() eq "" && $session->getTMITeam() ne "" ) {
+use CGI;
+my $query = CGI->new();
+my $user     = $query->param('user');
+my $passwort = $query->param('pass');
 	print "Content-type:text/html\n\n
 <form name=Testform action=/cgi-mod/tmi/login.pl method=POST>	
+<input type=hidden name=user value=\"".$user."\">
+<input type=hidden name=pass value=\"".$passwort."\">
+</form>
+
 <script language=JavaScript>
 function AbGehts()
 {
