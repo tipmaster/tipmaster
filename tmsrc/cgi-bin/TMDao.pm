@@ -29,8 +29,6 @@ sub getUserForEmail {
 	my $email = shift;
 	my @lines = @{ _getPasswordLines() };
 
-	TMLogger::log("TMDao.pm >>> ".$email);
-
 	foreach (@lines) {
 		my @data = split( /&/, $_ );
 		return $data[1] if ( $data[3] eq $email );

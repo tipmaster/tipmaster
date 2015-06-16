@@ -25,6 +25,19 @@ my $session = TMSession::getSession( btm_login => 1 );
 my $trainer = $session->getUser();
 my $leut    = $trainer;
 
+if ( $session->getBTMTeam() eq "" && $session->getTMITeam() ne "" ) {
+	print "Content-type:text/html\n\n
+<form name=Testform action=/cgi-mod/tmi/login.pl method=POST>	
+<script language=JavaScript>
+function AbGehts()
+{
+document.Testform.submit();
+}
+window.setTimeout(\"AbGehts()\",0);
+</script>";
+	exit;
+}
+
 use CGI;
 use TMLogger;
 

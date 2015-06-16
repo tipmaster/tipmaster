@@ -21,7 +21,6 @@
 use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
 my $session = TMSession::getSession(undef);
-TMLogger::log("last100.pl >>> completed");
 my $trainer = $session->getUser();
 my $leut    = $trainer;
 
