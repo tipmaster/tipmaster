@@ -75,7 +75,7 @@ if ($modus eq "checklogin") {
 
 
 if ($modus eq "wronglogin") {
-  $msg = "Ihr Login war ung&uuml;ltig oder ihre Session ist abgelaufen<br>Bitte melden Sie sich erneut an<br>\n";
+  $msg = "Ihr Login war ung&uuml;ltig oder ihre Session ist abgelaufen<br>Bitte melden Sie sich erneut an.<b>Im Moment gibt es eine Umstellung der Anmeldelogik. Bitte versuchen Sie es sp&auml;ter nochmal.</b><br>\n";
   $modus = "showlogin";
 }
 
@@ -100,7 +100,8 @@ if ($modus eq "showlogin") {
   if ($msg) {print "<H3>$msg</H3>\n";}
   &printNavigation("Europacup Home");
   print "<H3>Bitte identifizieren Sie sich:</H3>\n";
-  
+
+  print "<b>Im Moment gibt es eine Umstellung der Anmeldelogik. Bitte versuchen Sie es sp&auml;ter nochmal</b>\n";  
   print "<FORM action = \"$cgiverz/login.pl\" method=post>\n";
   print "<input type=hidden name=\"runde\" value=\"$runde\">\n";
   print "<input type=hidden name=\"modus\" value=\"checklogin\">\n";
