@@ -119,7 +119,7 @@ sub error_needslogin {
 	Im Fall von Login Problemen:<br/><br/>
 	<li> Bitte gehen Sie sicher dass Ihr Trainername und Passwort mit der richtigen Gross- und Kleinschreibung angegeben werden.</li>
 	<li> Fordern Sie ein neues Passwort <a href="/url.shtml">hier an</a></li>
-	<li> Senden Sie eine E-Mail an info@tipmaster.de mit der Problembeschreibung.</li>
+	<li> Falls es weiterhin Probleme gibt, dann bitte <a href="http://community.tipmaster.de/showthread.php?p=253375">hier in der Community melden</a> und eine E-Mail an info@tipmaster.de mit der Problembeschreibung senden.</li>
 	
 	</div>
 	</p>
