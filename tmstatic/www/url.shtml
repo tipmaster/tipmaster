@@ -8,4 +8,4 @@
 
 <form action=/cgi-bin/pass_sent.pl method=post><br>
 Ihre Email :<br><input type=text lenght=25 name=email><br><br>
-<input type=submit value="Passwort zuschicken"></form>
+<input type=submit value="Neues Passwort zuschicken"></form>
