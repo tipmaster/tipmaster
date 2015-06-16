@@ -53,7 +53,6 @@ exit;
 
 sub return_html {
 
-	TMLogger::log( "anmeldung.pl >>> show send " . $send );
 	if ( $send != 1 ) { &formular }
 	$fehler = 0;
 
@@ -299,7 +298,6 @@ anderen Verein waehlen.";
 		}
 	}
 
-	TMLogger::log("anmeldung.pl >>> starte anmeldung");
 
 	if ( $fehler == 0 && $send == 1 ) { &anmelden }
 
@@ -534,7 +532,6 @@ sub formular {
 	$frei = 0;
 	$liga = 0;
 
-	TMLogger::log("anmeldung.pl >>> check formular");
 
 	open( D2, "/tmdata/btm/history.txt" );
 	while (<D2>) {

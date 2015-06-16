@@ -95,7 +95,6 @@ sub executeLoginAttempt {
 sub doLogout {
 
 	my $session = $_[0];
-	TMLogger::log("TMAuthenticationController.pm >>> logout");
 	$session->setSessionValue( "authenticated", 0 );
 	$session->setSessionValue( "trainer",       "" );
 	$session->setSessionValue( "btm_team",      "" );
@@ -106,7 +105,6 @@ sub doLogout {
 
 sub error_needslogin {
 
-	TMLogger::log("TMAuthenticationController.pm >>> show werrror");
 	my $competition = shift;
 	select STDOUT;
 	print "Content-type:text/html\n\n";
@@ -116,7 +114,7 @@ sub error_needslogin {
 	<body>
 	<p align=left>
 	<div style="text-align:left;width:400px;border:1px solid black; font-family:tahoma; font-size:14px; padding:20px;margin:30px">
-	<b>Du bist nicht beim ' . $competition . ' eingeloggt oder Ihre Login Daten waren inkorrekt.</b>
+	<b>Du bist nicht eingeloggt oder Ihre Login Daten waren inkorrekt.</b>
 	Bitte von der <a href="/">Startseite</a> aus einloggen.<br/><br/><br><br/>
 	Im Fall von Login Problemen:<br/><br/>
 	<li> Bitte gehen Sie sicher dass Ihr Trainername und Passwort mit der richtigen Gross- und Kleinschreibung angegeben werden.</li>
