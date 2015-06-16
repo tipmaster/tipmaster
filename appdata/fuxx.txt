@@ -37,7 +37,7 @@
 #68#Thomas Lichtner#
 #69#Hauke Oemick#
 #70#Thomas Junge#
-#71#Stefan Imhoff und Johann Krahmer#
+#71#Stefan Imhoff#Johann Krahmer#
 #72#Rene Kautz#
 #73#Marcel Liebl#
 #74#Tobias Rudolph#
@@ -46,7 +46,7 @@
 #77#Michael Aschermann#
 #78#Gregor Tsagkalidis#
 #79#Bodo Pfannenschwarz#
-#80#-keine Vergabe-#
+#80##
 #81#Sybille Salzer#
 #82#Detlef Reinhardt#
 #83#Tobias Zober#
