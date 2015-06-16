@@ -70,7 +70,6 @@ $tipo[24] = $query->param('53....');
 $tipo[25] = $query->param('54....');
 
 $team    = $query->param('team');
-$trainer = $query->param('trainer');
 
 &parse_form;
 

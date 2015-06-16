@@ -1650,7 +1650,7 @@ verwendet haben, ist Ihr bisheriges BTM Passwort Ihr neues TMI<br>
 Passwort !<br><br>
 
 Haben Sie Ihr Passwort vergessen ?<br>
-Kein Problem ! <a href=/tmi/url.htm>Wir mailen es Ihnen</a> !<br><br><br>
+Kein Problem ! <a href=/url.shtml>Wir mailen es Ihnen</a> !<br><br><br>
 
 Bei Problemen bitte Information<br>
 via Mail an info\@tipmaster.net . <br><br>

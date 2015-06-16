@@ -730,9 +730,7 @@ E-Mail an mich senden</b>
 		if ( $flagge[$x] == 5 ) { $vv = "ita0" }
 		if ( $flagge[$x] == 8 ) { $vv = "spa1" }
 
-		print
-"<form action=http://www.live-resultate.de/cgi-bin/show.pl method=post target=new name=xr$x><input type=hidden name=verein1 value=\"$verein1\"><input type=hidden name=index value=\"$vv\"><input type=hidden name=verein2 value=\"$verein2\"></form>\n";
-	}
+		}
 
 }
 
