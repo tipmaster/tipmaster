@@ -193,7 +193,7 @@ my $LABEL_AKT3 = &getTableHtml( "Die besten TMI Trainer", \@displaydata3 );
 
 my @linksoben = (
 	"Sportwetten",        "http://www.bet365.com/home/?affiliate=365_011411",
-	"Regelbuch",          "/Regeln.shtml",
+	"Regelbuch",          "https://github.com/tipmaster/tipmaster/wiki/Regelbuch",
 	"FAQ",                "https://github.com/tipmaster/tipmaster/wiki/FAQs",
 	"Passwort vergessen", "/url.shtml",
 	"Anmelden",           "/cgi-bin/btm/anmeldung.pl",
@@ -527,7 +527,7 @@ print '
 				
 				<b><span style="font-size:16px">TipMaster</span></b> &nbsp; <i>Das spannendste Fussball Tippspiel im Netz seit 1997</i><br/><br/>
 				Der TipMaster ist ein <b>kostenloses Fussball Tippspiel</b> bei dem jeder Mittipper die Trainerfunktion seines eigenen Fussballvereins &uuml;bernimmt. <br/><br/>Die Anzahl der Tore eines Vereins pro Spiel wird dabei live durch die w&ouml;chentlichen Tipps des Trainers bestimmt. 
-				<a href=/Regeln.shtml target=_top style="text-decoration:none; color:darkred">Weiteres zum Spielsystem.</a><br/><br/><br/>
+				<a href=https://github.com/tipmaster/tipmaster/wiki/Regelbuch target=_top style="text-decoration:none; color:darkred">Weiteres zum Spielsystem.</a><br/><br/><br/>
 				
 				<a href="/cgi-bin/btm/anmeldung.pl" class="btn">Jetzt <b>Kostenlos</b> Anmelden und <b>Sofort</b> Mittippen!</a>
 				
