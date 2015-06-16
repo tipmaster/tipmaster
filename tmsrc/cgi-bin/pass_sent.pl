@@ -65,8 +65,12 @@ Das Passwort fuer $user wurde an <br>
 die Adresse $email gemailt.<br><br>
 Falls dies nicht mehr ihre gueltige<br>
 E-Mail Adresse oder Sie diese Mail<br>
-nicht erreicht ist wenden Sie sich<br> 
-bitte an info\@tipmaster.de.
+nicht erreicht wenden Sie sich<br> 
+bitte an info\@tipmaster.de.<br/><br/>
+Emails and \@aol.com und \@gmx.de Adressen<br/>
+koennen im Moment nicht zugestellt werden.<br/>
+Bitte via info\@tipmaster.de eine alternative<br/> 
+Email Adresse mitteilen.
 
 <br/><br/>
 <a href="/">Zur&uuml;ck zur Hauptseite</a>
