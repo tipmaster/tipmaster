@@ -53,10 +53,10 @@ sub createNewPasswordForUser {
 			$output .= $_;
 		}
 	}
-	
-	my @lines=();
+
+	my @lines         = ();
 	my $inputFilePath = $TMConfig::FILE_PATH_PASS;
-	my $inputFile = IO::File->new("> $inputFilePath" );
+	my $inputFile     = IO::File->new("> $inputFilePath");
 	binmode( $inputFile, ":encoding(UTF-8)" );
 	$inputFile->write($output);
 	$inputFile->close();
@@ -74,8 +74,11 @@ sub _getPasswordLines {
 }
 
 sub _createRandomPassword {
-	my $password = int( rand (100000))+ 1;
+	my $length   = 10;
+	my $possible = 'abcdefghijkmnpqrstuvwxyz23456789ABCDEFGHJKLMNPQRSTUVWXYZ';
+	while ( length($password) < $length ) {
+		$password .= substr( $possible, ( int( rand( length($possible) ) ) ), 1 );
+	}
 	return $password;
 }
-
 1;

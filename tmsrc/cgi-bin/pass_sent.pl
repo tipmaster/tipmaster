@@ -48,7 +48,7 @@ $mail{Message} .= "Neues Passwort    : $newPassword\n\n\n\nMit freundlichen Grue
 $mailprog = '/usr/sbin/sendmail';
 
 open( MAIL, "|$mailprog -t" );
-print MAIL "To: $adresse\n";
+print MAIL "To: $email\n";
 print MAIL "From: info\@tipmaster.de ( TipMaster online )\n";
 print MAIL "Subject: Neues TipMaster Passwort\n\n";
 print MAIL "$mail{Message}";
