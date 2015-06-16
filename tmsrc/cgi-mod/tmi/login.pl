@@ -611,7 +611,7 @@ $trainer_enc =~ s/ /%20/g;
 #SSO Forum
 print <<"(END ERROR HTML)";
 
-<body bgcolor=#eeeeee vlink=darkred link=darkred text=black>
+<html>
 <head>
   <title>TipMaster international : LogIn Bereich $leut</title>
 <style type="text/css">
@@ -625,7 +625,7 @@ BODY {OVERFLOW:scroll;OVERFLOW-X:hidden}
 .DEK {POSITION:absolute;VISIBILITY:hidden;Z-INDEX:200;}
 //-->
 </style></head>
-<BODY>
+<body bgcolor="#eeeeee" vlink="darkred" link="darkred" text="black">
 <DIV ID="dek" CLASS="dek"></DIV>
 <SCRIPT TYPE="text/javascript">
 <!--
@@ -1429,8 +1429,6 @@ if ( $game > 0 ) {
 
 ################# ENDE TOP TIP ###################################################################
 
-print $page_footer;
-
 print <<"(END ERROR HTML)";
 
 <font color=darkred>
@@ -1464,6 +1462,8 @@ in <a href="http://community.tipmaster.de/showthread.php?t=27483">diesem Posting
 </td></tr></table>
 
 (END ERROR HTML)
+
+print $page_footer;
 
 select STDOUT;
 $session->writeSession();

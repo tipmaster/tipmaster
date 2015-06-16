@@ -1089,8 +1089,6 @@ ALT=\"kostenloser Vergleich privater Krankenversicherer\" WIDTH=140 HEIGHT=200><
 sub page_footer {
 
 	$page_footer = '
-</body></html>
-
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KX6R92"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -1101,7 +1099,7 @@ j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 })(window,document,\'script\',\'dataLayer\',\'GTM-KX6R92\');</script>
 <!-- End Google Tag Manager -->
 
-
+</body></html>
 ';
 	return $page_footer;
 }
