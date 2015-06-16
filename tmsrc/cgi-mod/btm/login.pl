@@ -199,7 +199,6 @@ my $first              = "";
 my $expire             = 0;
 my $poll               = "";
 my $wert               = "";
-my $master             = "";
 my $url                = "";
 my $url                = "";
 my $suche              = "";
