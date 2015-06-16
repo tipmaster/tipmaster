@@ -31,7 +31,7 @@ sub getUserForEmail {
 
 	foreach (@lines) {
 		my @data = split( /&/, $_ );
-		return $data[1] if ( $data[3] eq $email );
+		return $data[1] if ( lc $data[3] eq lc $email );
 	}
 	return undef;
 
