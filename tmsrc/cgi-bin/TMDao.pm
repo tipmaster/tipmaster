@@ -56,7 +56,7 @@ sub createNewPasswordForUser {
 	
 	my @lines=();
 	my $inputFilePath = $TMConfig::FILE_PATH_PASS;
-	my $inputFile = IO::File->new( $inputFilePath, "w" );
+	my $inputFile = IO::File->new("> $inputFilePath" );
 	binmode( $inputFile, ":encoding(UTF-8)" );
 	$inputFile->write($output);
 	$inputFile->close();
