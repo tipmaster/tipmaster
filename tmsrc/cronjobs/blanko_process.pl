@@ -16,7 +16,7 @@ $html = "
 <td width=10 />
 <td align=left><font face=verdana size=1><b>Urlaubstipp</b> - Sie haben ueber einen bestimmten Zeitraum - bspw. urlaubsbedingt - keine Moeglichkeit Ihren Tipp abzugeben ?<br>
  Dann benuetzen Sie fuer diesen Zeitraum bitte unseren Blanko - Tipp Service um eine Entlassung zu verhindern.<br>
- Ein Blankotipp ist jeweils fuer 30 Tage aktiv und tippt fuer Sie in diesem Zeitraum automatisiert und zufallsbasiert (>> <a href=/Regeln.shtml#blankotipp target=_new>Details</a> ).
+ Ein Blankotipp ist jeweils fuer 30 Tage aktiv und tippt fuer Sie in diesem Zeitraum automatisiert und zufallsbasiert (>> <a href=https://github.com/tipmaster/tipmaster/wiki/Regelbuch target=_new>Details</a> ).
  <br><br>
  
  

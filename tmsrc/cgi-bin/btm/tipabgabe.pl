@@ -486,7 +486,7 @@ $bilanz[0] - $bilanz[1] - $bilanz[2] </a>&nbsp; </td>
 <tr bgcolor=#eeeeee>
 <td align=center colspan=9 bgcolor=#eeeeff>
 <font face=versdana size=1>Umrechnung Quotensumme --> Anzahl Tore &nbsp; &nbsp; 
-[ <a href=/Regeln.shtml>TM Regelbuch</a> ]</td></tr>
+[ <a href=https://github.com/tipmaster/tipmaster/wiki/Regelbuch>TM Regelbuch</a> ]</td></tr>
 <tr bgcolor=#eeeeee>
 <td align=center bgcolor=#eeeeff><font face=versdana size=1>Tore</td>
 <td align=center><font face=versdana size=1>0</td>

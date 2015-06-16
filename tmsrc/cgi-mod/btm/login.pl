@@ -861,7 +861,7 @@ print <<"(END ERROR HTML)";
 	"javascript:document.link9.submit()",
 	"javascript:document.link14.submit()",
 	"/cgi-bin/btm/titel.pl",
-	"/Regeln.shtml",
+	"https://github.com/tipmaster/tipmaster/wiki/Regelbuch",
 	"https://github.com/tipmaster/tipmaster/wiki/FAQs",
 	"/",
 	"/cgi-bin/list.pl?id=links",
