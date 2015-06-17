@@ -20,7 +20,7 @@
 
 use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
-my $session = TMSession::getSession( btm_login => 1 );
+my $session = TMSession::getSession();
 my $trainer = $session->getUser();
 my $leut    = $trainer;
 
