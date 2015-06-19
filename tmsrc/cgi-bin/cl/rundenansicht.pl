@@ -3,21 +3,29 @@
 # Rundenansicht - Zeigt die Ergebnisse der uebergebenen Runde im Ueberblick an
 # Verknuepfung zur Detail-Spielansicht moeglich.
 
+use lib '/tmapp/tmsrc/cgi-bin/';
+
 use CGI;
-use Clteam;
-
-
-
+use CLLibrary;
+use CLTeam;
+use TMSession;
 
 $query = new CGI;
 print $query->header;
-do 'library.pl';
+
+my $session = TMSession::getSession("tmi_login");
+# if no session found, try a btm session
+if (!$session) {
+	$session = TMSession::getSession("btm_login");
+}
+my $cllib = new CLLibrary;
+my $name = $session->getUser();
+
 @grptms = ();
 
 $runde = $query->param('runde');
 $id = $query->param('id');
 $name = $query->param('name');
-$sessionkey = $query->param('sessionkey');
 $uorc = $query->param('uorc');
 $mynation = $query->param('nation');
 
@@ -26,11 +34,14 @@ my $debug = 0;
 if (!$runde) {$runde = $derzeitige_runde;}
 if (!$uorc) {$uorc = "C";}
 
-$bewerb = "Champions League"; $curround = $clrunde{$runde};
-if ($uorc eq "U") {$bewerb = "UEFA-Cup"; $curround = $uefarunde{$runde};}
+$bewerb = "Champions League"; $curround = $CLLibrary::clrunde{$runde};
+if ($uorc eq "U") {$bewerb = "UEFA-Cup"; $curround = $CLLibrary::uefarunde{$runde};}
+
 
 print "<HTML><HEAD><TITLE>$bewerb $curround</TITLE>\n";
+
   
+
 print &style,"\n";
 
 print <<ENDSCR;
@@ -77,11 +88,14 @@ if ($tagplace) {
 #OK, first we find out whether a) it's only a list, b) games are running or c) results are displayed.
 my $pagestatus = "list"; #list
 my $headertitle = "Auslosung";
-print "<!--Status  derz: $derzeitige_runde   rund: $runde  TO: $tipabgabe_offen //-->\n";
+my $derzeitige_runde = $cllib->getCurrentCLRound();
+my $tipabgabe_offen = $cllib->isFormularOpen();
+
+print "<!--Status  derz: $derzeitige_runde   rund: $runde  TO: ",$tipabgabe_offen," //-->\n";
 
 if ($derzeitige_runde eq $runde && !$tipabgabe_offen) {
 	# find out if games are already over and results written
-	  open(G,"<$verz/UEFA_${runde}.DAT");
+	  open(G,"<$CLLibrary::verz/UEFA_${runde}.DAT");
 	  my $line = <G>;
 	  ($lfd,$team1id,$team2id,$erg1,$erg2) = split(/&/,$line);
 	  if ($debug) { print "<!-- Debug Rundenermittliung Erg1 is $erg1 //-->\n"; }
@@ -95,13 +109,13 @@ if ($derzeitige_runde eq $runde && !$tipabgabe_offen) {
 	  }
 	  close(G);
 }  else {
-  if ($rundenfolge{$derzeitige_runde}>$rundenfolge{$runde}) {
+  if ($CLLibrary::rundenfolge{$derzeitige_runde}> $CLLibrary::rundenfolge{$runde}) {
 	  $pagestatus = "final";
           $headertitle = "Endergebnisse";
   }
 
 
-  if ($rundenfolge{$derzeitige_runde}<$rundenfolge{$runde}) {
+  if ($CLLibrary::rundenfolge{$derzeitige_runde}<$CLLibrary::rundenfolge{$runde}) {
           $pagestatus = "list";
           $headertitle = "Auslosung";
   }
@@ -109,10 +123,10 @@ if ($derzeitige_runde eq $runde && !$tipabgabe_offen) {
 }
 
 print "<H2><CENTER><font face=verdana>$bewerb <br>",$curround," <br>$headertitle</font></CENTER></H2><br>\n";
-&printNavigation;
+$cllib->printNavigation();
 print "<br><br>\n";
 $tim = time;
-my $timeLeft = $timeLimit - $tim;
+my $timeLeft = $CLLibrary::timeLimit - $tim;
 my $daysLeft = int($timeLeft/(60*1440));
 my $hoursLeft = ($timeLeft-$daysLeft*60*1440)/3600;
 print "<!-- current Time is : $tim, TimeLeft: $timeLeft, TimeLimit is : $timeLimit. Diff is ",($timeLimit - $tim)/60,"  ";
@@ -126,8 +140,8 @@ if ($uorc eq "C") {
 }
 
 if ($uorc eq "C" && ($runde eq "G1" || $runde eq "G2" || $runde eq "G3")) {
-    %gruppe = ();
-    &readGroupInfo();
+    my %gruppe = ();
+    $cllib->readGroupInfo();
     
     print "<TABLE border=1 width=96% align=center>\n";
     # Zeige die GRUPPEN
@@ -138,7 +152,7 @@ if ($uorc eq "C" && ($runde eq "G1" || $runde eq "G2" || $runde eq "G3")) {
       $back = (($grp%2)*2)+66;
       print "<!-- back is : $back (",chr($back),")//-->\n";
       print "<TR><TD bgcolor=#",chr($back) x 6,">\n";
-      &printgames($grp,1);
+	  &printgames($grp,1);
       print "</TD><TD bgcolor=#",chr($back) x 6,">\n";
       &printgames($grp,2);
       print "</TD></TR><TR bgcolor=#EEEEEE><TD colspan=2 bgcolor=#",chr($back) x 6,">\n";
@@ -149,34 +163,34 @@ if ($uorc eq "C" && ($runde eq "G1" || $runde eq "G2" || $runde eq "G3")) {
 } else {
 	# Normale Rundenansicht, Ergebnisliste
     print "<TABLE border=0 cellspacing=0 cellpadding=2 id=\"gamelist\" width=\"90%\">\n";
-    open(G,"<$verz/${fileprefix}_${runde}.DAT");
+    open(G,"<$CLLibrary::verz/${fileprefix}_${runde}.DAT");
     while(<G>) {
       ($lfd,$team1id,$team2id,$erg1,$erg2) = split(/&/,$_);
       if ($runde ne "FI") {
-                            my $filename1 = "$verz/tips/${uorc}_${runde}_$team1id.TIP";
-                            my $filename2 = "$verz/tips/${uorc}_${runde}_$team2id.TIP";
+                            my $filename1 = "$CLLibrary::verz/tips/${uorc}_${runde}_$team1id.TIP";
+                            my $filename2 = "$CLLibrary::verz/tips/${uorc}_${runde}_$team2id.TIP";
 
 			if ($pagestatus eq "running" or $pagestatus eq "final") {
 
 				#ok. we calculate intermediate results!
-				my $formularerg = &readFormular($runde);
+				my $formularerg = $cllib->readFormular($runde);
 				if ($debug) {  print "<!-- Home Debug 1 Tips1: @tips1, Tips2: @tips2 File: $filename1 $filename2 //-->\n";}
-			    my @tips1 = &getTipsFromFile($filename1,1);
-			    my @tips2 = &getTipsFromFile($filename2,2);
-			    @tips1 = &fillTip(5,@tips1);
-				@tips2 = &fillTip(4,@tips2);
+			    my @tips1 = $cllib->getTipsFromFile($filename1,1);
+			    my @tips2 = $cllib->getTipsFromFile($filename2,2);
+			    @tips1 = $cllib->fillTip(5,@tips1);
+				@tips2 = $cllib->fillTip(4,@tips2);
 				my $pkt1 = 0; my $pkt2 = 0;
-				($pkt1,$gamestring1) = &games($formularerg,@tips1);
-				($pkt2,$gamestring2) = &games($formularerg,@tips2);
+				($pkt1,$gamestring1) = $cllib->games($formularerg,@tips1);
+				($pkt2,$gamestring2) = $cllib->games($formularerg,@tips2);
 				$erg1 = $pkt1.":".$pkt2;
 	  
-				  my @tips1 = &getTipsFromFile($filename1,2);
-				  my @tips2 = &getTipsFromFile($filename2,1);
-				  @tips1 = &fillTip(4,@tips1);
-				  @tips2 = &fillTip(5,@tips2);
+				  my @tips1 = $cllib->getTipsFromFile($filename1,2);
+				  my @tips2 = $cllib->getTipsFromFile($filename2,1);
+				  @tips1 = $cllib->fillTip(4,@tips1);
+				  @tips2 = $cllib->fillTip(5,@tips2);
 				  my $pkt1 = 0; my $pkt2 = 0;
-				  ($pkt1,$gamestring3) = &games($formularerg,@tips1);
-				  ($pkt2,$gamestring4) = &games($formularerg,@tips2);
+				  ($pkt1,$gamestring3) = $cllib->games($formularerg,@tips1);
+				  ($pkt2,$gamestring4) = $cllib->games($formularerg,@tips2);
 				  $erg2 = $pkt1.":".$pkt2;
 
 			}
@@ -205,7 +219,7 @@ if ($uorc eq "C" && ($runde eq "G1" || $runde eq "G2" || $runde eq "G3")) {
  
 
 #Hier Schlussnavigation
-print &form("login.pl"),"<br>\n";
+print $cllib->form("login.pl"),"<br>\n";
 print "<input type=hidden name=\"modus\" value=\"mainpage\">\n";
 print "<input type=submit value=\"Zur&uuml;ck zur Europacup-Hauptseite\">\n";
 print "</form><br>\n";
@@ -220,15 +234,15 @@ print "</CENTER></BODY></HTML>\n";
 sub printRow {
   (my $lfd, my $team1id, my $team2id, my $erg1, my $erg2, my $uor, my $pagestatus) = @_;
 	
-  if ($uor eq "C") {
+  if ($uorc eq "C") {
 
-    $team1 = $id2team{"$team1id"};
-    $nat1 = $id2nat{"$team1id"};
+    $team1 = $cllib->id2team($team1id);
+    $nat1 = $cllib->id2nat($team1id);
     $nat1 =~ s/_.+//;
     
     if ($team2id ne "FREILOS") {
-      $team2 = $id2team{"$team2id"};
-      $nat2 = $id2nat{"$team2id"};
+      $team2 = $cllib->id2team("$team2id");
+      $nat2 = $cllib->id2nat("$team2id");
       $nat2 =~ s/_.+//;
     } else {
       $team2 = "FREILOS";
@@ -236,13 +250,13 @@ sub printRow {
     }
 
   } elsif ($uor eq "U") {
-    $team1 = $uid2team{"$team1id"};
-    $nat1 = $uid2nat{"$team1id"};
+    $team1 = $cllib->uid2team("$team1id");
+    $nat1 = $cllib->uid2nat("$team1id");
     $nat1 =~ s/_.+//;
     
     if ($team2id ne "FREILOS") {
-      $team2 = $uid2team{"$team2id"};
-      $nat2 = $uid2nat{"$team2id"};
+      $team2 = $cllib->uid2team("$team2id");
+      $nat2 = $cllib->uid2nat("$team2id");
       $nat2 =~ s/_.+//;
     } else {
       $team2 = "FREILOS";
@@ -254,7 +268,7 @@ sub printRow {
   }
 
   # determine who has won:
-  ($winner,$hinspiel,$rueckspiel,$decision) = &whowins($erg1,$erg2);
+  ($winner,$hinspiel,$rueckspiel,$decision) = $cllib->whowins($erg1,$erg2);
 		  $hi2 = "";$hi2z = "";
 		  $hi1 = "";$hi1z = "";
 
@@ -277,7 +291,7 @@ sub printRow {
   my $tipda1 = ""; my $tipda2 = "";
   if ($pagestatus eq "list") {
 	# Tip schon da?
-	($tipda1,$tipda2) = &tipda($uorc,$runde,$team1id,$team2id);
+	($tipda1,$tipda2) = $cllib->tipda($uorc,$runde,$team1id,$team2id);
   }
   $col1 = "";$col1z = "";$col2 = ""; $col2z = "";
 
@@ -287,7 +301,7 @@ sub printRow {
   } elsif ($mynation == $nat2) {
     $col2 = "<FONT color=green>"; $col2z = "</FONT>";
   }
-  #print "<!-- Compare $mynation $nat1 / $nat2: col1: $col1, col2: $col2//-->\n";
+#  print "<!-- Compare $mynation $nat1 / $nat2: col1: $col1, col2: $col2//-->\n";
 
   if ($team1id == $id) {
     $col1 = "<FONT color=red>"; $col1z = "</FONT>";
@@ -295,20 +309,20 @@ sub printRow {
     $col2 = "<FONT color=red>"; $col2z = "</FONT>";
   }
 
-  $name1 = $team2trainer{"$team1"};
-  $name2 = $team2trainer{"$team2"};
+  $name1 = $cllib->team2trainer("$team1");
+  $name2 = $cllib->team2trainer("$team2");
 
 ## Buildin a separate window launcher for tip sheet
 
   $back = (($lfd%2)*2)+68;
 
 ############### FLAGGEN DATEINAME ERMITTELN ######################################
-my $flag = lc($nation[$nat1]);
+my $flag = lc($CLLibrary::nation[$nat1]);
 $flag=~s/cze/tch/;$flag=~s/rom/rum/; $flag=~s/hun/ung/; $flag=~s/cyp/zyp/; $flag=~s/azb/ase/; $flag=~s/far/fae/; $flag=~s/mak/maz/;
 $flag=~s/sma/sam/;$flag=~s/bhz/boh/;$flag=~s/cro/kro/;$flag=~s/gre/gri/;   
 my $flag1 = $flag ;
 
-$flag = lc($nation[$nat2]);
+$flag = lc($CLLibrary::nation[$nat2]);
 $flag=~s/cze/tch/;$flag=~s/rom/rum/; $flag=~s/hun/ung/; $flag=~s/cyp/zyp/; $flag=~s/azb/ase/; $flag=~s/far/fae/; $flag=~s/mak/maz/;
 $flag=~s/sma/sam/;$flag=~s/bhz/boh/;$flag=~s/cro/kro/;$flag=~s/gre/gri/;
 my $flag2 = $flag ;
@@ -320,11 +334,11 @@ my $team2_id=$team2;$team2_id=~s/ /%20/g;
 my $coach1_id=$name1;$coach1_id=~s/ /%20/g;
 my $coach2_id=$name2;$coach2_id=~s/ /%20/g;
 my $dest1="tmi";my $dest2="tmi";
-if ( $nation[$nat1] eq "GER" ) { $dest1="btm" }
-if ( $nation[$nat2] eq "GER" ) { $dest2="btm" }
+if ( $CLLibrary::nation[$nat1] eq "GER" ) { $dest1="btm" }
+if ( $CLLibrary::nation[$nat2] eq "GER" ) { $dest2="btm" }
 
 
-  print "<TR bgcolor=#",chr($back) x 6," id=\"gamerow$lfd\"><TD align=right><font face=verdana size=2> &nbsp; $col1 $hi1 <a href=/cgi-mod/$dest1/verein.pl?ident=$team1_id>$team1</a>  (",$nation[$nat1],")$hi1z $col1z</font><br><font face=verdana size=1><a href=/cgi-mod/$dest1/trainer.pl?ident=$coach1_id>$name1</a>$tipda1</font></TD><TD align=center> &nbsp; <img src=/img/flags/$flag1.jpg> - <img src=/img/flags/$flag2.jpg> &nbsp; </TD><TD align=left><font face=verdana size=2>$col2 $hi2 <a href=/cgi-mod/$dest2/verein.pl?ident=$team2_id>$team2</a> (",$nation[$nat2],") $hi2z $col2z</font><br><font face=verdana size=1>$tipda2<a href=/cgi-mod/$dest2/trainer.pl?ident=$coach2_id>$name2</a></font></TD>\n";
+  print "<TR bgcolor=#",chr($back) x 6," id=\"gamerow$lfd\"><TD align=right><font face=verdana size=2> &nbsp; $col1 $hi1 <a href=/cgi-mod/$dest1/verein.pl?ident=$team1_id>$team1</a>  (",$CLLibrary::nation[$nat1],")$hi1z $col1z</font><br><font face=verdana size=1><a href=/cgi-mod/$dest1/trainer.pl?ident=$coach1_id>$name1</a>$tipda1</font></TD><TD align=center> &nbsp; <img src=/img/flags/$flag1.jpg> - <img src=/img/flags/$flag2.jpg> &nbsp; </TD><TD align=left><font face=verdana size=2>$col2 $hi2 <a href=/cgi-mod/$dest2/verein.pl?ident=$team2_id>$team2</a> (",$CLLibrary::nation[$nat2],") $hi2z $col2z</font><br><font face=verdana size=1>$tipda2<a href=/cgi-mod/$dest2/trainer.pl?ident=$coach2_id>$name2</a></font></TD>\n";
   if ($team2 ne "FREILOS" && !($pagestatus eq "list")) {
     $tiplink = "<img id=\"expbutton$lfd\" src=\"$images/expand.gif\" onClick=\"loadXMLDoc($lfd)\" border=0>".
 	           "<img id=\"colbutton$lfd\" src=\"$images/collapse.gif\" onClick=\"closeXMLDoc($lfd)\" border=0 style=\"display:none\">";
@@ -342,22 +356,22 @@ sub printFinale {
   (my $team1id, my $team2id, my $erg1, my $erg2, my $uorc) = @_;
   
    if ($uorc eq "C") {
-    $team1 = $id2team{"$team1id"};
-    $nat1 = $id2nat{"$team1id"};
-    $team2 = $id2team{"$team2id"};
-    $nat2 = $id2nat{"$team2id"};
+    $team1 = $cllib->id2team("$team1id");
+    $nat1 = $cllib->id2nat("$team1id");
+    $team2 = $cllib->id2team("$team2id");
+    $nat2 = $cllib->id2nat("$team2id");
   } else {
-    $team1 = $uid2team{"$team1id"};
-    $nat1 = $uid2nat{"$team1id"};
-    $team2 = $uid2team{"$team2id"};
-    $nat2 = $uid2nat{"$team2id"};
+    $team1 = $cllib->uid2team("$team1id");
+    $nat1 = $cllib->uid2nat("$team1id");
+    $team2 = $cllib->uid2team("$team2id");
+    $nat2 = $cllib->uid2nat("$team2id");
   }
 
 
   $nat1 =~ s/_.+//;
   $nat2 =~ s/_.+//; 
   # determine who has won:
-  ($winner,$hinspiel,$rueckspiel,$decision) = &whowins($erg1,$erg2);
+  ($winner,$hinspiel,$rueckspiel,$decision) = $cllib->whowins($erg1,$erg2);
 ##special
 #if ($uorc eq "C") {
 #  $erg1 = "- : -";
@@ -374,12 +388,12 @@ sub printFinale {
     } else {
       $winner = 2;
     }
-    $hinspiel = "<b> ".p2t($p1)." : ".p2t($p2)."</b> ($p1 - $p2)";
+    $hinspiel = "<b> ".$cllib->p2t($p1)." : ".$cllib->p2t($p2)."</b> ($p1 - $p2)";
     if (p2t($p1) == p2t($p2)) {
       if ($winner == 1) {
-	$decision = eval(p2t($p1)+1) . " : " . p2t($p2) . " n.V.";
+	$decision = eval($cllib->p2t($p1)+1) . " : " . $cllib->p2t($p2) . " n.V.";
       } else {
-	$decision = p2t($p1) . " : " . eval(p2t($p2)+1) . " n.V.";
+	$decision = $cllib->p2t($p1) . " : " . eval($cllib->p2t($p2)+1) . " n.V.";
       }
     }
  
@@ -391,7 +405,7 @@ sub printFinale {
    my $tipda1 = ""; my $tipda2 = "";
   if ($pagestatus eq "list") {
         # Tip schon da?
-        ($tipda1,$tipda2) = &tipda($uorc,$runde,$team1id,$team2id);
+        ($tipda1,$tipda2) = $cllib->tipda($uorc,$runde,$team1id,$team2id);
   }
  
   
@@ -411,13 +425,13 @@ sub printFinale {
     $col2 = "<FONT color=red>"; $col2z = "</FONT>";
   }
 
-  $name1 = $team2trainer{"$team1"};
-  $name2 = $team2trainer{"$team2"};
+  $name1 = $cllib->team2trainer("$team1");
+  $name2 = $cllib->team2trainer("$team2");
 
-  print "<TR><TD align=right><font face=verdana size=2>$col1 $hi1 $team1 (",$nation[$nat1],")$hi1z $col1z<br><font size=1>$name1 $tipda1</font></TD><TD align=center> - </TD><TD align=left><font face=verdana size=2>$col2 $hi2 $team2 (",$nation[$nat2],") $hi2z $col2z<br><font size=1>$tipda2 $name2</font></TD>\n";
-print "<!-- $derzeitige_runde -- $runde -- $tipabgabe_offen -->\n";
+  print "<TR><TD align=right><font face=verdana size=2>$col1 $hi1 $team1 (",$CLLibrary::nation[$nat1],")$hi1z $col1z<br><font size=1>$name1 $tipda1</font></TD><TD align=center> - </TD><TD align=left><font face=verdana size=2>$col2 $hi2 $team2 (",$CLLibrary::nation[$nat2],") $hi2z $col2z<br><font size=1>$tipda2 $name2</font></TD>\n";
+print "<!-- $derzeitige_runde -- $runde -- ",$tipabgabe_offen," -->\n";
   if ($team2 ne "FREILOS" && !($derzeitige_runde eq $runde && $tipabgabe_offen)) {
-    $tiplink = "<a href=\"$cgiverz/showgame.pl?runde=$runde&uorc=$uorc&game=$lfd\">Tips</a>";
+    $tiplink = "<a href=\"$CLLibrary::cgiverz/showgame.pl?runde=$runde&uorc=$uorc&game=$lfd\">Tips</a>";
   } else {$tiplink = "&nbsp;"}
     
   print "<TD><font face=verdana size=2>$hinspiel</font></TD><TD>&nbsp;</TD><TD align=center><font face=verdana size=2>$decision</font></TD><TD>&nbsp;<font face=verdana size=2> $tiplink </font>&nbsp;</TD></TR>\n";
@@ -451,7 +465,7 @@ sub printgames {
       if (!$tipabgabe_offen || $sptag<=($currlfdround*3-3)) {
 	$spcnt = (($sptag-1)*2)+$s;
 	$formnr = int(($sptag-1)/3)+1;
-	$tiplink = "<a href=\"$cgiverz/showgame.pl?uorc=C&runde=G${formnr}&game=$sptag&ids=".$heim->id."-".$gast->id."\"><img border=0 src=\"$images/ti.jpg\"></a>";
+	$tiplink = "<a href=\"$CLLibrary::cgiverz/showgame.pl?uorc=C&runde=G${formnr}&game=$sptag&ids=".$heim->id."-".$gast->id."\"><img border=0 src=\"$images/ti.jpg\"></a>";
       } else {
 	$tiplink = "&nbsp;";
       }      
@@ -471,10 +485,10 @@ sub table {
   for ($rnk=1;$rnk<=4;$rnk++) {
     my $teama = $sorteams[$rnk-1];
     my $theteam = $teama->{TEAM};
-    my $thename = $team2trainer{"$theteam"};
+    my $thename = $cllib->team2trainer("$theteam");
     my $nat1 = $id2nat{$teama->{ID}};
 
-my $flag = lc($nation[$nat1]);
+my $flag = lc($CLLibrary::nation[$nat1]);
 $flag=~s/cze/tch/;$flag=~s/rom/rum/; $flag=~s/hun/ung/; $flag=~s/cyp/zyp/; $flag=~
 s/azb/ase/; $flag=~s/far/fae/; $flag=~s/mak/maz/;
 $flag=~s/sma/sam/;$flag=~s/bhz/boh/;$flag=~s/cro/kro/;$flag=~s/gre/gri/;
@@ -486,30 +500,12 @@ my $flag1 = "<img src=/img/flags/$flag.jpg>";
 }
 
 
-sub tipda {
-	my $uorc = shift;
-	my $runde = shift;
-	my $team1id = shift;
-	my $team2id = shift;
-        # Tip schon da?
-        my $filename1 = "$verz/tips/${uorc}_${runde}_$team1id.TIP";
-        my $filename2 = "$verz/tips/${uorc}_${runde}_$team2id.TIP";
-        my $tipda1 = "&nbsp;<img src=\"/img/icons/other/redmark.jpg\" alt=\"Tip fehlt\"/>";
-        my $tipda2 = "<img src=\"/img/icons/other/redmark.jpg\" alt=\"Tip fehlt\"/>&nbsp;";
-        if (-e $filename1) {
-                $tipda1 = "&nbsp;<img src=\"/img/icons/other/greenmark.jpg\" alt=\"Tip ist eingegangen\"/>";
-        }
-        if (-e $filename2) {
-                $tipda2 = "<img src=\"/img/icons/other/greenmark.jpg\" alt=\"Tip ist eingegangen\"/>&nbsp;";
-        }
 
-	return ($tipda1,$tipda2);
-}
 
 
 sub form {
   $scriptname = shift;
-  my $ret = "<FORM name=bla action=\"$cgiverz/$scriptname\" method=post>\n";
+  my $ret = "<FORM name=bla action=\"$CLLibrary::cgiverz/$scriptname\" method=post>\n";
   $ret = "$ret <input type=hidden name=\"name\" value=\"$name\">\n";
   $ret = "$ret <input type=hidden name=\"sessionkey\" value=\"$sessionkey\">\n";
   $ret = "$ret <input type=hidden name=\"runde\" value=\"$derzeitige_runde\">\n";

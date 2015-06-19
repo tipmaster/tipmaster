@@ -1,4 +1,4 @@
-package Clteam;
+package CLTeam;
 use strict;
 
 my $spielstring = "";

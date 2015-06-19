@@ -181,10 +181,7 @@ ihren aktuellen Verein $datq[$x] in
 der $liga_namen[$liga[$x]] empfangen
 ( Stand Donnerstag abend 20.oo Uhr ! ).
 
-*** ANZEIGE ******************************************************************************************
-Sportingbet.com - 100% Einzahlungsbonus bis zu 100 Euro!
-http://ad-emea.doubleclick.net/clk;227424770;51590056;f
-******************************************************************************************************
+TMI Tippabgabe ist heute often bis 21.00 Uhr.
 
 ACHTUNG!
 Da auch bereits in der letzten Tipprunde die Tippabgabe verpasst

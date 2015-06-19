@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+
 
 print "Content-Type: text/html \n\n";
 $mailprog = '/usr/sbin/sendmail';
@@ -181,10 +181,7 @@ ihren aktuellen Verein $datq[$x] in
 der $liga_namen[$liga[$x]] empfangen
 ( Stand Donnerstag abend 20.oo Uhr ! ).
 
-*** ANZEIGE ******************************************************************************************
-Sportingbet.com - 100% Einzahlungsbonus bis zu 100 Euro!
-http://ad-emea.doubleclick.net/clk;227424770;51590056;f
-******************************************************************************************************
+BTM Tippabagbe ist heute offen bis 21 Uhr.
 
 ACHTUNG
 Da auch bereits in der letzten Tipprunde die Tippabgabe verpasst
