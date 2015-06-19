@@ -80,8 +80,7 @@ $runde = $rrunde;
 for ( $x = 1 ; $x <= $y ; $x++ ) {
 
 	print $y . $mail{ $datb[$x] };
-	exit;
-
+	
 	if ( $mail{ $datb[$x] } != ~/schneider.de/ ) {
 		if ( $mail{ $datb[$x] } != ~/weisse.de/ ) {
 			if ( $datb[$x] ne "Trainerposten frei" ) {
