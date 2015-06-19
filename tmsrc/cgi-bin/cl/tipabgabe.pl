@@ -3,68 +3,78 @@
 # Tipabgabe - stellt das Tipformular dar und ermittelt, welche Tips 
 # der angegebene Tipper abzugeben hat. Danach wird der Tip geprueft und abgespeichert.
 
-use CGI;
+use lib '/tmapp/tmsrc/cgi-bin/';
 
-do 'library.pl';
+use CGI;
+use CLLibrary;
+use CLTeam;
+use TMSession;
+
 
 @tips = ();
 my $doubler = 1;
 
 $query = new CGI;
+print $query->header;
 
-#$runde = $query->param('runde');
+my $session = TMSession::getSession("tmi_login");
+# if no session found, try a btm session
+if (!$session) {
+	$session = TMSession::getSession("btm_login");
+}
+if (!$session->isUserAuthenticated()) {
+	TMAuthenticationController::error_needslogin();
+}
+my $cllib = new CLLibrary;
+my $name = $session->getUser();
+
 $modus = $query->param('modus');
-$name = $query->param('name');
-$sessionkey = $query->param('sessionkey');
 $tipper_id = $query->param('id');
 $uorc = $query->param('uorc');
+(my $uorcByName,my $currentRoundName, my $mynation, my $myId) = $cllib->getCurrentCompetitionInfo($name);
+if (!$uorc) {
+	$uorc = $uorcByName;
+}
+if (!$tipper_id) {
+	$tipper_id = $myId;
+}
 
 
-print $query->header;
+
 
 $error = "";
 if (!$modus) {$modus = "abgabe";}
-if (!$runde) {$runde = $derzeitige_runde;}
-if (&readFormular($runde) eq "no") {$error = "Tipformular steht noch nicht bereit";}
-my $spielref = &readFormular($runde);
+if (!$runde) {$runde = $cllib->getCurrentCLRound();}
+if ($cllib->readFormular($runde) eq "no") {$error = "Tipformular steht noch nicht bereit";}
+my $spielref = $cllib->readFormular($runde);
 my %spiel = %$spielref;
 
-# identitaet checken
-if (! &checkKey($name,$sessionkey)) {$modus = "wronglogin";}
-
 print "<HTML><HEAD>\n";
-print "<link rel=\"stylesheet\" type=\"text/css\" href=\"/tm.css\" media=\"all
-\">\n";
+print "<link rel=\"stylesheet\" type=\"text/css\" href=\"/tm.css\" media=\"all\">\n";
 
-print "</HEAD><BODY><!-- MODUS: $modus //-->\n";
-
-if ($modus eq "wronglogin") {
-  printNavigation("Europacup Home");
-  print "Sorry, Ihre Session ist abgelaufen. Bitte neu anmelden<br>\n";
-  print "<a href=\"$cgiverz/login.pl\">Zum Login</a>\n";
-  print "</BODY></HTML>\n";
-  exit 0;
-}
+print "</HEAD><BODY><!-- MODUS: $modus  RUNDE: $runde, UORC: $uorc, ID: $tipper_id//-->\n";
 
 if ($error) {
-  printNavigation;
+  $cllib->printNavigation();
   print $error,"<br></BODY></HTML>\n";
   exit 0;
 }
 
 # abzugebende tips ermitteln
 
-@tips_to_give = &welchetips($tipper_id,$runde,$uorc);
+@tips_to_give = $cllib->welchetips($tipper_id,$runde,$uorc);
 $spname[4] = "Ausw&auml;rtsspiel";
 $spname[5] = "Heimspiel";
+
+
 
 if ($modus eq "abgabe") {
   #$submittext = "Tip speichern - Vorsicht! Tipabgabe erst nach Saisonumstellung durchfuehren.!";
   $submittext = "Tip speichern";
   # check if there is a tip already - if yes, preselect the
   # choices
-  @tip = &readTips($tipper_id,$runde);  
-  #print "<br>Eingelesene Tips: ",@tip,"\n";
+  @tip = $cllib->readTips($tipper_id,$runde,$uorc);  
+  print "<!--<br>Eingelesene Tips: ",@tip," //-->\n";
   if (!@tips_to_give) {
     print "Sie m&uuml;ssen diese Runde keinen Tip abgeben!";
     $show_submit = 0;
@@ -77,7 +87,7 @@ if ($modus eq "abgabe") {
     # yet to do
     $show_submit = 1;
   print "<H1>Europacup Tipabgabe</h1><hr>\n";
-  &printNavigation;
+  $cllib->printNavigation();
   print "<hr>\n";
 
     print "Sie m&uuml;ssen in dieser Runde ",$#tips_to_give+1," Tips abgeben:<br>\n";
@@ -87,9 +97,8 @@ if ($modus eq "abgabe") {
     }
   }
     
-  print &form("tipabgabe.pl"),"\n";
+  print $cllib->form("tipabgabe.pl"),"\n";
   print "<input type=hidden name=modus value=\"speichern\">";
-  print "<input type=hidden name=id value=\"$tipper_id\">";
   print "<HR>\n";
   print "<table border=0 colpadding=0 colspacing=0 rowpadding = 0 rowspacing=0 >\n";
   $lfd = 0; $lfd2 = 0;
@@ -142,7 +151,7 @@ if ($modus eq "abgabe") {
     print "</tr>\n";
   }
   if ($show_submit) {
-    if ($tipabgabe_offen && $tipsprinted == 25) {
+    if ($cllib->isFormularOpen() && $tipsprinted == 25) {
       print "<tr><td colspan=3> <input type=submit value=\"$submittext\"> </td> </tr>\n";
     } else {
       my $msgtet = "Die Tipabgabe ist bereits geschlossen";
@@ -156,13 +165,15 @@ if ($modus eq "abgabe") {
   
   print "</form></body></html>\n";
   exit 0;
+
+
 } elsif ($modus =~ /speichern/) {
   print "<H1>Tipabgabe verbuchen</H1>\n";
   print "<hr>\n";
-  &printNavigation;
+	$cllib->printNavigation();
   print "<hr><br>\n";
   print "<!-- Jetzt im Modus speichern: Tipabgabe is $tipabgabe_offen //-->\n";
-  if (!$tipabgabe_offen) {
+  if (!$cllib->isFormularOpen()) {
     print "Die Tipabgabe ist schon geschlossen\n";
     print "</BODY></HTML>\n";
     exit 0;
@@ -216,12 +227,8 @@ if ($modus eq "abgabe") {
   
   print "<!-- Now going to write tips //-->\n";
 
-  &writeTips($tipper_id,$runde,$uorc,@tips);
+  $cllib->writeTips($tipper_id,$runde,$uorc,@tips);
 
-  # Sanity Check
-  if ($doubler && $uorc eq "U" && ($tipper_id == 21 || $tipper_id == 10) && $runde eq "AC") {
-    &writeTips(28,"AC","C",@tips);
-  }
   print "<!-- Tips are written, now show them //-->\n";
 
   # Anzeige der abgegebenen Tips
@@ -250,7 +257,7 @@ if ($modus eq "abgabe") {
 
 
 
-sub readFormular {
+sub readFormularLocal {
   my $runde = shift;
   my $formularname = "$verz/formular${runde}.txt";
   open(G,"<$formularname") or return 1; 
@@ -268,46 +275,9 @@ sub readFormular {
  return 0;
 }
     
-sub readTips {
-  my @tips = ();
-  my $id = shift;
-  my $runde = shift;
-  $tipfilename = "$verz/tips/${uorc}_${runde}_${id}.TIP";
- # print "Opening $tipfilename\n";
-  if (-e $tipfilename) {
-    open(G,"<$tipfilename") or die "Cannot open tipfile: $!";
-    $spielstring = <G>;
-    close(G);
-    chomp $spielstring;
-    @tips = split(/&/,$spielstring);
-    #print "Tips are now: ",@tips,", read from |$spielstring|<br>\n";
-   # for (1..25) {
-   #   print "Tip $_ ist ",$tips[$_],"<br>\n";
-   # }
-    #foreach $a_t (@tips) {
-    #  print "Vorhanden: $a_t<br>\n";
-    #}
-  }
-  return @tips;
-}
 
-sub writeTips {
-  my @tips = ();
-  my $id = shift;
-  my $runde = shift;
-  my $uorc = shift;
-  @tips = @_;
-  $tipfilename = "$verz/tips/${uorc}_${runde}_${id}.TIP";
-  open(G,">$tipfilename") or &error("Problem beim schreiben von $tipfilename: $!");
-  
-  for (1..25) {
-    if ($tips[$_] eq "") {$tips[$_] = "___";}
-  }
-  $spielstring = join("&",@tips);
-  print G $spielstring,"\n";
-   print "<!-- gespeichert wurde $spielstring in $tipfilename//--> \n";
-  close(G);
-}
+
+
 
 
 sub returnTip {
@@ -333,14 +303,3 @@ sub error {
   exit 1;
 }
 
-
-sub form {
-  $scriptname = shift;
-  my $ret = "<FORM name=bla action=\"$cgiverz/$scriptname\" method=post>\n";
-  $ret = "$ret <input type=hidden name=\"name\" value=\"$name\">\n";
-  $ret = "$ret <input type=hidden name=\"sessionkey\" value=\"$sessionkey\">\n";
-  $ret = "$ret <input type=hidden name=\"runde\" value=\"$derzeitige_runde\">\n";
-  $ret = "$ret <input type=hidden name=\"uorc\" value=\"$uorc\">\n";
-
-  return $ret;
-}

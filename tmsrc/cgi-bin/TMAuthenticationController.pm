@@ -105,7 +105,7 @@ sub doLogout {
 
 sub error_needslogin {
 
-	my $competition = shift;
+	my $status = shift;
 	select STDOUT;
 	print "Content-type:text/html\n\n";
 	print '
@@ -114,13 +114,26 @@ sub error_needslogin {
 	<body>
 	<p align=left>
 	<div style="text-align:left;width:400px;border:1px solid black; font-family:tahoma; font-size:14px; padding:20px;margin:30px">
+	';
+	
+	if ($status eq "no team") {
+	print '
+	Ihnen ist aktuell kein Verein zugewiesen. Bitte schreiben<br/> 
+	Sie eine E-Mail an info@tipmaster.de wenn Sie denken das <br/>dass ein Fehler ist.
+	';	
+		
+	} else {
+	print '
+	
 	<b>Du bist nicht eingeloggt oder Ihre Login Daten waren inkorrekt.</b>
 	Bitte von der <a href="/">Startseite</a> aus einloggen.<br/><br/><br><br/>
 	Im Fall von Login Problemen:<br/><br/>
 	<li> Bitte gehen Sie sicher dass Ihr Trainername und Passwort mit der richtigen Gross- und Kleinschreibung angegeben werden.</li>
 	<li> Fordern Sie ein neues Passwort <a href="/url.shtml">hier an</a></li>
 	<li> Falls es weiterhin Probleme gibt, dann bitte <a href="http://community.tipmaster.de/showthread.php?p=253375">hier in der Community melden</a> und eine E-Mail an info@tipmaster.de mit der Problembeschreibung senden.</li>
+	';}
 	
+	print '
 	</div>
 	</p>
 	</body>

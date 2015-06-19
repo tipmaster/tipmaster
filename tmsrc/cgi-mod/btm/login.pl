@@ -335,7 +335,7 @@ form>";
 	exit;
 }
 
-if ( $verein_da == 0 ) { &error('kein_verein') }
+if ( $verein_da == 0 ) { TMAuthenticationController::error_needslogin("no team") }
 
 $y = 0;
 for ( $x = 1 ; $x < 19 ; $x++ ) {
