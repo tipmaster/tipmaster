@@ -31,7 +31,11 @@ if ($runde eq "Q1") {
    @team_ids = (74..117);
   
   # Randomisieren
-  @tmp = randomize_array(@team_ids);
+  $bad = 1;
+  while ($bad) {
+      @tmp = randomize_array(@team_ids);
+      $bad = isNationInternallyFixture(@tmp);
+  }
   @team_ids = @tmp; @tmp = ();
   
   # Ausstieg, falls Daten schon vorhanden
@@ -67,11 +71,10 @@ if ($runde eq "Q1") {
   }
   close(G);
   
-  $ok = 0;
-  while (!$ok) {
+  $bad = 1;
+  while ($bad) {
       @tmp = randomize_array(@team_ids);
-#      $ok = &checkFree(\@tmp,\@freis,5);
-      $ok = 1;
+      $bad = isNationInternallyFixture(@tmp);
   }
   @team_ids = @tmp; @tmp = ();
   
@@ -105,11 +108,10 @@ if ($runde eq "Q1") {
   }
   close(G);
   
-  $ok = 0;
-  while (!$ok) {
+  $bad = 1;
+  while ($bad) {
       @tmp = randomize_array(@team_ids);
-#      $ok = &checkFree(\@tmp,\@freis,7);
-      $ok = 1;
+      $bad = isNationInternallyFixture(@tmp);
   }
   @team_ids = @tmp; @tmp = ();
   
@@ -240,13 +242,12 @@ if ($runde eq "Q1") {
     push @team_ids,$gegner[$winner];
   }
   close(G);
-  do { 
-  	@tmp = randomize_array(@team_ids);
-  } while (!&check_neighbours(@tmp));
+  # Ab Viertelfinale ist niemand mehr gesetzt. Auch Landsmanner duerfen aufeinander treffen
+  @tmp = randomize_array(@team_ids);
   @team_ids = @tmp; @tmp = ();
   
   open (H,">$outname") or die "Cannot write to $outname: $!";
-  # 8 Achtelfinals
+  # 1 bis 4 Spiele, je nach Runde
   for (1..$anz) {
     print $_-1,"&$team_ids[$_*2-2]&$team_ids[$_*2-1]&-:-&-:-\n";
     if ($anz > 1) {
@@ -269,21 +270,6 @@ if ($runde eq "Q1") {
 
 }
 
-sub check_neighbours {
-  # prevent tow teams from duelling each other
-  if ($runde ne "HA") {
-    return 1;
-  }
-  my @t = @_;
-  while (@t) {
-     $t1 = shift @t;
-     $t2 = shift @t;
-    if ($t1 == 2 && $t2 == 71) {return 0;}
-    if ($t1 == 71 && $t2 == 2) {return 0;}
-  }
-  return 1;
-}
-
 sub sameNat {
   my $t1 = shift;
   my $t2 = shift;
@@ -300,7 +286,16 @@ sub sameNat {
   
 }
 
-
+sub isNationInternallyFixture {
+  while (my $hometeam = shift(@_)) {
+    my $awayteam = shift(@_);
+    if (sameNat($hometeam, $awayteam)) {
+      return 1;
+    }
+  }
+  return 0;
+}
+  
 
 #### Hilfsfunktionen
 
