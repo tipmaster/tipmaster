@@ -31,7 +31,11 @@ if ($runde eq "Q1") {
    @team_ids = (74..117);
   
   # Randomisieren
-  @tmp = randomize_array(@team_ids);
+  $bad = 1;
+  while ($bad) {
+      @tmp = randomize_array(@team_ids);
+      $bad = isNationInternallyFixture(@tmp);
+  }
   @team_ids = @tmp; @tmp = ();
   
   # Ausstieg, falls Daten schon vorhanden
@@ -67,11 +71,10 @@ if ($runde eq "Q1") {
   }
   close(G);
   
-  $ok = 0;
-  while (!$ok) {
+  $bad = 1;
+  while ($bad) {
       @tmp = randomize_array(@team_ids);
-#      $ok = &checkFree(\@tmp,\@freis,5);
-      $ok = 1;
+      $bad = isNationInternallyFixture(@tmp);
   }
   @team_ids = @tmp; @tmp = ();
   
@@ -105,11 +108,10 @@ if ($runde eq "Q1") {
   }
   close(G);
   
-  $ok = 0;
-  while (!$ok) {
+  $bad = 1;
+  while ($bad) {
       @tmp = randomize_array(@team_ids);
-#      $ok = &checkFree(\@tmp,\@freis,7);
-      $ok = 1;
+      $bad = isNationInternallyFixture(@tmp);
   }
   @team_ids = @tmp; @tmp = ();
   
@@ -284,7 +286,16 @@ sub sameNat {
   
 }
 
-
+sub isNationInternallyFixture {
+  while (my $hometeam = shift(@_)) {
+    my $awayteam = shift(@_);
+    if (sameNat($hometeam, $awayteam)) {
+      return 1;
+    }
+  }
+  return 0;
+}
+  
 
 #### Hilfsfunktionen
 
