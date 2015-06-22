@@ -22,6 +22,7 @@ use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
 use CGI;
 my $session = TMSession::getSession();
+$query = new CGI;
 my $coach = $query->param('coach');
 
 
