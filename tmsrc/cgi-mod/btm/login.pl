@@ -772,7 +772,7 @@ print <<"(END ERROR HTML)";
 <form name=link15 action=/cgi-bin/btm/mail/mailbox.pl method=post target=_top>
 </form>
 
-<form name=link16 action=/cgi-bin/btm/daten/daten.pl method=post target=_top>
+<form name=link16 action=/cgi-bin/change_profile.pl method=post target=_top>
 </form>
 
 <form name=link17 action=/cgi-bin/btm/daten/profile.pl method=post target=_top>
@@ -821,7 +821,7 @@ print <<"(END ERROR HTML)";
 	"Trainer - Ranking",
 	"Vereins - Ranking ",
 	"Liga - Ranking ",
-	"Daten aendern",
+	"Passwort &auml;ndern",
 	"Profil anlegen",
 	"Account loeschen",
 	"Freunde einladen",

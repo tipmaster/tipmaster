@@ -37,11 +37,25 @@ sub getUserForEmail {
 
 }
 
-sub createNewPasswordForUser {
-	my $user        = shift;
-	my $newPassword = _createRandomPassword();
+sub getHashedPasswordForUser {
 
-	my $hashedPassword = TMAuthenticationController::hashPassword( $newPassword, $user );
+	my $user  = shift;
+	my @lines = @{ _getPasswordLines() };
+
+	foreach (@lines) {
+		my @data = split( /&/, $_ );
+		return $data[2] if ( lc $data[1] eq lc $user );
+	}
+	return undef;
+
+}
+
+sub updatePasswordForUser {
+	my $password = shift;
+	my $user     = shift;
+	
+	my $hashedPassword = TMAuthenticationController::hashPassword( $password, $user );
+
 	my @lines = @{ _getPasswordLines() };
 	my $output;
 	foreach (@lines) {
@@ -61,6 +75,12 @@ sub createNewPasswordForUser {
 	$inputFile->write($output);
 	$inputFile->close();
 
+}
+
+sub createNewPasswordForUser {
+	my $user        = shift;
+	my $newPassword = _createRandomPassword();
+	updatePasswordForUser( $newPassword, $user );
 	return $newPassword;
 }
 
