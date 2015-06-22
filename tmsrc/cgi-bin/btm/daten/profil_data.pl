@@ -60,10 +60,14 @@ $r = 0;
 
 $zeilen = $suche . $wohnort . $aa . $land . $aa . $geburtstag . $aa . $bundesland . $aa . $beruf . $aa . $liebling . $aa . $hobby . $aa . $motto . $aa ;
 
-if ($zeilen=~/javascript/) {exit;}
+if ($zeilen=~/javascript/) {exit;} # Blacklisting ist kein effektiver Schutz! Besser erst gar nicht mit sowas anfangen.
 
 $rof = 0;
+# Ah, ja. Whitelisting! Viel besser. Aber es muss Alles geprüft werden, auch die Felder, die sich aus Comboboxen, Radios oder Checkboxen speisen. Auch das Geb.datum mit Felder von Länge 2 kann böse sein!
 if ( $wohnort =~ /[^A-Za-z_0-9\.\-,;! ]/) { $rof = 1 }
+if ( $land =~ /[^A-Za-z_0-9\.\-,;! ]/) { $rof = 1 }
+if ( $geburtstag =~ /[^A-Za-z_0-9\.\-,;! ]/) { $rof = 1 }
+if ( $bundesland =~ /[^A-Za-z_0-9\.\-,;! ]/) { $rof = 1 }
 if ( $beruf =~ /[^A-Za-z_0-9\.\-,;! ]/) { $rof = 1 }
 if ( $liebling =~ /[^A-Za-z_0-9\.\-,;! ]/) { $rof = 1 }
 if ( $hobby =~ /[^A-Za-z_0-9\.\-,;! ]/) { $rof = 1 }

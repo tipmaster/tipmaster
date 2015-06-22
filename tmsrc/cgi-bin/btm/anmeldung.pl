@@ -21,6 +21,7 @@
 use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
 use TMAuthenticationController;
+use HTML::Entities;
 
 my $session = TMSession::getSession();
 my $trainer = $session->getUser();
@@ -447,7 +448,7 @@ URL Warteliste : http://www.tipmaster.de/cgi-bin/btm/warte.pl\n\n";
 	print "\n";
 	print
 "<br><font face=verdana size=2 color=darkred><b>Ihre Anmeldung war erfolgreich !<font color=black></b><br><br><font face=verdana size=1>Vielen Dank fuer Ihre<br>Anmeldung , $voller_name .<br><br>\n";
-	print "Sie sind ab sofort als neuer Trainer bei<br>$verein eigetragen .<br><br>\n";
+	print "Sie sind ab sofort als neuer Trainer bei<br>". encode_entities($verein) ." eigetragen .<br><br>\n";
 	print
 "Der Link zum Freischalten Ihres Accounts<br>sowie weitere Instruktionen werden in diesem<br>Moment an $adresse<br>gemailt .<br><br><br>
 <font face=verdana size=2><b>Trainer - LogIn</b><form action=/cgi-mod/btm/login.pl method=post>

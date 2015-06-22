@@ -56,10 +56,13 @@ $r = 0;
 
 $zeilen = $suche . $wohnort . $aa . $land . $aa . $geburtstag . $aa . $bundesland . $aa . $beruf . $aa . $liebling . $aa . $hobby . $aa . $motto . $aa ;
 
-if ($zeilen=~/javascript/) {exit;}
+if ($zeilen=~/javascript/) {exit;} # Netter Versuch
 
 $rof = 0;
 if ( $wohnort =~ /[^A-Za-z_0-9\.\-,;! ]/) { $rof = 1 }
+if ( $land =~ /[^A-Za-z_0-9\.\-,;! ]/) { $rof = 1 }
+if ( $geburtstag =~ /[^A-Za-z_0-9\.\-,;! ]/) { $rof = 1 }
+if ( $bundesland =~ /[^A-Za-z_0-9\.\-,;! ]/) { $rof = 1 }
 if ( $beruf =~ /[^A-Za-z_0-9\.\-,;! ]/) { $rof = 1 }
 if ( $liebling =~ /[^A-Za-z_0-9\.\-,;! ]/) { $rof = 1 }
 if ( $hobby =~ /[^A-Za-z_0-9\.\-,;! ]/) { $rof = 1 }
