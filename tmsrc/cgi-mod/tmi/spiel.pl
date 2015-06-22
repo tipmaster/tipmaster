@@ -1458,7 +1458,9 @@ for ( $spieltag = ( $spielrunde - 1 ) ; $spieltag < ($spielrunde) ; $spieltag++ 
 		$xx = $start + 1;
 
 		$color = "black";
-		if ( ( $ega[$x] eq $session->getTMITeam() ) ) { $color = "red" }
+		if ( ( $datb[ $ega[$y] ] eq $trainer ) )            { $color = "red" }
+		if ( ( $datb[ $ega[$y] ] eq $session->getUser() ) ) { $color = "red" }
+
 
 		print "<TR BGCOLOR=$farbe>\n";
 		my $spacer = " &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ";
