@@ -20,10 +20,11 @@
 
 use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
-my $session = TMSession::getSession();
-my $coach = $session->getUser();
-
 use CGI;
+my $session = TMSession::getSession();
+my $coach = $query->param('coach');
+
+
 $mailprog = '/usr/sbin/sendmail';
 require "/tmapp/tmsrc/cgi-bin/runde.pl";
 $spielrunde_ersatz = ( $rrunde * 4 ) - 3;
