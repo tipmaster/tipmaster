@@ -436,10 +436,10 @@ sub whowins {
 
   $debug && print "<!-- Inside whowhin with $p1 $p2 $p3 $p4 //-->\n";
 
-  $t1 = p2t($p1);
-  $t2 = p2t($p2);
-  $t3 = p2t($p3);
-  $t4 = p2t($p4);
+  $t1 = $self->p2t($p1);
+  $t2 = $self->p2t($p2);
+  $t3 = $self->p2t($p3);
+  $t4 = $self->p2t($p4);
 
   $dec = "";
   # who is the winner?
