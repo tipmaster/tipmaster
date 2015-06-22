@@ -98,7 +98,7 @@ if ($derzeitige_runde eq $runde && !$tipabgabe_offen) {
 	  open(G,"<$CLLibrary::verz/UEFA_${runde}.DAT");
 	  my $line = <G>;
 	  ($lfd,$team1id,$team2id,$erg1,$erg2) = split(/&/,$line);
-	  if ($debug) { print "<!-- Debug Rundenermittliung Erg1 is $erg1 //-->\n"; }
+	  print "<!-- Debug Rundenermittliung Erg1 is $erg1 //-->\n"; 
 
 	  if ($erg1 eq "-:-") {
 		  $pagestatus = "running";
@@ -110,6 +110,7 @@ if ($derzeitige_runde eq $runde && !$tipabgabe_offen) {
 	  close(G);
 }  else {
   if ($CLLibrary::rundenfolge{$derzeitige_runde}> $CLLibrary::rundenfolge{$runde}) {
+	print "<!-- derzeitige runde: $derzeitige_runde,  runde: $runde //-->\n";
 	  $pagestatus = "final";
           $headertitle = "Endergebnisse";
   }
@@ -340,8 +341,8 @@ if ( $CLLibrary::nation[$nat2] eq "GER" ) { $dest2="btm" }
 
   print "<TR bgcolor=#",chr($back) x 6," id=\"gamerow$lfd\"><TD align=right><font face=verdana size=2> &nbsp; $col1 $hi1 <a href=/cgi-mod/$dest1/verein.pl?ident=$team1_id>$team1</a>  (",$CLLibrary::nation[$nat1],")$hi1z $col1z</font><br><font face=verdana size=1><a href=/cgi-mod/$dest1/trainer.pl?ident=$coach1_id>$name1</a>$tipda1</font></TD><TD align=center> &nbsp; <img src=/img/flags/$flag1.jpg> - <img src=/img/flags/$flag2.jpg> &nbsp; </TD><TD align=left><font face=verdana size=2>$col2 $hi2 <a href=/cgi-mod/$dest2/verein.pl?ident=$team2_id>$team2</a> (",$CLLibrary::nation[$nat2],") $hi2z $col2z</font><br><font face=verdana size=1>$tipda2<a href=/cgi-mod/$dest2/trainer.pl?ident=$coach2_id>$name2</a></font></TD>\n";
   if ($team2 ne "FREILOS" && !($pagestatus eq "list")) {
-    $tiplink = "<img id=\"expbutton$lfd\" src=\"$images/expand.gif\" onClick=\"loadXMLDoc($lfd)\" border=0>".
-	           "<img id=\"colbutton$lfd\" src=\"$images/collapse.gif\" onClick=\"closeXMLDoc($lfd)\" border=0 style=\"display:none\">";
+    $tiplink = "<img id=\"expbutton$lfd\" src=\"$CLLibrary::images/expand.gif\" onClick=\"loadXMLDoc($lfd)\" border=0>".
+	           "<img id=\"colbutton$lfd\" src=\"$CLLibrary::images/collapse.gif\" onClick=\"closeXMLDoc($lfd)\" border=0 style=\"display:none\">";
   } else {$tiplink = "&nbsp;" ;
     $hinspiel = ""; $rueckspiel = "";
 }
@@ -389,7 +390,7 @@ sub printFinale {
       $winner = 2;
     }
     $hinspiel = "<b> ".$cllib->p2t($p1)." : ".$cllib->p2t($p2)."</b> ($p1 - $p2)";
-    if (p2t($p1) == p2t($p2)) {
+    if ($cllib->p2t($p1) == $cllib->p2t($p2)) {
       if ($winner == 1) {
 	$decision = eval($cllib->p2t($p1)+1) . " : " . $cllib->p2t($p2) . " n.V.";
       } else {
@@ -465,7 +466,7 @@ sub printgames {
       if (!$tipabgabe_offen || $sptag<=($currlfdround*3-3)) {
 	$spcnt = (($sptag-1)*2)+$s;
 	$formnr = int(($sptag-1)/3)+1;
-	$tiplink = "<a href=\"$CLLibrary::cgiverz/showgame.pl?uorc=C&runde=G${formnr}&game=$sptag&ids=".$heim->id."-".$gast->id."\"><img border=0 src=\"$images/ti.jpg\"></a>";
+	$tiplink = "<a href=\"$CLLibrary::cgiverz/showgame.pl?uorc=C&runde=G${formnr}&game=$sptag&ids=".$heim->id."-".$gast->id."\"><img border=0 src=\"$CLLibrary::images/ti.jpg\"></a>";
       } else {
 	$tiplink = "&nbsp;";
       }      

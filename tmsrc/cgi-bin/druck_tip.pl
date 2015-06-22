@@ -20,19 +20,20 @@
 
 use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
-my $session = TMSession::getSession( btm_login => 1 );
-my $trainer = $session->getUser();
-my $leut    = $trainer;
-
 use CGI;
+my $session = TMSession::getSession();
+$query = new CGI;
+my $coach = $query->param('coach');
+
+
 $mailprog = '/usr/sbin/sendmail';
 require "/tmapp/tmsrc/cgi-bin/runde.pl";
 $spielrunde_ersatz = ( $rrunde * 4 ) - 3;
 
 print "Content-type:text/html\n\n";
-print "<title>Tippuebersicht $trainer der $rrunde. Tipprunde</title><center>";
+print "<title>Tippuebersicht $coach der $rrunde. Tipprunde</title><center>";
 print "<form action=druck_tip.pl method=post>
-<input type=text style=\"font-family:verdana;font-size=11px\" size=20 value=\"$trainer\" name=trainer>
+<input type=text style=\"font-family:verdana;font-size=11px\" size=20 value=\"$coach\" name=coach>
 <input type=submit value=\"Tipps laden\"  style=\"font-family:verdana;font-size=11px\">";
 
 &daten_btm;
@@ -46,7 +47,7 @@ sub daten_btm {
 	$rx = "x";
 	if ( $liga > 9 ) { $rf = "" }
 	$liga  = 0;
-	$suche = '&' . $trainer . '&';
+	$suche = '&' . $coach. '&';
 	$s     = 0;
 	open( D2, "/tmdata/btm/history.txt" );
 	while (<D2>) {
@@ -68,12 +69,12 @@ sub daten_btm {
 		$y++;
 		chomp $lor[$y];
 		$datb[$x] = $lor[$y];
-		if ( $datb[$x] eq $trainer ) { $id    = $x }
-		if ( $datb[$x] eq $trainer ) { $coach = $data[$x] }
+		if ( $datb[$x] eq $coach) { $id    = $x }
+		if ( $datb[$x] eq $coach ) { $team = $data[$x] }
 		$y++;
 		chomp $lor[$y];
 		$datc[$x] = $lor[$y];
-		if ( $datb[$x] eq $trainer ) { $recipient = $datc[$x] }
+		if ( $datb[$x] eq $coach ) { $recipient = $datc[$x] }
 	}
 	$verein = $id;
 
@@ -325,7 +326,7 @@ sub daten_tmi {
 	if ( $liga > 9 ) { $rf = "" }
 
 	$liga  = 0;
-	$suche = '&' . $trainer . '&';
+	$suche = '&' . $coach. '&';
 	$s     = 0;
 	open( D2, "/tmdata/tmi/history.txt" );
 	while (<D2>) {
@@ -347,12 +348,12 @@ sub daten_tmi {
 		$y++;
 		chomp $lor[$y];
 		$datb[$x] = $lor[$y];
-		if ( $datb[$x] eq $trainer ) { $id    = $x }
-		if ( $datb[$x] eq $trainer ) { $coach = $data[$x] }
+		if ( $datb[$x] eq $coach) { $id    = $x }
+		if ( $datb[$x] eq $coach ) { $team= $data[$x] }
 		$y++;
 		chomp $lor[$y];
 		$datc[$x] = $lor[$y];
-		if ( $datb[$x] eq $trainer ) { $recipient = $datc[$x] }
+		if ( $datb[$x] eq $coach) { $recipient = $datc[$x] }
 	}
 	$verein = $id;
 
@@ -587,7 +588,7 @@ sub daten_tmi {
 
 end1:
 
-if ( $coach eq "" ) { print "<font face=verdana size=2><b><br><br>$trainer nicht gefunden !"; exit; }
+if ( $coach eq "" ) { print "<font face=verdana size=2><b><br><br>$coach nicht gefunden !"; exit; }
 
 print "</td><td align=center bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td></tr></table>";
 print '

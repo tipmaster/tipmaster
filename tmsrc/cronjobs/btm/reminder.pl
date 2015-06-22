@@ -98,22 +98,20 @@ for ( $x = 1 ; $x <= $y ; $x++ ) {
 Guten Tag $datb[$x] ,
 
 diese Mail ist eine Erinnerung an ihre Tipabgabe beim
-Bundesliga - TipMaster fuer Spieltag $sp1 bis $sp2 . Bisher 
+Bundesliga - TipMaster fuer Spieltag $sp1 bis $sp2. Bisher 
 haben wir leider noch keine Tipabgabe von Ihnen fuer
 ihren aktuellen Verein $datq[$x] in 
 der $liga_namen[$liga[$x]] empfangen 
 ( Stand Donnerstag abend 20.oo Uhr ! ).
 
-** Die Tippabagbe schliesst fuer BTM heute nicht bevor 21 Uhr.
+Noch bis Freitag 18.oo Uhr haben sie die Moeglichkeit
+Ihre Tipabgabe unter http://www.tipmaster.de/ zu taetigen.
 
-Noch bis Freitag 21.oo Uhr haben sie die Moeglichkeit
-Ihre Tipabgabe unter http://www.tipmaster.de/ zu taetigen .
-
-Wenn es Probleme mit der Tipabgabe gibt forder Sie hier bitte ein neues Passowrt an:
+Wenn es Probleme mit dem Login gibt fordern Sie hier bitte ein neues Passwort an:
 http://www.tipmaster.de/url.shtml
 
 Anmerkung : Auch wenn Sie einen Blankotip fuer die aktuelle
-Tiprunde abgegeben haben erhalten Sie diesen Tip-Reminder .
+Tiprunde abgegeben haben erhalten Sie diesen Tip-Reminder.
 
 Mit sportlichen Gruessen
 Ihr TipMaster - Team
