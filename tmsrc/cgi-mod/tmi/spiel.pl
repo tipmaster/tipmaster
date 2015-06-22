@@ -1458,8 +1458,8 @@ for ( $spieltag = ( $spielrunde - 1 ) ; $spieltag < ($spielrunde) ; $spieltag++ 
 		$xx = $start + 1;
 
 		$color = "black";
-		if ( ( $datb[ $ega[$y] ] eq $trainer ) )            { $color = "red" }
-		if ( ( $datb[ $ega[$y] ] eq $session->getUser() ) ) { $color = "red" }
+		if ( ( $datb[ $ega[$x] ] eq $trainer ) )            { $color = "red" }
+		if ( ( $datb[ $ega[$x] ] eq $session->getUser() ) ) { $color = "red" }
 
 
 		print "<TR BGCOLOR=$farbe>\n";
