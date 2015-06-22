@@ -957,10 +957,10 @@ if (   ( $ww > 5 || ( $ww == 5 && $std > 17 ) )
 <font color=black><br><font size=1>
 Alle <font color=red>eigenen und gegnerischen<font color=black> Tippabgaben des<br> 
 Wochenendes zum Drucken auf einer Seite
-<br><a href=/cgi-bin/druck_tip.pl?trainer=$tr>Tippuebersicht</a> fuer diese WE fuer $trainer
+<br><a href=/cgi-bin/druck_tip.pl?coach=$tr>Tippuebersicht</a> fuer diese WE fuer $trainer
 
 </td><td valign=bottom>
-&nbsp; &nbsp; &nbsp; &nbsp;<a href=/cgi-bin/druck_tip.pl?trainer=$tr><img src=/img/printer.gif border=0></a></td></tr></table>
+&nbsp; &nbsp; &nbsp; &nbsp;<a href=/cgi-bin/druck_tip.pl?coach=$tr><img src=/img/printer.gif border=0></a></td></tr></table>
 ";
 }
 else {
