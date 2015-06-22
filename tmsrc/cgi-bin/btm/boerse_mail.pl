@@ -25,6 +25,7 @@ my $trainer = $session->getUser();
 my $leut    = $trainer;
 
 use CGI;
+my $query = new CGI;
 
 print "Content-type: text/html\n\n";
 $frei = 0;
