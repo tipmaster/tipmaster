@@ -20,6 +20,7 @@
 
 use lib '/tmapp/tmsrc/cgi-bin/'; 
 use TMSession;
+use HTML::Entities;
 my $session = TMSession::getSession(tmi_login => 1);
 my $trainer = $session->getUser();
 my $leut = $trainer;
@@ -126,7 +127,7 @@ if ( $land_join[$x] eq $land ) {
 }
 }
 #print "</select><br><br>\n";
-print "<input type=hidden name=land value=$land>";
+print "<input type=hidden name=land value=\"". encode_entities($land) ."\">";
 print "Ihr Geburtstag :<br>";
 
 print "<select name=gb1>\n";

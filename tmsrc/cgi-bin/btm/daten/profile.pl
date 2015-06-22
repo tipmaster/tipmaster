@@ -20,6 +20,7 @@
 
 use lib '/tmapp/tmsrc/cgi-bin/'; 
 use TMSession;
+use HTML::Entities;
 my $session = TMSession::getSession(btm_login => 1);
 my $trainer = $session->getUser();
 my $leut = $trainer;
@@ -104,7 +105,6 @@ print <<"(END ERROR HTML)";
 <b>Trainer Profil</b><br><font color=black><b>$trainer</b><br><br>
 <form action=/cgi-bin/btm/daten/profil_data.pl  method=post target=_top>
 <input type=hidden name=trainer value="$trainer">
-<input type=hidden name=pass value="$pass">
 <font face=verdana size=1>
 Ihr Wohnort :<br>
 <input type=text length=25 maxlength=20 name=wohnort value="$wohnort"><br><br>
@@ -134,7 +134,7 @@ if ( $land_join[$x] eq $land ) {
 }
 #}
 #print "</select><br><br>\n";
-print "<input type=hidden name=land value=$land>";
+print "<input type=hidden name=land value=\"". encode_entities($land) ."\">";
 print "Ihr Geburtstag :<br>";
 
 print "<select name=gb1>\n";
