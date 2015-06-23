@@ -64,6 +64,8 @@ sub getSession {
 	if ( ( $mode eq "btm_login" || $mode eq "tmi_login" ) && ( !$session->isUserAuthenticated() ) ) {
 		TMAuthenticationController::error_needslogin();
 	}
+	
+	
 	return $session;
 }
 
