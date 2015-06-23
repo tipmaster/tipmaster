@@ -150,7 +150,7 @@ sub validateNewPassword {
 	my $pass = shift;
 
 	return 0
-	  if ( length($pass) < 7 || length($pass) > 16 || $pass =~ / / || $pass =~ /\&/ || $pass =~ /\!/ || $pass =~ /\#/ );
+	  if ( length($pass) < 4 || length($pass) > 16 || $pass =~ / / || $pass =~ /\&/ || $pass =~ /\!/ || $pass =~ /\#/ );
 	return 1;
 
 }

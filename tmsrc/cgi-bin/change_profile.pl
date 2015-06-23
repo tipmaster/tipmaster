@@ -133,7 +133,7 @@ sub errorWrongFormatPassword {
 </head>
 <body bgcolor=#eeeeee text=black>
 Ihr derzeitiges Passwort kann nicht akzeptiert werden.<br/>
-Ein Passwort muss mindestens 7 Zeichen und maximal 16 Zeichen lang sein und<br/>
+Ein Passwort muss mindestens 4 Zeichen und maximal 16 Zeichen lang sein und<br/>
 sollte keine Sonderzeichen beinhalten.<br/><br/>
 <a href="/cgi-bin/change_profile.pl">Erneut versuchen</a><br/><br/>
 <a href="/">Zur Hauptseite</a><br/><br/>
