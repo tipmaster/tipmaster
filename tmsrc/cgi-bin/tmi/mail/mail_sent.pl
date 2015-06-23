@@ -97,7 +97,7 @@ print"  </script>\n";
 exit ;
 }
 
-if ($subject =~ /[\<\>]/) {
+if ($text =~ /[\<\>]/) {
 
 print "<body bgcolor=#eeeeee text=black><font face=verdana size=1 color=red>";
 print "Ihr Message Text hat ungueltige Zeichen enthalten . Ihre Message konnte nicht gesendet werden .<br>Bitte verzichten Sie auf Umlaute und weitere Sonderzeichen ...<br><br>Sie werden weitergeleitet ...";
