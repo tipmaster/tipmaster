@@ -32,7 +32,21 @@ require "/tmapp/tmsrc/cgi-bin/runde.pl";
 $spielrunde_ersatz = ( $rrunde * 4 ) - 3;
 
 print "Content-type:text/html\n\n";
-print "<title>Tippuebersicht ". encode_entities($coach) ." der $rrunde. Tipprunde</title><center>";
+print "<html><head>
+<style>
+body {
+  text-align: center;
+  font-family: verdana;
+  font-size: x-small;
+}
+.tipOpen { color: black; }
+.tipMiss { color: red; }
+.tipHit { color: green; }
+.tipPostp { color: blue; }
+</style>
+<title>Tippuebersicht ". encode_entities($coach) ." der $rrunde. Tipprunde</title>
+</head>";
+print "<body>";
 print "<form action=druck_tip.pl method=post>
 <input type=text style=\"font-family:verdana;font-size=11px\" size=20 value=\"". encode_entities($coach) ."\" name=coach>
 <input type=submit value=\"Tipps laden\"  style=\"font-family:verdana;font-size=11px\">";
@@ -192,125 +206,109 @@ sub daten_btm {
 			print "<tr><td colspan=7 bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td></tr>";
 		}
 		print "<TR BGCOLOR=white>";
-		print "<td colspan=7 align=center><font face=verdana size=1>$liga_namen[$liga] - $ss. Spieltag</td></tr>";
+		print "<td colspan=7 align=center>$liga_namen[$liga] - $ss. Spieltag</td></tr>";
 		print "<tr><td colspan=7 bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td></tr>";
 		print "<TR BGCOLOR=#e0e0e0>";
-		print "<td colspan=3 align=right><font face=verdana size=1>$data[$verein1[$x]] &nbsp; </td>";
+		print "<td colspan=3 align=right>$data[$verein1[$x]] &nbsp; </td>";
 		print "<td bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td>\n";
-		print "<td colspan=3 align=left height=20><font face=verdana size=1>&nbsp; $data[$verein2[$x]] </td></tr>";
+		print "<td colspan=3 align=left height=20>&nbsp; $data[$verein2[$x]] </td></tr>";
 
 		$tip1 = $tip_line[ $tip[$x] + 1 ];
 		$tip2 = $tip_line[ $tip[$x] + 2 ];
 
-		print "<tr bgcolor=#efefef>";
 
-		@all = split( /,/, $tip1 );
+		@hometips = split( /,/, $tip1 );
+		@awaytips = split( /,/, $tip2 );
 
-		#print "<td colspan=1 align=right valign=top><font face=verdana size=1>";
-		#for($a=1;$a<=5;$a++){
-		#$dd=($a*2)-1;
-		#print " &nbsp; &nbsp; $datum[$all[$dd]] &nbsp;$uhr[$all[$dd]] &nbsp; <br>";
-		#}; print "</td>";
-
-		print "<td colspan=1 align=right valign=top width=225><font face=verdana size=1>";
 		for ( $a = 1 ; $a <= 5 ; $a++ ) {
 			$dd = ( $a * 2 ) - 1;
+			print "<tr bgcolor=#efefef>"; # Dieses tr trägt EINEN Heimtipp (Paarung, Tip, Quote), Spacer, (ggf.) EINEN Auswärtstipp (Paarung, Tip, Quote)
 
-			$tmp  = "";
-			$tmp1 = "";
-			if ( $ergebnis[ $all[$dd] ] != 0 && $ergebnis[ $all[$dd] ] == $all[ $dd - 1 ] ) {
-				$tmp  = "<font color=green>";
-				$tmp1 = "<font color=black>";
+			# Hometip
+			$tipcolorclass  = "tipOpen";
+			if ( $ergebnis[ $hometips[$dd] ] != 0 && $ergebnis[ $hometips[$dd] ] == $hometips[ $dd - 1 ] ) {
+				$tipcolorclass  = "tipHit";
 			}
-			if ( $ergebnis[ $all[$dd] ] != 0 && $ergebnis[ $all[$dd] ] != $all[ $dd - 1 ] ) {
-				$tmp  = "<font color=red>";
-				$tmp1 = "<font color=black>";
+			if ( $ergebnis[ $hometips[$dd] ] != 0 && $ergebnis[ $hometips[$dd] ] != $hometips[ $dd - 1 ] ) {
+				$tipcolorclass  = "tipMiss";
 			}
-			if ( $ergebnis[ $all[$dd] ] == 4 ) { $tmp = "<font color=gray>"; $tmp1 = "<font color=black>" }
-
-			print "&nbsp; &nbsp; $tmp $paarung[$all[$dd]] $tmp1<br>";
-		}
-		print "</td>\n";
-
-		print "<td colspan=1 align=right valign=top><font face=verdana size=1>";
-		for ( $a = 1 ; $a <= 5 ; $a++ ) {
-			$dd = ( $a * 2 ) - 1;
-			$ee = $all[ $dd - 1 ];
-			if ( $all[ $dd - 1 ] == 2 ) { $ee = 0 }
-			if ( $all[ $dd - 1 ] == 3 ) { $ee = 2 }
-
-			print " &nbsp; Tip $ee<br>";
-		}
-		print "</td>\n";
-
-		print "<td colspan=1 align=right valign=top><font face=verdana size=1>";
-		for ( $a = 1 ; $a <= 5 ; $a++ ) {
-			$dd = ( $a * 2 ) - 1;
-			if ( $all[ $dd - 1 ] == 1 ) { $ee = $qu_1[ $all[$dd] ] }
-			if ( $all[ $dd - 1 ] == 2 ) { $ee = $qu_0[ $all[$dd] ] }
-			if ( $all[ $dd - 1 ] == 3 ) { $ee = $qu_2[ $all[$dd] ] }
-
-			print "&nbsp; $ee &nbsp;<br>";
-		}
-		print "</td>\n";
-
-		print "<td bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td>\n";
-
-################################## VEREIN 2 ######################
-
-		@all = split( /,/, $tip2 );
-
-		print "<td colspan=1 align=right valign=top><font face=verdana size=1>";
-		for ( $a = 1 ; $a <= 4 ; $a++ ) {
-			$dd = ( $a * 2 ) - 1;
-			if ( $all[ $dd - 1 ] == 1 ) { $ee = $qu_1[ $all[$dd] ] }
-			if ( $all[ $dd - 1 ] == 2 ) { $ee = $qu_0[ $all[$dd] ] }
-			if ( $all[ $dd - 1 ] == 3 ) { $ee = $qu_2[ $all[$dd] ] }
-
-			print "&nbsp; $ee<br>";
-		}
-		print "</td>\n";
-
-		print "<td colspan=1 align=right valign=top><font face=verdana size=1>";
-		for ( $a = 1 ; $a <= 4 ; $a++ ) {
-			$dd = ( $a * 2 ) - 1;
-			$ee = $all[ $dd - 1 ];
-			if ( $all[ $dd - 1 ] == 2 ) { $ee = 0 }
-			if ( $all[ $dd - 1 ] == 3 ) { $ee = 2 }
-
-			print " &nbsp; Tip $ee &nbsp;<br>";
-		}
-		print "</td>\n";
-
-		print "<td colspan=1 align=left valign=top width=225><font face=verdana size=1>";
-		for ( $a = 1 ; $a <= 4 ; $a++ ) {
-			$dd = ( $a * 2 ) - 1;
-
-			$tmp  = "";
-			$tmp1 = "";
-			if ( $ergebnis[ $all[$dd] ] != 0 && $ergebnis[ $all[$dd] ] == $all[ $dd - 1 ] ) {
-				$tmp  = "<font color=green>";
-				$tmp1 = "<font color=black>";
+			if ( $ergebnis[ $hometips[$dd] ] == 4 ) {
+				$tipcolorclass = "tipPostp";
 			}
-			if ( $ergebnis[ $all[$dd] ] != 0 && $ergebnis[ $all[$dd] ] != $all[ $dd - 1 ] ) {
-				$tmp  = "<font color=red>";
-				$tmp1 = "<font color=black>";
+
+			print "<td colspan=1 align=right valign=top width=225 class='$tipcolorclass'>";
+			print "&nbsp; &nbsp; $paarung[$hometips[$dd]]";
+			print "</td>\n";
+
+			print "<td colspan=1 align=right valign=top> class='$tipcolorclass'>";
+
+			$dd = ( $a * 2 ) - 1;
+			$ee = $hometips[ $dd - 1 ];
+			if ( $hometips[ $dd - 1 ] == 2 ) { $ee = 0 }
+			if ( $hometips[ $dd - 1 ] == 3 ) { $ee = 2 }
+
+			print " &nbsp; Tip $ee";
+			print "</td>\n";
+
+			print "<td colspan=1 align=right valign=top class='$tipcolorclass'>";
+
+			$dd = ( $a * 2 ) - 1;
+			if ( $hometips[ $dd - 1 ] == 1 ) { $ee = $qu_1[ $hometips[$dd] ] }
+			if ( $hometips[ $dd - 1 ] == 2 ) { $ee = $qu_0[ $hometips[$dd] ] }
+			if ( $hometips[ $dd - 1 ] == 3 ) { $ee = $qu_2[ $hometips[$dd] ] }
+
+			print "&nbsp; $ee &nbsp;";
+			print "</td>\n";
+			
+			# Spacer
+			print "<td bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td>\n";
+
+			# Awaytip
+			if ( $a == 5 ) {
+				# away team only has 4 tipps. fill remaining space in tr
+				print "<td colspan=3>";
+			} else {
+				$tipcolorclass  = "tipOpen";
+				if ( $ergebnis[ $awaytips[$dd] ] != 0 && $ergebnis[ $awaytips[$dd] ] == $awaytips[ $dd - 1 ] ) {
+					$tipcolorclass  = "tipHit";
+				}
+				if ( $ergebnis[ $awaytips[$dd] ] != 0 && $ergebnis[ $awaytips[$dd] ] != $awaytips[ $dd - 1 ] ) {
+					$tipcolorclass  = "tipMiss";
+				}
+				if ( $ergebnis[ $awaytips[$dd] ] == 4 ) {
+					$tipcolorclass = "tipPostp";
+				}
+
+				print "<td colspan=1 align=right valign=top class='$tipcolorclass'>";
+				$dd = ( $a * 2 ) - 1;
+				if ( $awaytips[ $dd - 1 ] == 1 ) { $ee = $qu_1[ $awaytips[$dd] ] }
+				if ( $awaytips[ $dd - 1 ] == 2 ) { $ee = $qu_0[ $awaytips[$dd] ] }
+				if ( $awaytips[ $dd - 1 ] == 3 ) { $ee = $qu_2[ $awaytips[$dd] ] }
+				print "&nbsp; $ee";
+				print "</td>\n";
+
+				print "<td colspan=1 align=right valign=top class='$tipcolorclass'>";
+				$dd = ( $a * 2 ) - 1;
+				$ee = $awaytips[ $dd - 1 ];
+				if ( $awaytips[ $dd - 1 ] == 2 ) { $ee = 0 }
+				if ( $awaytips[ $dd - 1 ] == 3 ) { $ee = 2 }
+
+				print " &nbsp; Tip $ee &nbsp;";
+				print "</td>\n";
+				print "<td colspan=1 align=left valign=top width=225 class='$tipcolorclass'>";
+				$dd = ( $a * 2 ) - 1;
+
+
+				print "$paarung[$awaytips[$dd]]&nbsp; &nbsp;";
+				print "</td>\n";
+
 			}
-			if ( $ergebnis[ $all[$dd] ] == 4 ) { $tmp = "<font color=gray>"; $tmp1 = "<font color=black>" }
+			
+			print "</tr>";
 
-			print "$tmp $paarung[$all[$dd]] $tmp1 &nbsp; &nbsp; <br>";
 		}
-		print "</td>\n";
-
-		#print "<td colspan=1 align=center valign=top><font face=verdana size=1>";
-		#for($a=1;$a<=4;$a++){
-		#$dd=($a*2)-1;
-		#print " &nbsp; &nbsp; $uhr[$all[$dd]] &nbsp;$datum[$all[$dd]] &nbsp; <br>";
-		#}; print "</td>";
 
 ########################## ENDE #####################################
-
-		print "</tr>";
 
 		print "<tr><td colspan=7 bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td></tr>";
 
@@ -478,108 +476,98 @@ sub daten_tmi {
 		$tip1 = $tip_line[ $tip[$x] + 1 ];
 		$tip2 = $tip_line[ $tip[$x] + 2 ];
 
-		print "<tr bgcolor=#efefef>";
+		@hometips = split( /,/, $tip1 );
+		@awaytips = split( /,/, $tip2 );
 
-		@all = split( /,/, $tip1 );
-
-		print "<td colspan=1 align=right valign=top width=225><font face=verdana size=1>";
-		for ( $a = 1 ; $a <= 5 ; $a++ ) {
-			$dd   = ( $a * 2 ) - 1;
-			$tmp  = "";
-			$tmp1 = "";
-			if ( $ergebnis[ $all[$dd] ] != 0 && $ergebnis[ $all[$dd] ] == $all[ $dd - 1 ] ) {
-				$tmp  = "<font color=green>";
-				$tmp1 = "<font color=black>";
-			}
-			if ( $ergebnis[ $all[$dd] ] != 0 && $ergebnis[ $all[$dd] ] != $all[ $dd - 1 ] ) {
-				$tmp  = "<font color=red>";
-				$tmp1 = "<font color=black>";
-			}
-			if ( $ergebnis[ $all[$dd] ] == 4 ) { $tmp = "<font color=gray>"; $tmp1 = "<font color=black>" }
-
-			print "&nbsp; &nbsp;$tmp $paarung[$all[$dd]] $tmp1<br>";
-		}
-		print "</td>\n";
-
-		print "<td colspan=1 align=right valign=top><font face=verdana size=1>";
 		for ( $a = 1 ; $a <= 5 ; $a++ ) {
 			$dd = ( $a * 2 ) - 1;
-			$ee = $all[ $dd - 1 ];
-			if ( $all[ $dd - 1 ] == 2 ) { $ee = 0 }
-			if ( $all[ $dd - 1 ] == 3 ) { $ee = 2 }
+			print "<tr bgcolor=#efefef>"; # Dieses tr trägt EINEN Heimtipp (Paarung, Tip, Quote), Spacer, (ggf.) EINEN Auswärtstipp (Paarung, Tip, Quote)
 
-			print " &nbsp; Tip $ee<br>";
-		}
-		print "</td>\n";
-
-		print "<td colspan=1 align=right valign=top><font face=verdana size=1>";
-		for ( $a = 1 ; $a <= 5 ; $a++ ) {
-			$dd = ( $a * 2 ) - 1;
-			if ( $all[ $dd - 1 ] == 1 ) { $ee = $qu_1[ $all[$dd] ] }
-			if ( $all[ $dd - 1 ] == 2 ) { $ee = $qu_0[ $all[$dd] ] }
-			if ( $all[ $dd - 1 ] == 3 ) { $ee = $qu_2[ $all[$dd] ] }
-
-			print "&nbsp; $ee &nbsp;<br>";
-		}
-		print "</td>\n";
-
-		print "<td bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td>\n";
-
-################################## VEREIN 2 ######################
-
-		@all = split( /,/, $tip2 );
-
-		print "<td colspan=1 align=right valign=top><font face=verdana size=1>";
-		for ( $a = 1 ; $a <= 4 ; $a++ ) {
-			$dd = ( $a * 2 ) - 1;
-			if ( $all[ $dd - 1 ] == 1 ) { $ee = $qu_1[ $all[$dd] ] }
-			if ( $all[ $dd - 1 ] == 2 ) { $ee = $qu_0[ $all[$dd] ] }
-			if ( $all[ $dd - 1 ] == 3 ) { $ee = $qu_2[ $all[$dd] ] }
-
-			print "&nbsp; $ee<br>";
-		}
-		print "</td>\n";
-
-		print "<td colspan=1 align=right valign=top><font face=verdana size=1>";
-		for ( $a = 1 ; $a <= 4 ; $a++ ) {
-			$dd = ( $a * 2 ) - 1;
-			$ee = $all[ $dd - 1 ];
-			if ( $all[ $dd - 1 ] == 2 ) { $ee = 0 }
-			if ( $all[ $dd - 1 ] == 3 ) { $ee = 2 }
-
-			print " &nbsp; Tip $ee &nbsp;<br>";
-		}
-		print "</td>\n";
-
-		print "<td colspan=1 align=left valign=top width=225><font face=verdana size=1>";
-		for ( $a = 1 ; $a <= 4 ; $a++ ) {
-			$dd = ( $a * 2 ) - 1;
-
-			$tmp  = "";
-			$tmp1 = "";
-			if ( $ergebnis[ $all[$dd] ] != 0 && $ergebnis[ $all[$dd] ] == $all[ $dd - 1 ] ) {
-				$tmp  = "<font color=green>";
-				$tmp1 = "<font color=black>";
+			# Hometip
+			$tipcolorclass  = "tipOpen";
+			if ( $ergebnis[ $hometips[$dd] ] != 0 && $ergebnis[ $hometips[$dd] ] == $hometips[ $dd - 1 ] ) {
+				$tipcolorclass  = "tipHit";
 			}
-			if ( $ergebnis[ $all[$dd] ] != 0 && $ergebnis[ $all[$dd] ] != $all[ $dd - 1 ] ) {
-				$tmp  = "<font color=red>";
-				$tmp1 = "<font color=black>";
+			if ( $ergebnis[ $hometips[$dd] ] != 0 && $ergebnis[ $hometips[$dd] ] != $hometips[ $dd - 1 ] ) {
+				$tipcolorclass  = "tipMiss";
 			}
-			if ( $ergebnis[ $all[$dd] ] == 4 ) { $tmp = "<font color=gray>"; $tmp1 = "<font color=black>" }
+			if ( $ergebnis[ $hometips[$dd] ] == 4 ) {
+				$tipcolorclass = "tipPostp";
+			}
 
-			print "$tmp $paarung[$all[$dd]] $tmp1 &nbsp; &nbsp; <br>";
+			print "<td colspan=1 align=right valign=top width=225 class='$tipcolorclass'>";
+			print "&nbsp; &nbsp; $paarung[$hometips[$dd]]";
+			print "</td>\n";
+
+			print "<td colspan=1 align=right valign=top> class='$tipcolorclass'>";
+
+			$dd = ( $a * 2 ) - 1;
+			$ee = $hometips[ $dd - 1 ];
+			if ( $hometips[ $dd - 1 ] == 2 ) { $ee = 0 }
+			if ( $hometips[ $dd - 1 ] == 3 ) { $ee = 2 }
+
+			print " &nbsp; Tip $ee";
+			print "</td>\n";
+
+			print "<td colspan=1 align=right valign=top class='$tipcolorclass'>";
+
+			$dd = ( $a * 2 ) - 1;
+			if ( $hometips[ $dd - 1 ] == 1 ) { $ee = $qu_1[ $hometips[$dd] ] }
+			if ( $hometips[ $dd - 1 ] == 2 ) { $ee = $qu_0[ $hometips[$dd] ] }
+			if ( $hometips[ $dd - 1 ] == 3 ) { $ee = $qu_2[ $hometips[$dd] ] }
+
+			print "&nbsp; $ee &nbsp;";
+			print "</td>\n";
+			
+			# Spacer
+			print "<td bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td>\n";
+
+			# Awaytip
+			if ( $a == 5 ) {
+				# away team only has 4 tipps. fill remaining space in tr
+				print "<td colspan=3>";
+			} else {
+				$tipcolorclass  = "tipOpen";
+				if ( $ergebnis[ $awaytips[$dd] ] != 0 && $ergebnis[ $awaytips[$dd] ] == $awaytips[ $dd - 1 ] ) {
+					$tipcolorclass  = "tipHit";
+				}
+				if ( $ergebnis[ $awaytips[$dd] ] != 0 && $ergebnis[ $awaytips[$dd] ] != $awaytips[ $dd - 1 ] ) {
+					$tipcolorclass  = "tipMiss";
+				}
+				if ( $ergebnis[ $awaytips[$dd] ] == 4 ) {
+					$tipcolorclass = "tipPostp";
+				}
+
+				print "<td colspan=1 align=right valign=top class='$tipcolorclass'>";
+				$dd = ( $a * 2 ) - 1;
+				if ( $awaytips[ $dd - 1 ] == 1 ) { $ee = $qu_1[ $awaytips[$dd] ] }
+				if ( $awaytips[ $dd - 1 ] == 2 ) { $ee = $qu_0[ $awaytips[$dd] ] }
+				if ( $awaytips[ $dd - 1 ] == 3 ) { $ee = $qu_2[ $awaytips[$dd] ] }
+				print "&nbsp; $ee";
+				print "</td>\n";
+
+				print "<td colspan=1 align=right valign=top class='$tipcolorclass'>";
+				$dd = ( $a * 2 ) - 1;
+				$ee = $awaytips[ $dd - 1 ];
+				if ( $awaytips[ $dd - 1 ] == 2 ) { $ee = 0 }
+				if ( $awaytips[ $dd - 1 ] == 3 ) { $ee = 2 }
+
+				print " &nbsp; Tip $ee &nbsp;";
+				print "</td>\n";
+				print "<td colspan=1 align=left valign=top width=225 class='$tipcolorclass'>";
+				$dd = ( $a * 2 ) - 1;
+
+
+				print "$paarung[$awaytips[$dd]]&nbsp; &nbsp;";
+				print "</td>\n";
+
+			}
+			
+			print "</tr>";
+
 		}
-		print "</td>\n";
-
-		#print "<td colspan=1 align=center valign=top><font face=verdana size=1>";
-		#for($a=1;$a<=4;$a++){
-		#$dd=($a*2)-1;
-		#print " &nbsp; &nbsp; $uhr[$all[$dd]] &nbsp;$datum[$all[$dd]] &nbsp; <br>";
-		#}; print "</td>";
 
 ########################## ENDE #####################################
-
-		print "</tr>";
 
 		print "<tr><td colspan=7 bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td></tr>";
 
@@ -591,7 +579,6 @@ end1:
 
 if ( $coach eq "" ) { print "<font face=verdana size=2><b><br><br>Bitte Trainernamen eingeben."; exit; }
 
-print "</td><td align=center bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td></tr></table>";
 print '
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KX6R92"
@@ -603,3 +590,4 @@ j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 })(window,document,\'script\',\'dataLayer\',\'GTM-KX6R92\');</script>
 <!-- End Google Tag Manager -->';
 
+print "</body></html>";
