@@ -96,7 +96,7 @@ print"  </script>\n";
 exit ;
 }
 
-if ($subject =~ /[\<\>]/) {
+if ($text =~ /[\<\>]/) {
 
 print "<body bgcolor=#eeeeee text=black><font face=verdana size=1 color=red>";
 print "Ihr Message Text hat ungueltige Zeichen enthalten . Ihre Message konnte nicht gesendet werden .<br>Bitte verzichten Sie auf Umlaute und weitere Sonderzeichen ...<br><br>Sie werden weitergeleitet ...";
@@ -252,7 +252,7 @@ $absender=$xx;
 $er=0;
 $text_db=$text;
 $text_db=~s/\n/<br>/g;
-$text_db=~s/'/`/g;
+$text_db=~s/'/`/g; # FIXME: Das sieht erstmal sicher aus, ist aber nicht unüberwindlich. Besser mit placeholders arbeiten.
 $subject=~s/'/`/g;
 
       $sql = "INSERT INTO box VALUES ($zahl_db,'BTM','$trainer','$xx','$subject','$text_db','$wt $xd$tag.$xe$mon.$jahr','$xc$std:$xb$min:$xa$sek',$oo)";

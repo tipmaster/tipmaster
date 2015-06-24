@@ -20,6 +20,8 @@
 
 use lib '/tmapp/tmsrc/cgi-bin/'; 
 use TMSession;
+use HTML::Entities;
+
 my $session = TMSession::getSession(tmi_login => 1);
 my $trainer = $session->getUser();
 my $leut = $trainer;
@@ -355,7 +357,7 @@ print "<tr><td align=left bgcolor=#DEDFEC colspan=2><font face=verdana size=1> &
 print "<form action=/cgi-bin/tmi/mail/mailbox.pl method=post><input type=hidden name=method value=\"add_adress\">\n";
 print "<td align=left bgcolor=#DEDFEC colspan=2><font face=verdana size=1> &nbsp;<input type=text size=25 style=\"font-family:verdana;font-size:10px;\" name=add value=\"Trainername\"> &nbsp; <input type=submit style=\"font-familiy:verdana;font-size=8px;\" value=\"-> Tainer hinzufuegen\">";
 if ( $error_a ne "" ) {
-print "<br> &nbsp;<font color=darkred>$error_a";
+print "<br> &nbsp;<font color=darkred>". encode_entities($error_a);
 }
 
 print "</td></tr></form>\n";
