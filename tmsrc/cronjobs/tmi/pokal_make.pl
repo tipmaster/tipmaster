@@ -422,7 +422,7 @@ $ole = $tips ;
 
 
 
-$ein = 0;
+$ein = 1;
 if ( -e "$tip_datei" ) { $ein = 1 }
 
 print "$tip_datei $ein $ole $liga{$teams[$gegner_if]}  ";
@@ -449,7 +449,7 @@ close (FF);
 
 
 
-
+$ein = 0;
 
 if ( $ein == 0 ) {
 
