@@ -33,9 +33,10 @@ $spielrunde_ersatz = ( $rrunde * 4 ) - 3;
 
 print "Content-type:text/html\n\n";
 print "<html><head>
-<style>
-body {
-  text-align: center;
+<style type=\"text/css\">
+body {text-align: center;}
+table {margin: 0 auto;}
+td {
   font-family: verdana;
   font-size: x-small;
 }
@@ -51,9 +52,31 @@ print "<form action=druck_tip.pl method=post>
 <input type=text style=\"font-family:verdana;font-size=11px\" size=20 value=\"". encode_entities($coach) ."\" name=coach>
 <input type=submit value=\"Tipps laden\"  style=\"font-family:verdana;font-size=11px\">";
 
-&daten_btm;
-end2:
-&daten_tmi;
+print "<table border=0 cellpadding=1 cellspacing=0><tr><td>";
+
+if ( $coach eq "" ) {
+	print "<span style=\"font-size: medium; font-weight: bold;\"><br><br>Bitte Trainernamen eingeben.</span>";
+} else {
+	&daten_btm;
+	end2:
+	&daten_tmi;
+	end1:
+}
+
+print "</td></tr></table>";
+
+print '
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KX6R92"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':
+new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
+\'//www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,\'script\',\'dataLayer\',\'GTM-KX6R92\');</script>
+<!-- End Google Tag Manager -->';
+
+print "</body></html>";
 
 sub daten_btm {
 	require "/tmapp/tmsrc/cgi-bin//btm_ligen.pl";
@@ -196,9 +219,6 @@ sub daten_btm {
 	$rr = $spielrunde_ersatz + 2;
 	if ( $rr > 33 ) { $rr = 33 }
 
-	print
-"<table border=0 cellpadding=1 cellspacing=0><tr><td align=center bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td><td><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td><td>";
-
 	for ( $x = $spielrunde_ersatz - 1 ; $x <= $rr ; $x++ ) {
 		$ss = $x + 1;
 		print "<TABLE CELLSPACING=0 CELLPADDING=1 BORDER=0 width=100%>";
@@ -240,7 +260,7 @@ sub daten_btm {
 			print "&nbsp; &nbsp; $paarung[$hometips[$dd]]";
 			print "</td>\n";
 
-			print "<td colspan=1 align=right valign=top> class='$tipcolorclass'>";
+			print "<td colspan=1 align=right valign=top class='$tipcolorclass'>";
 
 			$dd = ( $a * 2 ) - 1;
 			$ee = $hometips[ $dd - 1 ];
@@ -466,12 +486,12 @@ sub daten_tmi {
 			print "<tr><td colspan=7 bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td></tr>";
 		}
 		print "<TR BGCOLOR=white>";
-		print "<td colspan=7 align=center><font face=verdana size=1>$liga_namen[$liga] - $ss. Spieltag</td></tr>";
+		print "<td colspan=7 align=center>$liga_namen[$liga] - $ss. Spieltag</td></tr>";
 		print "<tr><td colspan=7 bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td></tr>";
 		print "<TR BGCOLOR=#e0e0e0>";
-		print "<td colspan=3 align=right><font face=verdana size=1>$data[$verein1[$x]] &nbsp; </td>";
+		print "<td colspan=3 align=right>$data[$verein1[$x]] &nbsp; </td>";
 		print "<td bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td>\n";
-		print "<td colspan=3 align=left height=20><font face=verdana size=1>&nbsp; $data[$verein2[$x]] </td></tr>";
+		print "<td colspan=3 align=left height=20>&nbsp; $data[$verein2[$x]] </td></tr>";
 
 		$tip1 = $tip_line[ $tip[$x] + 1 ];
 		$tip2 = $tip_line[ $tip[$x] + 2 ];
@@ -499,7 +519,7 @@ sub daten_tmi {
 			print "&nbsp; &nbsp; $paarung[$hometips[$dd]]";
 			print "</td>\n";
 
-			print "<td colspan=1 align=right valign=top> class='$tipcolorclass'>";
+			print "<td colspan=1 align=right valign=top class='$tipcolorclass'>";
 
 			$dd = ( $a * 2 ) - 1;
 			$ee = $hometips[ $dd - 1 ];
@@ -560,34 +580,12 @@ sub daten_tmi {
 
 				print "$paarung[$awaytips[$dd]]&nbsp; &nbsp;";
 				print "</td>\n";
-
 			}
 			
 			print "</tr>";
-
 		}
 
-########################## ENDE #####################################
-
 		print "<tr><td colspan=7 bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td></tr>";
-
 		print "</table>\n";
 	}
 }
-
-end1:
-
-if ( $coach eq "" ) { print "<font face=verdana size=2><b><br><br>Bitte Trainernamen eingeben."; exit; }
-
-print '
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KX6R92"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':
-new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
-\'//www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,\'script\',\'dataLayer\',\'GTM-KX6R92\');</script>
-<!-- End Google Tag Manager -->';
-
-print "</body></html>";
