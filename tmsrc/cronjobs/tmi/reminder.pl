@@ -80,24 +80,24 @@ $tt = 0;
 $runde = $rrunde;
 for ( $x = 1 ; $x <= $y ; $x++ ) {
 
-	if ( $mail{ $datb[$x] } != ~/schneider.de/ ) {
-		if ( $mail{ $datb[$x] } != ~/weisse.de/ ) {
-			if ( $datb[$x] ne "Trainerposten frei" ) {
-				$tt++;
+	if ( $reminder[$x] ne "1" ) {
+		if ( $datb[$x] ne "Trainerposten frei" ) {
+			$tt++;
 
-				#print "$reminder[$x] $datb[$x]<br>\n";
-				if ( $reminder[$x] eq "" ) { $reminder[$x] = 1 }
-				if ( $reminder[$x] == 0 ) {
+			#print "$reminder[$x] $datb[$x]<br>\n";
+			if ( $reminder[$x] eq "" ) { $reminder[$x] = 1 }
+			if ( $reminder[$x] == 0 ) {
 
-					$oo = 0;
+				$oo = 0;
+				print "$mail{$datb[$x]} -> $datq[$x]\n";
 
-					open( MAIL, "|$mailprog -t" );
-					print MAIL "To: $mail{$datb[$x]}\n";
-					print MAIL "From: noreply\@tipmaster.de\n";
-					print MAIL "Subject: Tip - Reminder [TMI] $datq[$x] \n";
+				open( MAIL, "|$mailprog -t" );
+				print MAIL "To: $mail{$datb[$x]}\n";
+				print MAIL "From: noreply\@tipmaster.de\n";
+				print MAIL "Subject: Tip - Reminder [TMI] $datq[$x] \n";
 
-					print MAIL "*** TipMaster international ***\nhttp://www.tipmaster.de \n\n";
-					print MAIL <<"(END ERROR HTML)";
+				print MAIL "*** TipMaster international ***\nhttp://www.tipmaster.de \n\n";
+				print MAIL <<"(END ERROR HTML)";
 Guten Tag $datb[$x] ,
 
 diese Mail ist eine Erinnerung an ihre Tipabgabe beim
@@ -126,9 +126,8 @@ Sie bitte eine kurze Mail an info\@tipmaster.net mit der Bitte
 zur Loeschung des mit Ihrer E-Mail Adresse angelegten Accounts .
 **************************************************************************
 (END ERROR HTML)
-					sleep 1;
+				sleep 1;
 
-				}
 			}
 		}
 	}
