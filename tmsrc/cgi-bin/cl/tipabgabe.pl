@@ -29,16 +29,11 @@ my $cllib = new CLLibrary;
 my $name = $session->getUser();
 
 $modus = $query->param('modus');
-$tipper_id = $query->param('id');
 $uorc = $query->param('uorc');
-(my $uorcByName,my $currentRoundName, my $mynation, my $myId) = $cllib->getCurrentCompetitionInfo($name);
+(my $uorcByName,my $currentRoundName, my $mynation, my $tipper_id) = $cllib->getCurrentCompetitionInfo($name);
 if (!$uorc) {
 	$uorc = $uorcByName;
 }
-if (!$tipper_id) {
-	$tipper_id = $myId;
-}
-
 
 
 

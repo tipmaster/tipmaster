@@ -5,10 +5,13 @@
 
 # Ausgewertet wird die ID-Datei, bzw. die vorangegangene DATA-Datei
 
-do '/tmapp/tmsrc/cgi-bin/cl/library.pl';
-if (!-e "$verz/ID.dat") {
-  $verz = "/tmdata/cl"; 
-}
+use lib "/tmapp/tmsrc/cgi-bin";
+
+use CLTeam;
+use CLLibrary;
+
+my $cllib = new CLLibrary;
+my $verz = $CLLibrary::verz;
 
 $runde = shift @ARGV;
 
@@ -47,7 +50,7 @@ if ($runde eq "Q1") {
     if ($gegner[2] eq "FREILOS") {
       $winner = 1;
     } else {
-      ($winner,undef,undef,undef) = &whowins($erg1,$erg2);
+      ($winner,undef,undef,undef) = $cllib->whowins($erg1,$erg2);
       if (!$winner) {close(G); die "Kein Sieger bei Spiel $lfd eingetragen\n";}
     }
     push @team_ids,$gegner[$winner];
@@ -73,7 +76,7 @@ if ($runde eq "Q1") {
     if ($gegner[2] eq "FREILOS") {
       next;
     } else {
-      ($winner,undef,undef,undef) = &whowins($erg1,$erg2);
+      ($winner,undef,undef,undef) = $cllib->whowins($erg1,$erg2);
       if (!$winner) {close(G); die "Kein Sieger bei Spiel $lfd eingetragen\n";}
     }
 
@@ -109,7 +112,7 @@ if ($runde eq "Q1") {
     if ($gegner[2] eq "FREILOS") {
       $winner = 1;
     } else {
-      ($winner,undef,undef,undef) = &whowins($erg1,$erg2);
+      ($winner,undef,undef,undef) = $cllib->whowins($erg1,$erg2);
       if (!$winner) {close(G); die "Kein Sieger bei Spiel $lfd eingetragen\n";}
     }
     push @team_ids,$gegner[$winner];
@@ -135,7 +138,7 @@ if ($runde eq "Q1") {
     if ($gegner[2] eq "FREILOS") {
       next;
     } else {
-      ($winner,undef,undef,undef) = &whowins($erg1,$erg2);
+      ($winner,undef,undef,undef) = $cllib->whowins($erg1,$erg2);
       if (!$winner) {close(G); die "Kein Sieger bei Spiel $lfd eingetragen\n";}
     }
 
@@ -182,7 +185,7 @@ if ($runde eq "Q1") {
 	if ($gegner[2] eq "FREILOS") {
 	  $winner = 1;
 	} else {
-	  ($winner,undef,undef,undef) = &whowins($erg1,$erg2);
+	  ($winner,undef,undef,undef) = $cllib->whowins($erg1,$erg2);
 	  if (!$winner) {close(G); die "Kein Sieger bei Spiel $lfd eingetragen\n";}
 	}
 	push @team_ids,$gegner[$winner];
@@ -208,7 +211,7 @@ if ($runde eq "Q1") {
     if ($gegner[2] eq "FREILOS") {
       next;
     } else {
-      ($winner,undef,undef,undef) = &whowins($erg1,$erg2);
+      ($winner,undef,undef,undef) = $cllib->whowins($erg1,$erg2);
       if (!$winner) {close(G); die "Kein Sieger bei Spiel $lfd eingetragen\n";}
     }
 
@@ -252,7 +255,7 @@ if ($runde eq "Q1") {
     if ($gegner[2] eq "FREILOS") {
       $winner = 1;
     } else {
-      ($winner,undef,undef,undef) = &whowins($erg1,$erg2);
+      ($winner,undef,undef,undef) = $cllib->whowins($erg1,$erg2);
       if (!$winner) {close(G); die "Kein Sieger bei Spiel $lfd eingetragen\n";}
     }
     push @team_ids,$gegner[$winner];

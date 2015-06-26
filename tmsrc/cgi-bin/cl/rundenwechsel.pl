@@ -12,7 +12,7 @@ my $v = "/home/tm/www/cgi-bin/cl";
 
 chdir $v;
 
-my $lib = "$v/library.pl";
+
 # Ergebnisse eintragen
 
 print `$v/auswerter.pl $old C`;
@@ -34,24 +34,3 @@ print "Meldung CL: $erg\n";
 exit 0;
 
 
-sub changelib {
-  my $old = shift;
-  my $new = shift;
-  my $lib = shift;
-  my $tmplib = "/tmp/library.pl.temp";
-  
-  open(K,"<$lib") or die "Cannot oben $lib: $!";
-  open(L,">$tmplib") or die "Cannot write to tmp lib: $!";
-
-  while (<K>) {
-    s/derzeitige_runde = \"$old\";/derzeitige_runde = \"$new\";/;
-    print L;
-  }
-
-  close(K);
-  close(L);
-  `cp $lib $lib.before_$new`;
-  print `cp $tmplib $lib`;
-
-  return;
-}

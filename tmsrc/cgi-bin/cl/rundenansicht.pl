@@ -21,7 +21,7 @@ if (!$session) {
 my $cllib = new CLLibrary;
 my $name = $session->getUser();
 
-@grptms = ();
+my @grptms = ();
 
 $runde = $query->param('runde');
 $id = $query->param('id');
@@ -127,7 +127,7 @@ print "<H2><CENTER><font face=verdana>$bewerb <br>",$curround," <br>$headertitle
 $cllib->printNavigation();
 print "<br><br>\n";
 $tim = time;
-my $timeLeft = $CLLibrary::timeLimit - $tim;
+my $timeLeft = $cllib->getTimeLimit() - $tim;
 my $daysLeft = int($timeLeft/(60*1440));
 my $hoursLeft = ($timeLeft-$daysLeft*60*1440)/3600;
 print "<!-- current Time is : $tim, TimeLeft: $timeLeft, TimeLimit is : $timeLimit. Diff is ",($timeLimit - $tim)/60,"  ";
@@ -142,7 +142,7 @@ if ($uorc eq "C") {
 
 if ($uorc eq "C" && ($runde eq "G1" || $runde eq "G2" || $runde eq "G3")) {
     my %gruppe = ();
-    $cllib->readGroupInfo();
+    @grptms = $cllib->readGroupInfo();
     
     print "<TABLE border=1 width=96% align=center>\n";
     # Zeige die GRUPPEN

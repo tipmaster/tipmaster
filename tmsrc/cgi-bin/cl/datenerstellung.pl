@@ -5,15 +5,14 @@
 
 # Ausgewertet wird die ID-Datei, bzw. die vorangegangene DATA-Datei
 
-use lib "/tmapp/tmsrc/cgi-bin/cl";
-use lib qw {.};
-use Clteam;
-do 'library.pl';
-do '/tmapp/tmsrc/cgi-bin/cl/library.pl';
+use lib "/tmapp/tmsrc/cgi-bin";
 
-if (!-e "$verz/ID.dat") {
-  $verz = $verz;
-}
+use CLTeam;
+use CLLibrary;
+
+my $cllib = new CLLibrary;
+my $verz = $CLLibrary::verz;
+my $derzeitige_runde = $cllib->getCurrentCLRound();
 
 # check if library has run
 if (!$derzeitige_runde) {
@@ -23,7 +22,7 @@ if (!$derzeitige_runde) {
 	print "Derzeitige Runde laut library: $derzeitige_runde\n";
 }
 
-$runde = shift @ARGV;
+my $runde = shift @ARGV;
 
 if ($runde eq "Q1") {
   
@@ -31,7 +30,7 @@ if ($runde eq "Q1") {
    @team_ids = (74..117);
   
   # Randomisieren
-  $bad = 1;
+  my $bad = 1;
   while ($bad) {
       @tmp = randomize_array(@team_ids);
       $bad = isNationInternallyFixture(@tmp);
@@ -63,7 +62,7 @@ if ($runde eq "Q1") {
     if ($gegner[2] eq "FREILOS") {
       $winner = 1;
     } else {
-      ($winner,undef,undef,undef) = &whowins($erg1,$erg2);
+      ($winner,undef,undef,undef) = $cllib->whowins($erg1,$erg2);
       if (!$winner) {close(G); die "Kein Sieger bei Spiel $lfd eingetragen\n";}
     }
     push @team_ids,$gegner[$winner];
@@ -100,7 +99,7 @@ if ($runde eq "Q1") {
     if ($gegner[2] eq "FREILOS") {
       $winner = 1;
     } else {
-      ($winner,undef,undef,undef) = &whowins($erg1,$erg2);
+      ($winner,undef,undef,undef) = $cllib->whowins($erg1,$erg2);
       if (!$winner) {close(G); die "Kein Sieger bei Spiel $lfd eingetragen\n";}
     }
     push @team_ids,$gegner[$winner];
@@ -132,7 +131,7 @@ if ($runde eq "Q1") {
     if ($gegner[2] eq "FREILOS") {
       $winner = 1;
     } else {
-      ($winner,undef,undef,undef) = &whowins($erg1,$erg2);
+      ($winner,undef,undef,undef) = $cllib->whowins($erg1,$erg2);
       if (!$winner) {close(G); die "Kein Sieger bei Spiel $lfd eingetragen\n";}
     }
     push @team_ids,$gegner[$winner];
@@ -172,8 +171,8 @@ if ($runde eq "Q1") {
     for ($j = 1; $j <= 4; $j++) {
  #     print "Group $_, Slot $j: ";
       my $key = $team_ids[($_*4)-$j]; 
-      print "Key $key ",$id2team{"$key"}," ",(25-length($id2team{"$key"}))x" ";
-      print "(",$id2nat{"$key"},") - ";
+      #print "Key $key ",$cllib->id2team{"$key"}," ",(25-length($cllib->id2team{"$key"}))x" ";
+      #print "(",$cllib->id2nat{"$key"},") - ";
       print K $_,"&",$j,"&",$key,$reststring;
     }
     print "\n";
@@ -186,20 +185,20 @@ if ($runde eq "Q1") {
   # dann Acht spiele auslosen.
 
   # Gruppendaten einlesen
-  &readGroupInfo();
+  my @grptms = $cllib->readGroupInfo();
   
   # Tabellen berechnen
   for (my $grp = 1; $grp<=8; $grp++) {
     my @teams = @grptms[($grp-1)*4..$grp*4-1];
-    my @sorteams = sort {compare2teams($b,$a)} @teams;
+    my @sorteams = sort {$cllib->compare2teams($b,$a)} @teams;
 
   # jede Gruppe checken auf 2==3 -> 2==4 u 1==3 -> warnung
-    if (compare2teams($sorteams[1],$sorteams[2]) == 0) {
+    if ($cllib->compare2teams($sorteams[1],$sorteams[2]) == 0) {
       print "Warning! Group $grp, Teams 2 and 3 are equal, check manually!\n";
-      if (compare2teams($sorteams[0],$sorteams[1]) == 0) {
+      if ($cllib->compare2teams($sorteams[0],$sorteams[1]) == 0) {
 	print "Warning! Group $grp First three teams are equal!\n";
       }
-      if (compare2teams($sorteams[2],$sorteams[3]) == 0) {
+      if ($cllib->compare2teams($sorteams[2],$sorteams[3]) == 0) {
 	print "Warning! Group $grp last three teams are equal\n";
       }
     }
@@ -236,7 +235,7 @@ if ($runde eq "Q1") {
     if ($gegner[2] eq "FREILOS") {
       $winner = 1;
     } else {
-      ($winner,undef,undef,undef) = &whowins($erg1,$erg2);
+      ($winner,undef,undef,undef) = $cllib->whowins($erg1,$erg2);
       if (!$winner) {close(G); die "Kein Sieger bei Spiel $lfd eingetragen\n";}
     }
     push @team_ids,$gegner[$winner];
@@ -261,29 +260,19 @@ if ($runde eq "Q1") {
 
 }  else {
   
-  print "Unbekannte Runde\n";
-
-  print &welchetips(62,"G2","C"),"\n";
-  print &welchetips(7,"G2","C"),"\n";
-  print &welchetips(10,"G2","C"),"\n";
-
-
+  print "Unbekannte Runde: $runde\n";
 }
 
 sub sameNat {
   my $t1 = shift;
   my $t2 = shift;
-  $tn1 = $id2nat{"$t1"};
-  $tn2 = $id2nat{"$t2"};
+  $tn1 = $cllib->id2nat("$t1");
+  $tn2 = $cllib->id2nat("$t2");
   $tn1 =~ s/_.+//;
   $tn2 =~ s/_.+//;
   my $ret =  ($tn1 == $tn2);
   print "Compared $tn1 to $tn2,($t1 / $t2) returning $ret\n";
-  if (($tn1 == 00 && $tn2 == 25) || ($tn1 == 25 && $tn2 == 00)) {
-    return 0;
-  }
   return $ret;
-  
 }
 
 sub isNationInternallyFixture {

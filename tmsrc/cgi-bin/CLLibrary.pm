@@ -133,10 +133,6 @@ sub getExplicitWhere() {
 
 
 
-	our @grptms = ();
-
-
-
 %btm_tipper = ();
 $debug = 0;
 
@@ -152,7 +148,43 @@ $debug = 0;
 
 
 
+sub getTimeLimit {
+	my $self = shift;
+	
+	my $derzeitige_runde = $self->getCurrentCLRound();
 
+#$timeLimit = 1004112000+(($rundenfolge{$derzeitige_runde}+432)*7*86400+3720); #primed for 04/1
+        my @nsparm = split(/\//,$ecparms{"neueSaison"});
+        my $lfdsais = $nsparm[1];
+        # adjustment for saisons. 2013 had 5 saisons, 2014 had 6 seasons
+        $lfdsais +=11;
+        my $weekctr = ($lfdsais*9)+425+46+2+55+54+1;
+
+        ### forget this after dec 30, 2013, then, increase weekctr statically
+        my $dec28      = 1388271471;
+        my $dec28_2014 = 1419721200;
+        my $nowis = time;
+        if ($nowis > $dec28) {
+                $weekctr++;
+        }
+
+        #same stunt for 2014
+        if ($nowis > $dec28_2014) {
+                $weekctr++;
+        }
+
+
+
+        #####
+
+        my $winterzeit = 0;
+	my $inthisround = $rundenfolge{$derzeitige_runde}+$weekctr;
+        my $timeLimit = 1004112000+($inthisround*7*86400+120+$winterzeit*3600); #primed for 04/1
+
+	print "<!-- DerzRunde: $derzeitige_runde  LFDSais: $lfdsais, weekctr: $weekctr, inthisround: $inthisround //-->\n";
+
+	return $timeLimit;
+}
 
 #### Status des Wettbewerbs
 
@@ -170,37 +202,8 @@ sub isFormularOpen {
 #Check: per Browser die rundenansicht.pl anschaun und in den HTML-Quelltext
 #schauen, dort wird angezeigt, in wievielen Minuten die CL-Abgabe automatisch
 #schliesst.
-#$timeLimit = 1004112000+(($rundenfolge{$derzeitige_runde}+168)*7*86400); #primed for 04/1
-# Fuer Winterzeitprobleme den hier aktivieren:
-
-#$timeLimit = 1004112000+(($rundenfolge{$derzeitige_runde}+432)*7*86400+3720); #primed for 04/1
-	my @nsparm = split(/\//,$ecparms{"neueSaison"});
-	my $lfdsais = $nsparm[1];
-	# adjustment for saisons. 2013 had 5 saisons, 2014 had 6 seasons
-	$lfdsais +=11;
-	my $weekctr = ($lfdsais*9)+425+46+2+55+54+2;
-
-	### forget this after dec 30, 2013, then, increase weekctr statically
-	my $dec28      = 1388271471; 
-	my $dec28_2014 = 1419721200;
-	my $nowis = time;
-	if ($nowis > $dec28) {
-		$weekctr++;
-	}
-
-	#same stunt for 2014
-	if ($nowis > $dec28_2014) {
-	        $weekctr++;
-	}
-
-
-
-	#####
-
-	my $winterzeit = 0;
-	$timeLimit = 1004112000+(($rundenfolge{$derzeitige_runde}+$weekctr)*7*86400+120+$winterzeit*3600); #primed for 04/1
-
-
+	
+	my $timeLimit = $self->getTimeLimit();
 	#Changeme wenn die tipabgabe generell offen/zu sein soll
 	my $immerzu = 0;
 	my $immeroffen = 0;
@@ -597,16 +600,13 @@ sub getSlot {
 sub readGroupInfo {
 	my $self = shift;
 	$datei = "$verz/DATA_G1.DAT";
-	if (!-e $datei) {
-	$datei = $datei;
-	}
   open(G,"<$datei") or die "Problem reading $datei: $!";
   while (<G>) {
     my $line = $_;
     chomp $line;
     if ($line =~ /^(\d+)\&(\d+)\&(\d+)/) {
       (my $grp, my $slot,my $id,my @gms) = split(/&/,$line);
-      my $cteam = Clteam->new();
+      my $cteam = CLTeam->new();
       $cteam->slot($slot);
       $cteam->id($id);
       $cteam->team( $id2team{"$id"} );
@@ -616,8 +616,21 @@ sub readGroupInfo {
     }
   }
   close(G);
+	return @grptms;
 }  
 
+sub writeGroupInfo {
+  my $self = shift;
+  my $grptms_ref = shift;
+  open(G,">$verz/DATA_${runde}.DAT") or die "Cannot write to group info\n";
+  for ($grp = 1;$grp<=8;$grp++) {
+    for ($slot=1;$slot<=4;$slot++) {
+      my $team = $$grptms[($grp-1)*4+$slot-1];
+      print G "$grp&$slot&",$team->id,"&",$team->exportstring,"\n";
+    }
+  }
+  close(G);
+}
 
 
 sub compare2teams {
