@@ -741,7 +741,7 @@ for ( $pokal = 1 ; $pokal <= 17 ; $pokal++ ) {
 
 		if ( $lock == 0 ) {
 
-			$ein = 1;
+			$ein = 0;
 			if ( -e "$tip_datei" ) { $ein = 1 }
 
 			print "$tip_datei $ein $ole $liga{$teams[$gegner_if]}  ";
