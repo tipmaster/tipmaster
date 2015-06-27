@@ -1,6 +1,8 @@
 #!/usr/bin/perl
 
+use lib '/tmapp/tmsrc/cgi-bin/';
 use Date::Calc qw(:all);
+use TMSession;
 require "/tmapp/tmsrc/cronjobs/blanko_process.pl";
 
 my $blanko_file = "/tmdata/blanko.txt";
