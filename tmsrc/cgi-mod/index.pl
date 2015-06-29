@@ -851,7 +851,7 @@ print '
 
 	<td bgcolor=white>
 
-<iframe id=\'acae648c\' name=\'acae648c\' src=\'http://advertising.fussball-liveticker.eu/www/delivery/afr.php?zoneid=83&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'120\' height=\'600\'><a href=\'http://advertising.fussball-liveticker.eu/www/delivery/ck.php?n=a3108930&amp;cb=INSERT_RANDOM_NUMBER_HERE\' target=\'_blank\'><img src=\'http://advertising.fussball-liveticker.eu/www/delivery/avw.php?zoneid=83&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3108930&amp;ct0=INSERT_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
+<iframe id=\'acae648c\' name=\'acae648c\' src=\'http://ads.socapro.com/www/delivery/afr.php?zoneid=83&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'120\' height=\'600\'><a href=\'http://ads.socapro.com/www/delivery/ck.php?n=a3108930&amp;cb=INSERT_RANDOM_NUMBER_HERE\' target=\'_blank\'><img src=\'http://ads.socapro.com/www/delivery/avw.php?zoneid=83&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3108930&amp;ct0=INSERT_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
 
 
 </td><td bgcolor=black width=1>
@@ -912,6 +912,8 @@ Legendaere Fussballer auf <a style="color:darkgrey" href="http://www.kult-kicker
 <a style="color:darkgrey" href="http://www.fussball-fieber.org">Bundesliga Live-Stream</a>
 -
 <a style="color:darkgrey" href="https://www.stadionheft24.de">Stadionzeitungen f&uuml;r Amateurvereine</a>
+- 
+<a style="color:darkgrey" href="https://www.bulitickets.net">Bundesliga Tickets</a>
 </p>
 
 
