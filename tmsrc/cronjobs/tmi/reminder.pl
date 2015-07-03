@@ -105,7 +105,7 @@ TipMaster international fuer Spieltag $sp1 bis $sp2 . Bisher
 haben wir leider noch keine Tipabgabe von Ihnen fuer
 ihren aktuellen Verein $datq[$x] in 
 der $liga_namen[$liga[$x]] empfangen 
-( Stand Donnerstag abend 20.oo Uhr ! ).
+( Stand Donnerstag morgen 10.oo Uhr).
 
 Noch bis Freitag 18.oo Uhr haben sie die Moeglichkeit
 Ihre Tipabgabe unter http://www.tipmaster.de/ zu taetigen.
@@ -126,7 +126,7 @@ Sie bitte eine kurze Mail an info\@tipmaster.net mit der Bitte
 zur Loeschung des mit Ihrer E-Mail Adresse angelegten Accounts .
 **************************************************************************
 (END ERROR HTML)
-				sleep 1;
+				sleep .3;
 
 			}
 		}
