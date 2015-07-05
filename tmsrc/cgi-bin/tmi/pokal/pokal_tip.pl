@@ -632,7 +632,7 @@ print "<font face=verdana size=1><br>&nbsp;&nbsp;Ihnen stehen $tips Tips zur Ver
 
 print "<form action=/cgi-bin/tmi/pokal/pokal_sent.pl method=post>";
 print "<input type=hidden name=trainer value=\"$trainer\">\n";
-
+print "<input type=hidden name=pokal value=\"$pokal\">\n";
 $xx = "&";
 $aa = $liga . $xx . $id ;
 

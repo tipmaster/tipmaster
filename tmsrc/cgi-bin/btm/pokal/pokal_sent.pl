@@ -41,6 +41,8 @@ $tip[8] = $query->param('37....');
 $tip[9] = $query->param('38....');
 $tip[10] = $query->param('39....');
 $tips = $query->param('tips');
+$pokal = $query->param('pokal');
+
 
 
 print "Content-type: text/html\n\n";
@@ -83,6 +85,102 @@ if ( $abg != $tips ) {
 print "<font face=verdana size=2><br><br><br><br><br><b>Die Anzahl Ihrer abgegebenen Tips ist nicht korrekt ...<br>Sie haben $abg Tips anstatt der korrekten $tips Tips abgegeben .<br>Bitte kehren Sie zur Tipabgabe zurueck und korregieren Sie Ihre Tipabgabe .\n";
 exit ;
 }
+
+
+
+my $rf ="0";
+my $rx = "x" ;
+my $liga = 0;
+if ( $liga > 9 ) { $rf = "" }
+
+$suche = '&'.$trainer.'&' ;
+$s = 0;
+open(D2,"/tmdata/btm/history.txt");
+while(<D2>) {
+$s++;
+if ($_ =~ /$suche/) {
+@lor = split (/&/, $_);	
+$liga = $s ;
+}
+
+}
+close(D2);
+
+
+my $url = "/tmdata/btm/pokal/tips/" ;
+
+$id_verein = 0;
+
+$y = 0;
+for ( $x = 1; $x < 19; $x++ )
+{
+$y++;
+chomp $lor[$y];
+$data[$x] = $lor[$y];
+$teams[$x] = $lor[$y];
+$team[$x] = $lor[$y];
+$y++;
+chomp $lor[$y];
+$datb[$x] = $lor[$y];
+if ( $datb[$x] eq $trainer ) {$id = $x }
+if ( $datb[$x] eq $trainer ) {$id_verein = (($liga-1)*18)+ $x }
+
+if ( $datb[$x] eq $trainer ) {$verein = $data[$x] }
+$y++;
+chomp $lor[$y];
+$datc[$x] = $lor[$y];
+if ( $datb[$x] eq $trainer ) {$recipient = $datc[$x] }
+}
+
+
+
+
+$rr = 0;
+$li=0;
+$liga=0;
+open(D2,"/tmdata/btm/history.txt");
+while(<D2>) {
+
+$li++;
+@vereine = split (/&/, $_);	
+
+$y = 0;
+for ( $x = 1; $x < 19; $x++ )
+{
+$rr++;
+$y++;
+chomp $verein[$y];
+$teams[$rr] = $vereine[$y];
+$team[$rr] = $vereine[$y];
+$y++;
+chomp $verein[$y];
+$datb[$rr] = $vereine[$y];
+$y++;
+chomp $verein[$y];
+$datc[$rr] = $vereine[$y];
+}
+
+}
+
+close(D2);
+
+
+if ( $id_verein<10 ) { $url = $url . '0' }
+if ( $id_verein<100 ) { $url = $url . '0' }
+if ( $id_verein<1000 ) { $url = $url . '0' }
+
+open(D7,"/tmdata/btm/pokal/pokal_datum.txt");
+$spielrunde_ersatz = <D7> ;
+chomp $spielrunde_ersatz;
+close(D7);
+
+$runde = $spielrunde_ersatz; 
+
+
+$url=$url.$id_verein. '-' . $pokal . '-' . $runde . '.txt' ;
+
+
+
 
 open(D2,">$url");
 print D2 "$reihe\n";
