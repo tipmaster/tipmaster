@@ -453,6 +453,7 @@ sub fillTip {
 }
 
 sub getSlot {
+  my $self = shift;
   my $stag = shift;
   my $sp = shift;
   my $flip = 0;
@@ -493,6 +494,7 @@ sub readGroupInfo {
 
 
 sub compare2teams {
+  my $self = shift;
   my $team1 = shift;
   my $team2 = shift;
 

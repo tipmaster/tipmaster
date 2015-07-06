@@ -453,7 +453,7 @@ sub printgames {
   
   for (my $sptag = $horr*3-2; $sptag <= $horr*3; $sptag++) {
     for ($s = 1; $s <= 2; $s++) {
-      (my $k1, my $k2) = &getSlot($sptag,$s);
+      (my $k1, my $k2) = $cllib->getSlot($sptag,$s);
       #print "<!-- Hashval: ",$grptms[($grp-1)*4+$k1-1]," //-->\n";
       my $heim = $grptms[($grp-1)*4+$k1-1];
       my $gast = $grptms[($grp-1)*4+$k2-1];
@@ -480,14 +480,14 @@ sub printgames {
 sub table {
   my $grp = shift;
   my @teams = @grptms[($grp-1)*4..$grp*4-1];
-  my @sorteams = sort {compare2teams($b,$a)} @teams;
+  my @sorteams = sort {$cllib->compare2teams($b,$a)} @teams;
 
   print "<table width=100%>\n";
   for ($rnk=1;$rnk<=4;$rnk++) {
     my $teama = $sorteams[$rnk-1];
     my $theteam = $teama->{TEAM};
     my $thename = $cllib->team2trainer("$theteam");
-    my $nat1 = $id2nat{$teama->{ID}};
+    my $nat1 = $cllib->id2nat($teama->{ID});
 
 my $flag = lc($CLLibrary::nation[$nat1]);
 $flag=~s/cze/tch/;$flag=~s/rom/rum/; $flag=~s/hun/ung/; $flag=~s/cyp/zyp/; $flag=~
