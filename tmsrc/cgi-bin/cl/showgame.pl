@@ -19,9 +19,10 @@ $game_nr = $query->param('game');
 $uorc = $query->param('uorc');
 $ids = $query->param('ids');
 
-my @grptms = ();
+@grptms = $cllib->readGroupInfo();
+#print "<!-- grptms is @grptms //-->\n";
 %game = ();%tipgame = ();
-
+my $verz = $CLLibrary::verz;
 
 
 # get the data of this game
@@ -96,12 +97,25 @@ sub spielanzeige {
 
 sub printCLGame {
   my $ides = shift;
+  my @grptms = $cllib->readGroupInfo();
+ 
+  print "<!-- Grp has ",scalar @grptms," length -->\n"; 
   ($id1, $id2) = split(/-/,$ides);
 
-  print "<!-- in CLGame, $id1 $id2 $game_nr //-->\n";
+  ## bad fix: walk thru @grptms, find matching teams
+  for (0..31) {
+	if ($grptms[$_]->id == $id1) {
+      		$team1 = $grptms[$_]->team;
+	}
+        if ($grptms[$_]->id == $id2) {
+                $team2 = $grptms[$_]->team;
+        }
+  }
 
-  $team1 = $grptms[$id1]->team;
-  $team2 = $grptms[$id2]->team;
+  print "<!-- in CLGame, $id1 $id2 $game_nr  Ref: ",$grptms[$id1]," //-->\n";
+
+  #$team1 = $grptms[$id1]->team;
+  #$team2 = $grptms[$id2]->team;
 
   $name1 = $cllib->team2trainer("$team1");
   $name2 = $cllib->team2trainer("$team2");
@@ -119,7 +133,7 @@ sub printCLGame {
   @tips1 = $cllib->getTipsFromFile($filename1,$game_nr);
   @tips2 = $cllib->getTipsFromFile($filename2,$game_nr);
 
-  print "<!-- got tips from file $filename1, Game Nr. was $game_nr //-->\n";
+  print "<!-- got tips from file $filename1, Game Nr. was $game_nr Tips: ",join("-",@tips1)," / ",join("-",@tips2),"//-->\n";
 
   @tips1 = $cllib->fillTip(5,@tips1);
   @tips2 = $cllib->fillTip(4,@tips2);

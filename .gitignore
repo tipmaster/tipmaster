@@ -4,3 +4,4 @@ migrate.sh
 .project
 .ignorepath
 .includepath
+nohup.out

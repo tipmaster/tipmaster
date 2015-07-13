@@ -679,7 +679,7 @@ sub doLink {
 
 # extract tip numbers from tipfile
 sub getTipsFromFile {
-		my $self = shift;
+	my $self = shift;
   my $filename = shift;
   my $tipno = shift;
   my @tips = ();
@@ -700,7 +700,7 @@ sub getTipsFromFile {
     }
     return @tips;
   } else {
-    return ();
+    return (-1,-1);
   }
 }
 
