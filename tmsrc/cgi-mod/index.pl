@@ -916,6 +916,8 @@ Legendaere Fussballer auf <a style="color:darkgrey" href="http://www.kult-kicker
 <a style="color:darkgrey" href="http://www.bulitickets.net">Bundesliga Tickets</a>
 - 
 <a style="color:darkgrey" href="https://fussball-tippspiel.org">Bundesliga Tippspiel</a>
+<br/>
+Fussball Bundesliga Tipps auf <a title="Wett-Tipps zur Fussball Bundesliga" href="http://wetttipps-heute.com">wetttipps-heute.com</a>
 </p>
 
 
