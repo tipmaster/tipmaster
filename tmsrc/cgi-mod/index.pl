@@ -920,6 +920,8 @@ Legendaere Fussballer auf <a style="color:darkgrey" href="http://www.kult-kicker
 Fussball Bundesliga Tipps auf <a title="Wett-Tipps zur Fussball Bundesliga" href="http://wetttipps-heute.com">wetttipps-heute.com</a>
 - 
 <a href="http://www.tip4free.de">Fussball Tippspiel</a>
+-
+<a href="http://kadermanager.de">Der Einfache Kalender für Fußballtrainer</a>
 </p>
 
 
