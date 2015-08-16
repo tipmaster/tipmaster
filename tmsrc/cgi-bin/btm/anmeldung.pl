@@ -22,7 +22,7 @@ use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
 use TMAuthenticationController;
 use HTML::Entities;
-use TMDAO;
+use TMDao;
 use URI::Encode;
 use TMLogger;
 

@@ -921,7 +921,7 @@ Fussball Bundesliga Tipps auf <a title="Wett-Tipps zur Fussball Bundesliga" href
 - 
 <a href="http://www.tip4free.de">Fussball Tippspiel</a>
 -
-<a href="http://kadermanager.de">Der Einfache Kalender für Fußballtrainer</a>
+<a href="http://kadermanager.de">Der Einfache Kalender fuer Fussballtrainer</a>
 </p>
 
 
