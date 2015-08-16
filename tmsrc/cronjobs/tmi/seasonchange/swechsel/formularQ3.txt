@@ -1,0 +1,27 @@
+
+
+1&VfL Wolfsburg        - B.Leverkusen        &24&31&24&1&2 : 0&05.10.2002&15:30&
+1&Hannover 96          - B.Dortmund          &35&31&19&3&0 : 3&05.10.2002&15:30&
+1&B.M'gladbach         - A.Bielefeld         &17&31&40&1&3 : 0&05.10.2002&15:30&
+1&Kaiserslautern       - E.Cottbus           &16&33&47&1&4 : 0&05.10.2002&15:30&
+1&VfB Stuttgart        - 1860 Muenchen       &19&31&33&1&4 : 1&06.10.2002&17:30&
+3&Newcastle            - West Bromwich       &15&33&50&1&2 : 1&05.10.2002&16:00&
+3&Southampton          - Manchester C.       &23&31&26&1&2 : 0&05.10.2002&16:00&
+3&West Ham             - Birmingham C.       &19&31&35&3&1 : 2&05.10.2002&16:00&
+3&Aston Villa          - Leeds Utd.          &28&31&22&2&0 : 0&06.10.2002&16:00&
+3&Blackburn R.         - Tottenham H.        &23&31&26&3&1 : 2&06.10.2002&16:00&
+4&AC Ajaccio           - FC Nantes           &22&31&27&1&1 : 0&05.10.2002&20:00&
+4&OSC Lille            - Ol. Marseille       &23&31&25&1&3 : 0&05.10.2002&20:00&
+4&Stade Rennes         - Ol.Lyon             &27&31&22&3&0 : 1&05.10.2002&20:00&
+4&Gir.Bordeaux         - CS Sedan            &14&36&60&2&2 : 2&06.10.2002&18:00&
+4&AJ Auxerre           - AS Monaco           &18&31&36&2&1 : 1&06.10.2002&18:15&
+5&Reggina              - Brescia Calcio      &20&30&32&2&2 : 2&05.10.2002&18:00&
+5&FC Empoli            - FC Bologna          &27&29&23&2&0 : 0&06.10.2002&15:00&
+5&AC Parma             - AC Perugia          &16&32&50&2&2 : 2&06.10.2002&15:00&
+5&FC Piacenza          - Inter Mailand       &38&30&18&3&1 : 4&06.10.2002&15:00&
+5&Ata.Bergamo          - Lazio Rom           &28&29&23&3&0 : 1&06.10.2002&20:30&
+8&FC Valencia          - Celta Vigo          &17&31&40&3&0 : 1&06.10.2002&17:00&
+8&Malaga CF            - Atletico Madrid     &20&31&32&1&3 : 1&06.10.2002&17:00&
+8&Real Mallorca        - Esp.Barcelona       &19&31&35&1&2 : 0&06.10.2002&17:00&
+8&FC Barcelona         - CA Osasuna          &12&45&90&2&2 : 2&06.10.2002&17:00&
+8&Rayo Vallecano       - FC Villarreal       &18&31&36&2&2 : 2&06.10.2002&17:00&

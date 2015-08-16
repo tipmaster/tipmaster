@@ -1,0 +1,27 @@
+
+
+1&Hannover 96          - VfL Wolfsburg       &22&31&27&1&3 : 1&02.11.2002&15:30&
+1&H. Rostock           - Kaiserslautern      &19&31&33&2&2 : 2&02.11.2002&15:30&
+1&Leverkusen           - VfB Stuttgart       &17&31&42&3&0 : 1&02.11.2002&15:30&
+1&B. Dortmund          - Hamburger SV        &14&37&65&2&1 : 1&02.11.2002&15:30&
+1&W. Bremen            - B. Muenchen         &28&31&22&1&2 : 0&03.11.2002&17:30&
+3&FC Fulham            - Arsenal London      &38&31&18&3&0 : 1&03.11.2002&15:00&
+3&Tottenham            - FC Chelsea          &23&31&25&2&0 : 0&03.11.2002&15:00&
+3&Blackburn            - Aston Villa         &17&31&40&2&0 : 0&03.11.2002&16:00&
+3&Leeds Utd.           - FC Everton          &16&32&44&3&0 : 1&03.11.2002&16:00&
+3&Charlton A.          - FC Sunderland       &19&31&35&2&1 : 1&03.11.2002&17:05&
+4&Olympique Lyon       - OGC Nizza           &17&31&40&2&2 : 2&02.11.2002&17:15&
+4&Racing Lens          - AJ Auxerre          &22&31&28&1&3 : 1&02.11.2002&20:00&
+4&Ol. Marseille        - Montpellier         &15&35&55&1&2 : 0&02.11.2002&20:00&
+4&FC Sochaux           - Strasbourg          &17&31&40&1&2 : 0&02.11.2002&20:00&
+4&FC Nantes            - Gir. Bordeaux       &22&31&27&2&0 : 0&03.11.2002&20:45&
+5&AC Turin             - Brescia C.          &21&29&31&3&0 : 2&02.11.2002&20:30&
+5&FC Empoli            - Lazio Rom           &33&30&20&3&1 : 2&03.11.2002&15:00&
+5&AS Rom               - AC Perugia          &13&40&75&2&2 : 2&03.11.2002&15:00&
+5&Ata. Bergamo         - FC Piacenza         &21&29&31&1&2 : 0&03.11.2002&15:00&
+5&AC Parma             - Chievo Verona       &16&31&47&3&0 : 1&03.11.2002&20:30&
+8&Athletic Bilbao      - Celta Vigo          &25&31&24&1&2 : 1&03.11.2002&17:00&
+8&Betis Sevilla        - Malaga CF           &19&31&35&1&3 : 0&03.11.2002&17:00&
+8&R. Valladolid        - Real Mallorca       &19&31&35&3&1 : 3&02.11.2002&18:00&
+8&R. Santander         - FC Barcelona        &30&31&21&2&1 : 1&03.11.2002&20:30&
+8&Dep.La Coruna        - Real Madrid         &24&31&25&2&0 : 0&02.11.2002&21:30&

@@ -1,0 +1,1540 @@
+&Catania Calcio#93&1
+&AC Venezia#93&1
+&AC Mailand#93&1
+&US Castelnuovo Garfagnana#93&1
+&AS Livorno#93&1
+&AC Siena#93&1
+&Lecco Calcio#93&1
+&AC Chievo#93&1
+&AC Perugia#93&1
+&USC Castrovillari#93&1
+&Polisportiva Viribus Unitis#93&1
+&US Avellino#93&1
+&Lodigiani Calcio#93&1
+&Piacenza Calcio#93&1
+&SS Gualdo#93&1
+&Montevarchi Calcio#93&1
+&AC Fanfulla 1874#93&2
+&AC Sangiovannese#93&2
+&AC Martina#93&2
+&Castel di Sangro#93&2
+&AC Spezia#93&2
+&Alzano Virescit#93&2
+&US Valenzana#93&2
+&FC Treviso#93&2
+&US Russi#93&3
+&Pescara Calcio#93&3
+&Hellas Verona#93&3
+&AC Montichiari#93&3
+&Juventus Turin#93&4
+&FC Modena#93&4
+&US Cremonese#93&5
+&Atalanta Bergamo#93&6
+&Oldham Athletic#93&1
+&Hull City AFC#93&1
+&Aston Villa#93&1
+&Newcastle United#93&1
+&Rochdale AFC#93&1
+&Tranmere Rovers#93&1
+&Rotherham United#93&1
+&Exeter City FC#93&1
+&FC Sunderland#93&1
+&FC Liverpool#93&1
+&Aldershot Town#93&1
+&FC Wrexham#93&1
+&Swindon Town#93&1
+&Sheffield United#93&1
+&Hitchin Town#93&1
+&Tottenham Hotspur#93&1
+&Leeds United#93&2
+&West Ham United#93&2
+&Grimsby Town#93&2
+&Northampton Town#93&2
+&FC Blackpool#93&2
+&Hayes FC#93&2
+&Stoke City#93&2
+&Welling United#93&2
+&Bolton Wanderers#93&3
+&Peterborough United#93&3
+&FC Walsall#93&3
+&Nuneaton Borough#93&3
+&FC Barnsley#93&4
+&Lancaster City#93&4
+&Carlisle United AFC#93&5
+&Charlton Athletic#93&6
+&Coria CF#93&1
+&Recreativo de Huelva#93&1
+&CD Numancia#93&1
+&Talavera CF#93&1
+&CD Palencia#93&1
+&Las Rozas#93&1
+&CD Mirandes#93&1
+&Levante UD#93&1
+&Getafe CF#93&1
+&SD Compostella#93&1
+&Betis Sevilla#93&1
+&Xerez CD#93&1
+&Alicante CF#93&1
+&Cordoba CF#93&1
+&FC Barcelona#93&1
+&SS Reyes#93&1
+&San Sebastian#93&2
+&Celta de Vigo#93&2
+&Real Madrid#93&2
+&Sporting Gijon#93&2
+&RCD Mallorca#93&2
+&Villarrobledo CF#93&2
+&Granada CF#93&2
+&CF Valencia#93&2
+&Real Valladolid#93&3
+&Cadiz CF#93&3
+&RC Santander#93&3
+&Atletico Marbella#93&3
+&Rayo Vallecano#93&4
+&CF Villarreal#93&4
+&AD Alcorcón#93&5
+&Espanyol Barcelona#93&6
+&Racing Strasbourg#93&1
+&FC Martigues#93&1
+&AS Nancy#93&1
+&US Joue-les-Tours#93&1
+&Olympique Chatellerault#93&1
+&FC Saint Lo Manche#93&1
+&Stade de Reims#93&1
+&Stade Saint Raphael#93&1
+&SM Caen#93&1
+&SEC Bastia#93&1
+&Stade Lavallois#93&1
+&Stade Poitiers#93&1
+&Stade Rennes#93&1
+&USL Dunkerque#93&1
+&AC Le Havre#93&1
+&ES Frejus#93&1
+&ES Aiglons Brive#93&2
+&FC Metz#93&2
+&Dijon Football#93&2
+&VF La Roche-sur-Yon#93&2
+&CS Louhans-Cuiseaux#93&2
+&ATAC Troyes#93&2
+&FC Sete#93&2
+&ES Viry Chatillon#93&2
+&Olympique Marseille#93&3
+&Stade Brest 29#93&3
+&ES Vitrolles#93&3
+&OGC Nice#93&3
+&AS Red Star 93#93&4
+&FA Ile Rousse Monticello#93&4
+&AC Ajaccio#93&5
+&FC 56 Lorient#93&6
+&Be Quick '28 Zwolle#93&1
+&FC Vinkenslag Maastricht#93&1
+&Go Ahead Eagles#93&1
+&HFC Haarlem#93&1
+&Twente Enschede#93&1
+&FC Zwolle#93&1
+&ONS Sneek#93&1
+&Ajax Amsterdam#93&1
+&VVOG Harderwijk#93&1
+&RKSV Schijndel#93&1
+&SVV Scheveningen#93&1
+&UVS Leiden#93&1
+&Kozakken Boys#93&1
+&FC Uetrecht#93&1
+&NEC Nijmegen#93&1
+&De Bataven Gendt#93&1
+&SV Meerssen#93&2
+&NAC Breda#93&2
+&Fortuna Sittard#93&2
+&FC Groningen#93&2
+&Be Quick Groningen#93&2
+&VV Barneveld#93&2
+&WSC Waalwijk#93&2
+&KBV Amsterdam#93&2
+&ASV Dronten#93&3
+&IVS Urmond#93&3
+&VVV Venlo#93&3
+&Sparta Rotterdam#93&3
+&Argon Mijdrecht#93&4
+&SC Telstar#93&4
+&AFC'34 Alkmaar#93&5
+&Roda JC Kerkrade#93&6
+&Colegio Infantes de Sagres#93&1
+&Desportivo Alcains#93&1
+&FC Felgueiras#93&1
+&SC S. João Ver#93&1
+&SC Ermesinde#93&1
+&Casa Pia AC#93&1
+&Benfica Lissabon#93&1
+&Louletano DC#93&1
+&Estrela Amadora#93&1
+&FC da Maia#93&1
+&FC Barreirense#93&1
+&FC de Marco#93&1
+&Vitoria Guimaraes#93&1
+&UD Oliveirense#93&1
+&FC Pacosde Fereira#93&1
+&AC de Portugal#93&1
+&Odivelas FC#93&2
+&FC de Famalicão#93&2
+&Amora FC#93&2
+&Desportivo Santa Clara#93&2
+&FC Gil Vicente#93&2
+&Portimonense SC#93&2
+&Maritimo Funchal#93&2
+&CD Nacional#93&2
+&CF Belenenses#93&3
+&CF Uniao Maderia#93&3
+&SC Varzim#93&3
+&USC de Paredes#93&3
+&Leixões SC-MC#93&4
+&SC Olhanense#93&4
+&FC Leca#93&5
+&Academica Coimbra#93&6
+&AC Olen#93&1
+&KVV Heidebloem Dilsen#93&1
+&AS Eupen#93&1
+&SK Lebbeke#93&1
+&KV Mechelen#93&1
+&SK Deinze#93&1
+&AA Gent#93&1
+&VV St. Truiden#93&1
+&KFC Beringen#93&1
+&SC Lambusart-Fleurus#93&1
+&KSK Maldegem#93&1
+&Bocholter VV#93&1
+&FC Verbroedering#93&1
+&KFCO Wilrijk#93&1
+&Torhout 1992 KM#93&1
+&Germinal Beerschot#93&1
+&KV Kortrijk#93&2
+&Cercle Bruegge#93&2
+&SC Charleroi#93&2
+&SK Londerzeel#93&2
+&FC Bruegge#93&2
+&FC Herentals#93&2
+&FC Strombeek#93&2
+&Royal Wallonia Walhain#93&2
+&FC le Lorr. Arlon#93&3
+&Zultse VV#93&3
+&Royal Capellen FC#93&3
+&RRC Gent-Zeehaven#93&3
+&UR Namur#93&4
+&KFC Lille#93&4
+&SK Eernegem#93&5
+&Stade Leuven#93&6
+&FC Locarno#93&1
+&FC Baden#93&1
+&FC Rorschach#93&1
+&FC Langenthal#93&1
+&FC Vaduz#93&1
+&FC Ascona#93&1
+&SC Cham#93&1
+&FC Visp#93&1
+&Grasshopper Zuerich#93&1
+&Young Boys Bern#93&1
+&FC Seefeld Zuerich#93&1
+&FC Affoltern a.A.#93&1
+&SC Emmen#93&1
+&FC Muensingen#93&1
+&FC Colombier#93&1
+&BSC Old Boys Basel#93&1
+&SC Kriens#93&2
+&FC Muri#93&2
+&FC Herisau#93&2
+&FC Hochdorf#93&2
+&FC Altstetten Zuerich#93&2
+&FC Wetzikon#93&2
+&FC Luzern#93&2
+&FC Gossau#93&2
+&FC Nordstern Basel#93&3
+&FC Renens#93&3
+&FC Freienbach#93&3
+&FC Uzwil#93&3
+&Servette Genf#93&4
+&FC Chatel-St-Denis#93&4
+&FC Sion#93&5
+&FC Fribourg#93&6
+&SK Eintracht Wels#93&1
+&SV St. Veit#93&1
+&1.Simmeringer SC#93&1
+&SV Rohrbach/B.#93&1
+&SC Spittal#93&1
+&TSV Hartberg#93&1
+&Sturm Graz#93&1
+&Austria Lustenau#93&1
+&Austria Wien#93&1
+&SPG Jenbach/Achensee#93&1
+&RS Wolfersberg#93&1
+&SVG Bleiburg#93&1
+&FC Gratkorn#93&1
+&USV Zeltweg#93&1
+&SC Fussach#93&1
+&Fenerbahce Wien#93&1
+&VfB Admira/Wacker#93&2
+&FC Tirol Innsbruck#93&2
+&SV Langenrohr#93&2
+&Kienreich FC Wolfurt#93&2
+&Kapfenberger SV#93&2
+&SV Kirchbichl#93&2
+&SC Wr. Neustadt#93&2
+&SC St. Poelten#93&2
+&SC Zwettl#93&3
+&Rapid Lienz#93&3
+&USV St. Oswald#93&3
+&SC Rheindorf#93&3
+&FC OMV Stadlau#93&4
+&ASV Radlberg#93&4
+&TuS Arnfels#93&5
+&SV Schwechat#93&6
+&Greenock Morton#93&1
+&Lugar Boswell Thistle#93&1
+&FC Motherwell#93&1
+&Aberdeen East End#93&1
+&Gretna FC#93&1
+&Caledonian Thistle#93&1
+&Annan Athletic#93&1
+&FC Keith#93&1
+&Abbey Vale Athletic#93&1
+&FC Clachnacuddin#93&1
+&Cumbernauld United#93&1
+&FC Montrose#93&1
+&Forres Mechanics#93&1
+&Partick Thistle#93&1
+&Hawick Royal Albert FC#93&1
+&FC Clydebank#93&1
+&Ross County#93&2
+&FC Stranraer#93&2
+&Lothian Thistle#93&2
+&FC Kilmarnock#93&2
+&Queen of the South#93&2
+&Kelso United FC#93&2
+&FC Airdieonians#93&2
+&Brora Rangers#93&2
+&Girvan FC#93&3
+&FC Huntly#93&3
+&Wigtown and Bladnoch#93&3
+&FC Dundee#93&3
+&FC St. Johnstone#93&4
+&Dundee United#93&4
+&Gala Fairydean#93&5
+&Raith Rovers#93&6
+&Sapankaspor#93&1
+&Izmirspor#93&1
+&Siirt Jet-PA#93&1
+&Kartalspor Istanbul#93&1
+&Cankin Belediyesi#93&1
+&Altay Izmir#93&1
+&Galatasaray Istanbul#93&1
+&Duzce SK#93&1
+&Bakirkoey Istanbul#93&1
+&Yeni Turgutluspor#93&1
+&Igdir Belediyesi#93&1
+&Maltepe Istanbul#93&1
+&Besiktas Istanbul#93&1
+&Bucaspor Izmir#93&1
+&Kayserispor#93&1
+&Sakaryaspor AS Adapazari#93&1
+&Tuerk Telekom Ankara#93&2
+&Corluspor#93&2
+&Akcaabat Sebatspor#93&2
+&Gaziantep B. Bld.#93&2
+&Amasyaspor#93&2
+&Zeytinburnu Istanbul#93&2
+&Usakspor#93&2
+&Hacilar Erciyes#93&2
+&Antalyaspor#93&3
+&Darica Genclerbirligi#93&3
+&Eskisehirspor#93&3
+&Konyaspor#93&3
+&Marmarisspor#93&4
+&Zonguldakspor#93&4
+&Mezitlispor#93&5
+&Karsiyaka Izmir#93&6
+&Dublin Bus#93&1
+&Cherry Orchard#93&1
+&Wayside Celtic#93&1
+&FC Derry City#93&1
+&Kilkenny City#93&1
+&Douglas Hall#93&1
+&Sacred Heart#93&1
+&Sligo Rovers#93&1
+&Kildare Town#93&1
+&Moyle Park College#93&1
+&Galway Hibernians#93&1
+&Cobh Wanderers#93&1
+&Whitehall Ramgers#93&1
+&Waterford United#93&1
+&St. Jame's Gate#93&1
+&Temple United#93&1
+&Greenmount Rangers#93&2
+&FC Bohemians#93&2
+&Ballymun United#93&2
+&Clifton Villa#93&2
+&Cobh Ramblers#93&2
+&Saint Francis FC#93&2
+&Skyvalley Rys#93&2
+&Bromley FC#93&2
+&Mulvey Celtic#93&3
+&Ashtown Villa#93&3
+&FC Finn Harps#93&3
+&Athlone Town#93&3
+&Postal Workers#93&4
+&Longford Town#93&4
+&UC Dublin#93&5
+&Cellbridge Town#93&6
+&Barn United#93&1
+&FC Glenavon#93&1
+&Annagh United#93&1
+&Glebe Rangers#93&1
+&Connor FC#93&1
+&Limavady United#93&1
+&Portglenone FC#93&1
+&Larne Tech. Old Boys#93&1
+&Glentoran Belfast#93&1
+&Ballymena United#93&1
+&Loughgall#93&1
+&FC Linfield#93&1
+&Ballyclare Comrades#93&1
+&Northern Telecom#93&1
+&Ards Rangers#93&1
+&Dungiven FC#93&1
+&Albert Foundry#93&2
+&Laurelvale FC#93&2
+&Comber Rec.#93&2
+&Lurgan Celtic#93&2
+&H and W Sport FC#93&2
+&Crumlin United#93&2
+&Hanover FC#93&2
+&Moyola Park#93&2
+&Omagh Town#93&3
+&1st Bangor Old Boys#93&3
+&FC Larne#93&3
+&Shorts FC#93&3
+&Ballycastle United#93&4
+&FC Crusaders#93&4
+&Knockbreda Parish#93&5
+&Chimney Corner#93&6
+&Bangor City FC#93&1
+&Holywell Town#93&1
+&Rhayader Town#93&1
+&Llanwern FC#93&1
+&Connah's Quay Nomads#93&1
+&Oswestry Town#93&1
+&Ely Rangers#93&1
+&Carmarthen Town#93&1
+&FC Caersws#93&1
+&Milford United#93&1
+&Port Talbot Athletic#93&1
+&FC Porthmadog#93&1
+&Castell Alun Celts#93&1
+&Bala Town#93&1
+&Cefn Druids#93&1
+&Buckley Town#93&1
+&BP Llandarcy#93&2
+&Chepstow Town#93&2
+&Aberystwyth Town#93&2
+&AFC Newtown#93&2
+&FC Ton Pentre#93&2
+&Lex XI FC#93&2
+&Caernarfon Town#93&2
+&Porth Tywyn Suburbs#93&2
+&Ammanford FC#93&3
+&Brymbo Broughton#93&3
+&FC Rhyl#93&3
+&Corwen Amateurs#93&3
+&Porthcawl Town#93&4
+&Llanfair Caereinion#93&4
+&Gwynfi United#93&5
+&Bridgend Town#93&6
+&AC Horsens#93&1
+&BK 93 Kopenhagen#93&1
+&Dalum IF#93&1
+&Gladsaxe-Hero BK#93&1
+&Korup IF#93&1
+&Vejgaard Aalborg#93&1
+&Broenshoej BK#93&1
+&Thisted#93&1
+&FC Kopenhagen#93&1
+&Vejen#93&1
+&FC Bornholm#93&1
+&Haderslev FK#93&1
+&Aalborg BK#93&1
+&Glostrup FK#93&1
+&Skive IK#93&1
+&Kalundborg GB#93&1
+&Naestved IF#93&2
+&Lyngby FC#93&2
+&BK Fremad Amager#93&2
+&Holbaek IF#93&2
+&Silkeborg IF#93&2
+&Broendby IF#93&2
+&Aarhus GF#93&2
+&Odense BK#93&2
+&Brande#93&3
+&AC Ballerup#93&3
+&Virum-Sorgenfri#93&3
+&Esbjerg FB#93&3
+&Farum BK#93&4
+&HIK Skovlunde#93&4
+&Tarup Nyborg#93&5
+&Tved Svendborg#93&6
+&Aalesund FK#93&1
+&Molde FK#93&1
+&Odd Grenland Skien#93&1
+&Traeff SK#93&1
+&Stabaek FC#93&1
+&Eidsvold TF#93&1
+&Gjoevik/Lyn SK#93&1
+&Loerenskog IF#93&1
+&Skarboevik IF#93&1
+&Steinkjer FK#93&1
+&SK Brann Bergen#93&1
+&Tromsoe IL#93&1
+&Nord SK#93&1
+&Romerike Fotball#93&1
+&FK Haugesund#93&1
+&Byaasen IL#93&1
+&Stroems. Drammen#93&2
+&Sandefjord Fotball#93&2
+&Skarp IF#93&2
+&Strindheim IL#93&2
+&Bryne FK#93&2
+&SK Bodo Glint#93&2
+&Lofoten FK#93&2
+&Moss FK#93&2
+&Raufoss IL#93&3
+&Fredrikstad FK#93&3
+&Rosenborg Trondheim#93&3
+&Alta IF#93&3
+&Vard Haugesund SK#93&4
+&Kongsvinger IL#93&4
+&L/F Hoenefoss#93&5
+&Vidar FK#93&6
+&Oergryte Goeteborg#93&1
+&Kalmar FF#93&1
+&Skelleftea AIK FC#93&1
+&Linkoepings FF#93&1
+&IF Brommapojkarna#93&1
+&IF Heimer#93&1
+&BK Haecken Goeteborg#93&1
+&AIK Stockholm#93&1
+&Tidaholms GoIF#93&1
+&Trelleborg IF#93&1
+&IK Brage Borlaenge#93&1
+&Vaestra Froelunda IF#93&1
+&Vaesteras SK#93&1
+&IFK Oelme#93&1
+&IF Elfsborg#93&1
+&Halmstads BK#93&1
+&Hoegaborg BK#93&2
+&Atvidabergs FF#93&2
+&Helsingborg IF#93&2
+&Hammarby IF#93&2
+&IFK Goeteborg#93&2
+&Falkenbergs FF#93&2
+&Degerfors IF#93&2
+&BK Forward#93&2
+&Vaesby IK FK#93&3
+&Malmoe FF#93&3
+&IFK Lulea#93&3
+&Friska Viljor FC#93&3
+&Mjaellby AIF#93&4
+&Trollhaettans FK#93&4
+&IK Tord#93&5
+&FC Cafe Opera Stockholm#93&6
+&Ponnistus Helsinki#93&1
+&Turku PS#93&1
+&JJK Jyvaeskylae#93&1
+&Kiffen Helsinki#93&1
+&PIF Parinen#93&1
+&SalPa Salo#93&1
+&Riihimaeki PS#93&1
+&TPV Tampere#93&1
+&FC Mikkeli#93&1
+&FC Lahti#93&1
+&BK-IFK Vaasa#93&1
+&Gnistan Helsinki#93&1
+&EuPa Eura#93&1
+&SaeyRi Jyaeskylà#93&1
+&Korsholm Mustasaari#93&1
+&Tervarit Oulu#93&1
+&KPV Kokkola#93&2
+&Kuopio Kings#93&2
+&TP-47 Tornio#93&2
+&PS-44 Valkeakoski#93&2
+&Pallo-Iirot Rauma#93&2
+&SantaClaus Rovaniemi#93&2
+&HIFK Helsinki#93&2
+&IJK Helsinki#93&2
+&Huima Aeaenekoski#93&3
+&Kotka TP#93&3
+&Haka Valkeakoski#93&3
+&MyPa Anjalankoski#93&3
+&Jokerit Helsinki#93&4
+&HauPa Haukipudas#93&4
+&Haka Kajaani#93&5
+&FC Atlantis#93&6
+&UMF Selfoss#93&1
+&Throttur Reykjavik#93&1
+&Einherji Vopnafjordur#93&1
+&Fylkir Reykjavik#93&1
+&KI Bolungarvik#93&1
+&Austri Eskifjordur#93&1
+&HSH Olafsvik#93&1
+&KR Reykjavik#93&1
+&Kormakur Hvammstangi#93&1
+&Svarfdaela Dalvik#93&1
+&Leiknir Faskrudsfjordur#93&1
+&UMF Sindri#93&1
+&IB Vestmannaeyjar#93&1
+&KS Siglufjordur#93&1
+&Vikingur Reykjavik#93&1
+&BI Isafjordur#93&1
+&Arborgar Selfoss#93&2
+&UBK Breidablik#93&2
+&Ulfarnir Reykjavik#93&2
+&IH Hafnafjordur#93&2
+&GG Grindavik#93&2
+&Fjoelnir Reykjavik#93&2
+&Tindastoll Saudakrokur#93&2
+&Thor Akureyri#93&2
+&KVA Eskifjordur#93&3
+&Valur Reykjavik#93&3
+&Magni Grenivik#93&3
+&KV Akranes#93&3
+&IR Reykjavik#93&4
+&Neisti Hofsos#93&4
+&FH Hafnafjoerdur#93&5
+&Hamar Hveragerdi#93&6
+&LKS Lodz#93&1
+&Ruch Radzionkow#93&1
+&Hetman Zamosc#93&1
+&Hutnik Krakau#93&1
+&Pogon Staszow#93&1
+&Polonia Warschau#93&1
+&Gornik Zabrze#93&1
+&BBTS Bielsko-Biala#93&1
+&Jagiellonia Bialystok#93&1
+&Zaglebie Sosnowiec#93&1
+&Wisla Krakau#93&1
+&Flota Swinoujscie#93&1
+&Astra Krotoszyn#93&1
+&KS Myszkow#93&1
+&GKS Belchatow#93&1
+&Hutnik Warschau#93&1
+&RKS Radomsko#93&2
+&MKS Mlawa#93&2
+&Polonia Bytom#93&2
+&Odra Opole#93&2
+&Lech Posen#93&2
+&Concordia Knurow#93&2
+&Slask Breslau#93&2
+&Siarka Tarnobrzeg#93&2
+&Grunwald Ruda Slaska#93&3
+&Widzew Lodz#93&3
+&GKS Kattowitz#93&3
+&Lechia Danzig#93&3
+&Pogon Szczecin#93&4
+&Ruch Chorzow#93&4
+&Stomil Olsztyn#93&5
+&Legia Warschau#93&6
+&Banik Ostrau#93&1
+&Roubina Dolni Kounice#93&1
+&Slavia Prag#93&1
+&SK Viktoria Sibrina#93&1
+&SK Zelezarny Trinec#93&1
+&Viktoria Zizkov#93&1
+&Viktoria Pilsen#93&1
+&Karlovy Vary-Dvory#93&1
+&FC Dukla Sekopt Hranice#93&1
+&Tatran Prachatice#93&1
+&SK Unex Unikov#93&1
+&Spolana Neratovice#93&1
+&Novy Jicin#93&1
+&FK Chmel Blsany#93&1
+&FC Vitkovice#93&1
+&SK Ceske Budejovice#93&1
+&Bohemians Prag#93&2
+&FC VMB Kyjov#93&2
+&SK Semily#93&2
+&SK LeRK Prostejov#93&2
+&SSK Tatran Postorna#93&2
+&FK Jablonec#93&2
+&AFK Lazne Bohdanec#93&2
+&FK Teplice#93&2
+&Dulka Pribram#93&3
+&FK Holice 1932#93&3
+&ZD Milin#93&3
+&FC Banik Ratiskovice#93&3
+&SK Hranice#93&4
+&SK Detmarovice#93&4
+&Sparta Prag#93&5
+&Sigma Olomouc#93&6
+&Vasas Budapest#93&1
+&Dunakeszi Kinizsi Budapest#93&1
+&MTE Motim#93&1
+&Kisvardai SE#93&1
+&FC Szazhalombatta#93&1
+&Jaszberenyi SE#93&1
+&EFC Bekescsaba#93&1
+&Banyasz Siofok#93&1
+&Ujpest Budapest#93&1
+&Balatonlelle SE#93&1
+&Gyomaendrod VSE#93&1
+&Ilzer Monor#93&1
+&Komaromi FC#93&1
+&Bajai LSE#93&1
+&FC Rakoczi Kaposvar#93&1
+&FC Dunaferr#93&1
+&Taksony SE#93&2
+&Goedoelloi LC#93&2
+&SC Csepel#93&2
+&Budafoki LC#93&2
+&Kiskunfelegyhazi TK#93&2
+&Haladas Szombathely#93&2
+&Diego FC Dabas Erd#93&2
+&Zalaegerszegi TE#93&2
+&Bueki TK#93&3
+&Gyulai Termal FC#93&3
+&Ferencvaros Budapest#93&3
+&Beremendi Epitok SK#93&3
+&Tiszaujvarosi FC#93&4
+&FC Kecskemet#93&4
+&FC Eto Gyoer#93&5
+&SK Heviz#93&6
+&FC Brasov#93&1
+&Farul Constanta#93&1
+&Minerul Certej#93&1
+&Sportul Bukarest#93&1
+&Triumt Bucharest#93&1
+&Portul Constanta#93&1
+&ICIM Textila Premjer#93&1
+&Rapid Bukarest#93&1
+&Gaz Metan Medias#93&1
+&Universitatae Craiova#93&1
+&FC DoDo Bihor Oradea#93&1
+&Chindia Targoviste#93&1
+&Dacia Pitesti#93&1
+&Electromagnetica Bukarest#93&1
+&A.S.A. Targu-Mures#93&1
+&FC Hondor Stil Agigea#93&1
+&Foresta Suceava#93&2
+&Ind. Sarmei Campia Turzii#93&2
+&FC Dobreta Turnu Severin#93&2
+&Steaua Bukarest#93&2
+&Cetate Deva#93&2
+&Jiul Petrosani#93&2
+&Chimica Tarnaveni#93&2
+&Precizia Sacele#93&2
+&Extensiv Craiova#93&3
+&FC Inter Sibiu#93&3
+&Tractorul Brasov#93&3
+&Laminorul Roman#93&3
+&Fulgerul Bragadiru#93&4
+&Mobila Vatra Dornei#93&4
+&Viromet Victoria#93&5
+&FC Onesti#93&6
+&Zeleznicar Maribor#93&1
+&Unior Zrece#93&1
+&NK Locan#93&1
+&NK Zagorje#93&1
+&Promorje Ajdovscina#93&1
+&Olimpija Ljubljana#93&1
+&Ivancna Gorica#93&1
+&NK Dravograd#93&1
+&Goricanka Big Fun#93&1
+&NK Svoboda#93&1
+&Dren Dolomiti#93&1
+&NK Sentjur#93&1
+&Slascicarna Smon#93&1
+&ABC Tabor#93&1
+&Nafta Lendava#93&1
+&Kozjak Maribor#93&1
+&NK Carda#93&2
+&Jadran Sepic#93&2
+&Branik Maribor#93&2
+&Triglav krsko#93&2
+&NK Odranci#93&2
+&Sampionka Bilje#93&2
+&NK Kobilje#93&2
+&Kema Puconci#93&2
+&Aluminij Kidricevo#93&3
+&Fuzinar Ravne#93&3
+&Nograd Hotiza#93&3
+&NK Apace#93&3
+&NK Factor#93&4
+&Rudar Velenje#93&4
+&Slovenska Bistrica#93&5
+&NK Montavar Rogoza#93&6
+&Junak Sinj#93&1
+&NK Gospic#93&1
+&NK Osijek#93&1
+&NK Sibenik#93&1
+&Istra Pula#93&1
+&Vitez '92 Tnjski Antunovac#93&1
+&Omladinac Sloga Heresin#93&1
+&NK Cakovec#93&1
+&Podravac Virje#93&1
+&NK Belisce#93&1
+&Hrvatski vitez Posedarje#93&1
+&Val Kastel Stari#93&1
+&Solin Grada#93&1
+&Grobnican Cavle#93&1
+&NK Solin#93&1
+&Marsonia Slavonski#93&1
+&Pomorac Kostrena#93&2
+&NK Visnjan#93&2
+&Kamen Ingrad Velika#93&2
+&NK Rijeka#93&2
+&Trnje Zagreb#93&2
+&Zadarkomerc Zadar#93&2
+&Slavonac Stari Perkovci#93&2
+&Jadran Porec#93&2
+&Vukovar '91#93&3
+&NK Zagreb#93&3
+&Sloga Kakovec#93&3
+&Lokomotiva Zagreb#93&3
+&Trnje Trnovac#93&4
+&TSK Topolovac#93&4
+&Nehaj Senj#93&5
+&NK Karlovac#93&6
+&Buducnost Podgorica#93&1
+&Hajduk Belgrad#93&1
+&FK Belgrad#93&1
+&Milicionar Belgrad#93&1
+&Partizan Belgrad#93&1
+&Mladi Obilic Belgrad#93&1
+&Trajal Krusevac#93&1
+&Cukaricki Belgrad#93&1
+&Radnicki Kragujevac#93&1
+&Mladi radnik Pozarevac#93&1
+&Rudar Bor#93&1
+&Zeljeznicar Belgrad#93&1
+&Bezanija Belgrad#93&1
+&Zeta Golubovci#93&1
+&Zvezdara Belgrad#93&1
+&FK Rad Belgrad#93&1
+&Jedinstvo Bijelo Polje#93&2
+&Sloga Kraljevo#93&2
+&Roter Stern Belgrad#93&2
+&Novi Pazar#93&2
+&Napredak Krusevac#93&2
+&Zeljeznicar Lajkovac#93&2
+&Bane Raska#93&2
+&Buducnost Valjevo#93&2
+&Sartid Smederovo#93&3
+&OFK Belgrad#93&3
+&Duboscica Leskovac#93&3
+&Sutjeska Niksic#93&3
+&Zastava Kragujevac#93&4
+&Proleter Zrenjanin#93&4
+&Teleoptik Zemun#93&5
+&Radnicki Nis#93&6
+&GOSK Gabela#93&1
+&Sloboda Tuzla#93&1
+&FK Capljina#93&1
+&Velez Mostar#93&1
+&FK Zeljeznicar#93&1
+&Zmaj od Bosne Tuzla#93&1
+&Boksit Milici#93&1
+&Modrica Maxima#93&1
+&Buducnost Banovici#93&1
+&Olimpik Sarajevo#93&1
+&Igman Konjic#93&1
+&Slavija Srpsko Sarajewo#93&1
+&Mladost Velika Obarska#93&1
+&FK Zepce#93&1
+&FK Borac Banja Luka#93&1
+&Radnik Lipnica#93&1
+&Drina Zvornik#93&2
+&Brotnjo Citluk#93&2
+&NK Iskra Bugojno#93&2
+&FK Lukavac#93&2
+&FK Stolac#93&2
+&Sutjeska Srbinje#93&2
+&Famos Srpsko Sarajevo#93&2
+&Mladost Gacko#93&2
+&Omladinac Banja Luka#93&3
+&TOSK Tesanj#93&3
+&Radnik Hazici#93&3
+&FK Bosna Visoko#93&3
+&Redarstvenik Mostar#93&4
+&Podgrmec Sanski Most#93&4
+&Bratstvo Bosanska Krupa#93&5
+&Sloga Doboj#93&6
+&Belite Pleven#93&1
+&Bdin Vidin#93&1
+&Asenovets Asenovgrad#93&1
+&Fairplay Varna#93&1
+&Etar Veliko Tarnovo#93&1
+&Olimpic Beroe Teteven#93&1
+&Septemvri Sofia#93&1
+&Minior Pernik#93&1
+&Kaliakra Kavarna#93&1
+&Rodopa Smolyan#93&1
+&Dobrudzha Dobrich#93&1
+&Spartak Varna#93&1
+&Gigant Belene#93&1
+&Maritsa Plovdiv#93&1
+&Skala Bov#93&1
+&Beroe Stara Zagora#93&1
+&Antibiotik-Lud. Razgrad#93&2
+&FC Montana '21#93&2
+&Levski Glavinitsai#93&2
+&Spartak Pleven#93&2
+&Belasitsa Petrich#93&2
+&Kosmos Burgas#93&2
+&Vihren Sandanski#93&2
+&Akademik Svishtov#93&2
+&Port Burgas#93&3
+&Lokomotiv Plovdiv#93&3
+&FC Pomorie#93&3
+&Balkan Botevgrad#93&3
+&Marek Dubnitsa#93&4
+&Sokol '96 Markovo#93&4
+&FC Shumen#93&5
+&FC Haskovo#93&6
+&Olympiakos Vólou#93&1
+&Asteras Vlach.#93&1
+&AO Kavala#93&1
+&Ethnikos Chalkida#93&1
+&Pierikos Katerini#93&1
+&Paniliakos Pyrgos#93&1
+&Panaitolikos Agrínio#93&1
+&AO Thrasivoulos#93&1
+&Posidonas Michaniona#93&1
+&Ethnikos Asteras#93&1
+&Ethnikos Piräus#93&1
+&Arkadia Leonidio#93&1
+&Apollon Thesprotos#93&1
+&Kallithéa Athen#93&1
+&Panelefsiniakos#93&1
+&AO Kerkira#93&1
+&Keratsini FC#93&2
+&Ionikos Nikea#93&2
+&Anagennisi Karditsa#93&2
+&PAOK Saloniki#93&2
+&Pansérraikos Serres#93&2
+&Panaigialios Egio#93&2
+&Aris Saloniki#93&2
+&Iraklis Saloniki#93&2
+&Panionios Athen#93&3
+&Liki Saloniki#93&3
+&AO Ampelokipoi#93&3
+&Náfpaktiakos Astir#93&3
+&AO Patraikos#93&4
+&Agrotikos Asteras#93&4
+&Kastoria FC#93&5
+&Agios Nikolaos#93&6
+&CZKA Moskau#93&1
+&Spartak Moskau#93&1
+&Spartak Naltschik#93&1
+&Tschern. Novorossisk#93&1
+&Torpedo Pavlovo#93&1
+&Shinnik Yaroslavl#93&1
+&Uralan Elista#93&1
+&Rubin Kazan#93&1
+&Lotto MKM Moskau#93&1
+&Spartak-Chukotka Moskau#93&1
+&Tom Tomsk#93&1
+&Volga Ulyanovsk#93&1
+&Anschi Machatschkala#93&1
+&Lok Moskau#93&1
+&KamAZ-Chally Naberezh. Chelny#93&1
+&Spartak Tambov#93&1
+&SeverStal' Cherpovets#93&2
+&Gazovik-Gazprom Ischevsk#93&2
+&Zenit St. Petersburg#93&2
+&FK Oryol#93&2
+&Sodovik Sterlitamak#93&2
+&Amkar Perm#93&2
+&Baltika Kaliningrad#93&2
+&Lokomotiv Time Mineral#93&2
+&FK Pskov#93&3
+&Torpedo Moskau#93&3
+&FK Chimki#93&3
+&Fackel Woronesch#93&3
+&Metallurg Lipetsk#93&4
+&Torpedo-Victoria Nizhni Novgorod#93&4
+&Cosmos Elektrostal#93&5
+&Torpedo-ZIL Moskau#93&6
+&Kristiine JK #93&1
+&JK Paide-Arieks#93&1
+&Warrior Valga FC#93&1
+&Loo Auto Saha-Loo #93&1
+&FC Feeling#93&1
+&Hiiu Kalur Kardla#93&1
+&EP Joehvi#93&1
+&TJK Tallinn#93&1
+&FC Maardu#93&1
+&FC Levadia Tallinn#93&1
+&ALKO Kohtla-Jaerve#93&1
+&Baltika Narva#93&1
+&FC Viljandi#93&1
+&Jaervamaa JK/Arieks#93&1
+&JK Paernu#93&1
+&Flora Tallinn#93&1
+&Irbis Kivioli#93&2
+&Kalju Noemme#93&2
+&FC Levadia Paernu#93&2
+&DAG Tartu#93&2
+&Shipyard Loksa#93&2
+&FC Kuressaare#93&2
+&Muhumaa JK#93&2
+&Orbiit Joehvi #93&2
+&Veteranid Kohlta-Jaerve#93&3
+&Vigri Tartu#93&3
+&Norma Tallinn#93&3
+&Lelle SK#93&3
+&JK Vaprus Paernu#93&4
+&Tallina JK-83#93&4
+&Lootus Poelva #93&5
+&Duenamo Tallinn#93&6
+&Girnyk-Sport Komsomolsk#93&1
+&Electron Romny#93&1
+&FC Sdiushor-Metalurg#93&1
+&Mashynobudivnyk Druzhkivka#93&1
+&Metalurg Donezk#93&1
+&Metalurg Nikopol#93&1
+&FC Tekhno-Tsentr#93&1
+&Volin Lutsk#93&1
+&Krystal Chortkow#93&1
+&Borysfen Boryspol#93&1
+&Polissya Shitomir#93&1
+&Yavir Sumy#93&1
+&FC Krasylow#93&1
+&Bukovyna Tschernihow#93&1
+&Enerhetyk Burshtyn#93&1
+&Metallist Kharkov#93&1
+&Chernomorets Sevastopol#93&2
+&Systema-Borex Borodyanka#93&2
+&Vorskla Poltava#93&2
+&SC Mykolajiw#93&2
+&Tavria Simferopol#93&2
+&Olympia FC AES Yuzhnoukrainsk#93&2
+&Kremin Krementchuk#93&2
+&Papirnyk Malyn#93&2
+&Zorya Luhansk#93&3
+&Prek. Ivano-Frankovsk#93&3
+&Rigonda Bila Tserkva#93&3
+&ZSKA Kiew#93&3
+&Metalurg Saporoshje#93&4
+&Niva Vinnitsa#93&4
+&Zementnik Mykolajiw#93&5
+&FC Myrgorod#93&6
+&Locomotiva Balti#93&1
+&Sheriff Tiraspol#93&1
+&Viisoara Milestii Mici#93&1
+&Vierul Sangerei#93&1
+&Codru Calarasi#93&1
+&Start Albota de Jos#93&1
+&Veterani Chisinau#93&1
+&Sindicat Chisinau#93&1
+&Maiak Chirsova#93&1
+&Venita Lipcani#93&1
+&FC Chitcani#93&1
+&TTA Straseni#93&1
+&Gloria-Qvarc Edinet#93&1
+&FCM Ungheni#93&1
+&Favorit Albota de Sus#93&1
+&Locomotiv Basarabeasca#93&1
+&Spumante Cricova#93&2
+&Victoria-CSA Chisinau#93&2
+&Zarea Hlinaia#93&2
+&Rosso Floreni#93&2
+&Agasfer Chisinau#93&2
+&Happy End Camenca#93&2
+&Roma Balti#93&2
+&Fortuna Edinet#93&2
+&Moldova-Gaz Chisinau#93&3
+&FC Zimbru#93&3
+&Sporting-USM Chisinau#93&3
+&MHM-93 Chisinau#93&3
+&Migdal Carahasani#93&4
+&Unisport-Auto Chisinau#93&4
+&FC Corten#93&5
+&Tiligul Tiraspol#93&6
+&Maccabi Kfar Kana#93&1
+&Hapoel Kfar-Shalem#93&1
+&SC Ashdod#93&1
+&Hapoel Kiryat-Shmona#93&1
+&Hapoel Beit Shean#93&1
+&Maccabi Lazaros Holon#93&1
+&Hapoel Raanana#93&1
+&Hapoel Ironi Rishon Lezion#93&1
+&Hapoel Tel Aviv#93&1
+&Bnei Yehuda Tel Avib#93&1
+&Hapoel Hurfesh#93&1
+&Maccabi Tel Aviv#93&1
+&Hapoel Azur#93&1
+&Hapoel Taibe#93&1
+&Hapoel Lod#93&1
+&Hapoel Ramat Gan#93&1
+&Hapoel Zafririm Holon#93&2
+&Maccabi Jaffa#93&2
+&Bnei Saknin#93&2
+&Hapoel Ironi Dimona#93&2
+&Hapoel Acco#93&2
+&Hapoel Haifa#93&2
+&AS Ramat-Eliyahu#93&2
+&Hapoel Marmorek#93&2
+&Hapoel Jerusalem#93&3
+&Maccabi Netanya#93&3
+&Maccabi Kiriat Gat#93&3
+&Hapoel Hadera#93&3
+&Tzeirei Nahf#93&4
+&Hapoel Kfar Saba#93&4
+&Hapoel Kfar-Kana#93&5
+&Hapoel Majdel Krum#93&6
+&US Esch#93&1
+&US Sandweiler#93&1
+&Jeunesse Sport Koerich#93&1
+&US Luxemburg#93&1
+&FC Victoria Rosport#93&1
+&RM '86 Luxemburg#93&1
+&UNA Strassen#93&1
+&FC Swift Hesperingen#93&1
+&AS Colmarberg#93&1
+&Minerva Lintgen#93&1
+&Union Mertert-Wasserbillig#93&1
+&CS Hollerich#93&1
+&FC Munsbach#93&1
+&Aris Bonneweg#93&1
+&US Hostert#93&1
+&AS Luxemburg#93&1
+&Jeunesse Esch#93&2
+&FC Kehlen#93&2
+&AS Remich#93&2
+&Marisca Mersch#93&2
+&SC Bettemburg#93&2
+&SC Tetingen#93&2
+&Yellow Boys Weiler#93&2
+&FC Brouch#93&2
+&AS Hosingen#93&3
+&CS Obercorn#93&3
+&Blue Boys Muhlenbach#93&3
+&FC Erpeldingen#93&3
+&UN Kaerjeng#93&4
+&AS Wincrange#93&4
+&US Mondorf#93&5
+&FC Hamm#93&6
+&TJ Druzstevnik#93&1
+&Slovan Bratislava#93&1
+&Dukla Trencin#93&1
+&SK Roznava#93&1
+&ZSNP Ziar nad Hronom#93&1
+&Slovan Tura Luka#93&1
+&MSK Zilina#93&1
+&DAC Dunajska Streda#93&1
+&FK Zemplin Michalovce#93&1
+&ZTS VTJ Martin#93&1
+&Banik Prievidza#93&1
+&Koba Senec#93&1
+&Artmedia Petrzalka#93&1
+&Turna nad Bodvou#93&1
+&FC Rimavska Sobota#93&1
+&FK Bukoza Vranov#93&1
+&SKP Bratislava#93&2
+&Maradorix Bratislava#93&2
+&ZTS Dubnica#93&2
+&Novaky#93&2
+&Inter Bratislava#93&2
+&FK SH Senica#93&2
+&FK Zvolen#93&2
+&FK Hurbanovo#93&2
+&Dukla Banska Bystrica#93&3
+&Calex Zlate Moravce#93&3
+&Zeleziarne Podbrezova#93&3
+&FK Duslo Sala#93&3
+&Matador Puchov#93&4
+&Tatran Presov#93&4
+&AC Spisska Nova Ves#93&5
+&SKP Devin#93&6
+&FK Korab#93&1
+&Shkendija Haracina#93&1
+&FK Ohrid#93&1
+&Vardar Skopje#93&1
+&Makedonija Skopje#93&1
+&Vardanski Bogdanci#93&1
+&Vardar Negotine#93&1
+&Rudar Probistip#93&1
+&Sileks Kratovo#93&1
+&FK Praspa#93&1
+&FK Udarnik#93&1
+&Rabotnicki Skopje#93&1
+&Napredak Skopje#93&1
+&Sasa Kamenica#93&1
+&SK Skopje#93&1
+&Pobeda Prilep#93&1
+&Karaorman Skopje#93&2
+&FK Voska#93&2
+&FK Jaka#93&2
+&FK Novac#93&2
+&Jugohrom Skopje#93&2
+&Ljuboten Tetovo#93&2
+&Maxhari Solidarnost#93&2
+&Belasica Strumica#93&2
+&FK Alumina#93&3
+&Karaorman Struga#93&3
+&Kozuv Vinojug Gevgelija#93&3
+&Bregalnica Stip#93&3
+&Metalurg Skopje#93&4
+&FK Vlaznim Bashkimi#93&4
+&Balkan-BISI Skopje#93&5
+&11. Oktombri Prilep#93&6
+&Atlantas Klaipeda#93&1
+&Vetra Rudiskes#93&1
+&Delintra Lentvaris#93&1
+&Pieno Cechas Kalvarija#93&1
+&Klevas Siauliai#93&1
+&FK Pasvalys#93&1
+&Tauras Taurage#93&1
+&FK Ekranas#93&1
+&Kareda Kaunas#93&1
+&Kauno Jegeriai#93&1
+&Banga Gargzdai#93&1
+&FK Inkaras Launas#93&1
+&Vienybe Ukmerge#93&1
+&Laisve Silute#93&1
+&Kratonas Kalvarija#93&1
+&Sveikata Kybartai#93&1
+&Sirvena Birzai#93&2
+&Silas Kazlu Ruda#93&2
+&Savinge Kaisiadorys#93&2
+&Atletas Kaunas#93&2
+&FK Grigiskes#93&2
+&Krazante Kelme#93&2
+&Nafta Mazeikiai#93&2
+&FM-86 Panevezys#93&2
+&FBK Kaunas#93&3
+&Suduva Marijampole#93&3
+&Mastis Telsiai#93&3
+&ZEV-Klevas Vilnius#93&3
+&Mituva Jurbarkas#93&4
+&Ausra Vilnius#93&4
+&Interas Visaginas#93&5
+&Politechnika Kaunas#93&6
+&Luanvi Rezekne#93&1
+&FK Tukums 2000#93&1
+&FK Aluksne#93&1
+&N-T Riga#93&1
+&FK Lode#93&1
+&FK Smiltene#93&1
+&Latvijas Berzs#93&1
+&Dinaburg Daugavpils#93&1
+&Kazino 777 Riga#93&1
+&FK Cesis#93&1
+&Viola Jelgava#93&1
+&Lidosta Riga#93&1
+&Jauniesi Balvi#93&1
+&Ostas Policija#93&1
+&Policija Riga#93&1
+&RKB-Arma Riga#93&1
+&FK Ventspils#93&2
+&Lejaskurzemes Sports Aizpute#93&2
+&FK Rinupi#93&2
+&FK Madona#93&2
+&FK Lignums#93&2
+&Ofriss Riga#93&2
+&RFS Nationale#93&2
+&Namejs Jekabpils#93&2
+&Akora Seda#93&3
+&Robezsardze Ludza#93&3
+&Sakarnieks Malta#93&3
+&FK Mersrags#93&3
+&FK Staicele#93&4
+&Balvu Vilki#93&4
+&FK Riga#93&5
+&FK Bauska#93&6
+&Keramik Bereza#93&1
+&Bate Borisov#93&1
+&Lakamatju-96 Witebsk#93&1
+&Polesie Kozinki#93&1
+&Granit Mikashewitschi#93&1
+&Nyman Grodno#93&1
+&Belshina Bobruisk#93&1
+&FC Baranovichi#93&1
+&Zabudova Chist#93&1
+&VDE Witebsk#93&1
+&Torpedo Mogilew#93&1
+&Smena-BATE Minsk#93&1
+&Torpedo Minsk#93&1
+&Dinamo-Juni Minsk#93&1
+&FC Mosyr#93&1
+&Lokomotiv Vitebsk#93&1
+&Pinsk-900#93&2
+&FC Smorgon#93&2
+&Zlin Gomel#93&2
+&Azertsi Glubokaye#93&2
+&Dynamo Minsk#93&2
+&Veras Nesvizh#93&2
+&RSHVSM Olympia Minsk#93&2
+&FC Lida#93&2
+&Dnepr Shklov#93&3
+&Slawia Mosyr#93&3
+&FC Rogachiov#93&3
+&Neman Mostok#93&3
+&Polesie Mosyr Region#93&4
+&FC Moledetschno#93&4
+&Schachtjor Saligorsk#93&5
+&Traktor Minsk#93&6
+&Mqabba FC#93&1
+&Saint Laurence Spurs#93&1
+&Mellieha SC#93&1
+&Santa Venera Lightnings#93&1
+&Zebbug Rangers#93&1
+&FC Lija Athletic#93&1
+&Melita FC#93&1
+&Sliema Wanderers#93&1
+&Victoria Hotspurs#93&1
+&Kercem Ajax#93&1
+&Fgura United#93&1
+&Zejtun Corinthians#93&1
+&Balzan Youths#93&1
+&Qormi FC#93&1
+&Luqa St. Andrews FC#93&1
+&FC Valletta#93&1
+&Msida St. Joseph FC#93&2
+&Zebbug Rovers#93&2
+&San Gwann FC#93&2
+&FC Hibernians#93&2
+&Dingli Swallows#93&2
+&Gharghur FC#93&2
+&FC Floriana#93&2
+&Sirens FC#93&2
+&FC Birkirkara#93&3
+&Rabat Ajax#93&3
+&Mgarr United#93&3
+&Hamrun Spartans#93&3
+&Senglea Athletic#93&4
+&FC Zurrieq#93&4
+&FC Mosta#93&5
+&Xghajra Tornadoes#93&6
+&Elpida Xylofagou#93&1
+&Evagoras Paphos#93&1
+&Olympiakos Nicosia#93&1
+&AE Zakakiou#93&1
+&Othellos Athienou#93&1
+&PEF Olympiakou#93&1
+&APE Paphos#93&1
+&Ethnikos Achna#93&1
+&Sourouklis Troullon#93&1
+&Onisilos Sotiras#93&1
+&Alki Larnaca#93&1
+&Enosi Kokkinotrou#93&1
+&Ellinismos Akakiou#93&1
+&MEAP Nisou#93&1
+&Halkanoras Idaliou#93&1
+&Appollon Limassol#93&1
+&AME Parekklisias#93&2
+&AEK Larnaca#93&2
+&Akritas Chloraka#93&2
+&EN Lakatamia#93&2
+&Anorthosis Famagusta#93&2
+&AME Kapsalou#93&2
+&Omonia Aradippou#93&2
+&Rotsides Mammari#93&2
+&ASI Limassol#93&3
+&Apoel Nikosia#93&3
+&Omonia Nicosia#93&3
+&Anagennisis Derynia#93&3
+&Kinyras Empas#93&4
+&Ethnikos Latsion#93&4
+&Ermis Aradippou#93&5
+&AEL Limassol#93&6
+&FK Albanet#93&1
+&Albpetrol Patos#93&1
+&Sopoti Librazhd#93&1
+&FK Memaliaj#93&1
+&Perparimi Kukes#93&1
+&SK Tepelena#93&1
+&Vllaznia Shkoder#93&1
+&Dinamo Tirana#93&1
+&Devolli Bilisht#93&1
+&Shqiponja Gjirokaster#93&1
+&Beselidhja Lezhe#93&1
+&SK Tirana#93&1
+&Bylis Balish#93&1
+&Ilir Viking Tirana#93&1
+&KS Lac#93&1
+&Flamurtari Vlore#93&1
+&FK Burrel#93&2
+&FK Egnatia#93&2
+&Shkumbini Peqin#93&2
+&SK Lushnja#93&2
+&Kastrioti Kruje#93&2
+&Tomori Berat#93&2
+&Erzeni Shijak#93&2
+&Naftetari Kucova#93&2
+&Korabi Peshkopi#93&3
+&SK Shkodra#93&3
+&Teuta Durres#93&3
+&FK Plugu#93&3
+&Apolonia Fier#93&4
+&Gramozi Erseke#93&4
+&Skenderbeu Korce#93&5
+&FK Pogradeci#93&6
+&Kolcheti-1913 Poti#93&1
+&Sulori Vani#93&1
+&Kacheti Telawi#93&1
+&Dynamo Batumi#93&1
+&Samgurali Zchaltubo#93&1
+&Egrisi Senaki#93&1
+&Iweria Chasuri#93&1
+&Margweti Sestafoni#93&1
+&MVD Kodako#93&1
+&Dynamo Tiflis#93&1
+&FC Tiflis#93&1
+&Morkinali Tiflis#93&1
+&Gorda Rustawi#93&1
+&Dila Gori#93&1
+&Guria Lantschchuti#93&1
+&Kolcheti Chobi#93&1
+&Lokomotiwi Tiflis#93&2
+&WIT Georgia Tiflis#93&2
+&Alazani Gurdschaani#93&2
+&Skukura Kobuleti#93&2
+&Merani-91 Tiflis#93&2
+&Zooveti Tiflis#93&2
+&Duruji Kwareli#93&2
+&Mretebi Tiflis#93&2
+&Magaroeli Chiatura#93&3
+&Torpedo Kutaissi#93&3
+&Akademia Tiflis#93&3
+&College Tiflis#93&3
+&TSU Tiflis#93&4
+&Arsenali Tiflis#93&4
+&Sioni Bolnissi#93&5
+&Iberia Samtredia#93&6
+&Mika Aschtarak#93&1
+&Araks Oktemberyan#93&1
+&FK Erewan#93&1
+&Lori Wanadsor#93&1
+&Impuls Dilizhan#93&1
+&Erebuni Erewan#93&1
+&Kasakh Ashtarak#93&1
+&Ararat Erewan#93&1
+&FC Yegvard#93&1
+&Dvin Artaschat#93&1
+&Lernagorz Kapan#93&1
+&Kanaz Erewan#93&1
+&Kilikia Erewan#93&1
+&Karabach Stepanakert#93&1
+&ZSKA Erewan#93&1
+&Banants Kotaik#93&1
+&FC Masis#93&2
+&FIMA Erewan#93&2
+&FK Gjumri#93&2
+&Svartnoz Erewan#93&2
+&Alashkert Martuni#93&2
+&Sipan Vardenis#93&2
+&Achin Nor-Achin#93&2
+&Tufagorts Artik#93&2
+&Arabkir Erewan#93&3
+&Kotaik Abowjan#93&3
+&Debed Alaverdi#93&3
+&Dynamo Erewan#93&3
+&Artogen Vanadzor#93&4
+&Akthtamar Sevan#93&4
+&Aznavour Novemberian#93&5
+&Zangezur Goris#93&6
+&Umid Dzhalilabad#93&1
+&Polis Akademy#93&1
+&Kapaz Ganja#93&1
+&Energetik Ali-Bairamly#93&1
+&Vilasch Masalli#93&1
+&Inshaatchi Baku#93&1
+&Avei Akstafa#93&1
+&Shadagh Guba#93&1
+&Schahdag Kuba#93&1
+&ANS Pivani Baku#93&1
+&Taraggi Baku#93&1
+&Neftegaz-GNKAR Baku#93&1
+&Boz Gurd Samukh#93&1
+&Neftschi Baku#93&1
+&Karabach Agdam#93&1
+&Turan Tavuz#93&1
+&Inshaatchi Sabirabad#93&2
+&Araz Nahchivan#93&2
+&Shirvan Kyurdamir#93&2
+&Pambygci Neftcala#93&2
+&OIK Baku#93&2
+&Azeri Baki#93&2
+&Automobilchi Yevlakh#93&2
+&Dynamo Baku#93&2
+&Nidzhat Mashtagi#93&3
+&Hazar Universiteti Baku#93&3
+&Kuer-Nur Mingaecevir#93&3
+&Plastik Salyany#93&3
+&Bakili Nachitschewan#93&4
+&Dashgyn Zakataly#93&4
+&Schafa Baku#93&5
+&Azneftyag Baku#93&6
+&FC Lusitanos#93&1
+&Buick Encamp#93&1
+&Constelacio Esportiva#93&1
+&Sporting d'Escaldes#93&1
+&Deportiu La Massana#93&1
+&Matecos Sant Julia#93&1
+&Spordany Juvenil#93&1
+&Bulls Unicef#93&1
+&UE Les Bons#93&1
+&FC Encamp#93&1
+&Ranger's Pizerria Venecia#93&1
+&Joieries Aurum#93&1
+&Promeses FC#93&1
+&PV Encamp 93#93&1
+&G.B.G.#93&1
+&Kimsa Principat#93&1
+&Magatzems Lima#93&2
+&FC Andorra#93&2
+&CE Benito#93&2
+&Gimnastic Valira#93&2
+&Veterans d'Andorra#93&2
+&FS Cap del Carrer#93&2
+&CE Banca Reig#93&2
+&Francfurt Cerni#93&2
+&CE Principat#93&3
+&Inter d'Escaldes#93&3
+&FS Canillo#93&3
+&Escale Santa Coloma#93&3
+&UE Sant Julia de Loria#93&4
+&Pirineu Payma#93&4
+&Casa do Benfica#93&5
+&FC Engolasters#93&6
+&EB/Streymur Eidi#93&1
+&IF Fuglafsfjoerdur#93&1
+&VB Vagur#93&2
+&AB Argir#93&2
+&B68 Toftir#93&2
+&ROYN Hvalba#93&2
+&Sumba IF#93&2
+&Skala IF#93&2
+&B71 Sandur#93&2
+&B36 Thorshavn#93&2
+&NSI Runavik#93&3
+&GI Goetu#93&3
+&KI Klaksvik#93&3
+&Leirvik IF#93&3
+&FRAM Thorshanvn#93&4
+&HB Thorshavn#93&4
+&FS Vagar#93&5
+&TB Tvoeroyri#93&6
+&Libertas Borgo Maggiore#93&1
+&Calcio San Marino#93&1
+&La Fiorita Montegiardino#93&2
+&Montevito Fiorentino#93&2
+&SS Folgore Falciano#93&2
+&GS Dogana#93&2
+&SP Domagnano#93&2
+&Virtus Acquaviva#93&2
+&SS Murata#93&2
+&Aurora Santa Mustiola#93&2
+&SC Faetano#93&3
+&Tre Penne San Marino#93&3
+&Pennarossa Chiesanuova#93&3
+&Tre Fiori Fiorentino#93&3
+&SP Cailungo#93&4
+&SS San Giovanni#93&4
+&Juvenes Serravalle#93&5
+&Cosmos Serravalle#93&6

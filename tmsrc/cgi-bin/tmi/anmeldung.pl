@@ -227,7 +227,7 @@ oder es enth&auml;lt nicht erlaubte Sonder- bzw.<br>
 Leerzeichen.";
 }	
 
-if ( $vorhanden_para == 1 && (($pass_richtig ne $pass) || ($mail_richtig ne $mail))) { 
+if ( $vorhanden_para == 1 && (($pass_richtig ne TMAuthenticationController::hashPassword( $pass, $voller_name ) ) || ($mail_richtig ne $mail))) { 
 $fehler++;
 $fault[$fehler] = "<font color=darkred>Betrifft Trainername + Passwort + E-Mail:<font color=black><br>
 Unter diesem Trainername ist bereits ein<br>
@@ -239,6 +239,7 @@ dieser Account beim ersten Mal registriert wurde<br>
 anmelden. Dies ist aktuell noch nicht der Fall.<br>
 Der Account wurde mit der E-Mail Adresse <br>
 $mail_richtig er&ouml;ffnet.
+
 ";
 
 }	
