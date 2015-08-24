@@ -125,12 +125,21 @@ print "... beendet.";
 
 `mv /tmapp/tmsrc/cronjobs/btm/seasonchange/history.txt /tmdata/btm/history.txt`;
 
+#reset rights - problem occurredd fter git trainsition, tp, Aug-24-2105
+`chmod -R lighttpd:lighttpd /tmdata`;
+`chmod -R 755 /tmdata`;
+
+
 `perl /tmapp/tmsrc/cronjobs/btm/heer.pl &`;                          # berechnet Tabellenplazierung fuer Job-Boerse etc.
 `perl /tmapp/tmsrc/cronjobs/btm/seasonchange/erfolge_readout.pl &`;  # bisherige deutsche meister werden ausgelesen
 `perl /tmapp/tmsrc/cronjobs/btm/seasonchange/dfb_winner_readout.pl &`;    # bisherige dfb pokalsieger werden ausgelesen
 
 `nice -15 perl /tmapp/tmsrc/cronjobs/btm/db/stats_ns.pl &`;
 `nice -15 perl /tmapp/tmsrc/cronjobs/btm/db/top_award.pl &`;
+
+	#reset rights - problem occurredd fter git trainsition, tp, Aug-24-2105
+`chmod -R lighttpd:lighttpd /tmdata`;
+`chmod -R 755 /tmdata`;
 
 exit;
 

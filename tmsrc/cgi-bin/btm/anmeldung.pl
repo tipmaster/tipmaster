@@ -320,6 +320,12 @@ zu aendern.<br><br>
 			$datb[$x] = $vereind[$y];
 			$y++;
 		}
+		
+		TMLogger::log("main::anmeldung.pl " . $voller_name);
+		TMLogger::log("main::anmeldung.pl " . $adresse);
+		
+		
+		
 		for ( $x = 1 ; $x < 19 ; $x++ ) {
 			if ( $data[$x] eq $verein ) {
 				if ( $datb[$x] ne "Trainerposten frei" ) {
@@ -329,6 +335,7 @@ Der gewuenschte Verein ist mittlerweile<br>
 bereits wieder vergeben. Bitte einen<br>
 anderen Verein waehlen.";
 				}
+				TMLogger::log("main::anmeldung.pl klappt auch" . $variable);
 				$datb[$x] = $voller_name;
 				$datc[$x] = $adresse;
 			}
@@ -348,61 +355,7 @@ anderen Verein waehlen.";
 sub anmelden {
 
 	$c = time();
-	if ( $method eq "W" ) {
-
-		open( D3, "</tmdata/btm/warte.txt" );
-		while (<D3>) {
-			@all = split( /&/, $_ );
-			if ( $all[1] eq $voller_name ) { $nop = 1 }
-			if ( $all[3] eq $adresse )     { $nop = 1 }
-		}
-		close(D3);
-		$ok = 2;
-		if ( $nop != 1 ) {
-			open( D2, ">>/tmdata/btm/warte.txt" );
-			flock( D2, 2 );
-			print D2 "!&$voller_name&$pass&$adresse&$date&$time&$c&---&$c&\n";
-			flock( D2, 8 );
-			close(D2);
-
-			$mail{Message} .= "Bundesliga - TipMaster\nhttp://www.tipmaster.de/\n\n\n ";
-			$mail{Message} .= "             *** Registrierung Warteliste ***\n\n";
-			$mail{Message} .= "Sehr geehrte(r) $voller_name ,\n\n";
-			$mail{Message} .=
-			  "vielen Dank fuer Ihre Registrierung auf der BTM - Warteliste. Sobald neue Vereine frei werden\n";
-			$mail{Message} .=
-			  "und Ihre Wartelistenposition ausreichend hoch ist, wird Ihnen automatisch ein Verein zugeteilt\n";
-			$mail{Message} .= "und Sie via E-Mail informiert.\n\n";
-			$mail{Message} .=
-			  "Bitte beachten Sie dass Sie sich alle 72 Stunden auf der Seite der Warteliste mit Ihren\n";
-			$mail{Message} .=
-			  "Zugangsdaten einloggen muessen um nicht von der Warteliste wieder geloescht zu werden.\n\n";
-
-			$mail{Message} .= "Ihre LogIn Daten fuer die BTM Warteliste :\n\n";
-			$mail{Message} .= "Trainername  : $voller_name\n";
-			$mail{Message} .= "Passwort     : (Wie gewuenscht)\n\n
-URL Warteliste : http://www.tipmaster.de/cgi-bin/btm/warte.pl\n\n";
-
-			$mail{Message} .=
-"Bei Fragen zum Spielsystem lesen Sie bitte das Regelbuch sowie die FAQ zum TipMaster .\nWir wuenschen Ihnen viel Spass und Erfolg beim TipMaster .\n\n";
-			$mail{Message} .= "Mit freundlichen Gruessen\nIhr TipMaster - Team\n";
-
-			$mailprog = '/usr/sbin/sendmail';
-			open( MAIL, "|$mailprog -t" );
-			print MAIL "To: $adresse\n";
-			print MAIL "From: service\@tipmaster.net ( TipMaster online )\n";
-			print MAIL "Subject: Bundesliga - TipMaster Registrierung Warteliste\n\n";
-			print MAIL "$mail{Message}";
-			close(MAIL);
-
-			$ok = 1;
-		}
-
-		#print "Location: /cgi-bin/btm/warte.pl?ok=$ok\n\n";
-		exit;
-
-		exit;
-	}
+	
 
 	my $hashedPassword = TMAuthenticationController::hashPassword( $pass, $voller_name );
 
