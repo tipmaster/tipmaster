@@ -91,6 +91,9 @@ if (0) {
 
 	`mv /tmdata/tmi/db/spiele_old.txt /tmdata/tmi/db/spiele_old_$vold.txt`;
 	`mv /tmdata/tmi/db/spiele.txt /tmdata/tmi/db/spiele_old.txt`;
+	#reset rights - problem occurredd fter git trainsition, tp, Aug-24-2105
+`chmod -R lighttpd:lighttpd /tmdata`;
+`chmod -R 755 /tmdata`;
 	print "... beendet.";
 }
 print "Schreibe Vereinshistorien\n";
@@ -127,6 +130,10 @@ print "... beendet.";
 `perl /tmapp/tmsrc/cronjobs/tmi/seasonchange/cup_winner_readout.pl &`;                # bisherige dfb pokalsieger werden ausgelesen
 `nice -15 perl /tmapp/tmsrc/cronjobs/tmi/db/stats_ns.pl &`;
 `nice -15 perl /tmapp/tmsrc/cronjobs/tmi/db/top_award.pl &`;
+
+	#reset rights - problem occurredd fter git trainsition, tp, Aug-24-2105
+`chmod -R lighttpd:lighttpd /tmdata`;
+`chmod -R 755 /tmdata`;
 
 exit;
 
