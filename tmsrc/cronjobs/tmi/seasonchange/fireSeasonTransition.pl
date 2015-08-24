@@ -1,6 +1,5 @@
 require "/tmapp/tmsrc/cgi-bin/tmi/saison.pl";
 
-if (0) {
 	$vold = $main_saison[ $main_nr - 1 ];
 	$vold =~ s/Saison 20//;
 	$vold =~ s/'//;
@@ -92,7 +91,8 @@ if (0) {
 	`mv /tmdata/tmi/db/spiele_old.txt /tmdata/tmi/db/spiele_old_$vold.txt`;
 	`mv /tmdata/tmi/db/spiele.txt /tmdata/tmi/db/spiele_old.txt`;
 	print "... beendet.";
-}
+
+
 print "Schreibe Vereinshistorien\n";
 require "/tmapp/tmsrc/cronjobs/tmi/seasonchange/ns_sai_history.pl";
 print "Erstelle neue history.txt und lege Sie ab in /tmdata/tmi/swechsel\n";
