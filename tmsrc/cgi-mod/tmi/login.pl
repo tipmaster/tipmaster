@@ -1448,7 +1448,7 @@ in <a href="http://community.tipmaster.de/showthread.php?t=27483">diesem Posting
 </div><br/>
 <div style="min-width:235px;max-width:235px;padding:10px;background-color:white;border:1px solid black">
 <b>Tranerfuxx Wahl</b><br/><br/>
-<a href="http://community.tipmaster.de/showthread.php?t=28844">Hier abstimmen!</a></div>
+<a href="http://community.tipmaster.de/showthread.php?t=29303">Hier abstimmen!</a></div>
 
 <br/><br/>
 
