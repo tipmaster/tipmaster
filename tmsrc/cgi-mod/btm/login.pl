@@ -575,7 +575,9 @@ $leut_s =~ s/ /%20/g;
 $banner_gross =~ s/trainer=/trainer=$leut_s/g;
 $banner_klein =~ s/trainer=/trainer=$leut_s/g;
 
+
 print <<"(END ERROR HTML)";
+&nbsp; $banner_gross
 
 <table border=0 bgcolor=#eeeeee><tr>
 <td width=5></td>
@@ -583,7 +585,6 @@ print <<"(END ERROR HTML)";
 
 <td valign=top>
 <font color=#eeeeee face=verdana size=1>
-&nbsp; $banner_gross
 (END ERROR HTML)
 
 print <<"(END ERROR HTML)";
@@ -1051,8 +1052,6 @@ print <<"(END ERROR HTML)";
 <tr>
 
 <td align=left><font face=verdana size=1>
-&nbsp;<a href="http://ad-emea.doubleclick.net/clk;227424770;51590056;f">Sportingbet.com</a><br/>
-&nbsp;100% Einzahlungsbonus bis zu 100 Euro!<br/><br/>
 
 
 <br/><br>
