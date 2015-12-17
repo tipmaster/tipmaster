@@ -1058,7 +1058,7 @@ print <<"(END ERROR HTML)";
 
 <div style="min-width:235px;max-width:235px;padding:10px;background-color:white;border:1px solid black">
 <b>Aktion Fehlerbereinigung</b><br/><br/>
-Wir arbeiten aktiv daran Fehler beim TipMaster auszumerzen.
+Wir arbeiten aktiv daran Fehler beim TipMaster zu eliminieren.
 Wenn euch Fehler auffallen meldet sie bitte im Stammtisch
 in <a href="http://community.tipmaster.de/showthread.php?t=27483">diesem Posting</a>.
 </div>

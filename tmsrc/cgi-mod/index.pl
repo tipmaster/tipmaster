@@ -856,12 +856,11 @@ print '
 <!-- TM 120x600 -->
 <ins class="adsbygoogle"
      style="display:inline-block;width:120px;height:600px"
-     data-ad-client="ca-pub-4704356426999787"
-     data-ad-slot="2266437175"></ins>
+     data-ad-client="ca-pub-7303526190369900"
+     data-ad-slot="4833905475"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
 <!--
 <iframe id=\'acae648c\' name=\'acae648c\' src=\'http://ads.socapro.com/www/delivery/afr.php?zoneid=83&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'120\' height=\'600\'><a href=\'http://ads.socapro.com/www/delivery/ck.php?n=a3108930&amp;cb=INSERT_RANDOM_NUMBER_HERE\' target=\'_blank\'><img src=\'http://ads.socapro.com/www/delivery/avw.php?zoneid=83&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3108930&amp;ct0=INSERT_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
 -->
