@@ -42,11 +42,11 @@ j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 
 print '
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- FLT 728x90 -->
+<!-- TM 728x90 -->
 <ins class="adsbygoogle"
      style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-4704356426999787"
-     data-ad-slot="2600317976"></ins>
+     data-ad-client="ca-pub-7303526190369900"
+     data-ad-slot="4694304679"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -59,11 +59,11 @@ print '
 
 $a = '
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- FLT 728x90 -->
+<!-- TM 728x90 -->
 <ins class="adsbygoogle"
      style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-4704356426999787"
-     data-ad-slot="2600317976"></ins>
+     data-ad-client="ca-pub-7303526190369900"
+     data-ad-slot="4694304679"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>';
