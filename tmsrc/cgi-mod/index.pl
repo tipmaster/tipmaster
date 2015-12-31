@@ -853,12 +853,11 @@ print '
 
 <div style="max-width:300px">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- TM 728x90 -->
-
+<!-- TM 300x600 -->
 <ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-7303526190369900"
-     data-ad-slot="4694304679"></ins>
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-7019464997176631"
+     data-ad-slot="2386025707"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
