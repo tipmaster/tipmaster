@@ -1,3 +1,5 @@
+tmsrc/cronjobs/tmi/seasonchange/swechsel/
+tmsrc/cronjobs/btm/seasonchange/swechsel/
 deploy.sh
 migrate.sh
 .DS_Store

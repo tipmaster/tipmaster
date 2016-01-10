@@ -227,7 +227,7 @@ oder es enth&auml;lt nicht erlaubte Sonder- bzw.<br>
 Leerzeichen.";
 }	
 
-if ( $vorhanden_para == 1 && (($pass_richtig ne $pass) || ($mail_richtig ne $mail))) { 
+if ( $vorhanden_para == 1 && (($pass_richtig ne TMAuthenticationController::hashPassword( $pass, $voller_name ) ) || ($mail_richtig ne $mail))) { 
 $fehler++;
 $fault[$fehler] = "<font color=darkred>Betrifft Trainername + Passwort + E-Mail:<font color=black><br>
 Unter diesem Trainername ist bereits ein<br>
@@ -238,7 +238,13 @@ Passwort und identischer E-Mail mit der<br>
 dieser Account beim ersten Mal registriert wurde<br>
 anmelden. Dies ist aktuell noch nicht der Fall.<br>
 Der Account wurde mit der E-Mail Adresse <br>
-$mail_richtig er&ouml;ffnet.
+$mail_richtig er&ouml;ffnet.<br/><br/>
+
+
+$pass<br/>
+$pass_richtig<br/>
+".TMAuthenticationController::hashPassword( $pass, $voller_name )."<br/>
+$voller_name
 ";
 
 }	
@@ -660,6 +666,10 @@ print "
 Bitte geben Sie Ihren korrekten Namen an .<br> 
 Bei erkennbaren Phantasie- / Prominentennamen<br>
 wird Ihre Anmeldung spaeter wieder storniert .<br>
+<font color=green><br>
+Wenn Sie bereits einen Bundesliga Tipmaster<br>
+Account haben geben Sie bitte den exakt gleichen<br> 
+Vor- und Nachnamen an.<br>
 <font color=black>
 <br><font face=verdana size=1>Ihre E-Mail Adresse:<br><input type=text lenght=25 name=adresse value=\"$mail\"><br><br>
 <font color=red>
@@ -668,6 +678,10 @@ Vorraussetzung f&uuml;r die Teilnahme am TipMaster.<br>
 Nach Ihrer Anmeldung erhalten Sie eine Mail<br>
 an die angegebene E-Mailadresse die einen Link<br>
 zur Freischaltung Ihres Accounts enth&auml;lt.<br>
+<font color=green><br>
+Wenn Sie bereits einen Bundesliga Tipmaster<br>
+Account haben geben Sie bitte die gleiche<br> 
+E-Mail Adresse an an.<br>
 <br><br>
 <font color=black>
 ";
@@ -684,12 +698,15 @@ print "
 Ihr gewuenschtes Passwort :<br>
 <input type=password lenght=25 name=newpass><br><br>
 
-<br><br>
 <font color=red>
 Beachten Sie bitte das Ihr gewaehltes Passwort<br> 
 nicht kuerzer als 4 und laenger als 16 Zeichen<br>
 lang sein sowie keine Sonderzeichen und<br>
 Leerzeichen enthalten darf.<br>
+<font color=green><br>
+Wenn Sie bereits einen Bundesliga Tipmaster<br>
+Account haben geben Sie bitte das gleiche<br> 
+Passwort an.<br>
 <br><br><font color=black>
 <font color=black>
 ";

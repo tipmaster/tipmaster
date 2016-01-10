@@ -575,7 +575,9 @@ $leut_s =~ s/ /%20/g;
 $banner_gross =~ s/trainer=/trainer=$leut_s/g;
 $banner_klein =~ s/trainer=/trainer=$leut_s/g;
 
+
 print <<"(END ERROR HTML)";
+&nbsp; $banner_gross
 
 <table border=0 bgcolor=#eeeeee><tr>
 <td width=5></td>
@@ -583,7 +585,6 @@ print <<"(END ERROR HTML)";
 
 <td valign=top>
 <font color=#eeeeee face=verdana size=1>
-&nbsp; $banner_gross
 (END ERROR HTML)
 
 print <<"(END ERROR HTML)";
@@ -1051,19 +1052,21 @@ print <<"(END ERROR HTML)";
 <tr>
 
 <td align=left><font face=verdana size=1>
-&nbsp;<a href="http://ad-emea.doubleclick.net/clk;227424770;51590056;f">Sportingbet.com</a><br/>
-&nbsp;100% Einzahlungsbonus bis zu 100 Euro!<br/><br/>
 
 
 <br/><br>
 
 <div style="min-width:235px;max-width:235px;padding:10px;background-color:white;border:1px solid black">
 <b>Aktion Fehlerbereinigung</b><br/><br/>
-Wir arbeiten aktiv daran Fehler beim TipMaster auszumerzen.
+Wir arbeiten aktiv daran Fehler beim TipMaster zu eliminieren.
 Wenn euch Fehler auffallen meldet sie bitte im Stammtisch
 in <a href="http://community.tipmaster.de/showthread.php?t=27483">diesem Posting</a>.
 </div>
-
+<br/>
+<div style="min-width:235px;max-width:235px;padding:10px;background-color:white;border:1px solid black">
+<b>Tranerfuxx Wahl</b><br/><br/>
+<a href="http://community.tipmaster.de/showthread.php?t=29303">Hier abstimmen!</a></div>
+<br/>
 
 <br/><br/>
 </td>

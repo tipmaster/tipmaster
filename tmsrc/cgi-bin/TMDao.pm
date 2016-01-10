@@ -53,7 +53,7 @@ sub getHashedPasswordForUser {
 sub updatePasswordForUser {
 	my $password = shift;
 	my $user     = shift;
-	
+
 	my $hashedPassword = TMAuthenticationController::hashPassword( $password, $user );
 
 	my @lines = @{ _getPasswordLines() };
@@ -77,11 +77,81 @@ sub updatePasswordForUser {
 
 }
 
+sub updateEmailForUser {
+	my $user  = shift;
+	my $email = shift;
+	
+
+	my @lines = @{ _getPasswordLines() };
+	my $output;
+	my $success = 0;
+	foreach (@lines) {
+		my @data = split( /&/, $_ );
+		if ( $data[1] eq $user ) {
+			$success = 1;
+			$output .= '!&' . $user . '&' . $data[2] . '&' . $email . '&' . "\n";
+		}
+		else {
+			$output .= $_;
+		}
+	}
+
+	my @lines         = ();
+	my $inputFilePath = $TMConfig::FILE_PATH_PASS;
+	my $inputFile     = IO::File->new("> $inputFilePath");
+	binmode( $inputFile, ":encoding(UTF-8)" );
+	$inputFile->write($output);
+	$inputFile->close();
+
+	return $success;
+}
+
 sub createNewPasswordForUser {
 	my $user        = shift;
 	my $newPassword = _createRandomPassword();
 	updatePasswordForUser( $newPassword, $user );
 	return $newPassword;
+}
+
+sub verifyUserIsInactive {
+	my $name = shift;
+
+	my @schemas = ( "btm", "tmi" );
+	foreach $schema (@schemas) {
+		my $file = "/tmdata/" . $schema . "/history.txt";
+		open( FILE, $file );
+		while (<FILE>) {
+			if ( $_ =~ /$name/i ) {
+				return 0;
+			}
+		}
+		close(FILE);
+	}
+
+	return 1;
+}
+
+sub verifyEmailIsNotInUse {
+	my $email = shift;
+
+	my @lines = @{ _getPasswordLines() };
+	my $output;
+	foreach (@lines) {
+		my @data = split( /&/, $_ );
+		return 0 if ($email eq $data[3]);
+	}
+	return 1;
+}
+
+sub assignNewEmailToInactiveAccount {
+	my $name = shift;
+	my $newEmail = shift;
+	
+	return "E-Mail " . $newEmail . " ist bereits in Verwendung." if !verifyEmailIsNotInUse($newEmail);
+	return "Trainer " . $name. " ist aktiv." if !verifyUserIsInactive($name);
+	return "Trainer " . $name . " konnte nicht gefunden werden." if !(updateEmailForUser($name, $newEmail));
+	
+	return 1;
 }
 
 sub _getPasswordLines {

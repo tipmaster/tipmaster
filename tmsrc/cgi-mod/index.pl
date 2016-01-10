@@ -851,8 +851,20 @@ print '
 
 	<td bgcolor=white>
 
+<div style="max-width:300px">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- TM 300x600 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-7019464997176631"
+     data-ad-slot="2386025707"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!--
 <iframe id=\'acae648c\' name=\'acae648c\' src=\'http://ads.socapro.com/www/delivery/afr.php?zoneid=83&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'120\' height=\'600\'><a href=\'http://ads.socapro.com/www/delivery/ck.php?n=a3108930&amp;cb=INSERT_RANDOM_NUMBER_HERE\' target=\'_blank\'><img src=\'http://ads.socapro.com/www/delivery/avw.php?zoneid=83&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3108930&amp;ct0=INSERT_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
-
+-->
 
 </td><td bgcolor=black width=1>
 </td>
@@ -872,7 +884,7 @@ print '
 						</tr></table> 
 						
 						</td><td class=impressum align=center>
-						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Copyright 2015 - <a style="color:white" href="http://www.socapro.com" rel="nofollow">SocaPro Inc.</a> </b>
+						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Copyright 2016 - <a style="color:white" href="http://www.socapro.com" rel="nofollow">SocaPro Inc.</a> </b>
 			
 			
 						
@@ -916,6 +928,12 @@ Legendaere Fussballer auf <a style="color:darkgrey" href="http://www.kult-kicker
 <a style="color:darkgrey" href="http://www.bulitickets.net">Bundesliga Tickets</a>
 - 
 <a style="color:darkgrey" href="https://fussball-tippspiel.org">Bundesliga Tippspiel</a>
+<br/>
+Fussball Bundesliga Tipps auf <a title="Wett-Tipps zur Fussball Bundesliga" href="http://wetttipps-heute.com">wetttipps-heute.com</a>
+- 
+<a href="http://www.tip4free.de">Fussball Tippspiel</a>
+-
+<a href="http://kadermanager.de">Der Einfache Kalender fuer Fussballtrainer</a>
 </p>
 
 

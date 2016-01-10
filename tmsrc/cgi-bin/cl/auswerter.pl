@@ -66,7 +66,7 @@ if ($uorc eq "C") {
     close(X);
 
   } else {
-    my @grptms = $cllib->readGroupInfo();
+    @grptms = $cllib->readGroupInfo();
     #Rundenauswertung, Version fuer 2 Spielrunden
     if ($runde eq "G1") {$horr = 1;} else {$horr = 2;}
     print "Horr is $horr\n";
@@ -85,7 +85,9 @@ if ($uorc eq "C") {
 	}
       }
     }
-    $cllib->writeGroupInfo(\@grptms);
+    my $grp_ref = \@grptms;
+    print "Now writing group info with $grp_ref,  CLLIB is ",$cllib,"\n";
+    $cllib->writeGroupInfo($grp_ref);
   }
 
 } elsif ($uorc eq "U") {

@@ -22,6 +22,9 @@ use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
 use TMAuthenticationController;
 use HTML::Entities;
+use TMDao;
+use URI::Encode;
+use TMLogger;
 
 my $session = TMSession::getSession();
 my $trainer = $session->getUser();
@@ -35,6 +38,11 @@ $verein   = $query->param('frei');
 $mail     = $query->param('adresse');
 $link     = $query->param('link');
 $pass     = $query->param('newpass');
+$inactiveUser     = $query->param('inactiveUser');
+$email     = $query->param('email');
+
+
+
 
 $send   = $query->param('send');
 $method = $query->param('m');
@@ -54,8 +62,14 @@ exit;
 
 sub return_html {
 
+	our @hinweise = ();
 	if ( $send != 1 ) { &formular }
 	$fehler = 0;
+	TMLogger::log("main::anmeldung.pl " . $method);
+	if ($method eq "replaceEmailInactiveAccount") {
+		replaceEmailInactiveAccount($inactiveUser, $email);
+		&formular;
+	}
 
 ###### verbotene Emails ####################################
 	$ban = 0;
@@ -244,18 +258,40 @@ Format. Entweder es ist zu kurz bzw. zu lang<br>
 oder es enthaelt nicht erlaubte Sonder- bzw.<br>
 Leerzeichen.";
 	}
-	if ( $vorhanden_para == 1 && ( ( $pass_richtig ne $pass ) || ( $mail_richtig ne $mail ) ) ) {
+	if ( $vorhanden_para == 1 && ( ( $pass_richtig ne TMAuthenticationController::hashPassword( $pass, $voller_name ) ) || ( $mail_richtig ne $mail ) ) ) {
 		$fehler++;
+		
+		my $replaceEmailUrl = "/cgi-bin/btm/anmeldung.pl?send=1&m=replaceEmailInactiveAccount&inactiveUser=" . URI::Encode::uri_encode($voller_name) . "&email=". URI::Encode::uri_encode($mail);
+		
+		
 		$fault[$fehler] = "<font color=darkred>Betrifft Trainername + Passwort + E-Mail:<font color=black><br>
-Unter diesem Trainername ist bereits ein<br>
-Account beim TipMaster registriert.<br>
+Unter diesem Trainername wurde<br>
+in der Vergangenheit bereits ein<br>
+Account beim TipMaster registriert.<br><br>
 Um fuer diesen Account (Neu)Anmeldungen<br>
 zu taetigen, muessen Sie sich mit dem identischen<br>
 Passwort und identischer E-Mail mit der<br>
 dieser Account beim ersten Mal registriert wurde<br>
-anmelden. Dies ist aktuell noch nicht der Fall.<br>
+anmelden. Dies ist aktuell noch nicht der Fall.<br><br>
 Der Account wurde mit der E-Mail Adresse <br>
-$mail_richtig eroeffnet.
+$mail_richtig eroeffnet.<br><br>
+<b>L&ouml;sung 1:</b><br>
+Sie waeren in der Vergangenheit nicht beim TipMaster<br>
+angemeldet? Waehlen Sie bitte Ihren Nicknamen<br>
+als Vornamen und versuchen Sie es erneut.<br><br>
+<b>L&ouml;sung 2:</b><br>
+Passwort vergessen? Wenn Sie weiterhin Zugriff<br> 
+zu der obigen Email haben aber das Passwort vergessen<br>
+haben koennen Sie sich <a href=\"/url.shtml\">hier</a> ein neues<br>
+Passwort zuschicken lassen und die Wiederanmledung<br> 
+dann neu probieren.<br><br>
+<b>L&ouml;sung 3:</b><br>
+Neue E-Mail? Sollten Sie keinen Zugriff mehr<br>
+auf die obige E-Mail haben koennen Sie <a href=\"$replaceEmailUrl\">hier klicken</a><br>
+um die E-Mail Adresse fuer den inaktiven Account<br>
+fuer $voller_name auf $mail<br>
+zu aendern.<br><br>
+
 ";
 
 	}
@@ -284,6 +320,12 @@ $mail_richtig eroeffnet.
 			$datb[$x] = $vereind[$y];
 			$y++;
 		}
+		
+		TMLogger::log("main::anmeldung.pl " . $voller_name);
+		TMLogger::log("main::anmeldung.pl " . $adresse);
+		
+		
+		
 		for ( $x = 1 ; $x < 19 ; $x++ ) {
 			if ( $data[$x] eq $verein ) {
 				if ( $datb[$x] ne "Trainerposten frei" ) {
@@ -293,6 +335,7 @@ Der gewuenschte Verein ist mittlerweile<br>
 bereits wieder vergeben. Bitte einen<br>
 anderen Verein waehlen.";
 				}
+				TMLogger::log("main::anmeldung.pl klappt auch" . $variable);
 				$datb[$x] = $voller_name;
 				$datc[$x] = $adresse;
 			}
@@ -312,61 +355,7 @@ anderen Verein waehlen.";
 sub anmelden {
 
 	$c = time();
-	if ( $method eq "W" ) {
-
-		open( D3, "</tmdata/btm/warte.txt" );
-		while (<D3>) {
-			@all = split( /&/, $_ );
-			if ( $all[1] eq $voller_name ) { $nop = 1 }
-			if ( $all[3] eq $adresse )     { $nop = 1 }
-		}
-		close(D3);
-		$ok = 2;
-		if ( $nop != 1 ) {
-			open( D2, ">>/tmdata/btm/warte.txt" );
-			flock( D2, 2 );
-			print D2 "!&$voller_name&$pass&$adresse&$date&$time&$c&---&$c&\n";
-			flock( D2, 8 );
-			close(D2);
-
-			$mail{Message} .= "Bundesliga - TipMaster\nhttp://www.tipmaster.de/\n\n\n ";
-			$mail{Message} .= "             *** Registrierung Warteliste ***\n\n";
-			$mail{Message} .= "Sehr geehrte(r) $voller_name ,\n\n";
-			$mail{Message} .=
-			  "vielen Dank fuer Ihre Registrierung auf der BTM - Warteliste. Sobald neue Vereine frei werden\n";
-			$mail{Message} .=
-			  "und Ihre Wartelistenposition ausreichend hoch ist, wird Ihnen automatisch ein Verein zugeteilt\n";
-			$mail{Message} .= "und Sie via E-Mail informiert.\n\n";
-			$mail{Message} .=
-			  "Bitte beachten Sie dass Sie sich alle 72 Stunden auf der Seite der Warteliste mit Ihren\n";
-			$mail{Message} .=
-			  "Zugangsdaten einloggen muessen um nicht von der Warteliste wieder geloescht zu werden.\n\n";
-
-			$mail{Message} .= "Ihre LogIn Daten fuer die BTM Warteliste :\n\n";
-			$mail{Message} .= "Trainername  : $voller_name\n";
-			$mail{Message} .= "Passwort     : (Wie gewuenscht)\n\n
-URL Warteliste : http://www.tipmaster.de/cgi-bin/btm/warte.pl\n\n";
-
-			$mail{Message} .=
-"Bei Fragen zum Spielsystem lesen Sie bitte das Regelbuch sowie die FAQ zum TipMaster .\nWir wuenschen Ihnen viel Spass und Erfolg beim TipMaster .\n\n";
-			$mail{Message} .= "Mit freundlichen Gruessen\nIhr TipMaster - Team\n";
-
-			$mailprog = '/usr/sbin/sendmail';
-			open( MAIL, "|$mailprog -t" );
-			print MAIL "To: $adresse\n";
-			print MAIL "From: service\@tipmaster.net ( TipMaster online )\n";
-			print MAIL "Subject: Bundesliga - TipMaster Registrierung Warteliste\n\n";
-			print MAIL "$mail{Message}";
-			close(MAIL);
-
-			$ok = 1;
-		}
-
-		#print "Location: /cgi-bin/btm/warte.pl?ok=$ok\n\n";
-		exit;
-
-		exit;
-	}
+	
 
 	my $hashedPassword = TMAuthenticationController::hashPassword( $pass, $voller_name );
 
@@ -623,6 +612,16 @@ leider $fehler Fehler aufgetreten :</b><br><br><font color=black size=1>";
 		}
 		print "";
 	}
+	
+	if ( scalar(@hinweise) > 0 ) {
+		print "
+<br><br><font color=black size=1>";
+		for ( $f = 1 ; $f <= scalar(@hinweise) ; $f++ ) {
+			print "$hinweise[$f]<br><br>\n";
+		}
+		
+	}
+	
 
 	print "
 <form action=/cgi-bin/btm/anmeldung.pl method=post>
@@ -764,3 +763,20 @@ sub get_date {
 
 }
 
+
+sub replaceEmailInactiveAccount {
+	my $inactiveUser = shift;
+	my $email = shift;
+	my $return = TMDao::assignNewEmailToInactiveAccount($inactiveUser, $email);
+	
+	TMLogger::log("came in here");
+	
+	if ($return != 1) {
+		$fehler++;
+		$fault[$fehler] = $return;	
+	} else {
+		push(@hinweise,'Trainer '. $inactiveUser . ' hat nun die Email<br>'.$email.' zugewiesen. Bitte fordern Sie ein<br><a href="/url.shtml">neues Passwort an<a/> falls erfoderlich.');
+	}
+	
+	
+}

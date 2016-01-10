@@ -622,10 +622,13 @@ sub readGroupInfo {
 sub writeGroupInfo {
   my $self = shift;
   my $grptms_ref = shift;
-  open(G,">$verz/DATA_${runde}.DAT") or die "Cannot write to group info\n";
+ my $datname = "$verz/DATA_G1.DAT";
+  #print "Self is ",$self,", Now writing out group info with ",$grptms_ref," Writing to $datname \n";
+  open(G,">$datname") or die "Cannot write to group info\n";
   for ($grp = 1;$grp<=8;$grp++) {
     for ($slot=1;$slot<=4;$slot++) {
-      my $team = $$grptms[($grp-1)*4+$slot-1];
+      my $team = $$grptms_ref[($grp-1)*4+$slot-1];
+      #print "GroupWrite: Grp $grp, Slot $slot, team is $team ID ",$team->id,"\n"; 
       print G "$grp&$slot&",$team->id,"&",$team->exportstring,"\n";
     }
   }
