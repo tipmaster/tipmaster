@@ -911,6 +911,8 @@ print '
 
 Kostenlose Fussball Live Streams <a style="color:darkgrey" href="http://www.fussballlivestream.tv/">Hier klicken</a> 
 - 
+<a href="https://livescore.land/de">Livescore Land</a>
+-
 <a style="color:darkgrey" href="http://www.wett.info">Wett.info</a>
 -
 <a style="color:darkgrey" href="http://www.bundesligaquoten.de">bundesligaquoten.de</a>
