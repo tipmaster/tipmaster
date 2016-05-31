@@ -2,6 +2,7 @@
 require Net::SMTP;
 use DB_File;
 
+
 my $hasChanged = &roundHasChanged();
 if ($hasChanged) {
 
@@ -17,7 +18,7 @@ if ($hasChanged) {
         print "No round change detected!\n";
 }
 my $ec_hasChanged = &ECroundHasChanged();
-if ($ec_hasChanged) {
+if ($ec_hasChanged && $ec_hasChanged ne "Q1") {
 	if (1) {
 			&ECupdateRoundNotifier();
 			print "EC Round counter updated\n";

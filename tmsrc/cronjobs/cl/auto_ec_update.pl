@@ -17,6 +17,14 @@ my @rounds = ("Q1","Q2","Q3","G1","G2","AC","VI","HA","FI");
 my %roundnr = ("Q1",1,"Q2",2,"Q3",3,"G1",4,"G2",5,"AC",6,"VI",7,"HA",8,"FI",9);
 my %filenameprefix = ("U","UEFA","C","DATA");
 
+### do not run before saison has started
+my $now = time;
+my $limit = 1451994591;
+if ($now < $limit) { #di jan 5, 2016
+	print "No round change, $now vs $limit, timestamp for activation not reached yet!\n";
+	exit;
+}
+
 gofillout();
 gocreate();
 checkSoftLink();

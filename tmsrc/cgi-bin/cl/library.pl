@@ -1,3 +1,4 @@
+#No longer used!!
 #!/usr/bin/perl
 # Die Library - Funktionen, die aus mehreren Skripten benutzt werden
 
@@ -126,7 +127,7 @@ if ($nowis > $dec28_2014) {
 
 #####
 
-my $winterzeit = 0;
+my $winterzeit = 1;
 $timeLimit = 1004112000+(($rundenfolge{$derzeitige_runde}+$weekctr)*7*86400+120+$winterzeit*3600); #primed for 04/1
 
 

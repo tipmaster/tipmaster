@@ -156,32 +156,25 @@ sub getTimeLimit {
 #$timeLimit = 1004112000+(($rundenfolge{$derzeitige_runde}+432)*7*86400+3720); #primed for 04/1
         my @nsparm = split(/\//,$ecparms{"neueSaison"});
         my $lfdsais = $nsparm[1];
-        # adjustment for saisons. 2013 had 5 saisons, 2014 had 6 seasons
-        $lfdsais +=11;
-        my $weekctr = ($lfdsais*9)+425+46+2+55+54+1;
-
-        ### forget this after dec 30, 2013, then, increase weekctr statically
-        my $dec28      = 1388271471;
-        my $dec28_2014 = 1419721200;
-        my $nowis = time;
-        if ($nowis > $dec28) {
-                $weekctr++;
-        }
-
-        #same stunt for 2014
-        if ($nowis > $dec28_2014) {
-                $weekctr++;
-        }
-
-
-
+        # adjustment for saisons. 2013 had 5 saisons, 2014 had 6 seasons, 2015 had 5 seasons.
+        # on every year switch, increase lfdsais by the number of saisons
+        # could be automated one day
+        $lfdsais +=16;
+        my $weekctr = ($lfdsais*9)+425+46+2+55+54+5;
         #####
 
         my $winterzeit = 0;
+	my $nowtime = time;
+
+	# automated daylight savings until March 2017
+	if ($nowtime > 1477904400 && $nowtime < 1490601600) {
+	   $winterzeit = 1;
+	}
+
 	my $inthisround = $rundenfolge{$derzeitige_runde}+$weekctr;
         my $timeLimit = 1004112000+($inthisround*7*86400+120+$winterzeit*3600); #primed for 04/1
 
-	print "<!-- DerzRunde: $derzeitige_runde  LFDSais: $lfdsais, weekctr: $weekctr, inthisround: $inthisround //-->\n";
+	print "<!-- DerzRunde: $derzeitige_runde  LFDSais: $lfdsais, weekctr: $weekctr, inthisround: $inthisround TimeLimit $timeLimit  now is $nowtime//-->\n";
 
 	return $timeLimit;
 }
