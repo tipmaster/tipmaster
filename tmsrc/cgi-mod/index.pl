@@ -851,20 +851,11 @@ print '
 
 	<td bgcolor=white>
 
-<div style="max-width:300px">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- TM 300x600 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:600px"
-     data-ad-client="ca-pub-7019464997176631"
-     data-ad-slot="2386025707"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div style="max-width:160px">
+
+<iframe id='ac3d4403' name='ac3d4403' src='http://ads.socapro.com/www/delivery/afr.php?refresh=60&amp;zoneid=339&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_ENCODED_CLICKURL_HERE' frameborder='0' scrolling='no' width='160' height='600'><a href='http://ads.socapro.com/www/delivery/ck.php?n=a3450efc&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://ads.socapro.com/www/delivery/avw.php?zoneid=339&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3450efc&amp;ct0=INSERT_ENCODED_CLICKURL_HERE' border='0' alt='' /></a></iframe>
+
 </div>
-<!--
-<iframe id=\'acae648c\' name=\'acae648c\' src=\'http://ads.socapro.com/www/delivery/afr.php?zoneid=83&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'120\' height=\'600\'><a href=\'http://ads.socapro.com/www/delivery/ck.php?n=a3108930&amp;cb=INSERT_RANDOM_NUMBER_HERE\' target=\'_blank\'><img src=\'http://ads.socapro.com/www/delivery/avw.php?zoneid=83&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3108930&amp;ct0=INSERT_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
--->
 
 </td><td bgcolor=black width=1>
 </td>
