@@ -88,7 +88,7 @@ $cup_btm_aktiv = $cup_btm_aktiv_f[$rrunde];
 	"tip_fin.gif", "tip_den.gif", "tip_ned.gif", "tip_sco.gif", "flag_wm.gif", "tip_ger.gif",
 	"tip_rus.gif", "tip_por.gif", "tip_irl.gif", "tip_usa.gif", "tip_isl.gif", "tip_bel.gif",
 	"tip_ukr.gif", "tip_tur.gif", "tip_pol.gif", "tip_gri.gif", "tip_cze.gif", "tip_bel.gif",
-	"tip_f14.gif", "tip_bra.gif"
+	"tip_f14.gif", "tip_bra.gif", "tip_jap.gif"
 );
 
 # Job - Boerse auf=1/zu=0
