@@ -1109,19 +1109,22 @@ sub btm_liga_kuerzel {
 
 sub banner_gross {
 
-	$number = '
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- TM 728x90 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-7019464997176631"
-     data-ad-slot="2885553308"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!--
-<iframe id=\'acae648c\' name=\'acae648c\' src=\'http://advertising.fussball-liveticker.eu/www/delivery/afr.php?zoneid=84&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'468\' height=\'60\'><a href=\'http://advertising.fussball-liveticker.eu/www/delivery/ck.php?n=a3108930&amp;cb=INSERT_RANDOM_NUMBER_HERE\' target=\'_blank\'><img src=\'http://advertising.fussball-liveticker.eu/www/delivery/avw.php?zoneid=84&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3108930&amp;ct0=INSERT_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
--->
+#	$number = '
+#<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+#<!-- TM 728x90 -->
+#<ins class="adsbygoogle"
+#     style="display:inline-block;width:728px;height:90px"
+#     data-ad-client="ca-pub-7019464997176631"
+#     data-ad-slot="2885553308"></ins>
+#<script>
+#(adsbygoogle = window.adsbygoogle || []).push({});
+#</script>
+#<!--
+#<iframe id=\'acae648c\' name=\'acae648c\' src=\'http://advertising.fussball-liveticker.eu/www/delivery/afr.php?zoneid=84&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'468\' height=\'60\'><a href=\'http://advertising.fussball-liveticker.eu/www/delivery/ck.php?n=a3108930&amp;cb=INSERT_RANDOM_NUMBER_HERE\' target=\'_blank\'><img src=\'http://advertising.fussball-liveticker.eu/www/delivery/avw.php?zoneid=84&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3108930&amp;ct0=INSERT_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
+#-->
+
+$number = '
+<iframe id=\'a52022f2\' name=\'a52022f2\' src=\'http://ads.socapro.com/www/delivery/afr.php?refresh=60&amp;zoneid=336&amp;cb='.$cachebuster.'&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'728\' height=\'90\'><a href=\'http://ads.socapro.com/www/delivery/ck.php?n=ad110454&amp;cb='.$cachebuster.'\' target=\'_blank\'><img src=\'http://ads.socapro.com/www/delivery/avw.php?zoneid=336&amp;cb='.$cachebuster.'&amp;n=ad110454&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
 &nbsp;';
 
 	return $number;

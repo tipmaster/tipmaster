@@ -40,16 +40,23 @@ j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 
 ';
 
+#print '
+#<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+#<!-- TM 728x90 -->
+#<ins class="adsbygoogle"
+#     style="display:inline-block;width:728px;height:90px"
+#     data-ad-client="ca-pub-7019464997176631"
+#     data-ad-slot="2885553308"></ins>
+#<script>
+#(adsbygoogle = window.adsbygoogle || []).push({});
+#</script>
+#
+#';
+
+my $cachebuster = int(100000*rand());
+
 print '
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- TM 728x90 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-7019464997176631"
-     data-ad-slot="2885553308"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<iframe id=\'a52022f2\' name=\'a52022f2\' src=\'http://ads.socapro.com/www/delivery/afr.php?refresh=60&amp;zoneid=336&amp;cb='.$cachebuster.'&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'728\' height=\'90\'><a href=\'http://ads.socapro.com/www/delivery/ck.php?n=ad110454&amp;cb='.$cachebuster.'\' target=\'_blank\'><img src=\'http://ads.socapro.com/www/delivery/avw.php?zoneid=336&amp;cb='.$cachebuster.'&amp;n=ad110454&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
 
 ';
 

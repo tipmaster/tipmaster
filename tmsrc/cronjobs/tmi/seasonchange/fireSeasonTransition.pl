@@ -91,7 +91,7 @@ require "/tmapp/tmsrc/cgi-bin/tmi/saison.pl";
 	`mv /tmdata/tmi/db/spiele_old.txt /tmdata/tmi/db/spiele_old_$vold.txt`;
 	`mv /tmdata/tmi/db/spiele.txt /tmdata/tmi/db/spiele_old.txt`;
 	#reset rights - problem occurredd fter git trainsition, tp, Aug-24-2105
-`chmod -R lighttpd:lighttpd /tmdata`;
+`chown -R lighttpd:lighttpd /tmdata`;
 `chmod -R 755 /tmdata`;
 	print "... beendet.";
 

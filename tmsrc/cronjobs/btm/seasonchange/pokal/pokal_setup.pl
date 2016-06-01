@@ -9,5 +9,5 @@ print "\n\n BTM und TMI Pokal neu aufgesetzt !\n";
 
 
 	#reset rights - problem occurredd fter git trainsition, tp, Aug-24-2105
-`chmod -R lighttpd:lighttpd /tmdata`;
+`chown -R lighttpd:lighttpd /tmdata`;
 `chmod -R 755 /tmdata`;

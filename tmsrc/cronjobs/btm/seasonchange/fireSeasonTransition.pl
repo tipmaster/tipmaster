@@ -126,7 +126,7 @@ print "... beendet.";
 `mv /tmapp/tmsrc/cronjobs/btm/seasonchange/history.txt /tmdata/btm/history.txt`;
 
 #reset rights - problem occurredd fter git trainsition, tp, Aug-24-2105
-`chmod -R lighttpd:lighttpd /tmdata`;
+`chown -R lighttpd:lighttpd /tmdata`;
 `chmod -R 755 /tmdata`;
 
 
