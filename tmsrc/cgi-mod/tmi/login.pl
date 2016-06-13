@@ -1448,7 +1448,7 @@ in <a href="http://community.tipmaster.de/showthread.php?t=27483">diesem Posting
 <div style="min-width:235px;max-width:235px;padding:10px;background-color:white;border:1px solid black">
 <b>Trainerentlassungen</b><br/><br/>
 Am kommenden Donnerstag (16.06.2016) werden die ersten inaktive Trainer entlassen. 
-Die Entlassungen erfolgen nach der Vergabe durch die Jobbörse. </a>.
+Die Entlassungen erfolgen nach der Vergabe durch die Jobb&ouml;rse. </a>.
 </div>
 <br/>
 <div style="min-width:235px;max-width:235px;padding:10px;background-color:white;border:1px solid black">
