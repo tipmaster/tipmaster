@@ -1438,6 +1438,8 @@ print <<"(END ERROR HTML)";
 <td align=left><font face=verdana size=1>
 
 
+<br/><br>
+
 <div style="min-width:235px;max-width:235px;padding:10px;background-color:white;border:1px solid black">
 <b>Aktion Fehlerbereinigung</b><br/><br/>
 Wir arbeiten aktiv daran Fehler beim TipMaster zu eliminieren.
@@ -1445,15 +1447,11 @@ Wenn euch Fehler auffallen meldet sie bitte im Stammtisch
 in <a href="http://community.tipmaster.de/showthread.php?t=27483">diesem Posting</a>.
 </div>
 <br/>
-<div style="min-width:235px;max-width:235px;padding:10px;background-color:white;border:1px solid black">
-<b>Trainerentlassungen</b><br/><br/>
-Am kommenden Donnerstag (16.06.2016) werden die ersten inaktive Trainer entlassen. 
-Die Entlassungen erfolgen nach der Vergabe durch die Jobb&ouml;rse. </a>.
-</div>
-<br/>
+
+
 <div style="min-width:235px;max-width:235px;padding:10px;background-color:white;border:1px solid black">
 <b>Tranerfuxx Wahl</b><br/><br/>
-<a href="http://community.tipmaster.de/showthread.php?t=30393">Hier abstimmen!</a></div>
+<a href="http://community.tipmaster.de/showthread.php?t=30767">Hier abstimmen!</a></div>
 <br/>
 
 <br/><br/>
