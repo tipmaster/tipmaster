@@ -323,7 +323,8 @@ print "<p align=left>";
 print
 "<center>Laenderkuerzel ( = Erste Zahl jeder Spielzeile ) :<br>0 = UEFA Spiele | 1 = GER 1.BL | 2 = GER 2.BL | 3 = ENG | 
 4 = FRA | 5 = ITA |<br>6 = SUI | 7 = AUT | 8 = ESP | 9 = 'weisse Fahne' | 
-10 = SWE | 11 = NOR | 12 = FIN | 13 = DEN |<br> 14 = NED | 15 = SCO | 16 = WM Spiele | 17 = GER RL | 18 = RUS | 19 = POR | 20 = IRL |<br>21 = USA | 22 = ISL | 23 = BEL | 24 = UKR | 25 = TUR | 26 = POL | 27 = GRI | 28 = CZE | 29 = BEL | 30 = FIFA 2014 | 31 = BRA | 32 = JPN<br>
+10 = SWE | 11 = NOR | 12 = FIN | 13 = DEN |<br> 14 = NED | 15 = SCO | 16 = WM Spiele | 17 = GER RL | 18 = RUS | 19 = POR | 20 = IRL |<br>21 = USA | 22 = ISL | 23 = BEL | 24 = UKR | 25 = TUR | 26 = POL | 27 = GRI | 28 = CZE | <br> 29 = BEL | 30 = FIFA 2014 | 31 = BRA | 32 = JPN | 33= EM2016
+
 <br><br>
 FORMAT DER ZEILEN DES TIPFORMULARS :<br>
 [Laenderkuerzel Nummer]&[Vereinsname1] - [Vereinsname 2]&[QUOTE 1]&[QUOTE 0]&[QUOTE 2]&0&_ : _&[DATUM]&[UHRZEIT]&
