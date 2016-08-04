@@ -854,7 +854,7 @@ print '
 <div style="max-width:160px">
 
 
-<iframe id=\'ac3d4403\' name=\'ac3d4403\' src=\'http://ads.socapro.com/www/delivery/afr.php?refresh=60&amp;zoneid=351&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'160\' height=\'600\'><a href=\'http://ads.socapro.com/www/delivery/ck.php?n=a3450efc&amp;cb=INSERT_RANDOM_NUMBER_HERE\' target=\'_blank\'><img src=\'http://ads.socapro.com/www/delivery/avw.php?zoneid=351&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3450efc&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
+<iframe id=\'ac3d4403\' name=\'ac3d4403\' src=\'http://ads.socapro.com/www/delivery/afr.php?refresh=60&amp;zoneid=339&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'160\' height=\'600\'><a href=\'http://ads.socapro.com/www/delivery/ck.php?n=a3450efc&amp;cb=INSERT_RANDOM_NUMBER_HERE\' target=\'_blank\'><img src=\'http://ads.socapro.com/www/delivery/avw.php?zoneid=339&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3450efc&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
 
 </div>
 
