@@ -310,6 +310,7 @@ my $LABEL_BOX4 =
 my $LABEL_BOX5 = "Champ. League: $cup_cl_name[$rrunde-1]<br>UEFA Cup: $cup_uefa_name[$rrunde-1]<br><br>";
 my $LABEL_BOX6 = "Derzeit keine<br>Meldungen<br><br>";
 
+#my $LABEL_BOX6 = "<span style=\"color:red\">Derzeit gibt es Login-Probleme. Wir arbeiten dran!</span><br><br>";
 #my $LABEL_BOX6 = "Winterpause bis 6.1.12<br><br>";
 #my $LABEL_BOX6 = "Tipabgabe EC wg. <br>Winterzeit bis<br><b>21 Uhr</b> verl&auml;ngert<br><br>";
 
