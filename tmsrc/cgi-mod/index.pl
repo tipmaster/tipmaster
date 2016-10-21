@@ -920,7 +920,7 @@ Legendaere Fussballer auf <a style="color:darkgrey" href="http://www.kult-kicker
 -
 <a style="color:darkgrey" href="https://www.stadionheft24.de">Stadionzeitungen f&uuml;r Amateurvereine</a>
 - 
-<a style="color:darkgrey" href="http://www.bulitickets.net">Bundesliga Tickets</a>
+<a style="color:darkgrey" href="http://www.bundesliga-tickets.net">Bundesliga Tickets</a>
 - 
 <a style="color:darkgrey" href="http://www.fussball-liveticker.eu/b/fussball-europameisterschaft/em-2016-live-stream">EM Live Stream</a>
 - 
