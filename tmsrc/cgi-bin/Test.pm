@@ -573,10 +573,8 @@ sub tmi_liga_namen {
 
 sub tmi_liga_kat {
 	my @liga_kat = (
-		0, 1, 3, 5, 5, 1, 3, 5, 5, 1, 3, 5, 5, 1, 3, 5, 5, 2, 4, 6, 6, 2, 4, 6, 6, 2, 4, 6, 6, 2,
-		4, 6, 6, 2, 4, 6, 6, 2, 4, 6, 6, 2, 4, 6, 6, 4, 6, 4, 6, 4, 6, 3, 5, 3, 5, 3, 5, 4, 6, 5,
-		7, 4, 6, 3, 5, 4, 6, 4, 6, 3, 5, 4, 6, 3, 5, 3, 5, 4, 6, 5, 7, 5, 7, 4, 6, 3, 5, 3, 5, 4,
-		6, 4, 6, 4, 6, 4, 6, 3, 5, 5, 7, 4, 6, 5, 7, 5, 7, 4, 6, 5, 7, 5, 7, 5, 7, 5, 7, 5, 5
+		0, 1, 3, 5, 5, 1, 3, 5, 5, 1, 3, 5, 5, 1, 3, 5, 5, 2, 4, 6, 6, 2, 4, 6, 6, 2, 4, 6, 6, 2, 4, 6, 6, 2, 4, 6, 6, 2, 4, 6, 6, 2, 4, 6, 6, 4, 6, 4, 6, 4, 6, 3, 5, 3, 5, 3, 5, 4, 6, 5,
+		7, 4, 6, 3, 5, 4, 6, 4, 6, 3, 5, 4, 6, 3, 5, 3, 5, 4, 6, 5, 7, 5, 7, 4, 6, 3, 5, 3, 5, 4, 6, 4, 6, 4, 6, 4, 6, 3, 5, 5, 7, 4, 6, 5, 7, 5, 7, 4, 6, 5, 7, 5, 7, 5, 7, 5, 7, 5, 5
 	);
 	return (@liga_kat);
 }
@@ -903,7 +901,13 @@ sub btm_saison_namen {
 		"Saison 2016'3",
 		"Saison 2016'4",
 		"Saison 2016'5",
-		"Saison 2016'6"
+		"Saison 2016'6",
+		"Saison 2017'1",
+		"Saison 2017'2",
+		"Saison 2017'3",
+		"Saison 2017'4",
+		"Saison 2017'5",
+		"Saison 2017'6"
 	);
 
 	open( D1, "</tmdata/btm/main_nr.txt" );
@@ -1017,7 +1021,13 @@ sub tmi_saison_namen {
 		"Saison 2016'3",
 		"Saison 2016'4",
 		"Saison 2016'5",
-		"Saison 2016'6"
+		"Saison 2016'6",
+		"Saison 2017'1",
+		"Saison 2017'2",
+		"Saison 2017'3",
+		"Saison 2017'4",
+		"Saison 2017'5",
+		"Saison 2017'6"
 
 	);
 
@@ -1049,7 +1059,8 @@ sub btm_saison_kuerzel {
 		"131", "132", "133", "134", "135",
 		"141", "142", "143", "144", "145", "146",
 		"151", "152", "153", "154", "155",
-		"161", "162", "163", "164", "165", "166"
+		"161", "162", "163", "164", "165", "166",
+		"171", "172", "173", "174", "175", "176"
 
 	);
 	return @main_kuerzel;
@@ -1064,7 +1075,8 @@ sub tmi_saison_kuerzel {
 		"084",  "085", "091", "092", "093", "094", "095", "096", "101", "102", "103", "104", "105", "111",
 		"112",  "113", "114", "115", "116", "121", "122", "123", "124", "125", "126", "131", "132", "133",
 		"134",  "135", "141", "142", "143", "144", "145", "146", "151", "152", "153", "154", "155", "161",
-		"162",  "163", "164", "165", "166"
+		"162",  "163", "164", "165", "166",
+		"171", "172", "173", "174", "175", "176"
 	);
 	return @main_kuerzel;
 }
@@ -1072,32 +1084,17 @@ sub tmi_saison_kuerzel {
 sub btm_liga_kuerzel {
 
 	my @liga_kuerzel = (
-		"---",    "1.BL",   "2.BL",   "RL A",   "RL B",   "OL A",   "OL B",   "OL C",   "OL D",   "VL A",
-		"VL B",   "VL C",   "VL D",   "VL E",   "VL F",   "VL G",   "VL H",   "LA A",   "LA B",   "LA C",
-		"LA D",   "LA E",   "LA F",   "LA G",   "LA H",   "LA I",   "LA K",   "LA L",   "LA M",   "LA N",
-		"LA O",   "LA P",   "LA R",   "BE 01",  "BE 02",  "BE 03",  "BE 04",  "BE 05",  "BE 06",  "BE 07",
-		"BE 08",  "BE 09",  "BE 10",  "BE 11",  "BE 12",  "BE 13",  "BE 14",  "BE 15",  "BE 16",  "BE 17",
-		"BE 18",  "BE 19",  "BE 20",  "BE 21",  "BE 22",  "BE 23",  "BE 24",  "BE 25",  "BE 26",  "BE 27",
-		"BE 28",  "BE 29",  "BE 30",  "BE 31",  "BE 32",  "KR 01",  "KR 02",  "KR 03",  "KR 04",  "KR 05",
-		"KR 06",  "KR 07",  "KR 08",  "KR 09",  "KR 10",  "KR 11",  "KR 12",  "KR 13",  "KR 14",  "KR 15",
-		"KR 16",  "KR 17",  "KR 18",  "KR 19",  "KR 20",  "KR 21",  "KR 22",  "KR 23",  "KR 24",  "KR 25",
-		"KR 26",  "KR 27",  "KR 28",  "KR 29",  "KR 30",  "KR 31",  "KR 32",  "KR 33",  "KR 34",  "KR 35",
-		"KR 36",  "KR 37",  "KR 38",  "KR 39",  "KR 40",  "KR 41",  "KR 42",  "KR 43",  "KR 44",  "KR 45",
-		"KR 46",  "KR 47",  "KR 48",  "KR 49",  "KR 50",  "KR 51",  "KR 52",  "KR 53",  "KR 54",  "KR 55",
-		"KR 56",  "KR 57",  "KR 58",  "KR 59",  "KR 60",  "KR 61",  "KR 62",  "KR 63",  "KR 64",  "KK 01",
-		"KK 02",  "KK 03",  "KK 04",  "KK 05",  "KK 06",  "KK 07",  "KK 08",  "KK 09",  "KK 10",  "KK 11",
-		"KK 12",  "KK 13",  "KK 14",  "KK 15",  "KK 16",  "KK 17",  "KK 18",  "KK 19",  "KK 20",  "KK 21",
-		"KK 22",  "KK 23",  "KK 24",  "KK 25",  "KK 26",  "KK 27",  "KK 28",  "KK 29",  "KK 30",  "KK 31",
-		"KK 32",  "KK 33",  "KK 34",  "KK 35",  "KK 36",  "KK 37",  "KK 38",  "KK 39",  "KK 40",  "KK 41",
-		"KK 42",  "KK 43",  "KK 44",  "KK 45",  "KK 46",  "KK 47",  "KK 48",  "KK 49",  "KK 50",  "KK 51",
-		"KK 52",  "KK 53",  "KK 54",  "KK 55",  "KK 56",  "KK 57",  "KK 58",  "KK 59",  "KK 60",  "KK 61",
-		"KK 62",  "KK 63",  "KK 64",  "KK 65",  "KK 66",  "KK 67",  "KK 68",  "KK 69",  "KK 70",  "KK 71",
-		"KK 72",  "KK 73",  "KK 74",  "KK 75",  "KK 76",  "KK 77",  "KK 78",  "KK 79",  "KK 80",  "KK 81",
-		"KK 82",  "KK 83",  "KK 84",  "KK 85",  "KK 86",  "KK 87",  "KK 88",  "KK 89",  "KK 90",  "KK 91",
-		"KK 92",  "KK 93",  "KK 94",  "KK 95",  "KK 96",  "KK 97",  "KK 98",  "KK 99",  "KK 100", "KK 101",
-		"KK 102", "KK 103", "KK 104", "KK 105", "KK 106", "KK 107", "KK 108", "KK 109", "KK 110", "KK 111",
-		"KK 112", "KK 113", "KK 114", "KK 115", "KK 116", "KK 117", "KK 118", "KK 119", "KK 120", "KK 121",
-		"KK 122", "KK 123", "KK 124", "KK 125", "KK 126", "KK 127", "KK 128"
+		"---",    "1.BL",   "2.BL",   "RL A",   "RL B",   "OL A",   "OL B",   "OL C",   "OL D",   "VL A",   "VL B",   "VL C",   "VL D",   "VL E",   "VL F",   "VL G",   "VL H",   "LA A",   "LA B",   "LA C",   "LA D",   "LA E",   "LA F",   "LA G",
+		"LA H",   "LA I",   "LA K",   "LA L",   "LA M",   "LA N",   "LA O",   "LA P",   "LA R",   "BE 01",  "BE 02",  "BE 03",  "BE 04",  "BE 05",  "BE 06",  "BE 07",  "BE 08",  "BE 09",  "BE 10",  "BE 11",  "BE 12",  "BE 13",  "BE 14",  "BE 15",
+		"BE 16",  "BE 17",  "BE 18",  "BE 19",  "BE 20",  "BE 21",  "BE 22",  "BE 23",  "BE 24",  "BE 25",  "BE 26",  "BE 27",  "BE 28",  "BE 29",  "BE 30",  "BE 31",  "BE 32",  "KR 01",  "KR 02",  "KR 03",  "KR 04",  "KR 05",  "KR 06",  "KR 07",
+		"KR 08",  "KR 09",  "KR 10",  "KR 11",  "KR 12",  "KR 13",  "KR 14",  "KR 15",  "KR 16",  "KR 17",  "KR 18",  "KR 19",  "KR 20",  "KR 21",  "KR 22",  "KR 23",  "KR 24",  "KR 25",  "KR 26",  "KR 27",  "KR 28",  "KR 29",  "KR 30",  "KR 31",
+		"KR 32",  "KR 33",  "KR 34",  "KR 35",  "KR 36",  "KR 37",  "KR 38",  "KR 39",  "KR 40",  "KR 41",  "KR 42",  "KR 43",  "KR 44",  "KR 45",  "KR 46",  "KR 47",  "KR 48",  "KR 49",  "KR 50",  "KR 51",  "KR 52",  "KR 53",  "KR 54",  "KR 55",
+		"KR 56",  "KR 57",  "KR 58",  "KR 59",  "KR 60",  "KR 61",  "KR 62",  "KR 63",  "KR 64",  "KK 01",  "KK 02",  "KK 03",  "KK 04",  "KK 05",  "KK 06",  "KK 07",  "KK 08",  "KK 09",  "KK 10",  "KK 11",  "KK 12",  "KK 13",  "KK 14",  "KK 15",
+		"KK 16",  "KK 17",  "KK 18",  "KK 19",  "KK 20",  "KK 21",  "KK 22",  "KK 23",  "KK 24",  "KK 25",  "KK 26",  "KK 27",  "KK 28",  "KK 29",  "KK 30",  "KK 31",  "KK 32",  "KK 33",  "KK 34",  "KK 35",  "KK 36",  "KK 37",  "KK 38",  "KK 39",
+		"KK 40",  "KK 41",  "KK 42",  "KK 43",  "KK 44",  "KK 45",  "KK 46",  "KK 47",  "KK 48",  "KK 49",  "KK 50",  "KK 51",  "KK 52",  "KK 53",  "KK 54",  "KK 55",  "KK 56",  "KK 57",  "KK 58",  "KK 59",  "KK 60",  "KK 61",  "KK 62",  "KK 63",
+		"KK 64",  "KK 65",  "KK 66",  "KK 67",  "KK 68",  "KK 69",  "KK 70",  "KK 71",  "KK 72",  "KK 73",  "KK 74",  "KK 75",  "KK 76",  "KK 77",  "KK 78",  "KK 79",  "KK 80",  "KK 81",  "KK 82",  "KK 83",  "KK 84",  "KK 85",  "KK 86",  "KK 87",
+		"KK 88",  "KK 89",  "KK 90",  "KK 91",  "KK 92",  "KK 93",  "KK 94",  "KK 95",  "KK 96",  "KK 97",  "KK 98",  "KK 99",  "KK 100", "KK 101", "KK 102", "KK 103", "KK 104", "KK 105", "KK 106", "KK 107", "KK 108", "KK 109", "KK 110", "KK 111",
+		"KK 112", "KK 113", "KK 114", "KK 115", "KK 116", "KK 117", "KK 118", "KK 119", "KK 120", "KK 121", "KK 122", "KK 123", "KK 124", "KK 125", "KK 126", "KK 127", "KK 128"
 	);
 	for ( my $x11 = 257 ; $x11 <= 384 ; $x11++ ) {
 		my $y11 = $x11 - 256;
@@ -1123,8 +1120,14 @@ sub banner_gross {
 #<iframe id=\'acae648c\' name=\'acae648c\' src=\'http://advertising.fussball-liveticker.eu/www/delivery/afr.php?zoneid=84&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'468\' height=\'60\'><a href=\'http://advertising.fussball-liveticker.eu/www/delivery/ck.php?n=a3108930&amp;cb=INSERT_RANDOM_NUMBER_HERE\' target=\'_blank\'><img src=\'http://advertising.fussball-liveticker.eu/www/delivery/avw.php?zoneid=84&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3108930&amp;ct0=INSERT_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
 #-->
 
-$number = '
-<iframe id=\'a52022f2\' name=\'a52022f2\' src=\'http://ads.socapro.com/www/delivery/afr.php?refresh=60&amp;zoneid=367&amp;cb='.$cachebuster.'&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'728\' height=\'90\'><a href=\'http://ads.socapro.com/www/delivery/ck.php?n=ad110454&amp;cb='.$cachebuster.'\' target=\'_blank\'><img src=\'http://ads.socapro.com/www/delivery/avw.php?zoneid=367&amp;cb='.$cachebuster.'&amp;n=ad110454&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
+	$number = '
+<iframe id=\'a52022f2\' name=\'a52022f2\' src=\'http://ads.socapro.com/www/delivery/afr.php?refresh=60&amp;zoneid=367&amp;cb='
+	  . $cachebuster
+	  . '&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'728\' height=\'90\'><a href=\'http://ads.socapro.com/www/delivery/ck.php?n=ad110454&amp;cb='
+	  . $cachebuster
+	  . '\' target=\'_blank\'><img src=\'http://ads.socapro.com/www/delivery/avw.php?zoneid=367&amp;cb='
+	  . $cachebuster
+	  . '&amp;n=ad110454&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
 &nbsp;';
 
 	return $number;
