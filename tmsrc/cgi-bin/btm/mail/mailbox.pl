@@ -166,17 +166,17 @@ if ( $in == 0 ) { $in = "keine" }
 print "
 <table border=0 cellpadding=0 cellspacing=0 bgcolor=black><tr><td>
 <table border=0 cellpadding=3 cellspacing=1>
-<form name=back action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"></form>
+<form name=back action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"></form>
 
 <tr><td align=left bgcolor=#DEDFEC colspan=5 width=750><font face=verdana size=1> &nbsp; Posteingang $trainer | Es befinden sich $in Message(s) in Ihrem Posteingang | &nbsp; [ <a href=javascript:document.back.submit()>Message - Box aktualisieren</a> ] &nbsp; &nbsp;</td></tr>
 ";
 
 foreach $loop (@inbox) {
 ($id,$neu)=split(/&/,$loop);
-print "<form action=/cgi-bin/btm/mail/mailbox.pl name=show",$id,"in method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"><input type=hidden name=id value=$id><input type=hidden name=method value=show_inbox></form>\n";
+print "<form action=/cgi-bin/btm/mail/mailbox.pl name=show",$id,"in method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"><input type=hidden name=id value=$id><input type=hidden name=method value=show_inbox></form>\n";
 }
 
-print "<form action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"><input type=hidden name=method value=\"delete_inbox\">\n";
+print "<form action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"><input type=hidden name=method value=\"delete_inbox\">\n";
 
 foreach $loop (reverse @inbox) {
 @go=();
@@ -214,7 +214,7 @@ print "<tr><td align=left bgcolor=#DEDFEC colspan=5 width=750><font face=verdana
 print "
 </form></table>
 </td></tr></table>
-<form name=old action=/cgi-bin/btm/mail/mail_inbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\">
+<form name=old action=/cgi-bin/btm/mail/mail_inbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\">
 </form>
 ";
 
@@ -234,10 +234,10 @@ print "
 
 foreach $loop (@outbox) {
 
-print "<form action=/cgi-bin/btm/mail/mailbox.pl name=show",$loop,"out method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"><input type=hidden name=id value=$loop><input type=hidden name=method value=show_outbox></form>\n";
+print "<form action=/cgi-bin/btm/mail/mailbox.pl name=show",$loop,"out method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"><input type=hidden name=id value=$loop><input type=hidden name=method value=show_outbox></form>\n";
 }
 
-print "<form action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"><input type=hidden name=method value=\"delete_outbox\">\n";
+print "<form action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"><input type=hidden name=method value=\"delete_outbox\">\n";
 
 foreach $loop (reverse @outbox) {
 @go=();
@@ -299,7 +299,7 @@ print "
 
 ";
 
-print "<form action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"><input type=hidden name=method value=\"delete_adress\">\n";
+print "<form action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"><input type=hidden name=method value=\"delete_adress\">\n";
 
 foreach $loop (@outbox) {
 $r++;
@@ -348,7 +348,7 @@ print "<tr><td align=center bgcolor=#DDDFFF colspan=4 width=750><font face=verda
 }
 #if ( $out ne "keine" ) {
 print "<tr><td align=left bgcolor=#DEDFEC colspan=2><font face=verdana size=1> &nbsp;<input type=submit style=\"font-familiy:verdana;font-size=8px;\" value=\"-> Markierte Trainer l&ouml;schen\"></td></form>";
-print "<form action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"><input type=hidden name=method value=\"add_adress\">\n";
+print "<form action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"><input type=hidden name=method value=\"add_adress\">\n";
 print "<td align=left bgcolor=#DEDFEC colspan=2><font face=verdana size=1> &nbsp;<input type=text size=25 style=\"font-family:verdana;font-size:10px;\" name=add value=\"Trainername\"> &nbsp; <input type=submit style=\"font-familiy:verdana;font-size=8px;\" value=\"-> Tainer hinzuf&uuml;gen\">";
 if ( $error_a ne "" ) {
 print "<br> &nbsp;<font color=darkred>". encode_entities($error_a);
@@ -365,7 +365,7 @@ print "
 <table border=0 cellpadding=0 cellspacing=0 bgcolor=black><tr><td>
 <table border=0 cellpadding=3 cellspacing=1>
 <form method=post action=/cgi-bin/btm/mail/mail_sent.pl>
-<input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"><input type=hidden name=message value=\"konkurrenz\">
+<input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"><input type=hidden name=message value=\"konkurrenz\">
 <tr>
 
 <td align=left bgcolor=#DEDFEC colspan=2 width=450><font face=verdana size=1> &nbsp; Message versenden</td>
@@ -596,7 +596,7 @@ $query=~s/$tausch1/$tausch2/;
 print "
 <br><table border=0 cellpadding=0 cellspacing=0 bgcolor=black><tr><td>
 <table border=0 cellpadding=5 cellspacing=1>
-<form name=back action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"></form>
+<form name=back action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"></form>
 
 <tr><td align=left bgcolor=#DEDFEC colspan=3><font face=verdana size=1>&nbsp;<img src=/img/mail.gif> &nbsp; Message \"$go[0]\" vom $go[3] - $go[4] &nbsp; &nbsp; &nbsp; [ <a href=javascript:document.back.submit()>Zur&uuml;ck zur Message - Box</a> ] &nbsp; &nbsp; &nbsp;</td></tr>
 <tr>
@@ -646,7 +646,7 @@ print "
 
 ($re , $th ) = split (/:/ , $go[0] ) ;
 
-print "<input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"><input type=hidden name=message value=konkurrenz>\n";
+print "<input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"><input type=hidden name=message value=konkurrenz>\n";
 if ($re ne "Re") { $go[0] = 'Re: ' . $go[0] }
 print "<input type=text name=subject style=\"font-family:verdana;font-size:10px;\" size=35 value=\"$go[0]\"><br>";
 print "<textarea name=text rows=10 cols=60 maxrows=10 wrap=virtual maxcols=40 style=\"font-family:verdana;font-size:10px;\">

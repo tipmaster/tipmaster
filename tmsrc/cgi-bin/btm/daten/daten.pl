@@ -48,7 +48,7 @@ print <<"(END ERROR HTML)";
 Sie koennen nun Ihre<br>Log - In Daten aendern .<br><br>
 <form action=/cgi-bin/btm/daten/daten_pass.pl  method=post target=_top>
 <input type=hidden name=trainer value="$trainer">
-<input type=hidden name=pass value="$pass">
+<input type=hidden name=password value="$pass">
 <font face=verdana size=1><u>Passwort aendern :</u><br><br>
 Altes Passwort :<br>
 <input type=text length=10 maxlength=15 name=pass1><br><br>
@@ -58,7 +58,7 @@ Neues Passwort :<br>
 
 <form action=/cgi-bin/btm/daten/daten_mail.pl  method=post target=_top>
 <input type=hidden name=trainer value="$trainer">
-<input type=hidden name=pass value="$pass">
+<input type=hidden name=password value="$pass">
 <font face=verdana size=1><u>E-Mail Adresse aendern :</u><br><br>
 Aktuelle Mailadresse :<br>
 <input type=text length=20 maxlength=35 name=mail value="$mail"><br><br>

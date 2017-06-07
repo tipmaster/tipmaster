@@ -442,7 +442,7 @@ sub anmelden {
 "Der Link zum Freischalten Ihres Accounts<br>sowie weitere Instruktionen werden in diesem<br>Moment an $adresse<br>gemailt .<br><br><br>
 <font face=verdana size=2><b>Trainer - LogIn</b><form action=/cgi-mod/btm/login.pl method=post>
 <br><br><font color=black><br>
-<font face=verdana size=1>Trainername :<br><input type=text lenght=25 name=user value=\"$voller_name\"><br><br>Passwort :<br><input type=password lenght=25 name=pass><br><font size=1><br><input type=hidden name=first value=1><input type=image src=/img/log_in.jpg border=0></form><br>";
+<font face=verdana size=1>Trainername :<br><input type=text lenght=25 name=email value=\"$voller_name\"><br><br>Passwort :<br><input type=password lenght=25 name=password><br><font size=1><br><input type=hidden name=first value=1><input type=image src=/img/log_in.jpg border=0></form><br>";
 	print "</td><td><br><font color=#eeeeee face=verdana size=1>";
 	print "</td></tr></table>";
 
@@ -733,7 +733,7 @@ sub freischalten {
 "<br><font face=verdana size=2 color=darkred><b>Freischaltung fuer Account<br>$tt war erfolgreich !<font color=black></b><br><br><font face=verdana size=1><br><br>\n
 <font face=verdana size=2><b>Trainer - LogIn</b><form action=/cgi-mod/btm/login.pl method=post>
 <font color=black><br>
-<font face=verdana size=1>Trainername :<br><input type=text lenght=25 name=user value=\"$tt\"><br><br>Passwort :<br><input type=password lenght=25 name=pass><br><font size=1><br><input type=hidden name=first value=1><input type=image src=/img/log_in.jpg border=0></form><br>";
+<font face=verdana size=1>Trainername :<br><input type=text lenght=25 name=email value=\"$tt\"><br><br>Passwort :<br><input type=password lenght=25 name=password><br><font size=1><br><input type=hidden name=first value=1><input type=image src=/img/log_in.jpg border=0></form><br>";
 		print "</td><td>";
 		print "</td></tr></table>";
 

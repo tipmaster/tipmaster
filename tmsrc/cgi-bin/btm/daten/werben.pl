@@ -50,7 +50,7 @@ uns mit einer freundlichen Einladung zur Teilnahme !<br><br><br>
 
 <form action=/cgi-bin/btm/daten/werben_mail.pl  method=post target=_top>
 <input type=hidden name=trainer value="$trainer">
-<input type=hidden name=pass value="$pass">
+<input type=hidden name=password value="$pass">
 <font face=verdana size=1>
 Name des Bekannten:<br>
 <input type=text length=25 maxlength=20 name=name><br><br>

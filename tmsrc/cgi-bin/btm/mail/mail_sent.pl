@@ -61,7 +61,7 @@ $ab = length($text);
 if ( ($aa < 3 ) or ($subject eq "" ) )  { 
 print "<body bgcolor=#eeeeee text=black><font face=verdana size=1 color=Red>";
 print "Ihr Betreff ist entweder zu kurz oder Sie haben keinen angegeben . Ihre Message konnte nicht gesendet werden .<br><br>Sie werden weitergeleitet ...";
-print "<form name=Testform action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"></form>";
+print "<form name=Testform action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"></form>";
 print "<script language=JavaScript>\n";
 print"   function AbGehts()\n";
 print"   {\n";
@@ -84,7 +84,7 @@ if ($subject =~ /[\<\>]/) {
 
 print "<body bgcolor=#eeeeee text=black><font face=verdana size=1 color=Red>";
 print "Ihr Betreff hat ungueltige Zeichen enthalten . Ihre Message konnte nicht gesendet werden .<br>Bitte verzichten Sie auf Umlaute und weitere Sonderzeichen ...<br><br>Sie werden weitergeleitet ...";
-print "<form name=Testform action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"></form>";
+print "<form name=Testform action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"></form>";
 print "<script language=JavaScript>\n";
 print"   function AbGehts()\n";
 print"   {\n";
@@ -100,7 +100,7 @@ if ($text =~ /[\<\>]/) {
 
 print "<body bgcolor=#eeeeee text=black><font face=verdana size=1 color=red>";
 print "Ihr Message Text hat ungueltige Zeichen enthalten . Ihre Message konnte nicht gesendet werden .<br>Bitte verzichten Sie auf Umlaute und weitere Sonderzeichen ...<br><br>Sie werden weitergeleitet ...";
-print "<form name=Testform action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"></form>";
+print "<form name=Testform action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"></form>";
 print "<script language=JavaScript>\n";
 print"   function AbGehts()\n";
 print"   {\n";
@@ -339,10 +339,10 @@ print "<html><body bgcolor=white text=black>\n";
 print "<font face=verdana size=1> Ihre Nachricht wird verschickt . Sie werden weitergeleitet ...\n";
 
 if ( $link eq "friend" ) {
-print "<form name=Testform action=/cgi-bin/btm/friendly.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"></form>";
+print "<form name=Testform action=/cgi-bin/btm/friendly.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"></form>";
 
 } else {
-print "<form name=Testform action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"></form>";
+print "<form name=Testform action=/cgi-bin/btm/mail/mailbox.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"></form>";
 }
 print "<script language=JavaScript>\n";
 print"   function AbGehts()\n";

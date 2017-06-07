@@ -61,7 +61,7 @@ exit ;
 
 
 
-print "<form name=Testform action=/cgi-mod/btm/login.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"></form>";
+print "<form name=Testform action=/cgi-mod/btm/login.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"></form>";
 print "<script language=JavaScript>";
 print"   function AbGehts()";
 print"   {";

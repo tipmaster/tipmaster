@@ -87,7 +87,7 @@ close (D9);
 print "Content-type: text/html\n\n";
 print "<body bgcolor=#eeeeee text=black><font face=verdana size=1>";
 print "Bundesliga - TipMaster<br><br>Ihre E-Mail Adresse wurde in $mail geandert ...<br>Sie werden weitergeleitet ...";
-print "<form name=Testform action=/cgi-mod/btm/login.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"></form>";
+print "<form name=Testform action=/cgi-mod/btm/login.pl method=post><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"></form>";
 print "<script language=JavaScript>\n";
 print"   function AbGehts()\n";
 print"   {\n";

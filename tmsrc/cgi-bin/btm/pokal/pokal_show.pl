@@ -758,7 +758,7 @@ print "<option value=7 $gh>Finale \n";
 print "</select>&nbsp;&nbsp;\n";
 
 
-print "&nbsp;&nbsp;<input type=hidden name=pass value=\"$pass\"><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=ligi value=\"$ligi\"><input type=hidden name=id value=\"$id\"><iNPUT TYPE=SUBMIT  style=\"font-family: Verdana; font-size: 11px; font-weight: normal; color: #000000;\" VALUE=\"Resultate laden\"></form>";
+print "&nbsp;&nbsp;<input type=hidden name=password value=\"$pass\"><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=ligi value=\"$ligi\"><input type=hidden name=id value=\"$id\"><iNPUT TYPE=SUBMIT  style=\"font-family: Verdana; font-size: 11px; font-weight: normal; color: #000000;\" VALUE=\"Resultate laden\"></form>";
 
 $sp01 = $spielrunde + 1;
 $sp02 = $spielrunde - 1;
@@ -775,7 +775,7 @@ $pokal_aa = $pokal_aa * 1;
 
 
 if ( $pokal_dfb != 0 ) {
-print "<form name=tipdfb method=post action=/cgi-bin/btm/pokal/pokal_tip.pl target=_top><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pokal value=17><input type=hidden name=pass value=\"$pass\"></form>\n";
+print "<form name=tipdfb method=post action=/cgi-bin/btm/pokal/pokal_tip.pl target=_top><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pokal value=17><input type=hidden name=password value=\"$pass\"></form>\n";
 print "<font face=verdana size=1>&nbsp;&nbsp;Ihr Verein $trainer_verein startet im DFB - Pokal ... ";
 if ( $cup_dfb_name[$rrunde] ne "" ) {
 
@@ -786,7 +786,7 @@ print "[ Diese Woche keine Tiprunde in diesem Wettbewerb ]<br><br>\n";
 
 }
 if ( $pokal_id ne "0" ) {
-print "<form name=tip method=post action=/cgi-bin/btm/pokal/pokal_tip.pl target=_top><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pokal value=\"$pokal_aa\"><input type=hidden name=pass value=\"$pass\"></form>\n";
+print "<form name=tip method=post action=/cgi-bin/btm/pokal/pokal_tip.pl target=_top><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pokal value=\"$pokal_aa\"><input type=hidden name=password value=\"$pass\"></form>\n";
 print "<font face=verdana size=1>&nbsp;&nbsp;Ihr Verein $trainer_verein startet im Amateurpokal $pokal_aa ... ";
 
 if ( $cup_btm_name[$rrunde] ne "" ) {

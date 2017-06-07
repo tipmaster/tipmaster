@@ -33,8 +33,8 @@ my $user     = $query->param('email');
 my $passwort = $query->param('password');
 	print "Content-type:text/html\n\n
 <form name=Testform action=/cgi-mod/tmi/login.pl method=POST>	
-<input type=hidden name=user value=\"".$user."\">
-<input type=hidden name=pass value=\"".$passwort."\">
+<input type=hidden name=email value=\"".$user."\">
+<input type=hidden name=password value=\"".$passwort."\">
 </form>
 
 <script language=JavaScript>

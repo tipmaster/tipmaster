@@ -187,7 +187,7 @@ if ( $trainer ne "unknown" ) {
 }
 
 print
-"&nbsp;&nbsp<input type=hidden name=pass value=\"$pass\"><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=id value=\"$id\"><input type=submit style=\"font-family: Verdana; font-size: 11px; font-weight: normal; color: #000000;\" value=\"Tabelle laden\"></form>";
+"&nbsp;&nbsp<input type=hidden name=password value=\"$pass\"><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=id value=\"$id\"><input type=submit style=\"font-family: Verdana; font-size: 11px; font-weight: normal; color: #000000;\" value=\"Tabelle laden\"></form>";
 
 print "<br>";
 print

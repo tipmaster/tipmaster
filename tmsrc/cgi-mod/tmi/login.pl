@@ -1378,7 +1378,7 @@ if ( $game == 0 ) {
 if ( $game > 0 ) {
 
 	print "<form action=http://www.bet5.net/ method=post name=send>
-<input type=hidden name=user value=\"$leut\">
+<input type=hidden name=email value=\"$leut\">
 <input type=hidden name=method value=sendBets>
 
 <input type=hidden name=extern value=tm>
@@ -1506,7 +1506,7 @@ Content-type: text/html
 <input type=hidden name=first value=1>
 
 <br><font face=verdana size=1>Trainername :<br><input type=text lenght=25 name=trainer value="$trainer">
-<br><br>Passwort :<br><input type=password lenght=25 name=pass>
+<br><br>Passwort :<br><input type=password lenght=25 name=password>
 <br><br><input type=image src=/img/log_in.jpg border=0></form><br>
 <font face=verdana size=1>Der angegebene Trainername ist nicht<br>im Trainerverzeichnis eingetragen .<br><br>
 Bitte ueberpruefen Sie ihre Eingabe ,<br>
@@ -1557,7 +1557,7 @@ Content-type: text/html
 <input type=hidden name=first value=1>
 
 <br><font face=verdana size=1>Trainername :<br><input type=text lenght=25 name=trainer value="$leut">
-<br><br>Passwort :<br><input type=password lenght=25 name=pass>
+<br><br>Passwort :<br><input type=password lenght=25 name=password>
 <br><br><input type=image src=/img/log_in.jpg border=0></form><br>
 <font face=verdana size=1>Der angegebene Trainername existiert , <br>aber das angegebene Passwort ist falsch .
 <br><br>
@@ -1590,7 +1590,7 @@ Content-type: text/html
 <input type=hidden name=first value=1>
 
 <br><font face=verdana size=1>Trainername :<br><input type=text lenght=25 name=trainer value="$trainer">
-<br><br>Passwort :<br><input type=password lenght=25 name=pass>
+<br><br>Passwort :<br><input type=password lenght=25 name=password>
 <br><br><input type=image src=/img/log_in.jpg border=0></form><br>
 <font face=verdana size=1>Der angegebene Trainername ist zwar<br>im Trainerverzeichnis eingetragen<br>
 jedoch ist dem Account kein TMI Verein<br>zugeordnet.<br><br>
@@ -1639,7 +1639,7 @@ Content-type: text/html
 <input type=hidden name=first value=1>
 
 <br><font face=verdana size=1>Trainername :<br><input type=text lenght=25 name=trainer>
-<br><br>Passwort :<br><input type=password lenght=25 name=pass>
+<br><br>Passwort :<br><input type=password lenght=25 name=password>
 <br><br><input type=image src=/img/log_in.jpg border=0></form><br>
 <font face=verdana size=1>
 Entweder der angegebene Trainername bzw. das<br>

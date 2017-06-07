@@ -223,7 +223,7 @@ if ( $frei > 0 ) {
 "<td align=left bgcolor=#cbccff><font face=verdana size=1>&nbsp;<input type=checkbox name=\"$auswahl_verein[$x]\" value=yes$tt>&nbsp;</td>\n";
 			}
 
-# print "<form action=//verein.pl method=post name=x$x><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=pass value=\"$pass\"><input type=hidden name=ident value=\"$auswahl_verein[$x]\"></form>\n";
+# print "<form action=//verein.pl method=post name=x$x><input type=hidden name=trainer value=\"$trainer\"><input type=hidden name=password value=\"$pass\"><input type=hidden name=ident value=\"$auswahl_verein[$x]\"></form>\n";
 # print "<td align=left bgcolor=#eeeeff><font face=verdana size=1>&nbsp; <a href=javascript:document.x$x.submit()><img src=/img/h1.jpg border=0 alt=\"Vereinsstatistik $auswahl_verein[$x]\"></a> &nbsp;$auswahl_verein[$x]&nbsp;&nbsp;&nbsp;&nbsp; </td> \n";
 			print
 "<td align=left bgcolor=#eeeeff><font face=verdana size=1>&nbsp; &nbsp;$auswahl_verein[$x]&nbsp;&nbsp;&nbsp;&nbsp; </td> \n";
