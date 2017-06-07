@@ -29,8 +29,8 @@ my $leut    = $trainer;
 if ( $session->getBTMTeam() eq "" && $session->getTMITeam() ne "" ) {
 use CGI;
 my $query = CGI->new();
-my $user     = $query->param('user');
-my $passwort = $query->param('pass');
+my $user     = $query->param('email');
+my $passwort = $query->param('password');
 	print "Content-type:text/html\n\n
 <form name=Testform action=/cgi-mod/tmi/login.pl method=POST>	
 <input type=hidden name=user value=\"".$user."\">

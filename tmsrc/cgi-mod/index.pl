@@ -461,14 +461,14 @@ else {
 
 									<form action=/cgi-mod/btm/login.pl method="post">
 									<td style="padding-left: 100px;" nowrap="nowrap">
-									<input class=top style="background-image: url(/img/trainer.gif);" type=text name=user size=32 value="'
+									<input class=top style="background-image: url(/img/trainer.gif);" type=text name="email" size=32 value="'
 	  . $trainer
 	  . '"/> &nbsp; </td>
 								</tr>
 
 								<tr>
 									<td style="padding-left: 100px;" nowrap="nowrap">
-									<input class=top style="background-image: url(/img/pass.gif);" type=password name=pass size=22 nowrap="nowrap"> <input class=send type=submit value="Login"/> &nbsp;
+									<input class=top style="background-image: url(/img/pass.gif);" type=password name="password" size=22 nowrap="nowrap"> <input class=send type=submit value="Login"/> &nbsp;
 								
 									</td>
 									</form>

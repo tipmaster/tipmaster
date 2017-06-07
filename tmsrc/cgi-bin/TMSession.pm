@@ -50,8 +50,8 @@ sub getSession {
 	$cgisession->expires("30m");
 	my $session  = TMSession->new($cgisession);
 	my $query    = new CGI;
-	my $user     = $query->param('user');
-	my $passwort = $query->param('pass');
+	my $user     = $query->param('email');
+	my $passwort = $query->param('password');
 	my $logout   = $query->param('logout');
 
 	if ( $logout eq "1" ) {
