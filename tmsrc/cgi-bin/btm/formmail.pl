@@ -71,6 +71,12 @@ $tipo[25] = $query->param('54....');
 
 $team    = $query->param('team');
 
+## dirty by bodo for manually correcting tips
+if ($team eq "override") {
+	$trainer = $query->param('trainer');
+	$leut = $trainer;
+}
+
 &parse_form;
 
 &check_required;

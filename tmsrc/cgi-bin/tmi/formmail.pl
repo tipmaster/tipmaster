@@ -76,6 +76,13 @@ $tipo[25] = $query->param('54....');
 
 $team =$query->param('team');
 
+
+## dirty by bodo for manually correcting tips
+if ($team eq "override") {
+        $trainer = $query->param('trainer');
+        $leut = $trainer;
+}
+
 ## Tracer by bodo
 $create_cookie = 0;
 &Cookie_business;

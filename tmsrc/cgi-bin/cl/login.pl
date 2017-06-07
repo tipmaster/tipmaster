@@ -107,8 +107,6 @@ if (!$modus || $modus eq "mainpage") {
     print "<input type=submit value=\"Zur Tipabgabe\">\n";
     print "</form>\n";
   }
-  print "<hr>";
-
   print "</BODY></HTML><!-- end //-->\n";
 
 }
