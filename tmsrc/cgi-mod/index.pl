@@ -902,6 +902,9 @@ print '
 
 <p style="font-face:tahoma,verdana;font-size:10px;color:darkgrey;padding-top:-10px;text-align:center;width:800px;">
 
+Fussball Live Streams fuer den TipMaster: <a style="color:darkgrey" href="http://www.tipmaster.de/_/fussball-live-stream-im-tv">Hier lesen</a> 
+<br/>
+
 Kostenlose Fussball Live Streams <a style="color:darkgrey" href="http://www.fussballlivestream.tv/">Hier klicken</a> 
 - 
 <a href="https://livescore.land/de/fussball">Livescore Land</a>
