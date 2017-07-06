@@ -22,9 +22,9 @@
 
 use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
-my $session = TMSession::getSession();
-my $trainer = $session->getUser();
-my $leut    = $trainer;
+#my $session = TMSession::getSession();
+#my $trainer = $session->getUser();
+#my $leut    = $trainer;
 
 use TMDao;
 use CGI;
