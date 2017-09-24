@@ -855,7 +855,7 @@ print '
 <div style="max-width:160px">
 
 
-<iframe id=\'ac3d4403\' name=\'ac3d4403\' src=\'http://ads.socapro.com/www/delivery/afr.php?refresh=60&amp;zoneid=366&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'160\' height=\'600\'><a href=\'http://ads.socapro.com/www/delivery/ck.php?n=a3450efc&amp;cb=INSERT_RANDOM_NUMBER_HERE\' target=\'_blank\'><img src=\'http://ads.socapro.com/www/delivery/avw.php?zoneid=366&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3450efc&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
+<iframe id=\'ac3d4403\' name=\'ac3d4403\' src=\'https://ads.socapro.com/www/delivery/afr.php?refresh=60&amp;zoneid=366&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'160\' height=\'600\'><a href=\'https://ads.socapro.com/www/delivery/ck.php?n=a3450efc&amp;cb=INSERT_RANDOM_NUMBER_HERE\' target=\'_blank\'><img src=\'https://ads.socapro.com/www/delivery/avw.php?zoneid=366&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3450efc&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
 
 </div>
 
@@ -905,7 +905,7 @@ print '
 Fussball Live Streams fuer den TipMaster mit <a href="https://socagol.tv/de/bundesliga-live-stream" SocaGol</a>: <a style="color:darkgrey" href="http://www.tipmaster.de/_/fussball-live-stream-im-tv">Hier lesen</a> 
 <br/>
 
-Kostenlose Fussball Live Streams <a style="color:darkgrey" href="http://www.fussballlivestream.tv/">Hier klicken</a> 
+Kostenlose Fussball Live Streams <a style="color:darkgrey" href="https://www.fussballlivestream.tv/">Hier klicken</a> 
 - 
 <a href="https://livescore.land/de/fussball">Livescore Land</a>
 -
@@ -929,7 +929,7 @@ Legendaere Fussballer auf <a style="color:darkgrey" href="http://www.kult-kicker
 - 
 <a style="color:darkgrey" href="http://www.fussball-liveticker.eu/b/fussball-europameisterschaft/em-2016-live-ticker">EM Live Ticker</a>
 -
-<a style="color:darkgrey" href="https://livestream.land/bundesliga">Bundesliga Stream Kostenlos</a>
+<a style="color:darkgrey" href="https://livestream.services/bundesliga/">https://livestream.services/bundesliga/</a>
 - 
 
 <a style="color:darkgrey" href="https://fussball-tippspiel.org">Bundesliga Tippspiel</a>

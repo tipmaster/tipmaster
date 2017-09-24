@@ -1121,11 +1121,11 @@ sub banner_gross {
 #-->
 
 	$number = '
-<iframe id=\'a52022f2\' name=\'a52022f2\' src=\'http://ads.socapro.com/www/delivery/afr.php?refresh=60&amp;zoneid=367&amp;cb='
+<iframe id=\'a52022f2\' name=\'a52022f2\' src=\'https://ads.socapro.com/www/delivery/afr.php?refresh=60&amp;zoneid=367&amp;cb='
 	  . $cachebuster
-	  . '&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'728\' height=\'90\'><a href=\'http://ads.socapro.com/www/delivery/ck.php?n=ad110454&amp;cb='
+	  . '&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'728\' height=\'90\'><a href=\'https://ads.socapro.com/www/delivery/ck.php?n=ad110454&amp;cb='
 	  . $cachebuster
-	  . '\' target=\'_blank\'><img src=\'http://ads.socapro.com/www/delivery/avw.php?zoneid=367&amp;cb='
+	  . '\' target=\'_blank\'><img src=\'https://ads.socapro.com/www/delivery/avw.php?zoneid=367&amp;cb='
 	  . $cachebuster
 	  . '&amp;n=ad110454&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
 &nbsp;';
