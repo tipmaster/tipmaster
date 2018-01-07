@@ -1450,8 +1450,8 @@ in <a href="http://community.tipmaster.de/showthread.php?t=27483">diesem Posting
 
 
 <div style="min-width:235px;max-width:235px;padding:10px;background-color:white;border:1px solid black">
-<b>Tranerfuxx Wahl</b><br/><br/>
-<a href="http://community.tipmaster.de/showthread.php?t=32259">Hier abstimmen!</a></div>
+<b>Wichtige Info EC</b><br/><br/>
+Die Tippabgabe in der Champions-Leauge bzw. im UEFA-Cup endet Systembedingt Freitags bereits um 17:00 Uhr!</div>
 <br/>
 
 <br/><br/>
