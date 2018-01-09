@@ -1451,7 +1451,7 @@ in <a href="http://community.tipmaster.de/showthread.php?t=27483">diesem Posting
 
 <div style="min-width:235px;max-width:235px;padding:10px;background-color:white;border:1px solid black">
 <b>Wichtige Info EC</b><br/><br/>
-Die Tippabgabe in der Champions-Leauge bzw. im UEFA-Cup endet Systembedingt Freitags bereits um 17:00 Uhr!</div>
+Die Tippabgabe in der Champions-League bzw. im UEFA-Cup endet nun wieder wie gewohnt freitags um 18:00 Uhr!</div>
 <br/>
 
 <br/><br/>
