@@ -49,7 +49,7 @@ $mailprog = '/usr/sbin/sendmail';
 
 open( MAIL, "|$mailprog -t" );
 print MAIL "To: $email\n";
-print MAIL "From: info@tipmaster.de\n";
+print MAIL "From: info\@tipmaster.de\n";
 print MAIL "Subject: Neues TipMaster Passwort\n\n";
 print MAIL "$mail{Message}";
 close(MAIL);
