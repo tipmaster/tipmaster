@@ -21,7 +21,7 @@ require "/tmapp/tmsrc/cgi-bin/tmi/saison.pl";
 	print "Sichere Saisondaten in /tmdata/tmi/archiv/$old/\n";
 	print "Setze Softlink /tmdata/tmi/archiv/$new/ -> /tmi\n";
 
-	if (0) {
+
 	`rm /tmdata/tmi/archiv/$old`;
 	`mkdir /tmdata/tmi/archiv/$old/`;
 	`mkdir /tmdata/tmi/archiv/$old/pokal/`;
@@ -90,7 +90,7 @@ require "/tmapp/tmsrc/cgi-bin/tmi/saison.pl";
 
 	print "Verschiebe Aktionen der 'Big Mama' /tmdata/tmi/db/spiele.txt\n";
 
-}
+
 
 
 
