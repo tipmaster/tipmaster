@@ -12,7 +12,7 @@ require "/tmapp/tmsrc/cgi-bin/tmi/saison.pl";
 	$new =~ s/Saison 20//;
 	$new =~ s/'//;
 
-if (0) {
+
 	if ( $old eq "" || $new eq "" || $old eq ".." ) { exit; }
 	print "Content-type:text/html\n\n";
 	print
@@ -21,6 +21,7 @@ if (0) {
 	print "Sichere Saisondaten in /tmdata/tmi/archiv/$old/\n";
 	print "Setze Softlink /tmdata/tmi/archiv/$new/ -> /tmi\n";
 
+	if (0) {
 	`rm /tmdata/tmi/archiv/$old`;
 	`mkdir /tmdata/tmi/archiv/$old/`;
 	`mkdir /tmdata/tmi/archiv/$old/pokal/`;
