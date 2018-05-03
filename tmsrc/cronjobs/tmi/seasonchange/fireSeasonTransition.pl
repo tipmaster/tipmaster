@@ -12,6 +12,7 @@ require "/tmapp/tmsrc/cgi-bin/tmi/saison.pl";
 	$new =~ s/Saison 20//;
 	$new =~ s/'//;
 
+if (0) {
 	if ( $old eq "" || $new eq "" || $old eq ".." ) { exit; }
 	print "Content-type:text/html\n\n";
 	print
@@ -87,6 +88,10 @@ require "/tmapp/tmsrc/cgi-bin/tmi/saison.pl";
 	print "... beendet.";
 
 	print "Verschiebe Aktionen der 'Big Mama' /tmdata/tmi/db/spiele.txt\n";
+
+}
+
+
 
 	`mv /tmdata/tmi/db/spiele_old.txt /tmdata/tmi/db/spiele_old_$vold.txt`;
 	`mv /tmdata/tmi/db/spiele.txt /tmdata/tmi/db/spiele_old.txt`;
