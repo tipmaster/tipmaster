@@ -50,7 +50,7 @@ for ( $x = 1 ; $x <= $r ; $x++ ) {
 	$verein[$x] = $team[$x];
 }
 
-open( U, "./xx1.txt" );
+open( U, "/tmdata/tmi/swechsel/xx1.txt" );
 while (<U>) {
 	$r++;
 	$xx = $_;
@@ -65,7 +65,7 @@ while (<U>) {
 }
 close(U);
 
-open( U, ">./history.txt" );
+open( U, ">/tmdata/tmi/swechsel/history.txt" );
 for ( $x = 1 ; $x <= 203 ; $x++ ) {
 
 	$xa = ( ( $x - 1 ) * 18 ) + 1;

@@ -65,7 +65,7 @@ $verein[$x] = $team[$x] ;
 }
 
 
-open(U,"xx1.txt");
+open(U,"/tmdata/btm/swechsel/xx1.txt");
 while (<U>) {
 $r++;
 $xx = $_ ;
