@@ -907,8 +907,6 @@ Fussball Live Streams fuer den TipMaster mit <a href="https://socagol.tv/de/bund
 
 Kostenlose Fussball Live Streams <a style="color:darkgrey" href="https://www.fussballlivestream.tv/">Hier klicken</a> 
 - 
-<a href="https://livescore.land/de/fussball">Livescore Land</a>
--
 <a style="color:darkgrey" href="http://www.wett.info">Wett.info</a>
 -
 <a style="color:darkgrey" href="http://www.bundesligaquoten.de">bundesligaquoten.de</a>
@@ -925,14 +923,14 @@ Legendaere Fussballer auf <a style="color:darkgrey" href="http://www.kult-kicker
 - 
 <a style="color:darkgrey" href="http://www.bundesliga-tickets.net">Bundesliga Tickets</a>
 - 
-<a style="color:darkgrey" href="http://www.fussball-liveticker.eu/b/fussball-europameisterschaft/em-2016-live-stream">EM Live Stream</a>
+<a style="color:darkgrey" href="https://socagol.tv/de/wm-live-stream">WM 2018 Live Stream</a>
 - 
-<a style="color:darkgrey" href="http://www.fussball-liveticker.eu/b/fussball-europameisterschaft/em-2016-live-ticker">EM Live Ticker</a>
+<a style="color:darkgrey" href="https://socagol.tv/de/wm-live-stream">WM 2018 Live Ticker</a>
 -
-<a style="color:darkgrey" href="https://livestream.services/bundesliga/">https://livestream.services/bundesliga/</a>
+<a style="color:darkgrey" href="https://socagol.tv/de/bundesliga-live-stream">https://socagol.tv/de/bundesliga-live-stream</a>
 - 
 
-<a style="color:darkgrey" href="https://fussball-tippspiel.org">Bundesliga Tippspiel</a>
+<a style="color:darkgrey" href="https://socagol.tv/-/fussball-tippspiel/">Bundesliga Tippspiel</a>
 <br/>
 Fussball Bundesliga Tipps auf <a title="Wett-Tipps zur Fussball Bundesliga" href="http://wetttipps-heute.com">wetttipps-heute.com</a>
 - 
