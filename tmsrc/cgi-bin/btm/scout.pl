@@ -55,6 +55,9 @@ my @permitted_coaches = (
 	"Roberto Maisl",
 	"Holger Spreng",
 	"Thomas Sassmannshausen",
+	"Bernd Timmermann",
+	"Thomas Hauptmann",
+	"Andreas Samjeske",
 	"Stefan Pauls"
 );
 
@@ -105,7 +108,7 @@ require "/tmapp/tmsrc/cgi-bin/tag.pl";
 require "/tmapp/tmsrc/cgi-bin/tag_small.pl";
 
 print
-"<br><br><font face=verdana size=2 color=darkred><b>TipMaster Ergebnis - Scoutbereich</b><br><font face=verdana color=black><b>Vielen Dank fuer eure Mithilfe !</b><br><br>\n";
+"<br><br><font face=verdana size=2 color=darkred><b>TipMaster Ergebnis - Scoutbereich</b><br><font face=verdana color=black><b>Vielen Dank fuer eure Mithilfe :-) !</b><br><br>\n";
 
 if ( $login != 1 ) {
 	print

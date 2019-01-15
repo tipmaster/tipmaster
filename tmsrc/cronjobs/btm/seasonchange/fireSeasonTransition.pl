@@ -14,6 +14,7 @@ $new = $main_saison[ $main_nr + 1 ];
 $new =~ s/Saison 20//;
 $new =~ s/'//;
 
+print $old, $new;
 if ( $old eq "" || $new eq "" || $old eq ".." ) { exit; }
 print "Content-type:text/html\n\n";
 print
