@@ -907,39 +907,10 @@ Fussball Live Streams fuer den TipMaster mit <a href="https://socagol.tv/de/bund
 
 Kostenlose Fussball Live Streams <a style="color:darkgrey" href="https://www.fussballlivestream.tv/">Hier klicken</a> 
 - 
-<a style="color:darkgrey" href="http://www.wett.info">Wett.info</a>
--
-<a style="color:darkgrey" href="http://www.bundesligaquoten.de">bundesligaquoten.de</a>
-<br/>
-Interesse an echtem Training? <a style="color:darkgrey" href="http://fussballschulen.com">fussballschulen.com</a>
--
-Legendaere Fussballer auf <a style="color:darkgrey" href="http://www.kult-kicker.de">kult-kicker.de</a>
--
-<a style="color:darkgrey" href="http://www.surebethelp.com">Gratis Surebet Benachrichtigungen</a>
-<br/>
-<a style="color:darkgrey" href="http://www.fussball-fieber.org">Bundesliga Live-Stream</a>
--
-<a style="color:darkgrey" href="https://www.stadionheft24.de">Stadionzeitungen f&uuml;r Amateurvereine</a>
-- 
-<a style="color:darkgrey" href="http://www.bundesliga-tickets.net">Bundesliga Tickets</a>
-- 
-<a style="color:darkgrey" href="https://socagol.tv/de/wm-live-stream">WM 2018 Live Stream</a>
-- 
-<a style="color:darkgrey" href="https://socagol.tv/de/wm-live-stream">WM 2018 Live Ticker</a>
--
 <a style="color:darkgrey" href="https://socagol.tv/de/bundesliga-live-stream">https://socagol.tv/de/bundesliga-live-stream</a>
 - 
-
-<a style="color:darkgrey" href="https://socagol.tv/-/fussball-tippspiel/">Bundesliga Tippspiel</a>
-<br/>
-Fussball Bundesliga Tipps auf <a title="Wett-Tipps zur Fussball Bundesliga" href="http://wetttipps-heute.com">wetttipps-heute.com</a>
-- 
-<a href="http://www.tip4free.de">Fussball Tippspiel</a>
 -
-<a href="http://kadermanager.de">Der Einfache Kalender fuer Fussballtrainer</a>
-
--
-<a href="http://www.tippswetten.de/">Wetten Tipps</a></p>
+<a href="https://bundesligalviestreamkostenos.com">Bundesliga Live Streams</a></p>
 
 
 ' . $page_footer . '
