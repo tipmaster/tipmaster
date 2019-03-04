@@ -910,7 +910,7 @@ Kostenlose Fussball Live Streams <a style="color:darkgrey" href="https://www.fus
 <a style="color:darkgrey" href="https://socagol.tv/de/bundesliga-live-stream">https://socagol.tv/de/bundesliga-live-stream</a>
 - 
 -
-<a href="https://bundesligalviestreamkostenos.com">Bundesliga Live Streams</a></p>
+<a href="https://bundesligalivestreamkostenlos.com">Bundesliga Live Streams</a></p>
 
 
 ' . $page_footer . '
