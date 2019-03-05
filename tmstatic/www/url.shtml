@@ -9,3 +9,6 @@
 <form action=/cgi-bin/pass_sent.pl method=post><br>
 Ihre Email :<br><input type=text lenght=25 name=email><br><br>
 <input type=submit value="Neues Passwort zuschicken"></form>
+<br><br><br>
+T-online email und GMX Addressen haben oft Probleme.<br/>
+Bitte sendet eine Email an info@tipmaster.de um eure Email zu aktualisieren. 
