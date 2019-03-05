@@ -377,11 +377,12 @@ print '
 print '
 <body bgcolor=white>
 
-<!--
-<div align=center style="width:800px;text-align:center;padding-top:5px;padding-bottom:10px;">
-Der TipMaster ist aktuell im Wartungsmodus und gewisse Features inaktiv.<br/>Fehler bitte <a href=http://community.tipmaster.de/showthread.php?t=27483>in diesem Stammtisch Thread</a> kommunizieren. 
-</div>
--->
+
+<div align=center style="width:800px;text-align:center;padding-top:5px;padding-bottom:10px;color:white;background-color:#fc3">
+
+Augrund eines weitreichenden Datenverlusts mussten wir den Spielbetrieb und Datenstand leider auf die Saison 2018'2 Spieltag 20 zuruecksetzen.<br/>
+Der "Daten Reset" betrifft auch Accounts, Passwoerter etc. Probleme bitte <a href="http://community.tipmaster.de/showthread.php?t=34487">hier melden</a>.
+</div>.
 <table border=0 cellpadding=0 cellspacing=0><tr><td valign=top><tr><td valign=top>
 
 
@@ -902,8 +903,7 @@ print '
 
 <p style="font-face:tahoma,verdana;font-size:10px;color:darkgrey;padding-top:-10px;text-align:center;width:800px;">
 
-Fussball Live Streams fuer den TipMaster mit <a href="https://socagol.tv/de/bundesliga-live-stream" SocaGol</a>: <a style="color:darkgrey" href="http://www.tipmaster.de/_/fussball-live-stream-im-tv">Hier lesen</a> 
-<br/>
+Fussball Live Streams fuer den TipMaster mit <a href="https://socagol.tv/de/bundesliga-live-stream"> SocaGol</a><br/>
 
 Kostenlose Fussball Live Streams <a style="color:darkgrey" href="https://www.fussballlivestream.tv/">Hier klicken</a> 
 - 
