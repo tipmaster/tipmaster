@@ -902,14 +902,7 @@ print '
 
 <p style="font-face:tahoma,verdana;font-size:10px;color:darkgrey;padding-top:-10px;text-align:center;width:800px;">
 
-Fussball Live Streams fuer den TipMaster mit <a href="https://socagol.tv/de/bundesliga-live-stream"> SocaGol</a><br/>
-
-Kostenlose Fussball Live Streams <a style="color:darkgrey" href="https://www.fussballlivestream.tv/">Hier klicken</a> 
-- 
-<a style="color:darkgrey" href="https://socagol.tv/de/bundesliga-live-stream">https://socagol.tv/de/bundesliga-live-stream</a>
-- 
--
-<a href="https://bundesligalivestreamkostenlos.com">Bundesliga Live Streams</a></p>
+<a href="https://socagol.tv/de/bundesliga-live-stream">SocaGol</a> | <a style="color:darkgrey" href="https://www.fussballlivestream.tv">fussballlivestream.tv</a> | <a href="https://bundesligalivestreamkostenlos.com">Bundesliga Live Streams</a></p>
 
 
 ' . $page_footer . '
