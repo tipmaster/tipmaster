@@ -132,6 +132,11 @@ sub error_needslogin {
 	<li> Bitte gehen Sie sicher dass Ihr Trainername und Passwort mit der richtigen Gross- und Kleinschreibung angegeben werden.</li>
 	<li> Fordern Sie ein neues Passwort <a href="/url.shtml">hier an</a></li>
 	<li> Falls es weiterhin Probleme gibt, dann bitte <a href="http://community.tipmaster.de/showthread.php?p=253375">hier in der Community melden</a> und eine E-Mail an info@tipmaster.de mit der Problembeschreibung senden.</li>
+	
+	<br/><br/><b>
+	Augrund eines weitreichenden Datenverlusts mussten wir den Spielbetrieb und Datenstand leider auf die Saison 2018\'2 Spieltag 20 zuruecksetzen.<br/>
+	Dieser "Daten Reset" betrifft auch Accounts, Passwoerter, Pokal und Eurocup etc. Wenn Sie Ihren Account nach dem Mai 2018 erstellt haben<br/>
+	muessen sie sich leider <a href="http://www.tipmaster.de/cgi-bin/btm/anmeldung.pl">erneut anmelden</a>.
 	';
 	}
 
