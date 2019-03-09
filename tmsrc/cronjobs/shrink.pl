@@ -7,7 +7,7 @@
 
 
 sub shrink_last100 {
-`/usr/bin/wget http://www.tipmaster.de/cgi-bin/btm/last100.pl -O /tmdata/frontdata/tmp.txt`;
+`/usr/bin/wget http://www.tipmaster.de/cgi-bin/btm/last100.pl -O /tmdata/frontdata/tmp.txt -o /dev/null` ;
 $i=0;
 open(B,">/tmdata/frontdata/best_btm.txt");
 open(A,"/tmdata/frontdata/tmp.txt");
@@ -26,7 +26,7 @@ print B $1."#\n";
 }}}
 close(A);
 
-`/usr/bin/wget http://www.tipmaster.de/cgi-bin/tmi/last100.pl -O /tmdata/frontdata/tmp1.txt`;
+`/usr/bin/wget http://www.tipmaster.de/cgi-bin/tmi/last100.pl -O /tmdata/frontdata/tmp1.txt -o /dev/null`;
 $i=0;
 open(B,">/tmdata/frontdata/best_tmi.txt");
 open(A,"/tmdata/frontdata/tmp1.txt");
