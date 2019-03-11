@@ -377,11 +377,7 @@ print '
 <body bgcolor=white>
 
 
-<div style="padding-bottom:10px;width:811px;margin-bottom:1px;text-align:center;padding:10px;color:black;background-color:#fc3;font-size:11px;">
 
-Augrund eines weitreichenden Datenverlusts mussten wir den Spielbetrieb und Datenstand leider auf die Saison 2018\'2 Spieltag 20 zuruecksetzen.<br/>
-Der "Daten Reset" betrifft auch Accounts, Passwoerter, Pokal und Eurocup etc. Probleme bitte <a href="http://community.tipmaster.de/showthread.php?t=34487">hier melden</a>. Die Tippabgabe ist offen.
-</div>
 <table border=0 cellpadding=0 cellspacing=0><tr><td valign=top><tr><td valign=top>
 
 
