@@ -26,7 +26,6 @@ my $trainer = $session->getUser();
 my $leut = $trainer;
 
 use CGI;
-use DB_File;
 
 $query = new CGI;
 
@@ -46,16 +45,16 @@ $zeile = $r;
 close(D2);
 
 # retrieve notifier information
-my $notifiercheck = " ";
-my $flags = O_RDWR;
-my $mode = "0777";
-my $db = tie %notifiers, 'DB_File', "/tmdata/btm/notifiers.dbm", $flags,
- $mode, $DB_HASH or print "Cannot access DB: $!";
-my $val = $notifiers{"$trainer"};
-if ($val eq "1") {
-  $notifiercheck = " checked";
-}
-untie %notifiers;
+#my $notifiercheck = " ";
+#my $flags = O_RDWR;
+#my $mode = "0777";
+#my $db = tie %notifiers, 'DB_File', "/tmdata/btm/notifiers.dbm", $flags,
+# $mode, $DB_HASH or print "Cannot access DB: $!";
+#my $val = $notifiers{"$trainer"};
+#if ($val eq "1") {
+#  $notifiercheck = " checked";
+#}
+#untie %notifiers;
 
 
 ($gb1 , $gb2 , $gb3) = split (/\./, $geburtstag);	

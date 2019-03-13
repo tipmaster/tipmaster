@@ -25,7 +25,6 @@ my $trainer = $session->getUser();
 my $leut = $trainer;
 
 use CGI;
-use DB_File;
 $query = new CGI;
 $wohnort = $query->param('wohnort');
 $land = $query->param('land');
@@ -83,24 +82,24 @@ flock (D8 , 8);
 close (D8) ;
 
 
-if (1) {
+#if (1) {
 ## setzen von flag beim notifier
-my $flags = O_RDWR;
-my $notifierentry = 0;
-if ($notifval eq "formular") {
-        $notifierentry = 1;
-}
-my $mode = "0777";
-my $db = tie %notifiers, 'DB_File', "/tmdata/btm/notifiers.dbm", $flags,
-$mode, $DB_HASH or print "Cannot create DB: $!";
+#my $flags = O_RDWR;
+#my $notifierentry = 0;
+#if ($notifval eq "formular") {
+#        $notifierentry = 1;
+#}
+#my $mode = "0777";
+#my $db = tie %notifiers, 'DB_File', "/tmdata/btm/notifiers.dbm", $flags,
+#$mode, $DB_HASH or print "Cannot create DB: $!";
 
-my $fd = $db->fd;                                            # Get file descript
-open DBM, "+<&=$fd" or die "Could not dup DBM for lock: $!"; # Get dup filehandl
-flock DBM, LOCK_EX;                                          # Lock exclusively
-undef $db;                                                   # Avoid untie probs
-$notifiers{"$trainer"} = $notifierentry;
-untie %notifiers;
-}
+#my $fd = $db->fd;                                            # Get file descript
+#open DBM, "+<&=$fd" or die "Could not dup DBM for lock: $!"; # Get dup filehandl
+#flock DBM, LOCK_EX;                                          # Lock exclusively
+#undef $db;                                                   # Avoid untie probs
+#$notifiers{"$trainer"} = $notifierentry;
+#untie %notifiers;
+#}
 
 
 

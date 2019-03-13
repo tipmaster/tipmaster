@@ -88,23 +88,23 @@ sub getListOfRecipients {
         close(D1);
 
 
-        my $flags = O_RDWR;
-        my $mode = "0777";
-        my $db = tie %notifiers, 'DB_File', "/tmdata/btm/notifiers.dbm", $flags, $mode, $DB_HASH or die "Cannot create DB: $!";
-
-        my $fd = $db->fd;                                            # Get file descriptor
-        open DBM, "+<&=$fd" or die "Could not dup DBM for lock: $!"; # Get dup filehandle
-        flock DBM, LOCK_EX;                                          # Lock exclusively
-        undef $db;                                                   # Avoid untie probs
-
-        my @all_recpt = keys %notifiers;
-        foreach $a_recpt (@all_recpt) {
-                if ($notifiers{$a_recpt} eq "1") {
-                        push @mail_list, $t2m{$a_recpt};
-                }
-        }
-
-        untie %h;
+#        my $flags = O_RDWR;
+#        my $mode = "0777";
+#        my $db = tie %notifiers, 'DB_File', "/tmdata/btm/notifiers.dbm", $flags, $mode, $DB_HASH or die "Cannot create DB: $!";
+#
+#        my $fd = $db->fd;                                            # Get file descriptor
+#        open DBM, "+<&=$fd" or die "Could not dup DBM for lock: $!"; # Get dup filehandle
+#        flock DBM, LOCK_EX;                                          # Lock exclusively
+#        undef $db;                                                   # Avoid untie probs
+#
+#        my @all_recpt = keys %notifiers;
+#        foreach $a_recpt (@all_recpt) {
+#                if ($notifiers{$a_recpt} eq "1") {
+#                        push @mail_list, $t2m{$a_recpt};
+#                }
+#        }
+#
+#        untie %h;
 
         foreach (@all_recpt) {
                 print "$_ will get a notifier! (to ",$t2m{$_},"\n";
@@ -138,25 +138,25 @@ sub getListOfECRecipients {
 
 		# Filter for those with opt-out notification
 
-        my $flags = O_RDWR;
-        my $mode = "0777";
-        my $db = tie %notifiers, 'DB_File', "/tmdata/cl/notifiers.dbm", $flags, $mode, $DB_HASH or die "Cannot create DB: $!";
-
-        my $fd = $db->fd;                                            # Get file descriptor
-        open DBM, "+<&=$fd" or die "Could not dup DBM for lock: $!"; # Get dup filehandle
-        flock DBM, LOCK_EX;                                          # Lock exclusively
-        undef $db;                                                   # Avoid untie probs
-
-        foreach $a_recpt (@$tr_ref) {
-                if ($notifiers{$a_recpt} ne "1") {
-                        push @mail_list, $t2m{$a_recpt};
-						print "$a_recpt will get a notifiert to $t2m{$a_recpt}\n";
-                } else {
-						print "$a_recpt opted out. No notifier!\n";
-				}
-        }
-
-        untie %h;
+#        my $flags = O_RDWR;
+#        my $mode = "0777";
+#        my $db = tie %notifiers, 'DB_File', "/tmdata/cl/notifiers.dbm", $flags, $mode, $DB_HASH or die "Cannot create DB: $!";
+#
+#        my $fd = $db->fd;                                            # Get file descriptor
+#        open DBM, "+<&=$fd" or die "Could not dup DBM for lock: $!"; # Get dup filehandle
+#        flock DBM, LOCK_EX;                                          # Lock exclusively
+#        undef $db;                                                   # Avoid untie probs
+#
+#        foreach $a_recpt (@$tr_ref) {
+#                if ($notifiers{$a_recpt} ne "1") {
+#                        push @mail_list, $t2m{$a_recpt};
+#						print "$a_recpt will get a notifiert to $t2m{$a_recpt}\n";
+#                } else {
+#						print "$a_recpt opted out. No notifier!\n";
+#				}
+#        }
+#
+#        untie %h;
         return \@mail_list;
 }
 

@@ -26,7 +26,6 @@ my $trainer = $session->getUser();
 my $leut = $trainer;
 
 use CGI;
-use DB_File;
 $query = new CGI;
 
 

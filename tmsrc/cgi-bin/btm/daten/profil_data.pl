@@ -26,7 +26,6 @@ my $leut = $trainer;
 
 
 use CGI;
-use DB_File;
 $query = new CGI;
 $wohnort = $query->param('wohnort');
 $land = $query->param('land');
@@ -89,40 +88,40 @@ print D8 "$zeilen\n";
 flock (D8 , 8);
 close (D8) ;
 
-if (1) {
-## setzen von flag beim notifier
-my $flags = O_RDWR;
-my $notifierentry = 0;
-if ($notifval eq "formular") {
-	$notifierentry = 1;
-}
-my $mode = "0777";
-my $db = tie %notifiers, 'DB_File', "/tmdata/btm/notifiers.dbm", $flags, $mode, $DB_HASH or print "Cannot create DB: $!";
-
-my $fd = $db->fd;                                            # Get file descriptor
-open DBM, "+<&=$fd" or die "Could not dup DBM for lock: $!"; # Get dup filehandle
-flock DBM, LOCK_EX;                                          # Lock exclusively
-undef $db;                                                   # Avoid untie probs
-$notifiers{"$trainer"} = $notifierentry;
-untie %notifiers;
-flock DBM, LOCK_UN;
-
-
-if (1) {
-my $ecnotifierentry = 1;
-if ($ecnotifval eq "ecformular") {
-        $ecnotifierentry = 0;
-}
-my $ecdb = tie %ecnotifiers, 'DB_File', "/tmdata/cl/notifiers.dbm", $flags, $mode, $DB_HASH or print "Cannot create DB: $!";
-
-my $fd = $ecdb->fd;                                            # Get file descriptor
-open DBZ, "+<&=$fd" or die "Could not dup DBM for lock: $!"; # Get dup filehandle
-flock DBZ, LOCK_EX;                                          # Lock exclusively
-undef $ecdb;                                                   # Avoid untie probs
-$ecnotifiers{"$trainer"} = $ecnotifierentry;
-untie %ecnotifiers;
-flock DBZ, LOCK_UN;
-}
+#if (1) {
+### setzen von flag beim notifier
+#my $flags = O_RDWR;
+#my $notifierentry = 0;
+#if ($notifval eq "formular") {
+#	$notifierentry = 1;
+#}
+#my $mode = "0777";
+#my $db = tie %notifiers, 'DB_File', "/tmdata/btm/notifiers.dbm", $flags, $mode, $DB_HASH or print "Cannot create DB: $!";
+#
+#my $fd = $db->fd;                                            # Get file descriptor
+#open DBM, "+<&=$fd" or die "Could not dup DBM for lock: $!"; # Get dup filehandle
+#flock DBM, LOCK_EX;                                          # Lock exclusively
+#undef $db;                                                   # Avoid untie probs
+#$notifiers{"$trainer"} = $notifierentry;
+#untie %notifiers;
+#flock DBM, LOCK_UN;
+#
+#
+#if (1) {
+#my $ecnotifierentry = 1;
+#if ($ecnotifval eq "ecformular") {
+#        $ecnotifierentry = 0;
+#}
+#my $ecdb = tie %ecnotifiers, 'DB_File', "/tmdata/cl/notifiers.dbm", $flags, $mode, $DB_HASH or print "Cannot create DB: $!";
+#
+#my $fd = $ecdb->fd;                                            # Get file descriptor
+#open DBZ, "+<&=$fd" or die "Could not dup DBM for lock: $!"; # Get dup filehandle
+#flock DBZ, LOCK_EX;                                          # Lock exclusively
+#undef $ecdb;                                                   # Avoid untie probs
+#$ecnotifiers{"$trainer"} = $ecnotifierentry;
+#untie %ecnotifiers;
+#flock DBZ, LOCK_UN;
+#}
 
 }
 
