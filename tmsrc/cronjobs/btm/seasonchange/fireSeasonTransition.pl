@@ -17,8 +17,7 @@ $new =~ s/'//;
 print $old, $new;
 if ( $old eq "" || $new eq "" || $old eq ".." ) { exit; }
 print "Content-type:text/html\n\n";
-print
-"\n\nSaisonumstellung von $old -> $new [ <- richtige Saisonkuerzel ? nur dann Fortfahren ] und als User tm eingeloggt ?";
+print "\n\nSaisonumstellung von $old -> $new [ <- richtige Saisonkuerzel ? nur dann Fortfahren ] und als User tm eingeloggt ?";
 &break;
 print "Sichere Saisondaten in /tmdata/btm/archiv/$old/\n";
 print "Setze Softlink /tmdata/btm/archiv/$new/ -> /tmdata/btm\n";
