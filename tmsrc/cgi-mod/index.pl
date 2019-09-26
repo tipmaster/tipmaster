@@ -851,8 +851,20 @@ print '
 <div style="max-width:160px">
 
 
-<iframe id=\'ac3d4403\' name=\'ac3d4403\' src=\'https://ads.socapro.com/www/delivery/afr.php?refresh=60&amp;zoneid=366&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'160\' height=\'600\'><a href=\'https://ads.socapro.com/www/delivery/ck.php?n=a3450efc&amp;cb=INSERT_RANDOM_NUMBER_HERE\' target=\'_blank\'><img src=\'https://ads.socapro.com/www/delivery/avw.php?zoneid=366&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3450efc&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
+<!--/*
+  *
+  * Revive Adserver Asynchronous JS Tag
+  * - Generated with Revive Adserver v4.0.2
+  *
+  */-->
 
+<!--/*  * Replace all instances of INSERT_RANDOM_NUMBER_HERE with
+  * a generated random number (or timestamp).
+  *
+  */-->
+
+<ins data-revive-zoneid="366" data-revive-ct0="INSERT_ENCODED_CLICKURL_HERE" data-revive-id="6ab4779cfa7c58ae66d17bf2232e20ec"></ins>
+<script async src="https://ads.socapro.com/www/delivery/asyncjs.php"></script>
 </div>
 
 </td><td bgcolor=black width=1>
