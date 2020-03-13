@@ -946,7 +946,7 @@ $datei = "/tmdata/btm/poll/" . $trainer;
 $datei =~ s/ /_/g;
 $datei = $datei . '.txt';
 
-if (   ( $ww > 5 || ( $ww == 5 && $std > 17 ) )
+if ( 0 &&  ( $ww > 5 || ( $ww == 5 && $std > 17 ) )
 	|| ( $ww == 0 && $std < 24 )
 	|| ( $ww == 1 && $std < 12 ) )
 {
