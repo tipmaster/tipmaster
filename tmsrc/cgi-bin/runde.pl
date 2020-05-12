@@ -91,6 +91,9 @@ $cup_btm_aktiv = $cup_btm_aktiv_f[$rrunde];
 	"tip_f14.gif", "tip_bra.gif", "tip_jap.gif", "tip_em16.gif"
 );
 
+$main_flags[34] = "tip_kor.gif";
+$main_flags[35] = "tip_wru.gif";
+
 # Job - Boerse auf=1/zu=0
 $boerse_open = 1;
 

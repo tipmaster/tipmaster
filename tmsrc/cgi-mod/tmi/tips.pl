@@ -190,6 +190,9 @@ my @main_flags = (
 	"tip_rus.gif", "tip_por.gif", "tip_irl.gif"
 );
 
+$main_flags[34] = "tip_kor.gif";
+$main_flags[35] = "tip_wru.gif";
+
 use lib qw{/tmapp/tmsrc/cgi-bin};
 use Test;
 use CGI qw/:standard/;
