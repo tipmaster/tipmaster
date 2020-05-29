@@ -1114,7 +1114,7 @@ print '
 </table>';
 
 #if (0) {
-if ( 0 &&( $ww > 5 || ( $ww == 5 && $std > 17 ) ) || ( $ww == 0 && $std < 24 ) || ( $ww == 1 && $std < 12 ) ) {
+if ( ( $ww > 5 || ( $ww == 5 && $std > 17 ) ) || ( $ww == 0 && $std < 24 ) || ( $ww == 1 && $std < 12 ) ) {
 
 	my $tr = $trainer;
 	$tr =~ s/ /%20/g;
