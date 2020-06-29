@@ -200,7 +200,7 @@ my @linksoben = (
 );
 
 my @linksunten = (
-	"Fussball Live",        "http://www.fussball-liveticker.eu",
+	"Fussball Live",        "https://fussballliveticker.de/heute",
 	"TipMaster Forum",      "http://community.tipmaster.de",
 	"Werben auf Tipmaster", "/marketing/index.shtml",
 	"Impressum",            "/Impressum.shtml"

@@ -875,7 +875,7 @@ print <<"(END ERROR HTML)";
 	"/",
 	"/cgi-bin/list.pl?id=links",
 
-	"http://www.fussball-liveticker.eu/",
+	"https://fussballliveticker.de/heute",
 	"https://www.fussballlivestream.tv",
 	"mailto:info\@tipmaster.de",
 	""

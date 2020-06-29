@@ -788,9 +788,9 @@ if ( $spielrunde_ersatz > $spielrunde_live ) {
 		$ausw *= 1;
 		print "<br><font face=verdana size=1>&nbsp;&nbsp;Verfolgen Sie die realen Zwischenergebnisse 
 der europaieschen Top - Ligen mit unserem 
-<a href=http://www.fussball-liveticker.eu target=new1>-> Live - Ergebnisdienst !</a><br>\n";
+<a href=https://fussballliveticker.de/heute target=new1>-> Fussball Live Ergebnisdienst !</a><br>\n";
 		print "<br><font face=verdana size=1>&nbsp;
-[ <img src=/img/ani.gif> &nbsp;<a href=http://www.fussball-liveticker.eu target=new1>LiveScoring</a> aller realen europaeischen Ligen &nbsp;<img src=/img/ani.gif> ]
+[ <img src=/img/ani.gif> &nbsp;<a href=https://fussballliveticker.de/heute target=new1>Live Ticker</a> aller realen europaeischen Ligen &nbsp;<img src=/img/ani.gif> ]
 &nbsp; &nbsp; &nbsp; 
 [ Ausgewertete Tipformular Spiele bis jetzt : $ausw von 25 &nbsp;<a href=/cgi-bin/btm/form.pl target=new>Uebersicht</a> ]";
 	}
