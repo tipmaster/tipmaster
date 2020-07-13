@@ -75,7 +75,7 @@ print "Sp.25 geloescht ...\n";
 print "Sp.29 geloescht ...\n";
 `rm /tmdata/btm/tips/33/*`;
 print "Sp.33 geloescht ...\n";
-`rm -r ls -al /tmdata/btm/pokal/tips/`;
+`rm -r /tmdata/btm/pokal/tips/`;
 print "Loesche Pokaltips ...\n";
 `rm /tmdata/btm/pokal/pokal_qu[1-7].txt`;
 print "Loesche Pokalquoten ...\n";
