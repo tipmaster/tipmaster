@@ -67,7 +67,7 @@ print "Sp.9 geloescht ...\n";
 print "Sp.13 geloescht ...\n";
 `rm /tmdata/btm/tips/17/*`;
 print "Sp.17 geloescht ...\n";
-`rm c*`;
+`rm /tmdata/btm/tips/21/*`;
 print "Sp.21 geloescht ...\n";
 `rm /tmdata/btm/tips/25/*`;
 print "Sp.25 geloescht ...\n";
