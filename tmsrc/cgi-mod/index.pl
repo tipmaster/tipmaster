@@ -910,7 +910,7 @@ print '
 
 <p style="font-face:tahoma,verdana;font-size:10px;color:darkgrey;padding-top:-10px;text-align:center;width:800px;">
 
-<a href="https://socagol.tv/de/bundesliga-live-stream">SocaGol</a> | <a style="color:darkgrey" href="https://www.fussballlivestream.tv">fussballlivestream.tv</a> | <a href="https://bundesligalivestreamkostenlos.com">Bundesliga Live Streams</a></p>
+<a href="https://socagol.tv/de/bundesliga-live-stream">SocaGol</a> | <a style="color:darkgrey" href="https://fussballlivestreams.de">fussballlivestreams.de</a> | <a href="https://bundesligalivestreamkostenlos.com">Bundesliga Live Streams</a></p>
 
 
 ' . $page_footer . '

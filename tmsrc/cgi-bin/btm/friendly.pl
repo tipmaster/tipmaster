@@ -636,7 +636,7 @@ sub abgeben {
 		print "<br>\n";
 
 		print
-"<br><br><font face=verdana size=2 color=darkred> &nbsp; <b>Sie haben keinen Tip abgegeben ; dies ist bei einem Freundschaftsspiel nicht zul�ssig !<br><br> &nbsp; Bitte kehren Sie zur Tipabgabe zurueck und korregieren Sie Ihren Tip !\n";
+"<br><br><font face=verdana size=2 color=darkred> &nbsp; <b>Sie haben keinen Tip abgegeben ; dies ist bei einem Freundschaftsspiel nicht zulaeessig !<br><br> &nbsp; Bitte kehren Sie zur Tipabgabe zurueck und korregieren Sie Ihren Tip !\n";
 		exit;
 	}
 
@@ -656,7 +656,7 @@ sub abgeben {
 		print "<br>\n";
 
 		print
-"<br><br><font face=verdana size=2 color=darkred> &nbsp; <b>Sie haben mehr als 5 Tips abgegeben ( ihre Tipanzahl $tips ) ; dies ist bei einem Freundschaftsspiel nicht zul�ssig !<br><br> &nbsp; Bitte kehren Sie zur Tipabgabe zurueck und reduzieren Sie Ihre Tipanzahl !\n";
+"<br><br><font face=verdana size=2 color=darkred> &nbsp; <b>Sie haben mehr als 5 Tips abgegeben ( ihre Tipanzahl $tips ) ; dies ist bei einem Freundschaftsspiel nicht zulaessig !<br><br> &nbsp; Bitte kehren Sie zur Tipabgabe zurueck und reduzieren Sie Ihre Tipanzahl !\n";
 		exit;
 	}
 
@@ -676,7 +676,7 @@ sub abgeben {
 		print "<br>\n";
 
 		print
-"<br><br><font face=verdana size=2 color=darkred> &nbsp; <b>Sie haben weniger als 5 Tips abgegeben ( ihre Tipanzahl $tips ) ; dies ist bei einem Freundschaftsspiel nicht zul�ssig !<br><br> &nbsp; Bitte kehren Sie zur Tipabgabe zurueck und reduzieren Sie Ihre Tipanzahl !\n";
+"<br><br><font face=verdana size=2 color=darkred> &nbsp; <b>Sie haben weniger als 5 Tips abgegeben ( ihre Tipanzahl $tips ) ; dies ist bei einem Freundschaftsspiel nicht zulaessig !<br><br> &nbsp; Bitte kehren Sie zur Tipabgabe zurueck und reduzieren Sie Ihre Tipanzahl !\n";
 		exit;
 	}
 
@@ -749,7 +749,7 @@ sub abgeben {
 	print
 "Ihr Freundschaftsspiel Angebot wurde registriert .<br>Nur wenn Ihr Gegner seine Tipabgabe fuer das Freundschaftsspiel<br>bis Freitag 18.oo Uhr taetigt wird das Spiel ausgetragen .<br><br>Ihre Tipabgabe wurde registriert und kann nicht mehr modifiziert werden .\n";
 	print
-"<br><br>Sie haben nun die M�glichkeit den Trainer $gegner_n von $gegner<br>eine Message zu schreiben so dass er von Ihrem Freundschaftsspiel Angebot Notiz nimmt :<br><br>\n";
+"<br><br>Sie haben nun die Moeglichkeit den Trainer $gegner_n von $gegner<br>eine Message zu schreiben so dass er von Ihrem Freundschaftsspiel Angebot Notiz nimmt :<br><br>\n";
 
 	print "<hr size=1 width=90% color=black><align=left><img src=/img/send.gif><br><br>\n";
 	print "<form method=post action=/cgi-bin/btm/mail/mail_sent.pl>\n";
@@ -759,7 +759,7 @@ sub abgeben {
 	print
 "<td bgcolor=#F3C6F4 align=right>&nbsp;&nbsp;<font face=verdana size=1>Absender :&nbsp;&nbsp;</td><td align=left bgcolor=#d9daff><font face=verdana size=1>&nbsp;&nbsp;$trainer&nbsp;&nbsp;( $heim )&nbsp;&nbsp;</td></tr>\n";
 	print
-"<td bgcolor=#F3C6F4 align=right>&nbsp;&nbsp;<font face=verdana size=1>Empf�nger :&nbsp;&nbsp;</td><td align=left bgcolor=#d9daff><font face=verdana size=1>&nbsp;&nbsp;$gegner_n&nbsp;&nbsp;( $gegner )&nbsp;&nbsp;</td></tr>\n";
+"<td bgcolor=#F3C6F4 align=right>&nbsp;&nbsp;<font face=verdana size=1>Empfaenger :&nbsp;&nbsp;</td><td align=left bgcolor=#d9daff><font face=verdana size=1>&nbsp;&nbsp;$gegner_n&nbsp;&nbsp;( $gegner )&nbsp;&nbsp;</td></tr>\n";
 	print "<input type=hidden name=message value=personal>\n";
 	print "<input type=hidden name=auswahl_adress value=\"$gegner_n\">\n";
 	print "<input type=hidden name=link value=\"friend\">\n";
@@ -880,7 +880,7 @@ sub eintragen_gegner {
 	print "<tr><td bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td>\n";
 	print "<td bgcolor=#eeeeee>&nbsp;</td><td bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td>\n";
 
-	print "<td bgcolor=#eeeeee align=middle><font face=verdana size=1>F�nf Tips</td>\n";
+	print "<td bgcolor=#eeeeee align=middle><font face=verdana size=1>Fuenf Tips</td>\n";
 	print "<td bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td>\n";
 	print
 "<td bgcolor=#eeeeee><font face=verdana size=1>&nbsp;</td><td bgcolor=#eeeeee><font face=verdana size=1>&nbsp;&nbsp;&nbsp;&nbsp;Quoten</td><td bgcolor=black><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td>\n";
@@ -1041,7 +1041,7 @@ sub abgeben_gegner {
 		print "<br>\n";
 
 		print
-"<br><br><font face=verdana size=2 color=darkred> &nbsp; <b>Sie haben keinen Tip abgegeben ; dies ist bei einem Freundschaftsspiel nicht zul�ssig !<br><br> &nbsp; Bitte kehren Sie zur Tipabgabe zurueck und korregieren Sie Ihren Tip !\n";
+"<br><br><font face=verdana size=2 color=darkred> &nbsp; <b>Sie haben keinen Tip abgegeben ; dies ist bei einem Freundschaftsspiel nicht zulaessig !<br><br> &nbsp; Bitte kehren Sie zur Tipabgabe zurueck und korregieren Sie Ihren Tip !\n";
 		exit;
 	}
 
@@ -1061,7 +1061,7 @@ sub abgeben_gegner {
 		print "<br>\n";
 
 		print
-"<br><br><font face=verdana size=2 color=darkred> &nbsp; <b>Sie haben mehr als 5 Tips abgegeben ( ihre Tipanzahl $tips ) ; dies ist bei einem Freundschaftsspiel nicht zul�ssig !<br><br> &nbsp; Bitte kehren Sie zur Tipabgabe zurueck und reduzieren Sie Ihre Tipanzahl !\n";
+"<br><br><font face=verdana size=2 color=darkred> &nbsp; <b>Sie haben mehr als 5 Tips abgegeben ( ihre Tipanzahl $tips ) ; dies ist bei einem Freundschaftsspiel nicht zulaessig !<br><br> &nbsp; Bitte kehren Sie zur Tipabgabe zurueck und reduzieren Sie Ihre Tipanzahl !\n";
 		exit;
 	}
 
@@ -1081,7 +1081,7 @@ sub abgeben_gegner {
 		print "<br>\n";
 
 		print
-"<br><br><font face=verdana size=2 color=darkred> &nbsp; <b>Sie haben weniger als 5 Tips abgegeben ( ihre Tipanzahl $tips ) ; dies ist bei einem Freundschaftsspiel nicht zul�ssig !<br><br> &nbsp; Bitte kehren Sie zur Tipabgabe zurueck und reduzieren Sie Ihre Tipanzahl !\n";
+"<br><br><font face=verdana size=2 color=darkred> &nbsp; <b>Sie haben weniger als 5 Tips abgegeben ( ihre Tipanzahl $tips ) ; dies ist bei einem Freundschaftsspiel nicht zulaessig !<br><br> &nbsp; Bitte kehren Sie zur Tipabgabe zurueck und reduzieren Sie Ihre Tipanzahl !\n";
 		exit;
 	}
 
@@ -1278,7 +1278,7 @@ sub liste {
 	print "&nbsp;<font face=verdana size=2><b>Bundesliga - TipMaster Freundschaftsspiele&nbsp;&nbsp;\n";
 
 #disabled again - no one cared anymore...
-#print "</b><font size=1 color=red><br><br>&nbsp; Aus noch nicht gekl�rten Gruenden wurden die errsten 114 angebotenenen Friendlys aus der Datenabnk gel&ouml;scht ! <br><br><font color=black>";
+#print "</b><font size=1 color=red><br><br>&nbsp; Aus noch nicht geklaerten Gruenden wurden die errsten 114 angebotenenen Friendlys aus der Datenabnk gel&ouml;scht ! <br><br><font color=black>";
 	print
 	  "<select style=\"font-family: Verdana; font-size: 11px; font-weight: normal; color: #000000;\" name=akt_runde>";
 
