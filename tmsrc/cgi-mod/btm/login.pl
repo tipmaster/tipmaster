@@ -518,7 +518,7 @@ if(!old){yyy=-1000;skn.visibility="hidden";}
 #<body onload=fenster()>
 #';
 
-#open(D,">/btm/popup/$trainer");
+#open(D,">/tmdata/btm/popup/$trainer");
 #close(D);
 #}
 

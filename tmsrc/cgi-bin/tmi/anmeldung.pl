@@ -525,7 +525,7 @@ $nn = int(rand(9)) + 1 ;
 $nr = $nr . $nn;
 }
 
-open(AA,">/tmi/free/$trainer");
+open(AA,">/tmdata/tmi/free/$trainer");
 print AA $nr;
 close(AA);
 

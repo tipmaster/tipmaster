@@ -279,7 +279,7 @@ $nn = int(rand(9)) + 1 ;
 $nr = $nr . $nn;
 }
 
-open(AA,">/btm/free/$trainer");
+open(AA,">/tmdata/btm/free/$trainer");
 print AA $nr;
 close(AA);
 $mail{Message}="";
@@ -309,7 +309,7 @@ http://www.tipmaster.de/cgi-bin/btm/anmeldung.pl?m=f&t=$tmp&nr=$nr\n\n";
 $vergeben{$voller_name} = 1;
 print "Vergabe erfolgt : $voller_name -> $frei\n";
 $yy=time();
-open(AB,">>/btm/newjob.txt");
+open(AB,">>/tmdata/btm/newjob.txt");
 if ( $all[8] == 0 || $all[8] eq "\n" ) { $all[8]=$all[6] }
 print AB "$voller_name&$frei&$all[8]&$yy&\n";
 close(AB);

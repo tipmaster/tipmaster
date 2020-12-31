@@ -286,7 +286,7 @@ $nn = int(rand(9)) + 1 ;
 $nr = $nr . $nn;
 }
 
-open(AA,">/tmi/free/$trainer");
+open(AA,">/tmdata/tmi/free/$trainer");
 print AA $nr;
 close(AA);
 $mail{Message}="";
@@ -316,7 +316,7 @@ http://www.tipmaster.de/cgi-bin/tmi/anmeldung.pl?m=f&t=$tmp&nr=$nr\n\n";
 $vergeben{$voller_name} = 1;
 print "Vergabe erfolgt : $voller_name -> $frei\n";
 $yy=time();
-open(AB,">>/tmi/newjob.txt");
+open(AB,">>/tmdata/tmi/newjob.txt");
 print AB "$voller_name&$frei&$all[6]&$yy&\n";
 close(AB);
 $calculate=1;
