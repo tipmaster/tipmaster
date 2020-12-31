@@ -153,7 +153,7 @@ for ( $sai = 1 ; $sai <= ( $main_nr - 6 ) ; $sai++ ) {
 	while (<D>) {
 		@all = split( /&/, $_ );
 		if ( $all[1] > $grenze ) {
-			open( T, ">>/btm/trainer_db/$all[0]" );
+			open( T, ">>/tmdaata/btm/trainer_db/$all[0]" );
 
 			#print "$all[0]\n";
 			print T

@@ -154,7 +154,7 @@ open (D,"<$datei");
 while(<D>){
 @all=split(/&/,$_);
 if ($all[1] > $grenze) {
-open (T,">>/tmi/trainer_db/$all[0]");
+open (T,">>/tmdata/tmi/trainer_db/$all[0]");
 #print "$all[0]\n";
 print T "$sai&$me1{$all[0]}/$rr1&$me2{$all[0]}/$rr2&$me3{$all[0]}/$rr3&$me4{$all[0]}/$rr4&$me5{$all[0]}/$rr5&$_";
 close(T);
