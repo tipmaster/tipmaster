@@ -163,6 +163,8 @@ close(T);
 
 close($dd);
 
+if ($ar > 0) {
+
 open (T,">>/tmdata/tmi/trainer_db/ligawerte.txt");
 print T "$sai&";
 $oo=0;$qm = int ( ($a[1] / $ar ) * 10 ) / 10 ;
@@ -194,6 +196,6 @@ if ($oo==0 ) { $qm = $qm . '.0' }
 print T "$qm&\n";
 
 close(T);
-
+}
 }
 close(AAA);
