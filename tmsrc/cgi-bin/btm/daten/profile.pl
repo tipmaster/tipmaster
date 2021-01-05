@@ -21,6 +21,7 @@
 use lib '/tmapp/tmsrc/cgi-bin/'; 
 use TMSession;
 use HTML::Entities;
+use DB_File;
 my $session = TMSession::getSession(btm_login => 1);
 my $trainer = $session->getUser();
 my $leut = $trainer;
