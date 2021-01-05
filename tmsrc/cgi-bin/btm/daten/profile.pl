@@ -50,7 +50,7 @@ my $notifiercheck = " ";
 my $ecnotifiercheck = " checked";
 my $flags = O_RDWR;
 my $mode = "0777";
-my $db = tie %notifiers, 'DB_FI', "/tmdata/btm/notifiers.dbm", $flags, $mode, $DB_HASH or print "Cannot access DB: $!";
+my $db = tie %notifiers, 'DB_File', "/tmdata/btm/notifiers.dbm", $flags, $mode, $DB_HASH or print "Cannot access DB: $!";
 my $val = $notifiers{"$trainer"};
 if ($val eq "1") {
   $notifiercheck = " checked";
