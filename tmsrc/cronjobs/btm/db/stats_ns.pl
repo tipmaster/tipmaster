@@ -87,7 +87,7 @@ print $tx;
 for ( $tr = 2 ; $tr <= $tx ; $tr++ ) {
 	@lines = split( /\$/, $zeile[ $nr[$tr] ] );
 
-	for ( $ss = 1 ; $ss <= 99 ; $ss++ ) {
+	for ( $ss = 1 ; $ss <= 9999 ; $ss++ ) {
 		$sp_g[$ss]    = 0;
 		$sp_tp_g[$ss] = 0;
 		$sp_tm_g[$ss] = 0;
@@ -149,19 +149,19 @@ for ( $tr = 2 ; $tr <= $tx ; $tr++ ) {
 				if ( $saison == $akt_saison ) {
 					if ( ( $y >= $ab1 ) and ( $y <= $ab2 ) ) {
 
-						if ( $tora > $torb )  { $sp_s_g[99]++ }
-						if ( $tora == $torb ) { $sp_u_g[99]++ }
-						if ( $tora < $torb )  { $sp_n_g[99]++ }
+						if ( $tora > $torb )  { $sp_s_g[9999]++ }
+						if ( $tora == $torb ) { $sp_u_g[9999]++ }
+						if ( $tora < $torb )  { $sp_n_g[9999]++ }
 
-						$sp_tp_g[99] = $sp_tp_g[99] + $tora;
-						$sp_tm_g[99] = $sp_tm_g[99] + $torb;
+						$sp_tp_g[9999] = $sp_tp_g[9999] + $tora;
+						$sp_tm_g[9999] = $sp_tm_g[9999] + $torb;
 
-						$sp_qp_g[99] = $sp_qp_g[99] + $qu1;
-						$sp_qm_g[99] = $sp_qm_g[99] + $qu2;
+						$sp_qp_g[9999] = $sp_qp_g[9999] + $qu1;
+						$sp_qm_g[9999] = $sp_qm_g[9999] + $qu2;
 
-						$sp_uu_g[99] = $sp_uu_g[99] + $qu1 - $grenze_a;
+						$sp_uu_g[9999] = $sp_uu_g[9999] + $qu1 - $grenze_a;
 
-						$sp_g[99]++;
+						$sp_g[9999]++;
 
 					}
 				}
@@ -230,7 +230,7 @@ for ( $tr = 2 ; $tr <= $tx ; $tr++ ) {
 		if ( $go == 1 ) {
 			if ( $kk > 0 ) {
 
-				#print "$trainer[$tr] $sp_g[99]\n";
+				#print "$trainer[$tr] $sp_g[9999]\n";
 
 				print ALL "$trainer[$nr[$tr]]&$go";
 
@@ -305,29 +305,29 @@ for ( $tr = 2 ; $tr <= $tx ; $tr++ ) {
 						$ka = int( $qdp[$ss] );
 						if ( $ka == $qdp[$ss] ) { $qdp[$ss] = $qdp[$ss] . ".0" }
 
-						$sp_g[88]    = $sp_g[88] + $sp_g[$ss];
-						$sp_s_g[88]  = $sp_s_g[88] + $sp_s_g[$ss];
-						$sp_u_g[88]  = $sp_u_g[88] + $sp_u_g[$ss];
-						$sp_n_g[88]  = $sp_n_g[88] + $sp_n_g[$ss];
-						$sp_tp_g[88] = $sp_tp_g[88] + $sp_tp_g[$ss];
-						$sp_tm_g[88] = $sp_tm_g[88] + $sp_tm_g[$ss];
-						$sp_qp_g[88] = $sp_qp_g[88] + $sp_qp_g[$ss];
-						$sp_qm_g[88] = $sp_qm_g[88] + $sp_qm_g[$ss];
-						$sp_uu_g[88] = $sp_uu_g[88] + $sp_uu_g[$ss];
+						$sp_g[8888]    = $sp_g[8888] + $sp_g[$ss];
+						$sp_s_g[8888]  = $sp_s_g[8888] + $sp_s_g[$ss];
+						$sp_u_g[8888]  = $sp_u_g[8888] + $sp_u_g[$ss];
+						$sp_n_g[8888]  = $sp_n_g[8888] + $sp_n_g[$ss];
+						$sp_tp_g[8888] = $sp_tp_g[8888] + $sp_tp_g[$ss];
+						$sp_tm_g[8888] = $sp_tm_g[8888] + $sp_tm_g[$ss];
+						$sp_qp_g[8888] = $sp_qp_g[8888] + $sp_qp_g[$ss];
+						$sp_qm_g[8888] = $sp_qm_g[8888] + $sp_qm_g[$ss];
+						$sp_uu_g[8888] = $sp_uu_g[8888] + $sp_uu_g[$ss];
 					}
 
 					$vq = $akt_saison;
 
 					print ALL
-"&$sp_g[99]&$sp_s_g[99]&$sp_u_g[99]&$sp_n_g[99]&$sp_tp_g[99]&$sp_tm_g[99]&$sp_qp_g[99]&$sp_qm_g[99]&$sp_uu_g[99]";
+"&$sp_g[9999]&$sp_s_g[9999]&$sp_u_g[9999]&$sp_n_g[9999]&$sp_tp_g[9999]&$sp_tm_g[9999]&$sp_qp_g[9999]&$sp_qm_g[9999]&$sp_uu_g[9999]";
 					print S7
 "&$sp_g[$vq]&$sp_s_g[$vq]&$sp_u_g[$vq]&$sp_n_g[$vq]&$sp_tp_g[$vq]&$sp_tm_g[$vq]&$sp_qp_g[$vq]&$sp_qm_g[$vq]&$sp_uu_g[$vq]\n";
 
 					# Gesamt - Ranking
 
-					if ( $sp_g[88] > 0 ) {
-						$qpd = int( ( $sp_qp_g[88] / $sp_g[88] ) * 10 ) / 10;
-						$qmd = int( ( $sp_qm_g[88] / $sp_g[88] ) * 10 ) / 10;
+					if ( $sp_g[8888] > 0 ) {
+						$qpd = int( ( $sp_qp_g[8888] / $sp_g[8888] ) * 10 ) / 10;
+						$qmd = int( ( $sp_qm_g[8888] / $sp_g[8888] ) * 10 ) / 10;
 					}
 
 					$xx = "";
@@ -337,8 +337,8 @@ for ( $tr = 2 ; $tr <= $tx ; $tr++ ) {
 					if ( $ka == $qpd ) { $xx = ".0" }
 					if ( $kb == $qmd ) { $xy = ".0" }
 
-					$pu = ( $sp_s_g[88] * 3 ) + $sp_u_g[88];
-					$pu_old = $pu - ( ( $sp_s_g[99] * 3 ) + $sp_u_g[99] );
+					$pu = ( $sp_s_g[8888] * 3 ) + $sp_u_g[8888];
+					$pu_old = $pu - ( ( $sp_s_g[9999] * 3 ) + $sp_u_g[9999] );
 
 					if ( $pu < 1000 ) { $pu = '0' . $pu }
 					if ( $pu < 100 )  { $pu = '0' . $pu }
@@ -349,13 +349,13 @@ for ( $tr = 2 ; $tr <= $tx ; $tr++ ) {
 					if ( $pu_old < 10 )   { $pu_old = '0' . $pu_old }
 
 					print S1
-"$trainer[$nr[$tr]]&$sp_g[88]&$sp_s_g[88]&$sp_u_g[88]&$sp_n_g[88]&$sp_tp_g[88]&$sp_tm_g[88]&$qpd$xx&$qmd$xy&$pu&$pu_old&\n";
+"$trainer[$nr[$tr]]&$sp_g[8888]&$sp_s_g[8888]&$sp_u_g[8888]&$sp_n_g[8888]&$sp_tp_g[8888]&$sp_tm_g[8888]&$qpd$xx&$qmd$xy&$pu&$pu_old&\n";
 					print S6
-"$trainer[$nr[$tr]]&$sp_g[88]&$sp_g[99]&$sp_s_g[88]&$sp_s_g[99]&$sp_u_g[88]&$sp_u_g[99]&$sp_n_g[88]&$sp_tp_g[88]&$sp_tm_g[88]&$qpd$xx&$qmd$xy&$pu&$pu_old&\n";
+"$trainer[$nr[$tr]]&$sp_g[8888]&$sp_g[9999]&$sp_s_g[8888]&$sp_s_g[9999]&$sp_u_g[8888]&$sp_u_g[9999]&$sp_n_g[8888]&$sp_tp_g[8888]&$sp_tm_g[8888]&$qpd$xx&$qmd$xy&$pu&$pu_old&\n";
 
 					# Quoten - Ranking
 
-					$qp_old = $sp_qp_g[88] - $sp_qp_g[99];
+					$qp_old = $sp_qp_g[8888] - $sp_qp_g[9999];
 
 					for ( $nn = 1 ; $nn <= $akt_saison - 1 ; $nn++ ) {
 						if ( $sp_g[$nn] > 0 ) {
@@ -366,7 +366,7 @@ for ( $tr = 2 ; $tr <= $tx ; $tr++ ) {
 						if ( $sp_g[$nn] == 0 ) { $qqq[$nn] = "---" }
 					}
 
-					print S2 "$trainer[$nr[$tr]]&$sp_g[88]&$sp_g[99]&$sp_qp_g[88]&$sp_qm_g[88]&$sp_qp_g[99]&";
+					print S2 "$trainer[$nr[$tr]]&$sp_g[8888]&$sp_g[9999]&$sp_qp_g[8888]&$sp_qm_g[8888]&$sp_qp_g[9999]&";
 
 					for ( $d = $akt_saison - 6 ; $d <= $akt_saison - 1 ; $d++ ) {
 						print S2 "$qqq[$d]&";
@@ -375,7 +375,7 @@ for ( $tr = 2 ; $tr <= $tx ; $tr++ ) {
 
 					# überflüssig - Ranking
 
-					$qp_old = $sp_qp_g[88] - $sp_qp_g[99];
+					$qp_old = $sp_qp_g[8888] - $sp_qp_g[9999];
 
 					for ( $nn = 1 ; $nn <= $akt_saison - 1 ; $nn++ ) {
 						if ( $sp_g[$nn] > 0 ) {
@@ -393,7 +393,7 @@ for ( $tr = 2 ; $tr <= $tx ; $tr++ ) {
 						if ( $sp_g[$nn] == 0 ) { $qqm[$nn] = "---" }
 					}
 
-					print S3 "$trainer[$nr[$tr]]&$sp_g[88]&$sp_g[99]&$sp_uu_g[88]&$sp_uu_g[99]&";
+					print S3 "$trainer[$nr[$tr]]&$sp_g[8888]&$sp_g[9999]&$sp_uu_g[8888]&$sp_uu_g[9999]&";
 
 					for ( $d = $akt_saison - 6 ; $d <= $akt_saison - 1 ; $d++ ) {
 						print S3 "$qqm[$d]&";
@@ -402,7 +402,7 @@ for ( $tr = 2 ; $tr <= $tx ; $tr++ ) {
 
 					# Tore pro Spiel Ranking
 
-					$qtp_old = $sp_tp_g[88] - $sp_tp_g[99];
+					$qtp_old = $sp_tp_g[8888] - $sp_tp_g[9999];
 					for ( $nn = 1 ; $nn <= $akt_saison - 1 ; $nn++ ) {
 						if ( $sp_tp_g[$nn] > 0 ) {
 							$qtp[$nn] = $sp_tp_g[$nn];
@@ -412,7 +412,7 @@ for ( $tr = 2 ; $tr <= $tx ; $tr++ ) {
 						if ( $sp_g[$nn] == 0 ) { $qtp[$nn] = "---" }
 					}
 
-					print S5 "$trainer[$nr[$tr]]&$sp_g[88]&$sp_g[99]&$sp_tp_g[88]&$sp_tp_g[99]&";
+					print S5 "$trainer[$nr[$tr]]&$sp_g[8888]&$sp_g[9999]&$sp_tp_g[8888]&$sp_tp_g[9999]&";
 					for ( $d = $akt_saison - 6 ; $d <= $akt_saison - 1 ; $d++ ) {
 						print S5 "$qtp[$d]&";
 					}
@@ -420,7 +420,7 @@ for ( $tr = 2 ; $tr <= $tx ; $tr++ ) {
 
 					# Gegner Quoten - Ranking
 
-					$qm_old = $sp_qm_g[88] - $sp_qm_g[99];
+					$qm_old = $sp_qm_g[8888] - $sp_qm_g[9999];
 
 					for ( $nn = 1 ; $nn <= $akt_saison - 1 ; $nn++ ) {
 						if ( $sp_g[$nn] > 0 ) {
@@ -431,7 +431,7 @@ for ( $tr = 2 ; $tr <= $tx ; $tr++ ) {
 						if ( $sp_g[$nn] == 0 ) { $qqo[$nn] = "---" }
 					}
 
-					print S4 "$trainer[$nr[$tr]]&$sp_g[88]&$sp_g[99]&$sp_qm_g[88]&$sp_qp_g[88]&$sp_qm_g[99]&";
+					print S4 "$trainer[$nr[$tr]]&$sp_g[8888]&$sp_g[9999]&$sp_qm_g[8888]&$sp_qp_g[8888]&$sp_qm_g[9999]&";
 
 					for ( $d = $akt_saison - 6 ; $d <= $akt_saison - 1 ; $d++ ) {
 						print S4 "$qqo[$d]&";
