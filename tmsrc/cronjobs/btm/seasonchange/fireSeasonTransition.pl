@@ -134,7 +134,7 @@ print "... beendet.";
 `perl /tmapp/tmsrc/cronjobs/btm/seasonchange/erfolge_readout.pl &`;  # bisherige deutsche meister werden ausgelesen
 `perl /tmapp/tmsrc/cronjobs/btm/seasonchange/dfb_winner_readout.pl &`;    # bisherige dfb pokalsieger werden ausgelesen
 
-`nice -15 perl /tmapp/tmsrc/cronjobs/btm/db/stats_ns.pl &`;
+`nice -15 perl /tmapp/tmsrc/cronjobs/btm/db/stats_ns.pl &`; #coach histopry
 `nice -15 perl /tmapp/tmsrc/cronjobs/btm/db/top_award.pl &`;
 
 	#reset rights - problem occurredd fter git trainsition, tp, Aug-24-2105
