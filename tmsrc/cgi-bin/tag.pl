@@ -55,7 +55,29 @@ j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 
 my $cachebuster = int(100000*rand());
 
+
+
 print '
+
+		<div style="
+    display: inline-block;
+    min-height: inherit;
+   	width: 100%;
+   	max-width:1024px;
+    text-align:center">
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- FLT Horizontal 2019-09-06 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4704356426999787"
+     data-ad-slot="9746730021"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
 <iframe id=\'a52022f2\' name=\'a52022f2\' src=\'https://ads.socapro.com/www/delivery/afr.php?refresh=60&amp;zoneid=367&amp;cb='.$cachebuster.'&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'728\' height=\'90\'><a href=\'https://ads.socapro.com/www/delivery/ck.php?n=ad110454&amp;cb='.$cachebuster.'\' target=\'_blank\'><img src=\'https://ads.socapro.com/www/delivery/avw.php?zoneid=367&amp;cb='.$cachebuster.'&amp;n=ad110454&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
 
 ';
