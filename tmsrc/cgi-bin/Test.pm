@@ -1216,7 +1216,27 @@ sub banner_head {
 	srand();
 	$gg1 = int( 10 * rand ) + 44;
 
-	$number = "
+	$number = '
+	
+			<div style="
+    display: inline-block;
+    min-height: inherit;
+   	width: 100%;
+   	max-width:1024px;
+    text-align:center">
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- FLT Horizontal 2019-09-06 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4704356426999787"
+     data-ad-slot="9746730021"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+	'."
 <!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
 <A HREF=\"http://partners.webmasterplan.com/click.asp?ref=38356&site=1387&type=b$gg1&bnb=$gg1\" TARGET=\"_top\">
 <IMG SRC=http://banners.webmasterplan.com/view.asp?site=1387&ref=38356&b=$gg1 BORDER=0 
