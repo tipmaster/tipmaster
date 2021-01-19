@@ -65,6 +65,7 @@ print '
    	width: 100%;
    	max-width:1024px;
     text-align:center">
+    <script data-ad-client="ca-pub-4704356426999787" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- FLT Horizontal 2019-09-06 -->
 <ins class="adsbygoogle"

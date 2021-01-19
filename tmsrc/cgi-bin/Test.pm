@@ -1157,6 +1157,8 @@ sub banner_gross {
 
 	$number = '
 	
+	<script data-ad-client="ca-pub-4704356426999787" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	
 		<div style="
     display: inline-block;
     min-height: inherit;
