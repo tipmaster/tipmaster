@@ -376,7 +376,6 @@ print '
 print '
 <body bgcolor=white>
 
-<script data-ad-client="ca-pub-4704356426999787" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <table border=0 cellpadding=0 cellspacing=0><tr><td valign=top><tr><td valign=top>
 
