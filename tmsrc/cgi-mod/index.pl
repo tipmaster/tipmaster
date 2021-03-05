@@ -370,6 +370,9 @@ print '
   text-decoration: none;
 }
 </style>
+<!-- Paste the above code right above the closing </head> of the HTML in your tipmaster.de -->
+<script type="text/javascript" src="//services.vlitag.com/adv1/?q=b4ec91b2a704e5df94c61d878f983522" defer="" async=""></script><script> var vitag = vitag || {};</script>
+<!-- End Valueimpression Head Script -->
 </head>
 ';
 
@@ -847,23 +850,13 @@ print '
 
 	<td bgcolor=white>
 
-<div style="max-width:160px">
+<div style="max-width:300px">
 
 
-<!--/*
-  *
-  * Revive Adserver Asynchronous JS Tag
-  * - Generated with Revive Adserver v4.0.2
-  *
-  */-->
+<!-- tipmaster.de_300x600: Begin -->
+<div class="adsbyvli" data-ad-slot="vi_1335352009"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1335352009")})</script>
+<!-- tipmaster.de_300x600 End -->
 
-<!--/*  * Replace all instances of INSERT_RANDOM_NUMBER_HERE with
-  * a generated random number (or timestamp).
-  *
-  */-->
-
-<ins data-revive-zoneid="366" data-revive-ct0="INSERT_ENCODED_CLICKURL_HERE" data-revive-id="6ab4779cfa7c58ae66d17bf2232e20ec"></ins>
-<script async src="https://ads.socapro.com/www/delivery/asyncjs.php"></script>
 </div>
 
 </td><td bgcolor=black width=1>
