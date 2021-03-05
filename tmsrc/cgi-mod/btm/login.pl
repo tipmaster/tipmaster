@@ -964,7 +964,7 @@ Wochenendes zum Drucken auf einer Seite
 </td><td valign=bottom>
 &nbsp; &nbsp; &nbsp; &nbsp;<a href=/cgi-bin/druck_tip.pl?coach=$tr><img src=/img/printer.gif border=0></a></td></tr></table>
 
-&nbsp; $banner_gross
+
 ";
 }
 else {
@@ -1090,7 +1090,7 @@ Die Tippabgabe in der Champions-Leauge bzw. im UEFA-Cup endet nun wieder wie gew
 
 (END ERROR HTML)
 
-print $page_footer;
+print $page_footer . $banner_gross;
 
 select STDOUT;
 $session->writeSession();
