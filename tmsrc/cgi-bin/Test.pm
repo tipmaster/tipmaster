@@ -1162,7 +1162,7 @@ $number = '
 <!-- End Valueimpression Head Script -->
 <!-- tipmaster.de_970x250: Begin -->
 
-<div style="display:flex;justify-content:flex-start;padding-bottom:10px">
+<div style="display:flex;justify-content:flex-start;padding-bottom:10px;width:970px;padding-left:25px;">
 <div class="adsbyvli" data-ad-slot="vi_1335352012"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1335352012")})</script>
 <!-- tipmaster.de_970x250 End -->
 </div>
