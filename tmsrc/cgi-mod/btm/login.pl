@@ -1090,7 +1090,7 @@ Die Tippabgabe in der Champions-Leauge bzw. im UEFA-Cup endet nun wieder wie gew
 
 (END ERROR HTML)
 
-print $page_footer . $banner_gross;
+print $page_footer . '<br/><br/>'.$banner_gross;
 
 select STDOUT;
 $session->writeSession();

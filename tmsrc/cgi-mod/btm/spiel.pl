@@ -1411,6 +1411,7 @@ for ( $x = 1 ; $x < 19 ; $x++ ) {
 print "</table>\n";
 print "</tr></table>
 $page_footer
+$banner_gross
 </html>\n";
 
 exit;

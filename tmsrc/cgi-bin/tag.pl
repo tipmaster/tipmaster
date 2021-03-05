@@ -58,9 +58,12 @@ my $cachebuster = int(100000*rand());
 
 
 print '
-
-
-<iframe id=\'a52022f2\' name=\'a52022f2\' src=\'https://ads.socapro.com/www/delivery/afr.php?refresh=60&amp;zoneid=367&amp;cb='.$cachebuster.'&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'728\' height=\'90\'><a href=\'https://ads.socapro.com/www/delivery/ck.php?n=ad110454&amp;cb='.$cachebuster.'\' target=\'_blank\'><img src=\'https://ads.socapro.com/www/delivery/avw.php?zoneid=367&amp;cb='.$cachebuster.'&amp;n=ad110454&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
+<!-- Paste the above code right above the closing </head> of the HTML in your tipmaster.de -->
+<script type="text/javascript" src="//services.vlitag.com/adv1/?q=b4ec91b2a704e5df94c61d878f983522" defer="" async=""></script><script> var vitag = vitag || {};</script>
+<!-- End Valueimpression Head Script -->
+<!-- tipmaster.de_970x250: Begin -->
+<div class="adsbyvli" data-ad-slot="vi_1335352012"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1335352012")})</script>
+<!-- tipmaster.de_970x250 End -->
 
 ';
 
