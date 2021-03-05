@@ -1161,8 +1161,11 @@ $number = '
 <script type="text/javascript" src="//services.vlitag.com/adv1/?q=b4ec91b2a704e5df94c61d878f983522" defer="" async=""></script><script> var vitag = vitag || {};</script>
 <!-- End Valueimpression Head Script -->
 <!-- tipmaster.de_970x250: Begin -->
+
+<div style="display:flex;justify-content:flex-start;padding-bottom:10px">
 <div class="adsbyvli" data-ad-slot="vi_1335352012"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1335352012")})</script>
 <!-- tipmaster.de_970x250 End -->
+</div>
 ';
 	return $number;
 
