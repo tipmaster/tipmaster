@@ -963,6 +963,8 @@ Wochenendes zum Drucken auf einer Seite
 
 </td><td valign=bottom>
 &nbsp; &nbsp; &nbsp; &nbsp;<a href=/cgi-bin/druck_tip.pl?coach=$tr><img src=/img/printer.gif border=0></a></td></tr></table>
+
+&nbsp; $banner_gross
 ";
 }
 else {
