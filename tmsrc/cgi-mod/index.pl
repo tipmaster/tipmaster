@@ -32,6 +32,7 @@ print "Content-type:text/html\n\n";
 use Test;
 use CGI qw/:standard/;
 use CGI::Cookie;
+use utf8;
 
 my $mlib         = new Test;
 my $page_footer  = $mlib->page_footer();
