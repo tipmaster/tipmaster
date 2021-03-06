@@ -200,7 +200,7 @@ my @linksoben = (
 );
 
 my @linksunten = (
-	"Fussball Live",        "https://fussballliveticker.de/heute",
+	"Fußball Heute Ergebnisse",        "https://www.fussball-liveticker.eu/fussball-ergebnisse-heute",
 	"TipMaster Forum",      "http://community.tipmaster.de",
 	"Werben auf Tipmaster", "/marketing/index.shtml",
 	"Impressum",            "/Impressum.shtml"
