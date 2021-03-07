@@ -1,7 +1,7 @@
 # tipmaster
 Codebase for the German Soccer Fantasy Game TipMaster
 
-[Deutsche Erkl&auml;rung](#german)
+[Deutsche Erkl&auml;rung/Introduction in German](#german)
 
 ##Technology Stack
 * Perl 5.20.1
