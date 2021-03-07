@@ -329,7 +329,7 @@ print '
 <meta http-equiv="expires" content="-1">
 
 
-<META name="AUTHOR" content="info@tipmaster.net">
+<META name="AUTHOR" content="info@tipmaster.de">
 <META name="COPYRIGHT" content="TipMaster online 2006">
 <META NAME="description" CONTENT="&Uuml;bernehmen Sie Ihren eigenen Fu&szlig;ball Verein in diesem Tippspiel und f&uuml;hren Sie Ihn durch Ihren Tipp Verstand zur Meisterschaft">
 <META NAME="page-topic" content="Tippspiel">
@@ -340,8 +340,8 @@ print '
 <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
 
 <META NAME="Language" CONTENT="de">
-<META NAME="Publisher" CONTENT="info@tipmaster.net">
-<META NAME="DC.Creator" CONTENT="info@tipmaster.net">
+<META NAME="Publisher" CONTENT="info@tipmaster.de">
+<META NAME="DC.Creator" CONTENT="info@tipmaster.de">
 <META NAME="Robots" CONTENT="INDEX,FOLLOW">
 
 <style type="text/css" media="all">
@@ -371,9 +371,8 @@ print '
   text-decoration: none;
 }
 </style>
-<!-- Paste the above code right above the closing </head> of the HTML in your tipmaster.de -->
-<script type="text/javascript" src="//services.vlitag.com/adv1/?q=b4ec91b2a704e5df94c61d878f983522" defer="" async=""></script><script> var vitag = vitag || {};</script>
-<!-- End Valueimpression Head Script -->
+<script type="text/javascript" src="//services.vlitag.com/adv1/?q=b4ec91b2a704e5df94c61d878f983522" defer="" async=""></script>
+<script> var vitag = vitag || {};</script>
 </head>
 ';
 
