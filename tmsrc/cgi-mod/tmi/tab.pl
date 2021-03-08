@@ -37,6 +37,7 @@ my @cookies      = ();
 my $mlib         = new Test;
 my $page_footer  = $mlib->page_footer();
 my $banner_gross = $mlib->banner_gross();
+my $banner_bottom = $mlib->banner_bottom();
 my $banner_klein = $mlib->banner_klein();
 my $location     = $mlib->location_tmi();
 my @liga_namen   = $mlib->tmi_liga_namen();
@@ -1312,7 +1313,7 @@ if ( $methode eq "A" ) {
 	print "</table>\n";
 
 }
-
+print $banner_bottom;
 print $page_footer;
 exit;
 

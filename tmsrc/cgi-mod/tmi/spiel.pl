@@ -204,6 +204,7 @@ use CGI::Cookie;
 
 my $mlib         = new Test;
 my $banner_gross = $mlib->banner_gross();
+my $banner_bottom = $mlib->banner_bottom();
 my $banner_klein = $mlib->banner_klein();
 my $page_footer  = $mlib->page_footer();
 
@@ -1838,5 +1839,5 @@ for ( $x = 1 ; $x < 19 ; $x++ ) {
 print "</table>\n";
 print "</tr></table></html>\n";
 print $page_footer;
-print $banner_gross;
+print $banner_bottom;
 exit;

@@ -242,6 +242,7 @@ use DBI;
 my $mlib         = new Test;
 my $page_footer  = $mlib->page_footer();
 my $banner_gross = $mlib->banner_gross();
+my $banner_bottom = $mlib->banner_bottom();
 my $banner_klein = $mlib->banner_klein();
 my $aktiv_position;
 
@@ -1694,13 +1695,17 @@ so dass ihr Tip gewertet werden kann .
  </body>
 </html>
 (END ERROR HTML)
+
+
 	}
 
 	elsif ( $error eq 'spielauswahl' ) {
 
 	}
+print $page_footer . '<br/><br/>'.$banner_bottom;
 
 	exit;
 }
+print $page_footer . '<br/><br/>'.$banner_bottom;
 
 exit;

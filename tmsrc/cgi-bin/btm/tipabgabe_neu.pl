@@ -467,6 +467,7 @@ Tabellen und Statistiken sowie LiveScore zu den europ. und intern. Ligen !<br><b
 	print &getHtmlBlankotip($trainer);
 	&makeFormNew();
 
+	require "/tmapp/tmsrc/cgi-bin/tag_bottom.pl";
 	print "</body></html>\n";
 
 }

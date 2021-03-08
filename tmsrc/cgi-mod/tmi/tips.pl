@@ -200,6 +200,7 @@ use CGI::Cookie;
 
 my $mlib         = new Test;
 my $banner_gross = $mlib->banner_gross();
+my $banner_bottom = $mlib->banner_bottom();
 my $banner_klein = $mlib->banner_klein();
 
 $query      = new CGI;
@@ -549,6 +550,7 @@ print "<form name=d1 action=/cgi-bin/tmi/form.pl method=post target=new>\n";
 print "<input type=hidden name=spielrunde value=$spielrunde></form>\n";
 print
 "<font face=verdana size=2><b><a href=javascript:document.d1.submit()>Ergebnisse und Anstosszeiten der Tipformular Paarungen</a></b>\n";
+print $banner_bottom;
 print '<!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KX6R92"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

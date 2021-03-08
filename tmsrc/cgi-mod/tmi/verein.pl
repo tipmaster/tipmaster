@@ -35,6 +35,7 @@ use CGI::Cookie;
 my @cookies      = ();
 my $mlib         = new Test;
 my $banner_gross = $mlib->banner_gross();
+my $banner_bottom = $mlib->banner_bottom();
 my $banner_klein = $mlib->banner_klein();
 my $location     = $mlib->location_tmi();
 my @liga_namen   = $mlib->tmi_liga_namen();
@@ -1422,6 +1423,9 @@ for ( $spieltag = 0 ; $spieltag < 34 ; $spieltag++ ) {
 print "<tr>\n";
 print "<td bgcolor=black colspan=10><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td>\n";
 print "</table></html>";
+print $banner_bottom;
+print $page_footer;
+
 
 exit;
 

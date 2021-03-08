@@ -38,6 +38,7 @@ my $mlib        = new Test;
 my $page_footer = $mlib->page_footer();
 
 my $banner_gross = $mlib->banner_gross();
+my $banner_bottom = $mlib->banner_bottom();
 my $banner_klein = $mlib->banner_klein();
 my @liga_namen   = $mlib->btm_liga_namen();
 my @liga_kuerzel = $mlib->btm_liga_kuerzel();
@@ -1065,6 +1066,7 @@ if ( $methode eq "A" ) {
 	}
 
 	print "</table>\n";
+	print $banner_bottom;
 	print $page_footer;
 
 }
