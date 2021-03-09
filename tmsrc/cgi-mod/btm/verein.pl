@@ -180,6 +180,7 @@ my $rg;
 my $farbe;
 my $start;
 my $ss;
+my $page_footer;
 
 use CGI;
 $query     = new CGI;
@@ -1226,7 +1227,9 @@ for ( $spieltag = 0 ; $spieltag < 34 ; $spieltag++ ) {
 
 print "<tr>\n";
 print "<td bgcolor=black colspan=10><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td>\n";
-print "</table>$banner_bottom</html>";
+print "</table>$banner_bottom
+$page_footer
+</html>";
 
 exit;
 

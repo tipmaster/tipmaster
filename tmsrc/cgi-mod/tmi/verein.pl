@@ -188,6 +188,7 @@ my $rg;
 my $farbe;
 my $start;
 my $ss;
+my $page_footer;
 
 my $rr_ligen = 203;
 @old2new = (
