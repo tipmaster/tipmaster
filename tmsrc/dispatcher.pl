@@ -8,7 +8,8 @@ use utf8;
 
 while ( my $q = new CGI::Fast ) {
 	binmode( STDOUT, ":utf8" );
-	require '/tipmaster/tmsrc/cgi-mod/index.pl';
+	#require '/tipmaster/tmsrc/cgi-mod/index.pl';
+	require $ENV{FCGI_SCRIPT_FILENAME};
 }
 
 1;
