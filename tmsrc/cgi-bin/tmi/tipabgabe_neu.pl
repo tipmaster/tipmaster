@@ -455,8 +455,8 @@ print <<END_HEAD;
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/tipabgabe_screen.css" />
 	<link rel="stylesheet" href="/js/smoothness/jquery-ui-1.8.14.custom.css" type="text/css" media="all" />
 	
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
    
    <script type="text/javascript">
     	var IE='\\v'=='v';
