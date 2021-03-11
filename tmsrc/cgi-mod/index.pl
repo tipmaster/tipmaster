@@ -908,7 +908,7 @@ print '
 ' . $page_footer . '
 
 ';
-exit;
+
 
 sub getTableHtml {
 	my $text;
