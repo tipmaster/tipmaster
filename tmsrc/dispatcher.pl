@@ -14,8 +14,9 @@ while ( my $q = new CGI::Fast ) {
 		#require '/tipmaster/tmsrc/cgi-mod/index.pl';
 		print "Content-type: text/html\n\n";
 		foreach ( keys %ENV ) {
-			print $_. " > " . $ENV{$_} . "<br/>";
+			#print $_. " > " . $ENV{$_} . "<br/>";
 		}
+		print $$;
 
 		require $ENV{SCRIPT_FILENAME};
 	};
