@@ -956,3 +956,5 @@ sub getFlagToLiga() {
 	return $flag;
 
 }
+
+return 1;
