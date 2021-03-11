@@ -7,6 +7,8 @@ use CGI::Fast ( -utf8 );
 use utf8;
 
 while ( my $q = new CGI::Fast ) {
+	binmode( STDOUT, ":utf8" );
+	print "Content-type: text/html\n\n";
 	print "Hello World"
 }
 
