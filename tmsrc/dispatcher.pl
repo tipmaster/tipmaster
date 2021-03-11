@@ -9,7 +9,7 @@ use utf8;
 while ( my $q = new CGI::Fast ) {
 	binmode( STDOUT, ":utf8" );
 	print "Content-type: text/html\n\n";
-	require $ENV{SCRIPT_FILENAME};
+	require '/tipmaster/tmsrc/cgi-mod/index.pl';
 }
 
 1;
