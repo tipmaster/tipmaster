@@ -7,7 +7,7 @@ do 'library.pl';
 
 my $query = new CGI;
 #print $query->header(-type=>'application/json');
-print $query->header(-type=>'text/html');
+print "Content-type:text/html\n\n";
 
 my $runde = $query->param('runde');
 my $bort = $query->param('tm');
