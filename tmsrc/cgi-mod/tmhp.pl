@@ -950,6 +950,7 @@ sub getFlagToLiga() {
 	if ( $rr eq "San" )  { $rr = "San Marino" }
 	if ( $rr eq "Nord" ) { $rr = "Nord Irland" }
 
+	our %flag_hash;
 	my $flag = $flag_hash{$rr};
 	if ( $flag eq "" ) { $flag = "de" }
 	return $flag;
