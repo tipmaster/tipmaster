@@ -22,9 +22,6 @@ use strict;
 use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
 
-package tipmaster::btm::login;
-
-sub render {
 my $session = TMSession::getSession( btm_login => 1 );
 my $trainer = $session->getUser();
 my $leut    = $trainer;
@@ -1100,5 +1097,7 @@ select STDOUT;
 $session->writeSession();
 
 print $output;
-}
+
+exit;
+
 1;

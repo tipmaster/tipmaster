@@ -17,14 +17,11 @@
 
 =cut
 
-package tmhp; 
-
 use strict;
-use lib '/tipmaster/tmsrc/cgi-bin/';
+use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
-use lib qw{/tipmaster/tmsrc/cgi-bin};
+use lib qw{/tmapp/tmsrc/cgi-bin};
 
-sub render {
 use CGI;
 my $session = TMSession::getSession();
 my $trainer = $session->getUser();
@@ -911,7 +908,7 @@ print '
 ' . $page_footer . '
 
 ';
-}
+exit;
 
 sub getTableHtml {
 	my $text;
