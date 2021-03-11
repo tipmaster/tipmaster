@@ -17,7 +17,7 @@
 
 =cut
 
-package index; 
+package tmhp; 
 
 use strict;
 use lib '/tipmaster/tmsrc/cgi-bin/';
