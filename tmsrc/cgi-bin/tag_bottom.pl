@@ -26,10 +26,10 @@ my $leut    = $trainer;
 
 use CGI;
 
-print '
+#print '
 
-<div id="76383-6"><script src="//ads.themoneytizer.com/s/gen.js?type=6"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=76383&formatId=6"></script></div>
-';
+#<div id="76383-6"><script src="//ads.themoneytizer.com/s/gen.js?type=6"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=76383&formatId=6"></script></div>
+#';
 
 
 1;
