@@ -482,7 +482,7 @@ print "
 
 ";
 print "<font face=verdana size=1 color=darkred>Vor der Tippabgabe nochmal kurz die letzten Resultate bzw. Tabellenposition der Vereine checken ?<br><font color=black>
-Unter <a href=https://fussballliveticker.de/heute target=new11>https://fussballliveticker.de</a> gibts Ergebnisse ,
+Unter <a href=https://www.fussball-liveticker.eu target=new11>fussball-liveticker.eu</a> gibts Ergebnisse ,
 Tabellen und Statistiken sowie LiveScore zu den europ. und intern. Ligen !<br><br>\n";
 
 

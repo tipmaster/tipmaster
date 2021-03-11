@@ -438,7 +438,7 @@ END_HEAD
 <input type=hidden name=method value=blanko><input type=hidden name=prognose value=3></form>\n";
 
 	print "Vor der Tippabgabe nochmal kurz die letzten Resultate bzw. Tabellenposition der Vereine checken ?<br>
-Unter <a href=https://fussballliveticker.de/heute target=new11>https://fussballliveticker.de</a> gibts Ergebnisse ,
+Unter <a href=https://www.fussball-liveticker.eu target=new11>fussball-liveticker.eu</a> gibts Ergebnisse ,
 Tabellen und Statistiken sowie LiveScore zu den europ. und intern. Ligen !<br><br>\n";
 
 	$gg = int( $spielrunde_ersatz / 4 ) + 1;

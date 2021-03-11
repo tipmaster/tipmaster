@@ -138,7 +138,7 @@ if ( $ENV{REMOTE_ADDR} =~ /195.179.190/ || $trainer =~ /Wasmer/ ) {
 }
 
 print
-"<font face=verdana size=1 color=darkgreen>Bevor Ihr ein Endergebnis eintragt, prueft dieses Ergebnis<br>bitte durch mindestens zwei unabhaenige Quellen<br>( z.B. <a href=http://www.kicker.de>kicker.de</a> , <a href=https://fussballliveticker.de/heute>fussballliveticker.de</a> etc. )<br><br><font color=black>";
+"<font face=verdana size=1 color=darkgreen>Bevor Ihr ein Endergebnis eintragt, prueft dieses Ergebnis<br>bitte durch mindestens zwei unabhaenige Quellen<br>( z.B. <a href=http://www.kicker.de>kicker.de</a> , <a href=https://www.fussball-liveticker.eu>fussball-liveticker.eu</a> etc. )<br><br><font color=black>";
 
 print "<br/>Bitte 10er-Spiele mit <b>\"ausg.\"</b>eintragen!<br/><br/>\n";
 
