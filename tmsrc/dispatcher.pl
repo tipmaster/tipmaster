@@ -9,13 +9,13 @@ use utf8;
 while ( my $q = new CGI::Fast ) {
 	binmode( STDOUT, ":utf8" );
 	#require '/tipmaster/tmsrc/cgi-mod/index.pl';
-	print "Content-type: text/html\n\n";
-	foreach (keys %ENV) {
-		print $_. " > ". $ENV{$_}."<br/>";
-	}
+	#print "Content-type: text/html\n\n";
+	#foreach (keys %ENV) {
+	#	print $_. " > ". $ENV{$_}."<br/>";
+	#}
 
 
-	require $ENV{FCGI_SCRIPT_FILENAME};
+	require $ENV{SCRIPT_FILENAME};
 }
 
 1;
