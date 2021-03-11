@@ -836,7 +836,7 @@ print <<"(END ERROR HTML)";
 	"<b>TM Hauptseite</b>",
 	"TipMaster - Links",
 
-	"<b>Live - Resultate</b>",
+	"<b>Fussball Liveticker</b>",
 	"Fussball Live Streams",
 	"info\@tipmaster.de",
 	"",
@@ -876,8 +876,8 @@ print <<"(END ERROR HTML)";
 	"/",
 	"/cgi-bin/list.pl?id=links",
 
-	"https://fussballliveticker.de/heute",
-	"https://www.fussballlivestream.tv",
+	"https://www.fussball-liveticker.eu",
+	"https://fussballlivestreams.de",
 	"mailto:info\@tipmaster.de",
 	""
 );
