@@ -1006,7 +1006,7 @@ print <<"(END ERROR HTML)";
 	"/cgi-bin/tmi/titel.pl?liga=$liga",
 	"https://github.com/tipmaster/tipmaster/wiki/Regelbuch",
 	"https://github.com/tipmaster/tipmaster/wiki/FAQs",
-	"/btm/",
+	"/cgi-mod/btm/login.pl",
 	"/cgi-bin/list.pl?id=links",
 
 	"https://www.fussball-liveticker.eu",

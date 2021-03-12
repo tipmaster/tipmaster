@@ -78,8 +78,8 @@ close(K);
 		"UEFA-5-Jahreswertung","/uefa_ranking.html",
 		"Offensiv-Nationenwertung","/offensiv_ranking.html",
 		"Europacup Hall of Fame","/halloffame.html",
-		"TMI Home","/tmi/",
-		"BTM Home","/btm/",
+		"TMI Home","/cgi-mod/tmi/login.pl",
+		"BTM Home","/cgi-mod/btm/login.pl",
 		"Europacup Home","$cgiverz/login.pl?name=#name#&key=#key#&modus=mainpage");
 
 %ecparms = ();
