@@ -78,8 +78,8 @@ close(K);
 		"UEFA-5-Jahreswertung","/uefa_ranking.html",
 		"Offensiv-Nationenwertung","/offensiv_ranking.html",
 		"Europacup Hall of Fame","/halloffame.html",
-		"TMI Home","/cgi-mod/tmi/login.pl",
-		"BTM Home","/cgi-mod/btm/login.pl",
+		"TMI Home","/tmi/",
+		"BTM Home","/btm/",
 		"Europacup Home","$cgiverz/login.pl?name=#name#&key=#key#&modus=mainpage");
 
 %ecparms = ();
@@ -142,7 +142,7 @@ if ($immeroffen) {
   $tipabgabe_offen = 1;
 }
 
-print "<!-- Runde: $derzeitige_runde  Abgabe: $tipabgabe_offen   Time: $currentTime  Limit: $timeLimit //-->\n";
+#print "<!-- Runde: $derzeitige_runde  Abgabe: $tipabgabe_offen   Time: $currentTime  Limit: $timeLimit //-->\n";
 open (K,"<$verz/ID.dat");
 %id2team = ();%id2nat = ();%team2trainer = (); %trainer2team = (); %team2id = ();
 while(<K>) {
