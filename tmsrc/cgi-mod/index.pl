@@ -370,16 +370,14 @@ print '
   text-decoration: none;
 }
 </style>
-<script type="text/javascript" src="//services.vlitag.com/adv1/?q=b4ec91b2a704e5df94c61d878f983522" defer="" async=""></script>
-<script> var vitag = vitag || {};</script>
+<!--<script type="text/javascript" src="//services.vlitag.com/adv1/?q=b4ec91b2a704e5df94c61d878f983522" defer="" async=""></script>
+<script> var vitag = vitag || {};</script>-->
 </head>
 ';
 
 print '
 <body bgcolor=white><table border=0 cellpadding=0 cellspacing=0><tr><td valign=top><tr><td valign=top>
-
-
-	<table cellspacing="0" cellpadding="0" border="0" width="670" >
+<table cellspacing="0" cellpadding="0" border="0" width="670" >
 	<tr><td valign=top>
 
 		<table cellspacing="0" cellpadding="0" border="0" height="83">
@@ -850,9 +848,8 @@ print '
 
 
 <!-- tipmaster.de_300x600: Begin -->
-<!--
+
 <div class="adsbyvli" data-ad-slot="vi_1335352009"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1335352009")})</script>
--->
 <!-- tipmaster.de_300x600 End -->
 
 </div>
