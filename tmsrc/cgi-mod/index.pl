@@ -376,10 +376,7 @@ print '
 ';
 
 print '
-<body bgcolor=white>
-
-
-<table border=0 cellpadding=0 cellspacing=0><tr><td valign=top><tr><td valign=top>
+<body bgcolor=white><table border=0 cellpadding=0 cellspacing=0><tr><td valign=top><tr><td valign=top>
 
 
 	<table cellspacing="0" cellpadding="0" border="0" width="670" >
