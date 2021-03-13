@@ -320,7 +320,6 @@ print '
 <head>
 <TITLE>Das Kostenlose Kult Fu&szlig;ball Tippspiel: Der TipMaster</TITLE>
 
-<link rel="shortcut icon" href="/img/tm.bmp" type="image/bmp">
 
 <link rel="stylesheet" type="text/css" href="/css/tm.css" media="all">
 
