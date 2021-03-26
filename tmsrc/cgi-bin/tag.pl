@@ -59,6 +59,9 @@ my $cachebuster = int(100000*rand());
 print '
 <!-- Paste the above code right above the closing </head> of the HTML in your tipmaster.de -->
 <script type="text/javascript" src="//services.vlitag.com/adv1/?q=b4ec91b2a704e5df94c61d878f983522" defer="" async=""></script><script> var vitag = vitag || {};</script>
+<script type="text/javascript">
+vitag.outStreamConfig = { disableAdToHead: true,}
+</script>
 <!-- End Valueimpression Head Script -->
 <!-- tipmaster.de_970x250: Begin -->
 <div class="adsbyvli" data-ad-slot="vi_1335352012"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1335352012")})</script>

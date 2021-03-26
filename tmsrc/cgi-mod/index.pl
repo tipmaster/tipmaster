@@ -372,6 +372,9 @@ print '
 </style>
 
 <script type="text/javascript" src="//services.vlitag.com/adv1/?q=b4ec91b2a704e5df94c61d878f983522" defer="" async=""></script><script> var vitag = vitag || {};</script>
+<script type="text/javascript">
+vitag.outStreamConfig = { disableAdToHead: true,}
+</script>
 </head>
 ';
 
