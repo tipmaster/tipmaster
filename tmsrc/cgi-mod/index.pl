@@ -883,7 +883,6 @@ print '
 	
 	</tr>
 	
-	f
 	</tr>
 
 <tr><td bgcolor=black colspan=3></td></tr>
