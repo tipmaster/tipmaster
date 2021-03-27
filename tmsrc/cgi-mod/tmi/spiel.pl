@@ -1088,8 +1088,8 @@ print "<td><a href=http://community.tipmaster.de><img src=/img/b06.JPG border=0>
 print "<td><a href=/tmi/><img src=/img/b07.JPG border=0></a></td>\n";
 print "</tr></table>\n";
 
-require "/tmapp/tmsrc/cgi-bin/tag.pl" ;
-require "/tmapp/tmsrc/cgi-bin/tag_small.pl" ;
+#require "/tmapp/tmsrc/cgi-bin/tag.pl" ;
+#require "/tmapp/tmsrc/cgi-bin/tag_small.pl" ;
 
 print "\n";
 
