@@ -1190,6 +1190,12 @@ vitag.outStreamConfig = { disableAdToHead: true,}
 
 sub banner_bottom {
 
+
+return '<!-- Composite Start -->
+<div id="M696426ScriptRootC1104509"></div>
+<script src="https://jsc.mgid.com/t/i/tipmaster.de.1104509.js" async></script>
+<!-- Composite End -->';
+
 #return '';
 
 $number = '
