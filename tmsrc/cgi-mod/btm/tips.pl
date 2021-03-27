@@ -214,7 +214,7 @@ $verein2    = $query->param('ve2');
 print "Content-Type: text/html \n\n";
 print "<html><center>";
 
-print "$banner_gross $banner_klein";
+#print "$banner_gross $banner_klein";
 $fs = "";
 
 $fars = $spielrunde;

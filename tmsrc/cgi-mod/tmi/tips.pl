@@ -374,7 +374,7 @@ print
 #require "/tmapp/tmsrc/cgi-bin/tag.pl" ;
 #require "/tmapp/tmsrc/cgi-bin/tag_small.pl" ;
 
-print "$banner_gross $banner_klein";
+#print "$banner_gross $banner_klein";
 
 print "<br><br>\n";
 
