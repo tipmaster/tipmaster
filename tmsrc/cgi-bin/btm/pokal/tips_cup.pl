@@ -189,9 +189,9 @@ if ( $torb == 0 ) { $torb = 0 }
 
 print "<html><title>Tipabgabe Pokalwettbewerb</title><body bgcolor=#eeeeee text=black vlink=blue link=blue><font face=verdana size=1><center>\n";
 
-require "/tmapp/tmsrc/cgi-bin/tag.pl" ;
-require "/tmapp/tmsrc/cgi-bin/tag_small.pl" ;
-print "<br><br>\n";
+#require "/tmapp/tmsrc/cgi-bin/tag.pl" ;
+#require "/tmapp/tmsrc/cgi-bin/tag_small.pl" ;
+#print "<br><br>\n";
 
 $r=0;
 if (( $ru == $cup_btm)and ($tip_status==1)){$r=1}

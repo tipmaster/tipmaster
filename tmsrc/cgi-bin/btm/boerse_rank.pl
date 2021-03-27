@@ -222,8 +222,8 @@ for ( $xf = 1 ; $xf <= $be ; $xf++ ) {
 print "<title>Bewerbungs - Ranking $auswahl_verein</title><body bgcolor=#eeeeee>\n";
 print "<center>\n";
 
-require "/tmapp/tmsrc/cgi-bin/tag.pl";
-require "/tmapp/tmsrc/cgi-bin/tag_small.pl";
+#require "/tmapp/tmsrc/cgi-bin/tag.pl";
+#require "/tmapp/tmsrc/cgi-bin/tag_small.pl";
 
 print "<br><br>";
 print "<table border=0  cellpadding=0 cellspacing=0 bgcolor=black>\n";

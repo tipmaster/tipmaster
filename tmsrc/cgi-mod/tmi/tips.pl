@@ -376,7 +376,7 @@ print
 
 #print "$banner_gross $banner_klein";
 
-print "<br><br>\n";
+#print "<br><br>\n";
 
 if ( $pro1[1] == 0 ) {
 	print

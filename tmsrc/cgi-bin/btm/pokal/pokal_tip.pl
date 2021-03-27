@@ -777,7 +777,7 @@ print "<p align=left><body bgcolor=white text=black link=darkred link=darkred>\n
 #require "/tmapp/tmsrc/cgi-bin/tag_small.pl" ;
 
 
-print "<br>";
+#print "<br>";
 print "<font face=verdana size=1><br><table border=0 bgcolor=#eeeeee cellpadding=1>\n";
 
 
