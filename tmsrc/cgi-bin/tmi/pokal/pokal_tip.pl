@@ -529,8 +529,8 @@ print "<table border=0 cellpadding=0 cellspacing=0>";
 print "<html><body bgcolor=white text=black link=blue vlink=blue><title>Tipabgabe $pokal_runde[$runde]</title>";
 print "<p align=left><body bgcolor=white text=black link=darkred link=darkred>\n";
 
-require "/tmapp/tmsrc/cgi-bin/tag.pl" ;
-require "/tmapp/tmsrc/cgi-bin/tag_small.pl" ;
+#require "/tmapp/tmsrc/cgi-bin/tag.pl" ;
+#require "/tmapp/tmsrc/cgi-bin/tag_small.pl" ;
 
 print "<font face=verdana size=1><br><table border=0 bgcolor=#eeeeee cellpadding=1>\n";
 

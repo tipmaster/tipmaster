@@ -820,7 +820,7 @@ print "</TR>\n";
 }
 
 print "</table>\n";
-
+require "/tmapp/tmsrc/cgi-bin/tag_bottom.pl";
 
 exit ;
 

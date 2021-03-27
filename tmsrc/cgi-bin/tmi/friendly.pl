@@ -22,6 +22,7 @@ use lib '/tmapp/tmsrc/cgi-bin/';
 use TMSession;
 
 use CGI;
+use utf8;
 $query = new CGI;
 $such  = $query->param('suche');
 $method = $query->param('method');
@@ -1517,6 +1518,7 @@ sub liste {
 		}
 	}
 	print "</table>\n";
+	require "/tmapp/tmsrc/cgi-bin/tag_bottom.pl";
 
 	exit;
 
