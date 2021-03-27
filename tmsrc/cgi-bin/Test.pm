@@ -1192,10 +1192,11 @@ sub banner_bottom {
 
 
 return '<!-- Composite Start -->
+<div style="max-width:1000px">
 <div id="M696426ScriptRootC1104509"></div>
 <script src="https://jsc.mgid.com/t/i/tipmaster.de.1104509.js" async></script>
-<!-- Composite End -->';
-
+<!-- Composite End -->
+</div>';
 #return '';
 
 $number = '
