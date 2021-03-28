@@ -254,7 +254,7 @@ if ($pro2[$x] == 0) { $r = k102 }
 print "<img src=/img/$r.JPG><br>\n";
 }
 print "</font></td>\n";
-print "<td align=left width=250 valign=middle><font face=verdana size=1><img src=/loch.JPG border=0><br><font color=black>\n";
+print "<td align=left width=250 valign=middle><font face=verdana size=1><img src=/img/loch.JPG border=0><br><font color=black>\n";
 for ( $x = 1; $x < 6;$x++ ) {
 
 $flag = $main_flags[$flagge[$sp2[$x]]];
