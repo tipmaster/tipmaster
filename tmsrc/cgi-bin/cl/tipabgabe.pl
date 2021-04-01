@@ -45,7 +45,7 @@ my $spielref = $cllib->readFormular($runde);
 my %spiel = %$spielref;
 
 print "<HTML><HEAD>\n";
-print "<link rel=\"stylesheet\" type=\"text/css\" href=\"/tm.css\" media=\"all\">\n";
+print "<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/tm.css\" media=\"all\">\n";
 
 print "</HEAD><BODY><!-- MODUS: $modus  RUNDE: $runde, UORC: $uorc, ID: $tipper_id//-->\n";
 

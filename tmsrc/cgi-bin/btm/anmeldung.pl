@@ -283,7 +283,7 @@ als Vornamen und versuchen Sie es erneut.<br><br>
 Passwort vergessen? Wenn Sie weiterhin Zugriff<br> 
 zu der obigen Email haben aber das Passwort vergessen<br>
 haben koennen Sie sich <a href=\"/url.shtml\">hier</a> ein neues<br>
-Passwort zuschicken lassen und die Wiederanmledung<br> 
+Passwort zuschicken lassen und die Wiederanmeldung<br> 
 dann neu probieren.<br><br>
 <b>L&ouml;sung 3:</b><br>
 Neue E-Mail? Sollten Sie keinen Zugriff mehr<br>
