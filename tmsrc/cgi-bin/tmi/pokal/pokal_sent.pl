@@ -66,7 +66,7 @@ print"    }";
 print"   window.setTimeout(\"AbGehts()\",7000);";
 print"  </script>";
 
-print "<p align=left><body bgcolor=white text=black link=darkred link=darkred>&nbsp;&nbsp;&nbsp;<img src=/img/ort.jpg border=0>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n";
+print "<p align=left><body bgcolor=white text=black link=darkred link=darkred>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n";
 
 require "/tmapp/tmsrc/cgi-bin/tag.pl" ;
 
