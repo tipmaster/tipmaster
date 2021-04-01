@@ -751,7 +751,7 @@ sub abgeben {
 	print
 "<br><br>Sie haben nun die Moeglichkeit den Trainer $gegner_n von $gegner<br>eine Message zu schreiben so dass er von Ihrem Freundschaftsspiel Angebot Notiz nimmt :<br><br>\n";
 
-	print "<hr size=1 width=90% color=black><align=left><img src=/img/send.gif><br><br>\n";
+	print "<hr size=1 width=90% color=black><align=left><br><br>\n";
 	print "<form method=post action=/cgi-bin/btm/mail/mail_sent.pl>\n";
 	print "<table border=0 cellpadding=0 cellspacing=0 bgcolor=black><tr><td>\n";
 	print "<table border=0 cellpadding=2 cellspacing=1><tr>\n";
