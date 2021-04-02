@@ -329,7 +329,7 @@ print '
 
 
 <META name="AUTHOR" content="info@tipmaster.de">
-<META name="COPYRIGHT" content="TipMaster online 2006">
+<META name="COPYRIGHT" content="TipMaster online 1998-2021">
 <META NAME="description" CONTENT="&Uuml;bernehmen Sie Ihren eigenen Fu&szlig;ball Verein in diesem Tippspiel und f&uuml;hren Sie Ihn durch Ihren Tipp Verstand zur Meisterschaft">
 <META NAME="page-topic" content="Tippspiel">
 <META NAME="Title" CONTENT="TipMaster - das etwas andere Fu&szlig;ball Tippspiel">
@@ -873,7 +873,7 @@ print '
 						</tr></table> 
 						
 						</td><td class=impressum align=center>
-						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Copyright 2021 - <a style="color:white" href="http://www.socapro.com" rel="nofollow">SocaPro Inc.</a> </b>
+						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Copyright 1998-2021 - <a style="color:white" href="http://www.socapro.com" rel="nofollow">SocaPro Inc.</a> </b>
 			
 			
 						
