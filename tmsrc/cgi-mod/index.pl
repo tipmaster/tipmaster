@@ -897,7 +897,7 @@ print '
 
 <p style="font-face:tahoma,verdana;font-size:10px;color:darkgrey;padding-top:-10px;text-align:center;width:800px;">
 
-<a href="https://socagol.tv/de/bundesliga-live-stream">SocaGol</a> | <a style="color:darkgrey" href="https://fussballlivestreams.de">fussballlivestreams.de</a> | <a href="https://bundesligalivestreamkostenlos.com">Bundesliga Live Streams</a> | <a style="color:darkgrey" href="https://www.voetballivestream.tv/champions-league">Champions League</a> | <a style="color:darkgrey" href="https://rojadirecta-tv.es">Rojadirecta-tv.es</a> | <a style="color:darkgrey" href="https://www.fussball-liveticker.eu/fussball-ergebnisse-gestern">Fussball Ergebnisse Gestern</a> | <a style="color:darkgrey" href="https://www.footballcapper.org/">footballcapper.org/</a></p>
+<a href="https://socagol.tv/de/bundesliga-live-stream">SocaGol</a> | <a style="color:darkgrey" href="https://fussballlivestreams.de">fussballlivestreams.de</a> | <a href="https://bundesligalivestreamkostenlos.com">Bundesliga Live Streams</a> | <a style="color:darkgrey" href="https://www.voetballivestream.tv/champions-league">Champions League</a> | <a style="color:darkgrey" href="https://rojadirecta-tv.es">Rojadirecta-tv.es</a> | <a style="color:darkgrey" href="https://www.fussball-liveticker.eu/fussball-ergebnisse-gestern">Fussball Ergebnisse Gestern</a> | <a style="color:darkgrey" href="https://www.footballcapper.org/">football betting prediction</a></p>
 
 
 ' . $page_footer . '
