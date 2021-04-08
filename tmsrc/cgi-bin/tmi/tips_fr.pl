@@ -306,16 +306,14 @@ print "</font></td></tr><tr><td></td><td></td><td></td><td bgcolor=#000000><SPAC
 print "<td></td><td></td><td></td><td></td><td bgcolor=#000000><SPACER TYPE=BLOCK WIDTH=1 HEIGHT=1></td></tr>\n";
 print "<tr><td></td><td></td><td></td><td align=right><font face=verdana size=1>$su_1&nbsp;&nbsp;</td><td></td><td></td><td></td><td></td>\n";
 print "<td align=right><font face=verdana size=1>$su_2&nbsp;&nbsp;</td></tr></table>\n";
-print '
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KX6R92"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':
-new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
-\'//www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,\'script\',\'dataLayer\',\'GTM-KX6R92\');</script>
-<!-- End Google Tag Manager -->';
+
+print "<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-53T3SLD');</script>
+<!-- End Google Tag Manager -->";
 
 
 exit ;
