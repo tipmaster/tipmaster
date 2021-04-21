@@ -856,7 +856,7 @@ print '
 </td>
 <td bgcolor=black width=1>
 </td>
-<td>
+<td style="vertical-align:bottom">
 <ul>
 <b>Deutsch</b>
 <li><a href="https://www.fussball-liveticker.eu">fussball-liveticker.eu</a></li>
@@ -873,7 +873,7 @@ print '
 </ul><ul>
 <b>Dutch</b>
 <li><a href="https://voetbal-vandaag.com">voetbal-vandaag.com</a></li>
-<li><a href="https://www.voetballivestream.tv/jupiler-pro-league-live-stream">voetballivestream.tv</a></li>
+<li><a href="https://www.voetballivestream.tv/pro-league">voetballivestream.tv</a></li>
 <li><a href="https://voetbal-op-tv.nl">voetbal-op-tv.nl</a></li>
 
 </ul><ul>
