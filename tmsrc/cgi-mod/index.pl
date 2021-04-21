@@ -858,22 +858,29 @@ print '
 </td>
 <td>
 <ul>
+<b>Deutsch</b>
+<li><a href="https://www.fussball-liveticker.eu">fussball-liveticker.eu</a></li>
+<li><a href="https://fussballlivestreams.de">fussballlivestreams.de</a></li>
+<li><a href="https://fussballheuteimtv.de">fussballheuteimtv.de</a></li>
 
-<li>fussball-liveticker.eu</li>
-<li>fussballlivestreams.de</li>
-<li>fussballheuteimtv.de</li>
+</u><ul>
+<b>English</b>
+<li><a href="https://soccergames-today.com">soccergames-today.com</a></li>
+<li><a href="https://reddit.soccerstreaming100.com">soccerstreaming100.com</a></li>
+<li><a href="https://soccer-tv.live">soccer-tv.live</a></li>
 
-<li>soccergames-today.com</li>
-<li>soccerstreaming100.com</li>
-<li>soccer-tv.live</li>
 
-<li>voetbal-vandaag.com</li>
-<li>voetballivestream.tv</li>
-<li>voetbal-op-tv.nl</li>
+</u><ul>
+<b>Dutch</b>
+<li><a href="https://voetbal-vandaag.com">voetbal-vandaag.com</a></li>
+<li><a href="https://www.voetballivestream.tv/jupiler-pro-league-live-stream">voetballivestream.tv</a></li>
+<li><a href="https://voetbal-op-tv.nl">voetbal-op-tv.nl</a></li>
 
-<li>partidosfutbolhoy.es</li>
-<li>rojadirecta-tv.es</li>
-<li>futbolenlatele.tv</li>
+</u><ul>
+<b>Espa&ntilde;ol</b>
+<li>partidosfutbolhoy.es</a></li>
+<li>rojadirecta-tv.es</a></li>
+<li>futbolenlatele.tv</a></li>
 
 </ul>
 </td>
