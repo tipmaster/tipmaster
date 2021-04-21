@@ -863,24 +863,24 @@ print '
 <li><a href="https://fussballlivestreams.de">fussballlivestreams.de</a></li>
 <li><a href="https://fussballheuteimtv.de">fussballheuteimtv.de</a></li>
 
-</u><ul>
+</ul><ul>
 <b>English</b>
 <li><a href="https://soccergames-today.com">soccergames-today.com</a></li>
 <li><a href="https://reddit.soccerstreaming100.com">soccerstreaming100.com</a></li>
 <li><a href="https://soccer-tv.live">soccer-tv.live</a></li>
 
 
-</u><ul>
+</ul><ul>
 <b>Dutch</b>
 <li><a href="https://voetbal-vandaag.com">voetbal-vandaag.com</a></li>
 <li><a href="https://www.voetballivestream.tv/jupiler-pro-league-live-stream">voetballivestream.tv</a></li>
 <li><a href="https://voetbal-op-tv.nl">voetbal-op-tv.nl</a></li>
 
-</u><ul>
+</ul><ul>
 <b>Espa&ntilde;ol</b>
-<li>partidosfutbolhoy.es</a></li>
-<li>rojadirecta-tv.es</a></li>
-<li>futbolenlatele.tv</a></li>
+<li><a href="https://partidosfutbolhoy.es">partidosfutbolhoy.es</a></li>
+<li><a href="https://rojadirecta-tv.es/futbol-en-la-tele">rojadirecta-tv.es</a></li>
+<li><a href="https://futbolenlatele.tv">futbolenlatele.tv</a></li>
 
 </ul>
 </td>
