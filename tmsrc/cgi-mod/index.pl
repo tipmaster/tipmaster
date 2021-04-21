@@ -892,7 +892,44 @@ print '
 
 
 
-</tr></td></table>
+</tr></td>
+
+
+
+
+<td>
+
+<div style="width:200px;padding:10px;">
+
+
+<ul>
+
+<li>fussball-liveticker.eu</li>
+<li>fussballlivestreams.de</li>
+<li>fussballheuteimtv.de</li>
+
+<li>soccergames-today.com</li>
+<li>soccerstreaming100.com</li>
+<li>soccer-tv.live</li>
+
+<li>voetbal-vandaag.com</li>
+<li>voetballivestream.tv</li>
+<li>voetbal-op-tv.nl</li>
+
+<li>partidosfutbolhoy.es</li>
+<li>rojadirecta-tv.es</li>
+<li>futbolenlatele.tv</li>
+
+</ul>
+
+
+</div>
+
+
+</td>
+
+
+</table>
 
 
 <p style="font-face:tahoma,verdana;font-size:10px;color:darkgrey;padding-top:-10px;text-align:center;width:800px;">
