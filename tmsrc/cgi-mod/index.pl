@@ -853,9 +853,10 @@ print '
 
 </div>
 
-</td><td bgcolor=black width=1>
 </td>
-
+<td bgcolor=black width=1>
+</td>
+<td>
 <ul>
 
 <li>fussball-liveticker.eu</li>
@@ -876,7 +877,7 @@ print '
 
 </ul>
 </td>
-
+</tr>
 	<tr><td bgcolor=black colspan=3></td></tr>
 	
 	<tr>
