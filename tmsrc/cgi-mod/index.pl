@@ -794,8 +794,6 @@ print '
 							<table class=infoinner width=170><tr><td class=infoinner><b><img src=3.gif> Neu auf der Trainerbank</b></td></tr></table>
 
 
-							<img src=deutsch.gif height=8 width=12> T.Prommer<br>	
-							L.Onsome
 
 					
 						 </td></tr>
@@ -847,7 +845,7 @@ print '
 
 	<td bgcolor=white>
 
-<div style="max-width:300px">
+<div style="width:300px">
 
 
 <!-- tipmaster.de_300x600: Begin -->
@@ -856,6 +854,27 @@ print '
 </div>
 
 </td><td bgcolor=black width=1>
+</td>
+
+<ul>
+
+<li>fussball-liveticker.eu</li>
+<li>fussballlivestreams.de</li>
+<li>fussballheuteimtv.de</li>
+
+<li>soccergames-today.com</li>
+<li>soccerstreaming100.com</li>
+<li>soccer-tv.live</li>
+
+<li>voetbal-vandaag.com</li>
+<li>voetballivestream.tv</li>
+<li>voetbal-op-tv.nl</li>
+
+<li>partidosfutbolhoy.es</li>
+<li>rojadirecta-tv.es</li>
+<li>futbolenlatele.tv</li>
+
+</ul>
 </td>
 
 	<tr><td bgcolor=black colspan=3></td></tr>
@@ -902,25 +921,6 @@ print '
 <div style="width:200px;padding:10px;">
 
 
-<ul>
-
-<li>fussball-liveticker.eu</li>
-<li>fussballlivestreams.de</li>
-<li>fussballheuteimtv.de</li>
-
-<li>soccergames-today.com</li>
-<li>soccerstreaming100.com</li>
-<li>soccer-tv.live</li>
-
-<li>voetbal-vandaag.com</li>
-<li>voetballivestream.tv</li>
-<li>voetbal-op-tv.nl</li>
-
-<li>partidosfutbolhoy.es</li>
-<li>rojadirecta-tv.es</li>
-<li>futbolenlatele.tv</li>
-
-</ul>
 
 
 </div>
