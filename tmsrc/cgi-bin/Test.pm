@@ -1191,6 +1191,13 @@ vitag.outStreamConfig = { disableAdToHead: true,}
 sub banner_bottom {
 
 
+return '
+<div id="76383-6"><script src="//ads.themoneytizer.com/s/gen.js?type=6"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=76383&formatId=6"></script></div>
+';
+
+
+
+
 return '<!-- Composite Start -->
 <div style="max-width:1000px;padding-left:10px;padding-top:8px;">
 <div id="M696426ScriptRootC1104509"></div>
@@ -1200,7 +1207,7 @@ return '<!-- Composite Start -->
 #return '';
 
 $number = '
-<div id="76383-6"><script src="//ads.themoneytizer.com/s/gen.js?type=6"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=76383&formatId=6"></script></div>
+
 ';
 	return $number;
 
