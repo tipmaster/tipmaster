@@ -929,7 +929,7 @@ print <<"(END ERROR HTML)";
 
 (END ERROR HTML)
 
-@border = ( 0, 4, 8, 12, 16, 20, 24, 27, 31, 35 );
+@border = ( 0, 4, 8, 12, 16, 20, 24, 27, 31, 36 );
 @arte = ( 0, 0, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2 );
 @tab_name = (
 	"",           "AKTUELLES", "LIGAEXTERN",  "KARRIERE", "COMMUNITY", "RANKINGS",
