@@ -27,7 +27,9 @@ my $leut    = $trainer;
 use CGI;
 
 print '
-<div id="76383-6"><script src="//ads.themoneytizer.com/s/gen.js?type=6"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=76383&formatId=6"></script></div>
+
+<div class="adsbyvli" data-ad-slot="vi_1335352012"></div> <script>(vitag.Init = window.vitag.Init || []).push(function () { viAPItag.display("vi_1335352012") })</script>
+
 ';
 
 1;
