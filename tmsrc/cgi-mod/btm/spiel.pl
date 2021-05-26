@@ -685,7 +685,7 @@ print "function targetLink(URL)\n";
 print "  {\n";
 print "    if(document.images)\n";
 print
-"      targetWin = open(URL,\"Neufenster\",\"scrollbars=yes,toolbar=no,directories=no,menubar=no,status=no,resizeable=yes,width=850,height=280\");\n";
+"      targetWin = open(URL,\"Neufenster\",\"scrollbars=yes,toolbar=no,directories=no,menubar=no,status=no,resizeable=yes,width=850,height=580\");\n";
 print " }\n";
 print "  //-->\n";
 print "  </script>\n";

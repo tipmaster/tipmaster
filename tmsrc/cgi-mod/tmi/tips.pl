@@ -374,7 +374,7 @@ print
 #require "/tmapp/tmsrc/cgi-bin/tag.pl" ;
 #require "/tmapp/tmsrc/cgi-bin/tag_small.pl" ;
 
-#print "$banner_gross $banner_klein";
+print "$banner_gross";
 
 #print "<br><br>\n";
 
@@ -558,5 +558,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-53T3SLD');</script>
 <!-- End Google Tag Manager -->";
+
+
 exit;
 
