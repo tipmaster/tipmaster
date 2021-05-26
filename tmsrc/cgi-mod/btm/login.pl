@@ -838,6 +838,7 @@ print <<"(END ERROR HTML)";
 
 	"<b>Fussball Liveticker</b>",
 	"Fussball Live Streams",
+	"Fussball Heute im TV",
 	"info\@tipmaster.de",
 	"",
 );
@@ -878,6 +879,7 @@ print <<"(END ERROR HTML)";
 
 	"https://www.fussball-liveticker.eu",
 	"https://fussballlivestreams.de",
+	"https://fussballheuteimtv.de",
 	"mailto:info\@tipmaster.de",
 	""
 );
