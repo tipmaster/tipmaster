@@ -51,6 +51,35 @@ my $cachebuster = int(100000*rand());
 
 
 print '
+<div style="min-height:90px;display:flex;justify-content:flex-start;max-width:728px;">
+
+<ins class=\'dcmads\' style=\'display:inline-block;width:728px;height:90px\'
+
+    data-dcm-placement=\'N1390738.284374FUSSBALL-LIVETICK/B25798206.301718990\'
+
+    data-dcm-rendering-mode=\'script\'
+
+    data-dcm-https-only
+
+    data-dcm-gdpr-applies=\'gdpr=${GDPR}\'
+
+    data-dcm-gdpr-consent=\'gdpr_consent=${GDPR_CONSENT_755}\'
+
+    data-dcm-addtl-consent=\'addtl_consent=${ADDTL_CONSENT}\'
+
+    data-dcm-ltd=\'false\'
+
+    data-dcm-resettable-device-id=\'\'
+
+    data-dcm-app-id=\'\'>
+
+  <script src=\'https://www.googletagservices.com/dcm/dcmads.js\'></script>
+
+</ins>
+</div>
+'
+
+print '
 <!-- Paste the above code right above the closing </head> of the HTML in your tipmaster.de -->
 <script type="text/javascript" src="//services.vlitag.com/adv1/?q=b4ec91b2a704e5df94c61d878f983522" defer="" async=""></script><script> var vitag = vitag || {};</script>
 <script type="text/javascript">
@@ -58,9 +87,9 @@ vitag.outStreamConfig = { disableAdToHead: true,}
 </script>
 <!-- End Valueimpression Head Script -->
 <!-- tipmaster.de_970x250: Begin -->
-<div style="min-height:280px;display:flex;justify-content:flex-start;max-width:970px;">
+<!--div style="min-height:280px;display:flex;justify-content:flex-start;max-width:970px;">
 <div class="adsbyvli" data-ad-slot="vi_1335352012"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1335352012")})</script>
-</div>
+</div-->
 <!-- tipmaster.de_970x250 End -->
 
 ';
