@@ -77,7 +77,7 @@ print '
 
 </ins>
 </div>
-'
+';
 
 print '
 <!-- Paste the above code right above the closing </head> of the HTML in your tipmaster.de -->
