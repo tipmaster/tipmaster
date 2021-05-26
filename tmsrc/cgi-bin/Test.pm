@@ -1157,6 +1157,33 @@ sub banner_gross {
 
 #return '';
 
+
+return '
+<ins class=\'dcmads\' style=\'display:inline-block;width:728px;height:90px\'
+
+    data-dcm-placement=\'N1390738.284374FUSSBALL-LIVETICK/B25798206.301718990\'
+
+    data-dcm-rendering-mode=\'script\'
+
+    data-dcm-https-only
+
+    data-dcm-gdpr-applies=\'gdpr=${GDPR}\'
+
+    data-dcm-gdpr-consent=\'gdpr_consent=${GDPR_CONSENT_755}\'
+
+    data-dcm-addtl-consent=\'addtl_consent=${ADDTL_CONSENT}\'
+
+    data-dcm-ltd=\'false\'
+
+    data-dcm-resettable-device-id=\'\'
+
+    data-dcm-app-id=\'\'>
+
+  <script src=\'https://www.googletagservices.com/dcm/dcmads.js\'></script>
+
+</ins>';
+
+
 $number = '
 <!-- Paste the above code right above the closing </head> of the HTML in your tipmaster.de -->
 <script type="text/javascript" src="//services.vlitag.com/adv1/?q=b4ec91b2a704e5df94c61d878f983522" defer="" async=""></script><script> var vitag = vitag || {};</script>
@@ -1166,10 +1193,6 @@ vitag.outStreamConfig = { disableAdToHead: true,}
 <!-- End Valueimpression Head Script -->
 <!-- tipmaster.de_970x250: Begin -->
 
-<div style="display:flex;justify-content:flex-start;padding-bottom:10px;width:970px;padding-left:25px;min-height:280px;">
-<div class="adsbyvli" data-ad-slot="vi_1335352012"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1335352012")})</script>
-<!-- tipmaster.de_970x250 End -->
-</div>
 ';
 	return $number;
 
@@ -1190,6 +1213,15 @@ vitag.outStreamConfig = { disableAdToHead: true,}
 
 sub banner_bottom {
 
+return '
+<div style="display:flex;justify-content:flex-start;padding-bottom:10px;width:970px;padding-left:25px;min-height:280px;">
+
+<div class="adsbyvli" data-ad-slot="vi_1335352012"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1335352012")})</script>
+
+
+<!-- tipmaster.de_970x250 End -->
+</div>
+';
 
 return '
 <div id="76383-6"><script src="//ads.themoneytizer.com/s/gen.js?type=6"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=76383&formatId=6"></script></div>
@@ -1260,6 +1292,8 @@ sub banner_head {
 	my $number        = "";
 	srand();
 	$gg1 = int( 10 * rand ) + 44;
+
+
 
 	$number = '
 	
