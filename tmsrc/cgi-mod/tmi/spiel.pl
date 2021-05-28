@@ -1075,7 +1075,7 @@ print "</head>\n";
 
 print "<p align=left><body bgcolor=white text=black vlink=red link=red>\n";
 
-print "$banner_gross $banner_klein";
+print "$banner_gross";
 
 print "<table border=0 cellspacing=0><tr>\n";
 print "<td><a href=/cgi-mod/tmi/login.pl><img src=/img/b01.JPG border=0></a></td>\n";

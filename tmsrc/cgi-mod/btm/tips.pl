@@ -214,7 +214,7 @@ $verein2    = $query->param('ve2');
 print "Content-Type: text/html \n\n";
 print "<html><center>";
 
-print "$banner_gross";
+print "$banner_gross<br/>";
 $fs = "";
 
 $fars = $spielrunde;
@@ -542,6 +542,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-53T3SLD');</script>
 <!-- End Google Tag Manager -->";
-print $banner_bottom;
+print '<br>'.$banner_bottom;
 exit;
 

@@ -374,7 +374,7 @@ print
 #require "/tmapp/tmsrc/cgi-bin/tag.pl" ;
 #require "/tmapp/tmsrc/cgi-bin/tag_small.pl" ;
 
-print "$banner_gross";
+print "$banner_gross<br/>";
 
 #print "<br><br>\n";
 
@@ -550,7 +550,7 @@ print "<form name=d1 action=/cgi-bin/tmi/form.pl method=post target=new>\n";
 print "<input type=hidden name=spielrunde value=$spielrunde></form>\n";
 print
 "<font face=verdana size=2><b><a href=javascript:document.d1.submit()>Ergebnisse und Anstosszeiten der Tipformular Paarungen</a></b>\n";
-print $banner_bottom;
+print '<br>'.$banner_bottom;
 print "<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

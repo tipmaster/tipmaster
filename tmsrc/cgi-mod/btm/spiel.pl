@@ -205,7 +205,7 @@ $spielrunde = $query->param('sp');
 
 print "Content-Type: text/html \n\n";
 
-print "$banner_gross $banner_klein";
+print "$banner_gross";
 
 #print "<!-- Live : $live Mod Perl is ",$ENV{MOD_PERL}," / ",$ENV{"MOD_PERL"}," //-->\n";
 

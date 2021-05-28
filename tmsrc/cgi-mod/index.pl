@@ -910,6 +910,16 @@ print '
 <li><a href="https://futbolenlatele.tv">futbolenlatele.tv</a></li>
 
 </ul>
+
+</ul><ul>
+<b>Français</b>
+<li><a href="https://foot.streamonsport.fr">foot.streamonsport.fr</a></li>
+<li><a href="https://footstreaming24.fr"footstreaming24.fr</a></li>
+<li><a href="https://programmetvfoot24.fr">programmetvfoot24.fr</a></li>
+
+</ul>
+
+
 </td>
 </tr>
 	<tr><td bgcolor=black colspan=3></td></tr>
