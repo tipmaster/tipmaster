@@ -914,7 +914,7 @@ print '
 </ul><ul>
 <b>Français</b>
 <li><a href="https://foot.streamonsport.fr">foot.streamonsport.fr</a></li>
-<li><a href="https://footstreaming24.fr"footstreaming24.fr</a></li>
+<li><a href="https://footstreaming24.fr">footstreaming24.fr</a></li>
 <li><a href="https://programmetvfoot24.fr">programmetvfoot24.fr</a></li>
 
 </ul>
