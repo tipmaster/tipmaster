@@ -928,7 +928,7 @@ print '
 
 <ul>
 <b>Svensk</b>
-<li><a href="https://fotbol-liveresultat.se">fotbol-liveresultat.se</a></li>
+<li><a href="https://fotboll-liveresultat.se">fotboll-liveresultat.se</a></li>
 <li><a href="https://streama-fotboll.se">streama-fotboll.se</a></li>
 <li><a href="https://fotboll-tv.se">fotboll-tv.se</a></li>
 </ul>
