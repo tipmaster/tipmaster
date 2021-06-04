@@ -911,13 +911,28 @@ print '
 
 </ul>
 
-</ul><ul>
+<ul>
 <b>Français</b>
 <li><a href="https://foot.streamonsport.fr">foot.streamonsport.fr</a></li>
 <li><a href="https://footstreaming24.fr">footstreaming24.fr</a></li>
 <li><a href="https://programmetvfoot24.fr">programmetvfoot24.fr</a></li>
 
 </ul>
+
+<ul>
+<b>Italiano</b>
+<li><a href="https://rojadirecta-tv.it">rojadirecta-tv.it</a></li>
+<li><a href="https://sitistreamingcalcio.it">sitistreamingcalcio.it</a></li>
+<li><a href="https://calcio-tv.it">calcio-tv.it</a></li>
+</ul>
+
+<ul>
+<b>Svensk</b>
+<li><a href="https://fotbol-liveresultat.se">fotbol-liveresultat.se</a></li>
+<li><a href="https://streama-fotboll.se">streama-fotboll.se</a></li>
+<li><a href="https://fotboll-tv.se">fotboll-tv.se</a></li>
+</ul>
+
 
 
 </td>
