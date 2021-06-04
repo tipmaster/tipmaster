@@ -884,8 +884,9 @@ print '
 <td bgcolor=black width=1>
 </td>
 <td style="vertical-align:top">
-International Fußball Netzwerk:
 <br/>
+&nbsp; &nbsp; Internationales Fußball Netzwerk
+<br/><br/>
 <ul>
 <b>Deutsch</b>
 <li><a href="https://www.fussball-liveticker.eu">fussball-liveticker.eu</a></li>
