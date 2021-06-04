@@ -885,7 +885,7 @@ print '
 </td>
 <td style="vertical-align:top">
 <br/>
-&nbsp; &nbsp; Internationales Fußball Netzwerk
+&nbsp; &nbsp; Internationaler Fußball
 <br/><br/>
 <ul>
 <b>Deutsch</b>
