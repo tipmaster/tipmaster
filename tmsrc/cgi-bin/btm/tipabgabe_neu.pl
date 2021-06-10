@@ -417,8 +417,6 @@ END_HEAD
 "<body bgcolor=white text=black link=blue vlink=blue><title>Tippabgabe $coach  Sp. $spielrunde_ersatz bis $hh</title>";
 	print "<p align=left>\n";
 
-	require "/tmapp/tmsrc/cgi-bin/tag.pl";
-	require "/tmapp/tmsrc/cgi-bin/tag_small.pl";
 
 	$rr = $spielrunde_ersatz + 3;
 	if ( $rr > 33 ) { $rr = 33 }
@@ -467,7 +465,6 @@ Tabellen und Statistiken sowie LiveScore zu den europ. und intern. Ligen !<br><b
 	print &getHtmlBlankotip($trainer);
 	&makeFormNew();
 
-	require "/tmapp/tmsrc/cgi-bin/tag_bottom.pl";
 	print "</body></html>\n";
 
 }

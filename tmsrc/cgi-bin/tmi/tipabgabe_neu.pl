@@ -481,8 +481,6 @@ END_HEAD
 print "<body bgcolor=white text=black link=blue vlink=blue><title>Tippabgabe $coach  Sp. $spielrunde_ersatz bis $hh</title>";
 print "<p align=left>\n";
 
-require "/tmapp/tmsrc/cgi-bin/tag.pl" ;
-require "/tmapp/tmsrc/cgi-bin/tag_small.pl" ;
 
 
 
@@ -531,7 +529,6 @@ $h2h = &get_head2head("tmi",$gl_vereinsid{$data[$id]},$gl_vereinsid{$data[$gegne
 print "Auch keine Tippabgabe fuer relevante und anstehende Pokalrunden vergessen ? <a href=/cgi-bin/cup_time.pl target=_new>Blick auf den Rahmenterminkalender</a>";
 print &getHtmlBlankotip($trainer);
 &makeFormNew();
-	require "/tmapp/tmsrc/cgi-bin/tag_bottom.pl";
 print "</body></html>\n";
 
 
