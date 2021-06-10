@@ -458,8 +458,6 @@ print "<p align=left>\n";
 
 
 
-require "/tmapp/tmsrc/cgi-bin/tag.pl" ;
-require "/tmapp/tmsrc/cgi-bin/tag_small.pl" ;
 
 
 

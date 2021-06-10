@@ -412,8 +412,6 @@ sub return_html {
 "<html><body bgcolor=white text=black link=blue vlink=blue><title>Tippabgabe $coach  Sp. $spielrunde_ersatz bis $hh</title>";
 	print "<p align=left>\n";
 
-	require "/tmapp/tmsrc/cgi-bin/tag.pl";
-	require "/tmapp/tmsrc/cgi-bin/tag_small.pl";
 
 	$rr = $spielrunde_ersatz + 3;
 	if ( $rr > 33 ) { $rr = 33 }
