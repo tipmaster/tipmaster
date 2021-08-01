@@ -870,8 +870,6 @@ print '
 </div>
 
 
-<div class="adsbyvli" data-ad-slot="vi_1335352009"></div> <script>(vitag.Init = window.vitag.Init || []).push(function () { viAPItag.display("vi_1335352009") })</script><!-- tipmaster.de_300x600 End -->
-
 </div>
 
 </td>
