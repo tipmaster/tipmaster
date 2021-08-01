@@ -371,10 +371,16 @@ print '
 }
 </style>
 
-<!--script type="text/javascript" src="//services.vlitag.com/adv1/?q=b4ec91b2a704e5df94c61d878f983522" defer="" async=""></script><script> var vitag = vitag || {};</script-->
-<!--script type="text/javascript">
-vitag.outStreamConfig = { disableAdToHead: true,}
-</script-->
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot(\'/22495599872/TM-300x600\', [300, 600], \'div-gpt-ad-1627829299075-0\').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
 
 </head>
 ';
@@ -851,16 +857,7 @@ print '
 
 <!-- tipmaster.de_300x600: Begin -->
 
-<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-<script>
-  window.googletag = window.googletag || {cmd: []};
-  googletag.cmd.push(function() {
-    googletag.defineSlot(\'/22495599872/TM-300x600\', [300, 600], \'div-gpt-ad-1627829299075-0\').addService(googletag.pubads());
-    googletag.pubads().enableSingleRequest();
-    googletag.pubads().collapseEmptyDivs();
-    googletag.enableServices();
-  });
-</script>
+
 
 <!-- /22495599872/TM-300x600 -->
 <div id=\'div-gpt-ad-1627829299075-0\' style=\'min-width: 300px; min-height: 600px;\'>
