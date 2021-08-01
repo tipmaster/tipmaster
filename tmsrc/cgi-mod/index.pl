@@ -846,7 +846,7 @@ print '
 
 	<td bgcolor=white>
 
-<div style="width:160px">
+<div style="width:300px">
 
 
 <!-- tipmaster.de_300x600: Begin -->
