@@ -1158,35 +1158,25 @@ sub banner_gross {
 #return '';
 
 
-return '
-<script type="text/javascript" src="//services.vlitag.com/adv1/?q=b4ec91b2a704e5df94c61d878f983522" defer="" async=""></script><script> var vitag = vitag || {};</script>
-<script type="text/javascript">
-vitag.outStreamConfig = { disableAdToHead: true,}
+return "
+<script async src=\"https://securepubads.g.doubleclick.net/tag/js/gpt.js\"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/22495599872/TM-970x250', [970, 250], 'div-gpt-ad-1627829431547-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
 </script>
+<!-- /22495599872/TM-970x250 -->
+<div id='div-gpt-ad-1627829431547-0' style='min-width: 970px; min-height: 250px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1627829431547-0'); });
+  </script>
+</div>
+";
 
-<ins class=\'dcmads\' style=\'display:inline-block;width:728px;height:90px\'
-
-    data-dcm-placement=\'N1390738.284374FUSSBALL-LIVETICK/B25798206.301718990\'
-
-    data-dcm-rendering-mode=\'script\'
-
-    data-dcm-https-only
-
-    data-dcm-gdpr-applies=\'gdpr=${GDPR}\'
-
-    data-dcm-gdpr-consent=\'gdpr_consent=${GDPR_CONSENT_755}\'
-
-    data-dcm-addtl-consent=\'addtl_consent=${ADDTL_CONSENT}\'
-
-    data-dcm-ltd=\'false\'
-
-    data-dcm-resettable-device-id=\'\'
-
-    data-dcm-app-id=\'\'>
-
-  <script src=\'https://www.googletagservices.com/dcm/dcmads.js\'></script>
-
-</ins>';
 
 
 $number = '

@@ -850,33 +850,27 @@ print '
 
 
 <!-- tipmaster.de_300x600: Begin -->
-<!--div class="adsbyvli" data-ad-slot="vi_1335352009"></div> <script>(vitag.Init = window.vitag.Init || []).push(function () { viAPItag.display("vi_1335352009") })</script--><!-- tipmaster.de_300x600 End -->
 
-<ins class=\'dcmads\' style=\'display:inline-block;width:160px;height:600px\'
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot(\'/22495599872/TM-300x600\', [300, 600], \'div-gpt-ad-1627829299075-0\').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
 
-    data-dcm-placement=\'N1390738.284374FUSSBALL-LIVETICK/B25798206.301718141\'
-
-    data-dcm-rendering-mode=\'script\'
-
-    data-dcm-https-only
-
-    data-dcm-gdpr-applies=\'gdpr=${GDPR}\'
-
-    data-dcm-gdpr-consent=\'gdpr_consent=${GDPR_CONSENT_755}\'
-
-    data-dcm-addtl-consent=\'addtl_consent=${ADDTL_CONSENT}\'
-
-    data-dcm-ltd=\'false\'
-
-    data-dcm-resettable-device-id=\'\'
-
-    data-dcm-app-id=\'\'>
-
-  <script src=\'https://www.googletagservices.com/dcm/dcmads.js\'></script>
-
-</ins>
+<!-- /22495599872/TM-300x600 -->
+<div id=\'div-gpt-ad-1627829299075-0\' style=\'min-width: 300px; min-height: 600px;\'>
+  <script>
+    googletag.cmd.push(function() { googletag.display(\'div-gpt-ad-1627829299075-0\'); });
+  </script>
+</div>
 
 
+<div class="adsbyvli" data-ad-slot="vi_1335352009"></div> <script>(vitag.Init = window.vitag.Init || []).push(function () { viAPItag.display("vi_1335352009") })</script><!-- tipmaster.de_300x600 End -->
 
 </div>
 
