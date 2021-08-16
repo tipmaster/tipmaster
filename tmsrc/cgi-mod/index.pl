@@ -852,19 +852,36 @@ print '
 
 	<td bgcolor=white>
 
-<div style="width:300px">
+<div style="width:160px">
 
 
 <!-- tipmaster.de_300x600: Begin -->
 
 
+<ins class="dcmads" style="display:inline-block;width:160px;height:600px"
 
-<!-- /22495599872/TM-300x600 -->
-<div id=\'div-gpt-ad-1627829299075-0\' style=\'min-width: 300px; min-height: 600px;\'>
-  <script>
-    googletag.cmd.push(function() { googletag.display(\'div-gpt-ad-1627829299075-0\'); });
-  </script>
-</div>
+    data-dcm-placement="N1390738.284374FUSSBALL-LIVETICK/B25798206.301718141"
+
+    data-dcm-rendering-mode="script"
+
+    data-dcm-https-only
+
+    data-dcm-gdpr-applies="gdpr=${GDPR}"
+
+    data-dcm-gdpr-consent="gdpr_consent=${GDPR_CONSENT_755}"
+
+    data-dcm-addtl-consent="addtl_consent=${ADDTL_CONSENT}"
+
+    data-dcm-ltd="false"
+
+    data-dcm-resettable-device-id=""
+
+    data-dcm-app-id="">
+
+  <script src="https://www.googletagservices.com/dcm/dcmads.js"></script>
+
+</ins>
+
 
 
 </div>
@@ -892,7 +909,7 @@ print '
 </ul><ul>
 <b>Dutch</b>
 <li><a href="https://voetbal-vandaag.com">voetbal-vandaag.com</a></li>
-<li><a href="https://www.voetballivestream.tv/pro-league">voetballivestream.tv</a></li>
+<li><a href="https://www.livevoetbalkijkenvandaag.nl/pro-league-live-stream">livevoetbalkijkenvandaag.nl</a></li>
 <li><a href="https://voetbal-op-tv.nl">voetbal-op-tv.nl</a></li>
 
 </ul><ul>
@@ -986,7 +1003,7 @@ print '
 
 <p style="font-face:tahoma,verdana;font-size:10px;color:darkgrey;padding-top:-10px;text-align:center;width:800px;">
 
-<a href="https://socagol.tv/de/bundesliga-live-stream">SocaGol</a> | <a style="color:darkgrey" href="https://fussballlivestreams.de">fussballlivestreams.de</a> | <a href="https://bundesligalivestreamkostenlos.com">Bundesliga Live Streams</a> | <a style="color:darkgrey" href="https://www.voetballivestream.tv/champions-league">Champions League</a> | <a style="color:darkgrey" href="https://rojadirecta-tv.es">Rojadirecta-tv.es</a> | <a style="color:darkgrey" href="https://www.fussball-liveticker.eu/fussball-ergebnisse-gestern">Fussball Ergebnisse Gestern</a> | <a style="color:darkgrey" href="https://www.footballcapper.org/">football betting prediction</a></p>
+<a href="https://socagol.tv/de/bundesliga-live-stream">SocaGol</a> | <a style="color:darkgrey" href="https://fussballlivestreams.de">fussballlivestreams.de</a> | <a href="https://bundesligalivestreamkostenlos.com">Bundesliga Live Streams</a> | <a style="color:darkgrey" href="https://livevoetbalkijkenvandaag.nl/champions-league-live-stream">Champions League</a> | <a style="color:darkgrey" href="https://rojadirecta-tv.es">Rojadirecta-tv.es</a> | <a style="color:darkgrey" href="https://www.fussball-liveticker.eu/fussball-ergebnisse-gestern">Fussball Ergebnisse Gestern</a> | <a style="color:darkgrey" href="https://www.footballcapper.org/">football betting prediction</a></p>
 
 
 ' . $page_footer . '
