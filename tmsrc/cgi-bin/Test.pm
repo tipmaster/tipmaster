@@ -1157,6 +1157,31 @@ sub banner_gross {
 
 #return '';
 
+return "
+<ins class='dcmads' style='display:inline-block;width:728px;height:90px'
+
+    data-dcm-placement='N1390738.284374FUSSBALL-LIVETICK/B25798206.301718990'
+
+    data-dcm-rendering-mode='script'
+
+    data-dcm-https-only
+
+    data-dcm-gdpr-applies='gdpr=${GDPR}'
+
+    data-dcm-gdpr-consent='gdpr_consent=${GDPR_CONSENT_755}'
+
+    data-dcm-addtl-consent='addtl_consent=${ADDTL_CONSENT}'
+
+    data-dcm-ltd='false'
+
+    data-dcm-resettable-device-id=''
+
+    data-dcm-app-id=''>
+
+  <script src='https://www.googletagservices.com/dcm/dcmads.js'></script>
+
+</ins>
+";
 
 return "
 <script async src=\"https://securepubads.g.doubleclick.net/tag/js/gpt.js\"></script>
@@ -1219,6 +1244,32 @@ return '
 </div>
 ';
 
+
+return '<ins class="dcmads" style="display:inline-block;width:728px;height:90px"
+
+    data-dcm-placement="N1390738.284374FUSSBALL-LIVETICK/B25798206.301718990"
+
+    data-dcm-rendering-mode="script"
+
+    data-dcm-https-only
+
+    data-dcm-gdpr-applies="gdpr=${GDPR}"
+
+    data-dcm-gdpr-consent="gdpr_consent=${GDPR_CONSENT_755}"
+
+    data-dcm-addtl-consent="addtl_consent=${ADDTL_CONSENT}"
+
+    data-dcm-ltd="false"
+
+    data-dcm-resettable-device-id=""
+
+    data-dcm-app-id="">
+
+  <script src="https://www.googletagservices.com/dcm/dcmads.js"></script>
+
+</ins>
+';
+
 return '
 <div id="76383-6"><script src="//ads.themoneytizer.com/s/gen.js?type=6"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=76383&formatId=6"></script></div>
 ';
@@ -1250,77 +1301,6 @@ sub banner_klein {
 ';
 
 	return $tag_klein;
-}
-
-sub banner_head {
-
-	my $sek           = "";
-	my $min           = "";
-	my $std           = "";
-	my $tag           = "";
-	my $mon           = "";
-	my $jahr          = "";
-	my $ww            = "";
-	my $ran           = "";
-	my $jja           = "";
-	my $jjm           = "";
-	my $jjj           = "";
-	my $xx1           = "";
-	my @kampagnen_id  = ();
-	my @kampagnen_img = ();
-	my @kampagnen_url = ();
-	my $mleg          = "";
-	my $go            = "";
-	my $xa1           = "";
-	my $xb1           = "";
-	my $xc1           = "";
-	my $xd1           = "";
-	my $xe1           = "";
-	my $xf1           = "";
-	my $xg1           = "";
-	my $gg1           = "";
-	my $dateiname     = "";
-	my $r             = "";
-	my $ver           = "";
-	my @banner_url    = ();
-	my @sponsor_fir   = ();
-	my $aaff          = "";
-	my $number        = "";
-	srand();
-	$gg1 = int( 10 * rand ) + 44;
-
-
-
-	$number = '
-	
-			<div style="
-    display: inline-block;
-    min-height: inherit;
-   	width: 100%;
-   	max-width:1024px;
-    text-align:center">
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- FLT Horizontal 2019-09-06 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4704356426999787"
-     data-ad-slot="9746730021"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
-	'."
-<!-- BEGIN PARTNER PROGRAM - DO NOT CHANGE THE PARAMETERS OF THE HYPERLINK -->
-<A HREF=\"http://partners.webmasterplan.com/click.asp?ref=38356&site=1387&type=b$gg1&bnb=$gg1\" TARGET=\"_top\">
-<IMG SRC=http://banners.webmasterplan.com/view.asp?site=1387&ref=38356&b=$gg1 BORDER=0 
-ALT=\"kostenloser Vergleich privater Krankenversicherer\" WIDTH=140 HEIGHT=200></A>
-<!-- END PARTNER PROGRAM -->
-";
-
-	return $number;
-
 }
 
 sub page_footer {

@@ -269,7 +269,6 @@ my $page_footer  = $mlib->page_footer();
 my $banner_gross = $mlib->banner_gross();
 my $banner_bottom = $mlib->banner_bottom();
 my $banner_klein = $mlib->banner_klein();
-my $banner_head  = $mlib->banner_head();
 my @liga_namen   = $mlib->btm_liga_kuerzel();
 
 my $aktiv_position;
