@@ -1,6 +1,6 @@
 use Crypt::PBKDF2;
 
-my $user = "Thomas Heihal";
+my $user = "Helge Lang";
 my $pass = "Donnerstag";
 
 print generatePassword($pass,$user);

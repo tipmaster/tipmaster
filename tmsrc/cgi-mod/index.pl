@@ -885,7 +885,7 @@ print '
 </ul><ul>
 <b>English</b>
 <li><a href="https://soccergames-today.com">soccergames-today.com</a></li>
-<li><a href="https://reddit.soccerstreaming100.com">soccerstreaming100.com</a></li>
+<li><a href="https://livesoccertvstream.com">livesoccertvstream.com</a></li>
 <li><a href="https://soccer-tv.live">soccer-tv.live</a></li>
 
 
