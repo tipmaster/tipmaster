@@ -942,7 +942,12 @@ print '
 <li><a href="https://fotboll-tv.se">fotboll-tv.se</a></li>
 </ul>
 
-
+<ul>
+<b>British</b>
+<li><a href="https://footballresults-today.com">footballresults-today.com</a></li>
+<li><a href="https://live-footballstreaming.co.uk">live-footballstreaming.co.uk</a></li>
+<li><a href="https://livefootballontvtoday.co.uk">livefootballontvtoday.co.uk</a></li>
+</ul>
 
 </td>
 </tr>
