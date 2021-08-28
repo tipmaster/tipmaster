@@ -855,32 +855,21 @@ print '
 <div style="width:160px">
 
 
-<!-- tipmaster.de_300x600: Begin -->
-
-
-<ins class="dcmads" style="display:inline-block;width:160px;height:600px"
-
-    data-dcm-placement="N1390738.284374FUSSBALL-LIVETICK/B25798206.301718141"
-
-    data-dcm-rendering-mode="script"
-
-    data-dcm-https-only
-
-    data-dcm-gdpr-applies="gdpr=${GDPR}"
-
-    data-dcm-gdpr-consent="gdpr_consent=${GDPR_CONSENT_755}"
-
-    data-dcm-addtl-consent="addtl_consent=${ADDTL_CONSENT}"
-
-    data-dcm-ltd="false"
-
-    data-dcm-resettable-device-id=""
-
-    data-dcm-app-id="">
-
-  <script src="https://www.googletagservices.com/dcm/dcmads.js"></script>
-
-</ins>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot(\'/22495599872/de-tm-160x600-hp\', [160, 600], \'div-gpt-ad-1630160084264-0\').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<!-- /22495599872/de-tm-160x600-hp -->
+<div id=\'div-gpt-ad-1630160084264-0\' style=\'min-width: 160px; min-height: 600px;\'>
+  <script>
+    googletag.cmd.push(function() { googletag.display(\'div-gpt-ad-1630160084264-0\'); });
+  </script>
+</div>
 
 
 
