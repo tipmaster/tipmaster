@@ -1163,51 +1163,24 @@ return "
 
 sub banner_rectangle {
 
-
 return "
 <script async src=\"https://securepubads.g.doubleclick.net/tag/js/gpt.js\"></script>
 <script>
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
-    googletag.defineSlot('/22495599872/de-tm-728x90-subpage-top', [728, 90], 'div-gpt-ad-1630160558627-0').addService(googletag.pubads());
+    googletag.defineSlot('/22495599872/de-tm-300x250-loginpage', [300, 250], 'div-gpt-ad-1630161760304-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
   });
 </script>
-<!-- /22495599872/de-tm-728x90-subpage-top -->
-<div id='div-gpt-ad-1630160558627-0' style='min-width: 728px; min-height: 90px;'>
+<!-- /22495599872/de-tm-300x250-loginpage -->
+<div id='div-gpt-ad-1630161760304-0' style='min-width: 300px; min-height: 250px;'>
   <script>
-    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1630160558627-0'); });
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1630161760304-0'); });
   </script>
 </div>
 ";
 
-
-$number = '
-<!-- Paste the above code right above the closing </head> of the HTML in your tipmaster.de -->
-<script type="text/javascript" src="//services.vlitag.com/adv1/?q=b4ec91b2a704e5df94c61d878f983522" defer="" async=""></script><script> var vitag = vitag || {};</script>
-<script type="text/javascript">
-vitag.outStreamConfig = { disableAdToHead: true,}
-</script>
-<!-- End Valueimpression Head Script -->
-<!-- tipmaster.de_970x250: Begin -->
-
-';
-	return $number;
-
-	$number = '
-	
-	
-<iframe id=\'a52022f2\' name=\'a52022f2\' src=\'https://ads.socapro.com/www/delivery/afr.php?refresh=60&amp;zoneid=367&amp;cb='
-	  . $cachebuster
-	  . '&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'728\' height=\'90\'><a href=\'https://ads.socapro.com/www/delivery/ck.php?n=ad110454&amp;cb='
-	  . $cachebuster
-	  . '\' target=\'_blank\'><img src=\'https://ads.socapro.com/www/delivery/avw.php?zoneid=367&amp;cb='
-	  . $cachebuster
-	  . '&amp;n=ad110454&amp;ct0=INSERT_ENCODED_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
-&nbsp;';
-
-	return $number;
 }
 
 sub banner_bottom {
