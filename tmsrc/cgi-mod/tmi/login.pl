@@ -243,6 +243,7 @@ my $mlib         = new Test;
 my $page_footer  = $mlib->page_footer();
 my $banner_gross = $mlib->banner_gross();
 my $banner_bottom = $mlib->banner_bottom();
+my $banner_rectangle = $mlib->banner_rectangle();
 my $banner_klein = $mlib->banner_klein();
 my $aktiv_position;
 
@@ -1466,6 +1467,9 @@ Die Tippabgabe in der Champions-League bzw. im UEFA-Cup endet nun wieder wie gew
 </table>
 </td>
 </tr>
+
+$banner_rectangle
+
 </table>
 </td></tr></table>
 

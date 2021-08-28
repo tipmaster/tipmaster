@@ -1159,26 +1159,28 @@ return "
   </script>
 </div>
 ";
+}
+
+sub banner_rectangle {
+
 
 return "
 <script async src=\"https://securepubads.g.doubleclick.net/tag/js/gpt.js\"></script>
 <script>
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
-    googletag.defineSlot('/22495599872/TM-970x250', [970, 250], 'div-gpt-ad-1627829431547-0').addService(googletag.pubads());
+    googletag.defineSlot('/22495599872/de-tm-728x90-subpage-top', [728, 90], 'div-gpt-ad-1630160558627-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
-    googletag.pubads().collapseEmptyDivs();
     googletag.enableServices();
   });
 </script>
-<!-- /22495599872/TM-970x250 -->
-<div id='div-gpt-ad-1627829431547-0' style='min-width: 970px; min-height: 250px;'>
+<!-- /22495599872/de-tm-728x90-subpage-top -->
+<div id='div-gpt-ad-1630160558627-0' style='min-width: 728px; min-height: 90px;'>
   <script>
-    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1627829431547-0'); });
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1630160558627-0'); });
   </script>
 </div>
 ";
-
 
 
 $number = '

@@ -68,28 +68,6 @@ print "
 ";
 
 
-#print "
-#<script async src=\"https://securepubads.g.doubleclick.net/tag/js/gpt.js\"></script>
-#<script>
-#  window.googletag = window.googletag || {cmd: []};
-#  googletag.cmd.push(function() {
-#    googletag.defineSlot('/22495599872/TM-970x250', [970, 250], 'div-gpt-ad-1627829431547-0').addService(googletag.pubads());
-#    googletag.pubads().enableSingleRequest();
-#    googletag.pubads().collapseEmptyDivs();
-#    googletag.enableServices();
-#  });
-#</script>
-#<!-- /22495599872/TM-970x250 -->
-#<div id='div-gpt-ad-1627829431547-0' style='min-width: 970px; min-height: 250px;'>
-#  <script>
-#    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1627829431547-0'); });
-#  </script>
-#</div>
-#";
-
-#<iframe id=\'acae648c\' name=\'acae648c\' src=\'http://advertising.fussball-liveticker.eu/www/delivery/afr.php?zoneid=84&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'468\' height=\'60\'><a href=\'http://advertising.fussball-liveticker.eu/www/delivery/ck.php?n=a3108930&amp;cb=INSERT_RANDOM_NUMBER_HERE\' target=\'_blank\'><img src=\'http://advertising.fussball-liveticker.eu/www/delivery/avw.php?zoneid=84&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3108930&amp;ct0=INSERT_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
-#@ &nbsp; 
-
 
 $a = '
 
