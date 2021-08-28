@@ -1141,46 +1141,23 @@ sub btm_liga_kuerzel {
 
 sub banner_gross {
 
-#	$number = '
-#<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-#<!-- TM 728x90 -->
-#<ins class="adsbygoogle"
-#     style="display:inline-block;width:728px;height:90px"
-#     data-ad-client="ca-pub-7019464997176631"
-#     data-ad-slot="2885553308"></ins>
-#<script>
-#(adsbygoogle = window.adsbygoogle || []).push({});
-#</script>
-#<!--
-#<iframe id=\'acae648c\' name=\'acae648c\' src=\'http://advertising.fussball-liveticker.eu/www/delivery/afr.php?zoneid=84&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;ct0=INSERT_CLICKURL_HERE\' frameborder=\'0\' scrolling=\'no\' width=\'468\' height=\'60\'><a href=\'http://advertising.fussball-liveticker.eu/www/delivery/ck.php?n=a3108930&amp;cb=INSERT_RANDOM_NUMBER_HERE\' target=\'_blank\'><img src=\'http://advertising.fussball-liveticker.eu/www/delivery/avw.php?zoneid=84&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3108930&amp;ct0=INSERT_CLICKURL_HERE\' border=\'0\' alt=\'\' /></a></iframe>
-#-->
-
-#return '';
 
 return "
-<ins class='dcmads' style='display:inline-block;width:728px;height:90px'
-
-    data-dcm-placement='N1390738.284374FUSSBALL-LIVETICK/B25798206.301718990'
-
-    data-dcm-rendering-mode='script'
-
-    data-dcm-https-only
-
-    data-dcm-gdpr-applies='gdpr=${GDPR}'
-
-    data-dcm-gdpr-consent='gdpr_consent=${GDPR_CONSENT_755}'
-
-    data-dcm-addtl-consent='addtl_consent=${ADDTL_CONSENT}'
-
-    data-dcm-ltd='false'
-
-    data-dcm-resettable-device-id=''
-
-    data-dcm-app-id=''>
-
-  <script src='https://www.googletagservices.com/dcm/dcmads.js'></script>
-
-</ins>
+<script async src=\"https://securepubads.g.doubleclick.net/tag/js/gpt.js\"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/22495599872/de-tm-728x90-subpage-top', [728, 90], 'div-gpt-ad-1630160558627-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<!-- /22495599872/de-tm-728x90-subpage-top -->
+<div id='div-gpt-ad-1630160558627-0' style='min-width: 728px; min-height: 90px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1630160558627-0'); });
+  </script>
+</div>
 ";
 
 return "
@@ -1233,16 +1210,27 @@ vitag.outStreamConfig = { disableAdToHead: true,}
 
 sub banner_bottom {
 
-return '
-<div style="display:flex;justify-content:flex-start;padding-bottom:10px;width:970px;padding-left:25px;min-height:280px;">
+return "
+<div style=\"display:flex;justify-content:flex-start;padding-bottom:10px;width:728px;padding-left:25px;min-height:90px;\">
 
 
-<!-- tipmaster.de_970x250 End -->
-
-
+<script async src=\"https://securepubads.g.doubleclick.net/tag/js/gpt.js\"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/22495599872/de-tm-728x90-subpage-bottom', [728, 90], 'div-gpt-ad-1630160625050-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<!-- /22495599872/de-tm-728x90-subpage-bottom -->
+<div id='div-gpt-ad-1630160625050-0' style='min-width: 728px; min-height: 90px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1630160625050-0'); });
+  </script>
 </div>
 </div>
-';
+";
 
 
 return '<ins class="dcmads" style="display:inline-block;width:728px;height:90px"
