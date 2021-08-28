@@ -1457,7 +1457,7 @@ in <a href="http://community.tipmaster.de/showthread.php?t=27483">diesem Posting
 Die Tippabgabe in der Champions-League bzw. im UEFA-Cup endet nun wieder wie gewohnt freitags um 18:00 Uhr!</div>
 <br/>
 
-<br/><br/>
+<br/>
 
 </td>
 
@@ -1465,10 +1465,13 @@ Die Tippabgabe in der Champions-League bzw. im UEFA-Cup endet nun wieder wie gew
 
 </tr>
 </table>
+
+$banner_rectangle
+
 </td>
 </tr>
 
-$banner_rectangle
+
 
 </table>
 </td></tr></table>
