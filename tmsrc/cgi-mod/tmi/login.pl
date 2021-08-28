@@ -1013,8 +1013,7 @@ print <<"(END ERROR HTML)";
 	"https://www.fussball-liveticker.eu",
 	"https://fussballlivestreams.de",
 	"https://fussballheuteimtv.de",
-	"mailto:info\@tipmaster.de",
-	""
+	"mailto:info\@tipmaster.de"
 );
 
 $datei = "/tmdata/tmi/help/" . $leut;

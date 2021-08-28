@@ -834,12 +834,10 @@ print <<"(END ERROR HTML)";
 	"Haeufige Fragen",
 	"<b>TM Hauptseite</b>",
 	"TipMaster - Links",
-
 	"<b>Fussball Liveticker</b>",
 	"Fussball Live Streams",
 	"Fussball Heute im TV",
-	"info\@tipmaster.de",
-	"",
+	"info\@tipmaster.de"
 );
 
 @link_target = (
