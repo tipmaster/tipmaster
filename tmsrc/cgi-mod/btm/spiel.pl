@@ -208,7 +208,10 @@ print "Content-Type: text/html \n\n";
 
 
 
+print "<div style=\"display:flex;justify-content:flex-start\"><div>";
+
 print "$banner_left";
+print "</div><div>";
 print "$banner_gross";
 
 #print "<!-- Live : $live Mod Perl is ",$ENV{MOD_PERL}," / ",$ENV{"MOD_PERL"}," //-->\n";
