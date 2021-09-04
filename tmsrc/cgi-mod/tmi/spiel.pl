@@ -204,6 +204,7 @@ use CGI::Cookie;
 
 my $mlib         = new Test;
 my $banner_gross = $mlib->banner_gross();
+my $banner_left = $mlib->banner_left();
 my $banner_bottom = $mlib->banner_bottom();
 my $banner_klein = $mlib->banner_klein();
 my $page_footer  = $mlib->page_footer();
@@ -1075,6 +1076,7 @@ print "</head>\n";
 
 print "<p align=left><body bgcolor=white text=black vlink=red link=red>\n";
 
+print "$banner_left";
 print "$banner_gross";
 
 print "<table border=0 cellspacing=0><tr>\n";

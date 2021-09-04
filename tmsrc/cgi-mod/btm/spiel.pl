@@ -190,6 +190,7 @@ my $mlib        = new Test;
 my $page_footer = $mlib->page_footer();
 
 my $banner_gross = $mlib->banner_gross();
+my $banner_left = $mlib->banner_left();
 my $banner_bottom = $mlib->banner_bottom();
 my $banner_klein = $mlib->banner_klein();
 my @liga_namen   = $mlib->btm_liga_namen();
@@ -205,6 +206,9 @@ $spielrunde = $query->param('sp');
 
 print "Content-Type: text/html \n\n";
 
+
+
+print "$banner_left";
 print "$banner_gross";
 
 #print "<!-- Live : $live Mod Perl is ",$ENV{MOD_PERL}," / ",$ENV{"MOD_PERL"}," //-->\n";
