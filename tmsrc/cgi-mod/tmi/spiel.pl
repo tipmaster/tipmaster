@@ -1076,7 +1076,12 @@ print "</head>\n";
 
 print "<p align=left><body bgcolor=white text=black vlink=red link=red>\n";
 
+
+print "<div style=\"display:flex;justify-content:flex-start\"><div>";
+
 print "$banner_left";
+print "</div><div>";
+
 print "$banner_gross";
 
 print "<table border=0 cellspacing=0><tr>\n";
