@@ -115,6 +115,9 @@ print "<body bgcolor=#eeeeee text=black>\n";
 
 print "<title>TipMaster Freundschaftsspiel</title>\n";
 
+print "<div style=\"display:flex;justify-content:flex-start\"><div>";
+require "/tmapp/tmsrc/cgi-bin/tag_left.pl";
+print "</div><div>";
 require "/tmapp/tmsrc/cgi-bin/tag.pl";
 require "/tmapp/tmsrc/cgi-bin/tag_small.pl";
 print "<br>\n";
