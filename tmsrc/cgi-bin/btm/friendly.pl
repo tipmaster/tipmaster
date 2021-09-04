@@ -1193,6 +1193,7 @@ sub liste {
 	print "<div style=\"display:flex;justify-content:flex-start\"><div>";
 require "/tmapp/tmsrc/cgi-bin/tag_left.pl";
 print "</div><div>";
+require "/tmapp/tmsrc/cgi-bin/tag.pl";
 	require "/tmapp/tmsrc/cgi-bin/tag_small.pl";
 	print "<br>\n";
 	require "/tmapp/tmsrc/cgi-bin/loc.pl";
