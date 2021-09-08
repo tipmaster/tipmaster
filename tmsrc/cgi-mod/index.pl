@@ -889,6 +889,7 @@ print '
 <li><a href="https://www.fussball-liveticker.eu">fussball-liveticker.eu</a></li>
 <li><a href="https://fussballlivestreams.de">fussballlivestreams.de</a></li>
 <li><a href="https://fussballheuteimtv.de">fussballheuteimtv.de</a></li>
+<li><a href="https://fussballprognose.de">fussballprognose.de</a></li>
 
 </ul><ul>
 <b>English</b>
