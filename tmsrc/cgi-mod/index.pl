@@ -852,7 +852,7 @@ print '
 
 	<td bgcolor=white>
 
-<div style="width:160px">
+<div style="width:300px">
 
 
 
@@ -860,15 +860,15 @@ print '
 <script>
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
-    googletag.defineSlot(\'/22495599872/de-tm-160x600-hp\', [160, 600], \'div-gpt-ad-1630678713331-0\').addService(googletag.pubads());
+     googletag.defineSlot(\'/22495599872/DE-TM-300x600-HP\', [300, 600], \'div-gpt-ad-1631234661433-0\').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
   });
 </script>
-<!-- /22495599872/de-tm-160x600-hp -->
-<div id=\'div-gpt-ad-1630678713331-0\' style=\'min-width: 160px; min-height: 600px;\'>
+<!-- /22495599872/DE-TM-300x600-HP -->
+<div id=\'div-gpt-ad-1631234661433-0\' style=\'min-width: 300px; min-height: 600px;\'>
   <script>
-    googletag.cmd.push(function() { googletag.display(\'div-gpt-ad-1630678713331-0\'); });
+    googletag.cmd.push(function() { googletag.display(\'div-gpt-ad-1631234661433-0\'); });
   </script>
 </div>
 
