@@ -31,15 +31,15 @@ print "
 <script>
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
-    googletag.defineSlot('/22495599872/de-tm-728x90-subpage-bottom', [728, 90], 'div-gpt-ad-1630160625050-0').addService(googletag.pubads());
+ googletag.defineSlot('/22495599872/DE-TM-970x250-SUBPAGE', [970, 250], 'div-gpt-ad-1631234964627-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
   });
 </script>
-<!-- /22495599872/de-tm-728x90-subpage-bottom -->
-<div id='div-gpt-ad-1630160625050-0' style='min-width: 728px; min-height: 90px;'>
+<!-- /22495599872/DE-TM-970x250-SUBPAGE -->
+<div id='div-gpt-ad-1631234964627-0' style='min-width: 970px; min-height: 250px;'>
   <script>
-    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1630160625050-0'); });
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1631234964627-0'); });
   </script>
 </div>
 ";

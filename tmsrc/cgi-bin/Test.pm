@@ -1143,19 +1143,19 @@ sub banner_gross {
 
 
 return "
-<script async src=\"https://securepubads.g.doubleclick.net/tag/js/gpt.js\"></script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
 <script>
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
-    googletag.defineSlot('/22495599872/de-tm-728x90-subpage-top', [728, 90], 'div-gpt-ad-1630160558627-0').addService(googletag.pubads());
+    googletag.defineSlot('/22495599872/DE-TM-970x250-SUBPAGE', [970, 250], 'div-gpt-ad-1631234964627-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
   });
 </script>
-<!-- /22495599872/de-tm-728x90-subpage-top -->
-<div id='div-gpt-ad-1630160558627-0' style='min-width: 728px; min-height: 90px;'>
+<!-- /22495599872/DE-TM-970x250-SUBPAGE -->
+<div id='div-gpt-ad-1631234964627-0' style='min-width: 970px; min-height: 250px;'>
   <script>
-    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1630160558627-0'); });
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1631234964627-0'); });
   </script>
 </div>
 ";
@@ -1216,72 +1216,26 @@ return "
 sub banner_bottom {
 
 return "
-<div style=\"display:flex;justify-content:flex-start;padding-bottom:10px;width:728px;padding-left:25px;min-height:90px;\">
+<div style=\"display:flex;justify-content:flex-start;padding-bottom:10px;width:970px;padding-left:25px;min-height:250px;\">
 
 
 <script async src=\"https://securepubads.g.doubleclick.net/tag/js/gpt.js\"></script>
 <script>
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
-    googletag.defineSlot('/22495599872/de-tm-728x90-subpage-bottom', [728, 90], 'div-gpt-ad-1630160625050-0').addService(googletag.pubads());
+    googletag.defineSlot('/22495599872/DE-TM-970x250-SUBPAGE', [970, 250], 'div-gpt-ad-1631234964627-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
   });
 </script>
-<!-- /22495599872/de-tm-728x90-subpage-bottom -->
-<div id='div-gpt-ad-1630160625050-0' style='min-width: 728px; min-height: 90px;'>
+<!-- /22495599872/DE-TM-970x250-SUBPAGE -->
+<div id='div-gpt-ad-1631234964627-0' style='min-width: 970px; min-height: 250px;'>
   <script>
-    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1630160625050-0'); });
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1631234964627-0'); });
   </script>
 </div>
 </div>
 ";
-
-
-return '<ins class="dcmads" style="display:inline-block;width:728px;height:90px"
-
-    data-dcm-placement="N1390738.284374FUSSBALL-LIVETICK/B25798206.301718990"
-
-    data-dcm-rendering-mode="script"
-
-    data-dcm-https-only
-
-    data-dcm-gdpr-applies="gdpr=${GDPR}"
-
-    data-dcm-gdpr-consent="gdpr_consent=${GDPR_CONSENT_755}"
-
-    data-dcm-addtl-consent="addtl_consent=${ADDTL_CONSENT}"
-
-    data-dcm-ltd="false"
-
-    data-dcm-resettable-device-id=""
-
-    data-dcm-app-id="">
-
-  <script src="https://www.googletagservices.com/dcm/dcmads.js"></script>
-
-</ins>
-';
-
-return '
-<div id="76383-6"><script src="//ads.themoneytizer.com/s/gen.js?type=6"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=76383&formatId=6"></script></div>
-';
-
-
-
-
-return '<!-- Composite Start -->
-<div style="max-width:1000px;padding-left:10px;padding-top:8px;">
-<div id="M696426ScriptRootC1104509"></div>
-<script src="https://jsc.mgid.com/t/i/tipmaster.de.1104509.js" async></script>
-<!-- Composite End -->
-</div>';
-#return '';
-
-$number = '
-
-';
-	return $number;
 
 }
 
