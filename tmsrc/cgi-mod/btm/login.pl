@@ -1058,7 +1058,7 @@ print <<"(END ERROR HTML)";
 <td align=left><font face=verdana size=1>
 
 
-<br/><br>
+<br/>
 
 <div style="min-width:235px;max-width:235px;padding:10px;background-color:white;border:1px solid black">
 <b>Aktion Fehlerbereinigung</b><br/><br/>
@@ -1081,8 +1081,6 @@ Die Tippabgabe in der Champions-Leauge bzw. im UEFA-Cup endet nun wieder wie gew
 
 </tr>
 </table>
-
-<br>
 
 $banner_rectangle
 
