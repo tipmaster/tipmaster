@@ -1477,7 +1477,7 @@ $banner_rectangle
 
 (END ERROR HTML)
 
-print $page_footer;
+print $page_footer . '<br/><br/>'.$banner_bottom;
 
 select STDOUT;
 $session->writeSession();
