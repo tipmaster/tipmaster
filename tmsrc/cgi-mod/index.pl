@@ -896,20 +896,21 @@ print '
 <li><a href="https://soccergames-today.com">soccergames-today.com</a></li>
 <li><a href="https://hesgoal.us">hesgoal.us</a></li>
 <li><a href="https://soccer-tv.live">soccer-tv.live</a></li>
-
+<li><a href="https://soccerpredictions-today.com">soccerpredictions-today.com</a></li>
 
 </ul><ul>
 <b>Dutch</b>
 <li><a href="https://voetbal-vandaag.com">voetbal-vandaag.com</a></li>
-<li><a href="https://www.livevoetbalkijkenvandaag.nl/pro-league-live-stream">livevoetbalkijkenvandaag.nl</a></li>
+<li><a href="https://livevoetbalkijkenvandaag.nl">livevoetbalkijkenvandaag.nl</a></li>
 <li><a href="https://voetbal-op-tv.nl">voetbal-op-tv.nl</a></li>
+<li><a href="https://toto-voorspellingen.nl">toto-voorspellingen.nl</a></li>
 
 </ul><ul>
 <b>Espa&ntilde;ol</b>
 <li><a href="https://partidosfutbolhoy.es">partidosfutbolhoy.es</a></li>
 <li><a href="https://rojadirecta-tv.es/futbol-en-la-tele">rojadirecta-tv.es</a></li>
 <li><a href="https://futbolenlatele.tv">futbolenlatele.tv</a></li>
-
+<li><a href="https://pronosticosquiniela.es">pronosticosquiniela.es</a></li>
 </ul>
 
 <ul>
@@ -917,7 +918,7 @@ print '
 <li><a href="https://foot.streamonsport.fr">foot.streamonsport.fr</a></li>
 <li><a href="https://footstreaming24.fr">footstreaming24.fr</a></li>
 <li><a href="https://programmetvfoot24.fr">programmetvfoot24.fr</a></li>
-
+<li><a href="https://lotofootpronostic.fr">lotofootpronostic.fr</a></li>
 </ul>
 
 <ul>
@@ -925,6 +926,7 @@ print '
 <li><a href="https://rojadirecta-tv.it">rojadirecta-tv.it</a></li>
 <li><a href="https://sitistreamingcalcio.it">sitistreamingcalcio.it</a></li>
 <li><a href="https://calcio-tv.it">calcio-tv.it</a></li>
+<li><a href="https://pronostico-calcio.it">pronostico-calcio.it</a></li>
 </ul>
 
 <ul>
@@ -932,6 +934,7 @@ print '
 <li><a href="https://fotboll-liveresultat.se">fotboll-liveresultat.se</a></li>
 <li><a href="https://streama-fotboll.se">streama-fotboll.se</a></li>
 <li><a href="https://fotboll-tv.se">fotboll-tv.se</a></li>
+<li><a href="https://europatipsettips.se">europatipsettips.se</a></li>
 </ul>
 
 <ul>
@@ -939,6 +942,7 @@ print '
 <li><a href="https://footballresults-today.com">footballresults-today.com</a></li>
 <li><a href="https://live-footballstreaming.co.uk">live-footballstreaming.co.uk</a></li>
 <li><a href="https://livefootballontvtoday.co.uk">livefootballontvtoday.co.uk</a></li>
+<li><a href="https://premierleaguepredictions.co.uk">premierleaguepredictions.co.uk</a></li>
 </ul>
 
 </td>
