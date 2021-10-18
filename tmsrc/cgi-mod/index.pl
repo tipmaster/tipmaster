@@ -888,7 +888,7 @@ print '
 <b>Deutsch</b>
 <li><a href="https://www.fussball-liveticker.eu">fussball-liveticker.eu</a></li>
 <li><a href="https://fussballlivestreams.de">fussballlivestreams.de</a></li>
-<li><a href="https://fussballheuteimtv.de">fussballheuteimtv.de</a></li>
+<li><a href="https://livefussballtv.de">livefussballtv.de</a></li>
 <li><a href="https://fussballprognose.de">fussballprognose.de</a></li>
 
 </ul><ul>
@@ -907,7 +907,7 @@ print '
 
 </ul><ul>
 <b>Espa&ntilde;ol</b>
-<li><a href="https://partidosfutbolhoy.es">partidosfutbolhoy.es</a></li>
+<li><a href="https://tarjeta-roja.es">tarjeta-roja.es</a></li>
 <li><a href="https://rojadirecta-tv.es/futbol-en-la-tele">rojadirecta-tv.es</a></li>
 <li><a href="https://elitegol-tv.es">elitegol-tv.es</a></li>
 <li><a href="https://pronosticosquiniela.es">pronosticosquiniela.es</a></li>
@@ -924,7 +924,7 @@ print '
 <ul>
 <b>Italiano</b>
 <li><a href="https://rojadirecta-tv.it">rojadirecta-tv.it</a></li>
-<li><a href="https://sitistreamingcalcio.it">sitistreamingcalcio.it</a></li>
+<li><a href="https://vipbopxleague.it">vipboxleague.it</a></li>
 <li><a href="https://calcio-tv.it">calcio-tv.it</a></li>
 <li><a href="https://pronostico-calcio.it">pronostico-calcio.it</a></li>
 </ul>
