@@ -909,7 +909,7 @@ print '
 <b>Espa&ntilde;ol</b>
 <li><a href="https://tarjeta-roja.es">tarjeta-roja.es</a></li>
 <li><a href="https://rojadirecta-tv.es/futbol-en-la-tele">rojadirecta-tv.es</a></li>
-<li><a href="https://elitegol-tv.es">elitegol-tv.es</a></li>
+<li><a href="https://pirlotv-online.es">pirlotv-online.es</a></li>
 <li><a href="https://pronosticosquiniela.es">pronosticosquiniela.es</a></li>
 </ul>
 
