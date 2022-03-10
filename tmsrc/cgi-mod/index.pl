@@ -888,7 +888,7 @@ print '
 <b>Deutsch</b>
 <li><a href="https://www.fussball-liveticker.eu">fussball-liveticker.eu</a></li>
 <li><a href="https://fussballlivestreams.de">fussballlivestreams.de</a></li>
-<li><a href="https://livefussballtv.de">livefussballtv.de</a></li>
+<li><a href="https://fussballlivestreamtv.de">fussballlivestreamtv.de</a></li>
 <li><a href="https://fussballprognose.de">fussballprognose.de</a></li>
 
 </ul><ul>
@@ -900,7 +900,7 @@ print '
 
 </ul><ul>
 <b>Dutch</b>
-<li><a href="https://voetbal-vandaag.com">voetbal-vandaag.com</a></li>
+<li><a href="https://voetballivestreamvandaag.nl">voetballivestreamvandaag.nl</a></li>
 <li><a href="https://livevoetbalkijkenvandaag.nl">livevoetbalkijkenvandaag.nl</a></li>
 <li><a href="https://voetbal-op-tv.nl">voetbal-op-tv.nl</a></li>
 <li><a href="https://toto-voorspellingen.nl">toto-voorspellingen.nl</a></li>
@@ -934,7 +934,7 @@ print '
 <li><a href="https://fotboll-liveresultat.se">fotboll-liveresultat.se</a></li>
 <li><a href="https://streama-fotboll.se">streama-fotboll.se</a></li>
 <li><a href="https://fotboll-tv.se">fotboll-tv.se</a></li>
-<li><a href="https://europatipsettips.se">europatipsettips.se</a></li>
+<li><a href="https://hesgoals.se">hesgoals.se</a></li>
 </ul>
 
 <ul>
