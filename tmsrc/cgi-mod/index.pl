@@ -371,16 +371,6 @@ print '
 }
 </style>
 
-<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-<script>
-  window.googletag = window.googletag || {cmd: []};
-  googletag.cmd.push(function() {
-    googletag.defineSlot(\'/22495599872/TM-300x600\', [300, 600], \'div-gpt-ad-1627829299075-0\').addService(googletag.pubads());
-    googletag.pubads().enableSingleRequest();
-    googletag.pubads().collapseEmptyDivs();
-    googletag.enableServices();
-  });
-</script>
 
 </head>
 ';
@@ -856,20 +846,7 @@ print '
 
 
 
-<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-<script>
-  window.googletag = window.googletag || {cmd: []};
-  googletag.cmd.push(function() {
-     googletag.defineSlot(\'/22495599872/DE-TM-300x600-HP\', [300, 600], \'div-gpt-ad-1631234661433-0\').addService(googletag.pubads());
-    googletag.pubads().enableSingleRequest();
-    googletag.enableServices();
-  });
-</script>
-<!-- /22495599872/DE-TM-300x600-HP -->
-<div id=\'div-gpt-ad-1631234661433-0\' style=\'min-width: 300px; min-height: 600px;\'>
-  <script>
-    googletag.cmd.push(function() { googletag.display(\'div-gpt-ad-1631234661433-0\'); });
-  </script>
+
 </div>
 
 

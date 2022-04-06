@@ -38,21 +38,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 my $cachebuster = int(100000*rand());
 
 print "
-<script async src=\"https://securepubads.g.doubleclick.net/tag/js/gpt.js\"></script>
-<script>
-  window.googletag = window.googletag || {cmd: []};
-  googletag.cmd.push(function() {
-    googletag.defineSlot('/22495599872/DE-TM-970x250-SUBPAGE', [970, 250], 'div-gpt-ad-1631234964627-0').addService(googletag.pubads());
-    googletag.pubads().enableSingleRequest();
-    googletag.enableServices();
-  });
-</script>
-<!-- /22495599872/DE-TM-970x250-SUBPAGE -->
-<div id='div-gpt-ad-1631234964627-0' style='min-width: 970px; min-height: 250px;'>
-  <script>
-    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1631234964627-0'); });
-  </script>
-</div>
+#<script async src=\"https://securepubads.g.doubleclick.net/tag/js/gpt.js\"></script>
+#<script>
+#  window.googletag = window.googletag || {cmd: []};
+#  googletag.cmd.push(function() {
+#    googletag.defineSlot('/22495599872/DE-TM-970x250-SUBPAGE', [970, 250], 'div-gpt-ad-1631234964627-0').addService(googletag.pubads());
+#    googletag.pubads().enableSingleRequest();
+#    googletag.enableServices();
+#  });
+#</script>
+#<!-- /22495599872/DE-TM-970x250-SUBPAGE -->
+#<div id='div-gpt-ad-1631234964627-0' style='min-width: 970px; min-height: 250px;'>
+#  <script>
+#    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1631234964627-0'); });
+#  </script>
+#</div>
 ";
 
 
