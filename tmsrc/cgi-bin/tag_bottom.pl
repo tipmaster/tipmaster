@@ -26,22 +26,23 @@ my $leut    = $trainer;
 
 use CGI;
 
-#print "
-#<script async src=\"https://securepubads.g.doubleclick.net/tag/js/gpt.js\"></script>
-#<script>
-#  window.googletag = window.googletag || {cmd: []};
-#  googletag.cmd.push(function() {
-#  googletag.defineSlot('/22495599872/DE-TM-970x250-SUBPAGE-BOTTOM', [970, 250], 'div-gpt-ad-1631235278221-0').addService(googletag.pubads());
-#    googletag.pubads().enableSingleRequest();
-#    googletag.enableServices();
-#  });
-#</script>
-#<!-- /22495599872/DE-TM-970x250-SUBPAGE-BOTTOM -->
-#<div id='div-gpt-ad-1631235278221-0' style='min-width: 970px; min-height: 250px;'>
-#  <script>
-#    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1631235278221-0'); });
-#  </script>
-#</div>
-#";
+print "
+<script async src=\"https://securepubads.g.doubleclick.net/tag/js/gpt.js\"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+  googletag.defineSlot('/22495599872/DE-TM-970x250-SUBPAGE-BOTTOM', [970, 250], 'div-gpt-ad-1631235278221-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().set('page_url', 'https://elitegol-tv.es/');
+    googletag.enableServices();
+  });
+</script>
+<!-- /22495599872/DE-TM-970x250-SUBPAGE-BOTTOM -->
+<div id='div-gpt-ad-1631235278221-0' style='min-width: 970px; min-height: 250px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1631235278221-0'); });
+  </script>
+</div>
+";
 
 1;
