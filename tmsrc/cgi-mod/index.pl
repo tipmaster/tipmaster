@@ -928,6 +928,7 @@ print '
 <li><a href="https://premierleaguepredictions.co.uk">premierleaguepredictions.co.uk</a></li>
 <li><a href="https://hesgoal-uk.co.uk">hesgoal-uk.co.uk</a></li>
 </ul>
+<br/><br/>
 
 </td>
 </tr>
@@ -988,7 +989,7 @@ print '
 
 <p style="font-face:tahoma,verdana;font-size:10px;color:darkgrey;padding-top:-10px;text-align:center;width:800px;">
 
-<a href="https://socagol.tv/de/bundesliga-live-stream">SocaGol</a> | <a style="color:darkgrey" href="https://livevoetbalkijkenvandaag.nl/champions-league-live-stream">Champions League</a> | <a style="color:darkgrey" href="https://www.fussball-liveticker.eu/fussball-ergebnisse-gestern">Fussball Ergebnisse Gestern</a></p>
+<a href="https://www.ispo.com/sportwetten/">www.ispo.com/sportwetten/</a> | <a style="color:darkgrey" href="https://livevoetbalkijkenvandaag.nl/champions-league-live-stream">Champions League</a> | <a style="color:darkgrey" href="https://www.fussball-liveticker.eu/fussball-ergebnisse-gestern">Fussball Ergebnisse Gestern</a></p>
 
 
 ' . $page_footer . '
