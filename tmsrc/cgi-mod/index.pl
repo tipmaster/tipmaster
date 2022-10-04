@@ -842,12 +842,6 @@ print '
 
 	<td bgcolor=white>
 
-<div style="width:300px">
-
-
-
-
-</div>
 
 
 
@@ -857,7 +851,7 @@ print '
 </td>
 <td bgcolor=black width=1>
 </td>
-<td style="vertical-align:top">
+<td style="vertical-align:top; font-size:8px;">
 <br/>
 &nbsp; &nbsp; Internationaler Fußball
 <br/><br/>
