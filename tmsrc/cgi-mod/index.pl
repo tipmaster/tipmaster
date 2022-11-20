@@ -861,7 +861,7 @@ print '
 <li><a href="https://fussballlivestreams.de">fussballlivestreams.de</a></li>
 <li><a href="https://fussballlivestream-legal.de">fussballlivestream-legal.de</a></li>
 <li><a href="https://fussballprognose.de">fussballprognose.de</a></li>
-<li><a href="https://hesgoal-alternative.de">hesgoal-alternative.de</a></li>
+<li><a href="https://hesgoalalternative.de">hesgoalalternative.de</a></li>
 
 </ul><ul>
 <b>English</b>
@@ -869,7 +869,7 @@ print '
 <li><a href="https://livesoccertvfree.com">livesoccertvfree.com</a></li>
 <li><a href="https://soccer-tv.live">soccer-tv.live</a></li>
 <li><a href="https://soccerpredictions-today.com">soccerpredictions-today.com</a></li>
-<li><a href="https://hesgoal.us">hesgoal.us</a></li>
+<li><a href="https://hesgoal.li">hesgoal.li</a></li>
 </ul><ul>
 <b>Dutch</b>
 <li><a href="https://voetballivestreamvandaag.nl">voetballivestreamvandaag.nl</a></li>
@@ -893,7 +893,7 @@ print '
 <li><a href="https://footstreaming24.fr">footstreaming24.fr</a></li>
 <li><a href="https://programmetvfoot24.fr">programmetvfoot24.fr</a></li>
 <li><a href="https://lotofootpronostic.fr">lotofootpronostic.fr</a></li>
-<li><a href="https://hesgoal-foot.fr">hesgaol-foot.fr</a></li>
+<li><a href="https://hesgoals.fr">hesgaols.fr</a></li>
 </ul>
 
 <ul>
@@ -902,7 +902,7 @@ print '
 <li><a href="https://vipbopxleague.it">vipboxleague.it</a></li>
 <li><a href="https://calcio-tv.it">calcio-tv.it</a></li>
 <li><a href="https://pronostico-calcio.it">pronostico-calcio.it</a></li>
-<li><a href="https://hesgoals.it">hesgoals.it</a></li>
+<li><a href="https://hesgol.it">hesgol.it</a></li>
 </ul>
 
 <ul>
@@ -911,7 +911,7 @@ print '
 <li><a href="https://streama-fotboll.se">streama-fotboll.se</a></li>
 <li><a href="https://fotboll-tv.se">fotboll-tv.se</a></li>
 <li><a href="https://europatipsettips.se">europatipsettips.se</a></li>
-<li><a href="https://hesgoals.se">hesgoals.se</a></li>
+<li><a href="https://hesgoal.com.se">hesgoal.com.se</a></li>
 </ul>
 
 <ul>
@@ -983,7 +983,7 @@ print '
 
 <p style="font-face:tahoma,verdana;font-size:10px;color:darkgrey;padding-top:-10px;text-align:center;width:800px;">
 
-<a href="https://www.ispo.com/sportwetten/">www.ispo.com/sportwetten/</a> | <a style="color:darkgrey" href="https://livevoetbalkijkenvandaag.nl/champions-league-live-stream">Champions League</a> | <a style="color:darkgrey" href="https://www.fussball-liveticker.eu/fussball-ergebnisse-gestern">Fussball Ergebnisse Gestern</a></p>
+<a href="https://www.overlyzer.com/de/wm-2022/">Overlyzer WM Tipps</a> | <a href="https://www.ispo.com/sportwetten/">www.ispo.com/sportwetten/</a> | <a style="color:darkgrey" href="https://livevoetbalkijkenvandaag.nl/champions-league-live-stream">Champions League</a> | <a style="color:darkgrey" href="https://www.fussball-liveticker.eu/fussball-ergebnisse-gestern">Fussball Ergebnisse Gestern</a></p>
 
 
 ' . $page_footer . '

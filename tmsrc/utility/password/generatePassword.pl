@@ -3,10 +3,11 @@ use Crypt::PBKDF2;
 
 my $user = $ARGV[0] .' '.$ARGV[1];
 #my $user = 'Jens Wörner';
-my $user = "Karl-Heinz Brinkert";
+#my $user = "Felix Meyer";
 my $pass = "Donnerstag";
 
 print generatePassword($pass,$user);
+print "\n\n";
 
 sub generatePassword {
 	my $clearPassword = shift;
