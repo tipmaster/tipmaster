@@ -150,8 +150,9 @@ sub daten_lesen {
 	$fg          = "/tmdata/btm/";
 	$datei_hiero = $fg . $bx . $by . $bv;
 
+
 	
-	open( DO, $datei_hiero );
+	open( DO,'<:encoding(UTF-8)', $datei_hiero );
 	print $datei_hiero;
 	while (<DO>) {
 		@ver = <DO>;
