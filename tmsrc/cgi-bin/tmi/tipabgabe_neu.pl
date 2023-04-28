@@ -452,6 +452,7 @@ if ( $hh > 34 ) { $hh = 34 }
 
 print <<END_HEAD;
 <html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/tipabgabe_screen.css" />
 	<link rel="stylesheet" href="/js/smoothness/jquery-ui-1.8.14.custom.css" type="text/css" media="all" />
 	

@@ -83,7 +83,7 @@ $xa = ( $by * 4 ) - 3;
 $xb = $xa + 3;
 if ( $xb > 34 ) { $xb = 34 }
 print
-"<html><title>Tipformular Ergebnisse</title><p align=left><body bgcolor=white text=black link=darkred link=darkred>\n";
+"<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><title>Tipformular Ergebnisse</title><p align=left><body bgcolor=white text=black link=darkred link=darkred>\n";
 require "/tmapp/tmsrc/cgi-bin/tag.pl";
 require "/tmapp/tmsrc/cgi-bin/tag_small.pl";
 

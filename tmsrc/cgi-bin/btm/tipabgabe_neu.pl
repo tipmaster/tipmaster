@@ -155,7 +155,6 @@ use open qw(:std :encoding(utf-8));
 
 	
 	open( DO,'<:encoding(UTF-8)', $datei_hiero );
-	print $datei_hiero;
 	while (<DO>) {
 		@ver = <DO>;
 	}
