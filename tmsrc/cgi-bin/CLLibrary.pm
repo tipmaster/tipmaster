@@ -60,8 +60,6 @@ our %navigation = ( "Europacup-Regelwerk","/ecrules.html",
 
 our	%ecparms = ();
 
-  
-
 
 sub new {
         my ($type) = $_[0];
@@ -151,16 +149,16 @@ $debug = 0;
 sub getTimeLimit {
 	my $self = shift;
 	
+	print "<!-- inGetTimeLimit //-->\n";
 	my $derzeitige_runde = $self->getCurrentCLRound();
 
-#$timeLimit = 1004112000+(($rundenfolge{$derzeitige_runde}+432)*7*86400+3720); #primed for 04/1
         my @nsparm = split(/\//,$ecparms{"neueSaison"});
         my $lfdsais = $nsparm[1];
         # adjustment for saisons. 2013 had 5 saisons, 2014 had 6 seasons, 2015 had 5 seasons.
         # on every year switch, increase lfdsais by the number of saisons
         # could be automated one day
-        $lfdsais +=44;
-        my $weekctr = ($lfdsais*9)+425+46+2+55+54+5+2+2+5;   
+        $lfdsais +=56;
+        my $weekctr = ($lfdsais*9)+425+46+2+55+54+5+2+2+6+1;   
 	#2017-12-20: Added 2 weeks XMas break
 	#2018-12-27: Added 1 week of XMas break
         #####
@@ -181,11 +179,18 @@ sub getTimeLimit {
 	if ($nowtime > 1603576800 && $nowtime < 1616886000) { #Oct 25 - Mar 28 2021
 	   $winterzeit = 1;
 	}
+        if ($nowtime > 1635458400 && $nowtime < 1648335600) { #Oct 29 - Mar 27 2022
+           $winterzeit = 1;
+        }
+        if ($nowtime > 1667080800 && $nowtime < 1679785200) { #Oct 30 - Mar 26 2023
+           $winterzeit = 1;
+        }
 
 	my $inthisround = $rundenfolge{$derzeitige_runde}+$weekctr;
         my $timeLimit = 1004112000+($inthisround*7*86400+120+$winterzeit*3600); #primed for 04/1
 
-	print "<!-- DerzRunde: $derzeitige_runde  LFDSais: $lfdsais, weekctr: $weekctr, inthisround: $inthisround TimeLimit $timeLimit  now is $nowtime//-->\n";
+       print "<!-- DerzRunde: $derzeitige_runde  LFDSais: $lfdsais, weekctr: $weekctr, inthisround: $inthisround TimeLimit $timeLimit  now is $nowtime Winter $winterzeit//-->\n";
+
 
 	return $timeLimit;
 }

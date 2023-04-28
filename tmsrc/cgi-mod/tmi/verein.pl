@@ -211,6 +211,13 @@ $url_nr = 1;
 @vs_ver = ( undef, "Manchester United" );
 @vs_url = ( undef, "http://www.manchesterunited.de/mufc/" );
 
+## debug bpf 2022-02-27
+my $origve = $verein;
+my $origli = $liga;
+my $origident = $ident;
+my $hitmsg = "none so far";
+
+
 #require "/tmapp/tmsrc/cgi-bin/tmi_ligen.pl" ;
 #require "/tmapp/tmsrc/cgi-bin/tmi/saison.pl" ;
 
@@ -226,6 +233,8 @@ if ( ( $ident ne 'unknown' ) or ( $ident ne "" ) ) {
 	while (<D2>) {
 		$lo++;
 		if ( $_ =~ /$ident/ ) {
+			#bpf debug 2022-02-27
+			$hitmsg .= " Found ident $ident for file $datei, main_nr is $main_nr  ss_saison is $ss_saison !";
 			$li = $lo;
 			@vereine = split( /&/, $_ );
 		}
@@ -243,6 +252,8 @@ if ( ( $ident ne 'unknown' ) or ( $ident ne "" ) ) {
 		$datb[$x] = $vereine[$y];
 
 		if ( $data[$x] eq $ident ) {
+			#debug bpf 2022-02-27
+			$hitmsg .= "\n x was $x, li was $li and ident was $ident when it hit datei is $datei ss_saison $ss_saison main_nr $main_nr !";
 			$verein = $x;
 			$liga   = $li;
 		}
@@ -251,6 +262,9 @@ if ( ( $ident ne 'unknown' ) or ( $ident ne "" ) ) {
 
 	}
 }
+
+#bpf debug 2022-02-27
+my $ve2_debug = $verein; my $li2_debug = $liga;
 
 my %gl_vereinsid;
 my @gl_vereinsname;
@@ -437,6 +451,10 @@ if ( $seit_saison < 12 ) { $seit_saison = 12 }
 
 print
 "<html><title>Vereinsseite $data[$verein]  /  $liga_namen[$liga]</title><p align=left><body bgcolor=white text=black vlink=darkred link=darkred>\n";
+
+
+#debug bpf 2023-02-27
+print "<div style=\"visibility:hidden\"> Debug: verein is $verein, liga is $liga, ident: $ident origve: $origve origli $origli origident: |$origident| v2debug $ve2_debug li2debug $li2_debug hitmsg: $hitmsg</div>\n";
 
 print '
 <style type="text/css">

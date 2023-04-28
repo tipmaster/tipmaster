@@ -189,6 +189,11 @@ $verein    = $query->param('ve');
 $ident     = $query->param('ident');
 $ss_saison = $query->param('saison');
 
+## debug bpf 2022-02-27
+my $origve = $verein;
+my $origident = $ident;
+
+
 require "/tmapp/tmsrc/cgi-bin/btm_ligen.pl";
 require "/tmapp/tmsrc/cgi-bin/btm/saison.pl";
 $saison_aktuell = $main_nr - 1;
@@ -235,6 +240,10 @@ if ( ( $ident ne 'unknown' ) or ( $ident ne "" ) ) {
 
 	}
 }
+
+#bpf debug 2022-02-27
+my $ve2_debug = $verein; my $li2_debug = $liga;
+
 
 my %gl_vereinsid;
 my @gl_vereinsname;
@@ -388,6 +397,10 @@ if ( $datb[$verein] =~ /Bellagh/ ) {
 
 print
 "<html><title>Vereinsseite $data[$verein]  /  $liga_namen[$liga]</title><p align=left><body bgcolor=white text=black vlink=darkred link=darkred>\n";
+
+#debug bpf 2023-02-27
+print "<div style=\"visibility:hidden\"> Debug: verein is $verein, liga is $liga, ident: $ident origve: $origve origident: |$origident| v2debug $ve2_debug li2debug $li2_debug </div>\n";
+
 
 print '
 <style type="text/css">

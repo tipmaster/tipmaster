@@ -44,7 +44,7 @@ if (!$modus || $modus eq "mainpage") {
   $team = $cllib->getTeamForTrainer("$name");
  
   print "<HTML><HEAD><TITLE>Tipmaster Europacup Hauptseite</TITLE></HEAD>\n";
-  print "<!-- TimeLimit is : $timeLimit, Runde ist $currentRound / $runde//-->\n";
+  print "<!-- TimeLimit is : ",$cllib->getTimeLimit(),", Runde ist $currentRound / $runde//-->\n";
   print "<BODY>\n";
 
   if ($tagplace) {

@@ -130,10 +130,10 @@ $tim = time;
 my $timeLeft = $cllib->getTimeLimit() - $tim;
 my $daysLeft = int($timeLeft/(60*1440));
 my $hoursLeft = ($timeLeft-$daysLeft*60*1440)/3600;
-print "<!-- current Time is : $tim, TimeLeft: $timeLeft, TimeLimit is : $timeLimit. Diff is ",($timeLimit - $tim)/60,"  ";
+print "<div style=\"display: none;\"> current Time is : $tim, TimeLeft: $timeLeft, TimeLimit is : $timeLimit. Diff is ",($timeLimit - $tim)/60,"  ";
 printf "%2d",$daysLeft;print "d ";
 printf "%.1f",$hoursLeft;print "h";
-print " //-->\n";
+print " </div>\n";
 # Ab hier abhaengig von der eingetragenen Runde und Wettbewerb
 my $fileprefix = "UEFA";
 if ($uorc eq "C") {
