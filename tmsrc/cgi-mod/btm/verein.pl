@@ -399,7 +399,7 @@ print
 "<html><title>Vereinsseite $data[$verein]  /  $liga_namen[$liga]</title><p align=left><body bgcolor=white text=black vlink=darkred link=darkred>\n";
 
 #debug bpf 2023-02-27
-print "<div style=\"visibility:hidden\"> Debug: verein is $verein, liga is $liga, ident: $ident origve: $origve origident: |$origident| v2debug $ve2_debug li2debug $li2_debug </div>\n";
+#print "<div style=\"visibility:hidden\"> Debug: verein is $verein, liga is $liga, ident: $ident origve: $origve origident: |$origident| v2debug $ve2_debug li2debug $li2_debug </div>\n";
 
 
 print '

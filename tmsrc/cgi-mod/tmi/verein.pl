@@ -454,7 +454,7 @@ print
 
 
 #debug bpf 2023-02-27
-print "<div style=\"visibility:hidden\"> Debug: verein is $verein, liga is $liga, ident: $ident origve: $origve origli $origli origident: |$origident| v2debug $ve2_debug li2debug $li2_debug hitmsg: $hitmsg</div>\n";
+#print "<div style=\"visibility:hidden\"> Debug: verein is $verein, liga is $liga, ident: $ident origve: $origve origli $origli origident: |$origident| v2debug $ve2_debug li2debug $li2_debug hitmsg: $hitmsg</div>\n";
 
 print '
 <style type="text/css">
