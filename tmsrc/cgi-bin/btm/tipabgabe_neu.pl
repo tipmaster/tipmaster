@@ -152,6 +152,7 @@ sub daten_lesen {
 
 	
 	open( DO, $datei_hiero );
+	print $datei_hiero;
 	while (<DO>) {
 		@ver = <DO>;
 	
