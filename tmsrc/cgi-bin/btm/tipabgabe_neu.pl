@@ -149,6 +149,8 @@ sub daten_lesen {
 	$bv          = ".txt";
 	$fg          = "/tmdata/btm/";
 	$datei_hiero = $fg . $bx . $by . $bv;
+	binmode(STDOUT, ":unix:utf8");
+use open qw(:std :encoding(utf-8));
 
 
 	
@@ -156,13 +158,13 @@ sub daten_lesen {
 	print $datei_hiero;
 	while (<DO>) {
 		@ver = <DO>;
-	
 	}
 	close(DO);
 	$y = 0;
 	for ( $x = 0 ; $x < 25 ; $x++ ) {
 		$y++;
 		chomp $ver[$y];
+		
 		@ega = split( /&/, $ver[$y] );
 		$flagge[$y]   = $ega[0];
 		$paarung[$y]  = $ega[1];
