@@ -41,89 +41,80 @@ my @main_saison  = $mlib->btm_saison_namen();
 my @main_kuerzel = $mlib->btm_saison_kuerzel();
 
 my %flag_hash = (
-	"Albanien"      => "AL",
-	"Andorra"       => "AD",
-	"Armenien"      => "AM",
-	"Aserbaidschan" => "AZ",
-	"Belgien"       => "BE",
-	"Bosnien-Herz." => "BA",
-	"Bulgarien"     => "BG",
-	"Daenemark"     => "DK",
-	"England"       => "UK",
-	"Estland"       => "EE",
-	"Faeroer"       => "FO",
-	"Finnland"      => "FI",
-	"Frankreich"    => "FR",
-	"Georgien"      => "GE",
-	"Griechenland"  => "GR",
-	"Irland"        => "IE",
-	"Island"        => "IS",
-	"Israel"        => "IL",
-	"Italien"       => "IT",
-	"Jugoslawien"   => "JUG",
-	"Kroatien"      => "HR",
-	"Lettland"      => "LV",
-	"Litauen"       => "LT",
-	"Luxemburg"     => "LI",
-	"Malta"         => "MT",
-	"Mazedonien"    => "MK",
-	"Moldawien"     => "MD",
-	"Niederlande"   => "NL",
-	"Nord Irland"   => "IE",
-	"Norwegen"      => "NO",
-	"Oesterreich"   => "AT",
-	"Polen"         => "PL",
-	"Portugal"      => "PT",
-	"Rumaenien"     => "RO",
-	"Russland"      => "RU",
-	"San Marino"    => "SM",
-	"Schottland"    => "UK",
-	"Schweden"      => "SE",
-	"Schweiz"       => "CH",
-	"Slowakei"      => "SK",
-	"Slowenien"     => "SI",
-	"Spanien"       => "ES",
-	"Tschechien"    => "CZ",
-	"Tuerkei"       => "TR",
-	"Ukraine"       => "UA",
-	"Ungarn"        => "HU",
-	"Wales"         => "UK",
-	"Weissrussland" => "BY",
-	"Zypern"        => "CY"
+    "Albanien"      => "AL",
+    "Andorra"       => "AD",
+    "Armenien"      => "AM",
+    "Aserbaidschan" => "AZ",
+    "Belgien"       => "BE",
+    "Bosnien-Herz." => "BA",
+    "Bulgarien"     => "BG",
+    "Daenemark"     => "DK",
+    "England"       => "UK",
+    "Estland"       => "EE",
+    "Faeroer"       => "FO",
+    "Finnland"      => "FI",
+    "Frankreich"    => "FR",
+    "Georgien"      => "GE",
+    "Griechenland"  => "GR",
+    "Irland"        => "IE",
+    "Island"        => "IS",
+    "Israel"        => "IL",
+    "Italien"       => "IT",
+    "Jugoslawien"   => "JUG",
+    "Kroatien"      => "HR",
+    "Lettland"      => "LV",
+    "Litauen"       => "LT",
+    "Luxemburg"     => "LI",
+    "Malta"         => "MT",
+    "Mazedonien"    => "MK",
+    "Moldawien"     => "MD",
+    "Niederlande"   => "NL",
+    "Nord Irland"   => "IE",
+    "Norwegen"      => "NO",
+    "Oesterreich"   => "AT",
+    "Polen"         => "PL",
+    "Portugal"      => "PT",
+    "Rumaenien"     => "RO",
+    "Russland"      => "RU",
+    "San Marino"    => "SM",
+    "Schottland"    => "UK",
+    "Schweden"      => "SE",
+    "Schweiz"       => "CH",
+    "Slowakei"      => "SK",
+    "Slowenien"     => "SI",
+    "Spanien"       => "ES",
+    "Tschechien"    => "CZ",
+    "Tuerkei"       => "TR",
+    "Ukraine"       => "UA",
+    "Ungarn"        => "HU",
+    "Wales"         => "UK",
+    "Weissrussland" => "BY",
+    "Zypern"        => "CY"
 );
 
-my @cup_tmi_name = ( "---", "1.HR", "---",  "AF",   "VF", "---", "HF", "---", "FI" );
-my @cup_dfb_name = ( "---", "---",  "1.HR", "2.HR", "AF", "VF",  "HF", "",    "FI" );
-my @cup_btm_name = ( "",    "QR",   "1.HR", "2.HR", "AF", "VF",  "HF", "",    "FI" );
+my @cup_tmi_name  = ( "---",  "1.HR", "---",  "AF",     "VF", "---", "HF", "---", "FI" );
+my @cup_dfb_name  = ( "---",  "---",  "1.HR", "2.HR",   "AF", "VF",  "HF", "",    "FI" );
+my @cup_btm_name  = ( "",     "QR",   "1.HR", "2.HR",   "AF", "VF",  "HF", "",    "FI" );
 my @cup_cl_name   = ( "1.QR", "2.QR", "3.QR", "GR 1-3", "GR 4-6",, "AF", "VF", "HF", "FI" );
 my @cup_uefa_name = ( "1.QR", "2.QR", "1.HR", "2.HR",   "3.HR",,   "AF", "VF", "HF", "FI" );
 
 my @displaydata1 = ();
 my @displaydata2 = ();
 
-my @events1 = (
-	"",
-	"Start der Auswertung",
-	"Job-Boerse Runde",
-	"Vereinswechsel",
-	"Job-Boerse Runde",
-	"Tippabgabeschluss",
-	"Start der Auswertung"
-);
-my @events2 =
-  ( "", "Sonntag 23:45", "Dienstag 12:00", "Mittwoch 13:00", "Donnerstag 16:00", "Freitag 18:00", "Sonntag 23:45" );
+my @events1 = ( "", "Start der Auswertung", "Job-Boerse Runde", "Vereinswechsel", "Job-Boerse Runde", "Tippabgabeschluss", "Start der Auswertung" );
+my @events2 = ( "", "Sonntag 23:45",        "Dienstag 12:00",   "Mittwoch 13:00", "Donnerstag 16:00", "Freitag 18:00",     "Sonntag 23:45" );
 
 @displaydata1 = ();
 
 my $i = 0;
 open( A, "</tmdata/frontdata/anmeldung_s.txt" );
 while (<A>) {
-	my @data = split( /&/, $_ );
-	$displaydata1[$i][0] = $data[1];
-	$displaydata1[$i][1] = $data[2];
-	$displaydata1[$i][2] = "<img src=/img/flags/" . lc( $data[5] ) . ".gif  height=12 width=18>";
-	$displaydata1[$i][3] = $data[4];
-	$i++;
+    my @data = split( /&/, $_ );
+    $displaydata1[$i][0] = $data[1];
+    $displaydata1[$i][1] = $data[2];
+    $displaydata1[$i][2] = "<img src=/img/flags/" . lc( $data[5] ) . ".gif  height=12 width=18>";
+    $displaydata1[$i][3] = $data[4];
+    $i++;
 }
 close(A);
 
@@ -140,24 +131,23 @@ my $system       = "btm";
 my $i            = 0;
 open( A, "</tmdata/frontdata/best_$system.txt" );
 while (<A>) {
-	if ( $i < 5 ) {
-		my @data = split( /#/, $_ );
-		$displaydata2[$i][0] = ( $i + 1 ) . '.';
-		if ( $system eq "btm" ) {
-			$displaydata2[$i][1] = "<img src=/img/flags/de.gif  height=12 width=18>";
-		}
-		else {
-			my $flag = &getFlagToLiga("$liga_namen[$data[1]]");
-			$displaydata2[$i][1] = "<img src=/img/flags/" . lc($flag) . ".gif height=12 width=18>";
-		}
+    if ( $i < 5 ) {
+        my @data = split( /#/, $_ );
+        $displaydata2[$i][0] = ( $i + 1 ) . '.';
+        if ( $system eq "btm" ) {
+            $displaydata2[$i][1] = "<img src=/img/flags/de.gif  height=12 width=18>";
+        }
+        else {
+            my $flag = &getFlagToLiga("$liga_namen[$data[1]]");
+            $displaydata2[$i][1] = "<img src=/img/flags/" . lc($flag) . ".gif height=12 width=18>";
+        }
 
-		my $t = $data[0];
-		$t =~ s/ /%20/g;
-		$displaydata2[$i][2] =
-		  "<a href=/cgi-mod/$system/trainer.pl?ident=$t style=\"text-decoration: none\">$data[0]</a> &nbsp; ";
-		$displaydata2[$i][3] = "&nbsp;" . $data[2] . " Tore";
-		if ( $data[0] ne "" ) { $i++; }
-	}
+        my $t = $data[0];
+        $t =~ s/ /%20/g;
+        $displaydata2[$i][2] = "<a href=/cgi-mod/$system/trainer.pl?ident=$t style=\"text-decoration: none\">$data[0]</a> &nbsp; ";
+        $displaydata2[$i][3] = "&nbsp;" . $data[2] . " Tore";
+        if ( $data[0] ne "" ) { $i++; }
+    }
 }
 close(A);
 
@@ -167,24 +157,23 @@ if ( $$ % 2 == 0 ) { $system = "tmi" }
 my $i = 0;
 open( A, "</tmdata/frontdata/best_$system.txt" );
 while (<A>) {
-	if ( $i < 5 ) {
-		my @data = split( /#/, $_ );
-		$displaydata3[$i][0] = ( $i + 1 ) . '.';
-		if ( $system eq "btm" ) {
-			$displaydata3[$i][1] = "<img src=/img/flags/de.gif  height=12 width=18>";
-		}
-		else {
-			my $flag = &getFlagToLiga("$liga_namen[$data[1]]");
-			$displaydata3[$i][1] = "<img src=/img/flags/" . lc($flag) . ".gif height=12 width=18>";
-		}
+    if ( $i < 5 ) {
+        my @data = split( /#/, $_ );
+        $displaydata3[$i][0] = ( $i + 1 ) . '.';
+        if ( $system eq "btm" ) {
+            $displaydata3[$i][1] = "<img src=/img/flags/de.gif  height=12 width=18>";
+        }
+        else {
+            my $flag = &getFlagToLiga("$liga_namen[$data[1]]");
+            $displaydata3[$i][1] = "<img src=/img/flags/" . lc($flag) . ".gif height=12 width=18>";
+        }
 
-		my $t = $data[0];
-		$t =~ s/ /%20/g;
-		$displaydata3[$i][2] =
-		  "<a href=/cgi-mod/$system/trainer.pl?ident=$t style=\"text-decoration: none\">$data[0]</a> &nbsp; ";
-		$displaydata3[$i][3] = "&nbsp;" . $data[2] . " Tore";
-		if ( $data[0] ne "" ) { $i++; }
-	}
+        my $t = $data[0];
+        $t =~ s/ /%20/g;
+        $displaydata3[$i][2] = "<a href=/cgi-mod/$system/trainer.pl?ident=$t style=\"text-decoration: none\">$data[0]</a> &nbsp; ";
+        $displaydata3[$i][3] = "&nbsp;" . $data[2] . " Tore";
+        if ( $data[0] ne "" ) { $i++; }
+    }
 }
 close(A);
 
@@ -192,36 +181,23 @@ my $LABEL_AKT2 = &getTableHtml( "Die besten BTM Trainer", \@displaydata2 );
 
 my $LABEL_AKT3 = &getTableHtml( "Die besten TMI Trainer", \@displaydata3 );
 
-my @linksoben = (
-	"Regelbuch",          "https://github.com/tipmaster/tipmaster/wiki/Regelbuch",
-	"FAQ",                "https://github.com/tipmaster/tipmaster/wiki/FAQs",
-	"Passwort vergessen", "/url.shtml",
-	"Anmelden",           "/cgi-bin/btm/anmeldung.pl",
-	"Kontakt",            "mailto:info\@tipmaster.de"
-);
+my @linksoben = ( "Regelbuch", "https://github.com/tipmaster/tipmaster/wiki/Regelbuch", "FAQ", "https://github.com/tipmaster/tipmaster/wiki/FAQs", "Passwort vergessen", "/url.shtml", "Anmelden", "/cgi-bin/btm/anmeldung.pl", "Kontakt", "mailto:info\@tipmaster.de" );
 
-my @linksunten = (
-	"Fußball Heute Ergebnisse",        "https://www.fussball-liveticker.eu/fussball-ergebnisse-heute",
-	"TipMaster Forum",      "http://community.tipmaster.de",
-	"Werben auf Tipmaster", "/marketing/index.shtml",
-	"Impressum",            "/Impressum.shtml"
-);
+my @linksunten = ( "Fußball Heute Ergebnisse", "https://www.fussball-liveticker.eu/fussball-ergebnisse-heute", "TipMaster Forum", "http://community.tipmaster.de", "Werben auf Tipmaster", "/marketing/index.shtml", "Impressum", "/Impressum.shtml" );
 
 my $LABLE_LINKSOBEN;
 
-for ( my $i = 0 ; $i <= $#linksoben ; $i += 2 ) {
-	$LABLE_LINKSOBEN .= "<td bgcolor=white width=1></td>";
-	$LABLE_LINKSOBEN .=
-"<td class=boxlink> &nbsp; <a href=$linksoben[$i+1] style=\"text-decoration: none\">$linksoben[$i]</a> &nbsp; </td>";
+for ( my $i = 0; $i <= $#linksoben; $i += 2 ) {
+    $LABLE_LINKSOBEN .= "<td bgcolor=white width=1></td>";
+    $LABLE_LINKSOBEN .= "<td class=boxlink> &nbsp; <a href=$linksoben[$i+1] style=\"text-decoration: none\">$linksoben[$i]</a> &nbsp; </td>";
 }
 $LABLE_LINKSOBEN .= "<td bgcolor=white width=1></td>";
 
 my $LABLE_LINKSUNTEN;
 
-for ( my $i = 0 ; $i <= $#linksunten ; $i += 2 ) {
-	$LABLE_LINKSUNTEN .=
-"<td class=boxlink> &nbsp; <a href=$linksunten[$i+1] style=\"text-decoration: none\">$linksunten[$i]</a> &nbsp; </td>";
-	$LABLE_LINKSUNTEN .= "<td bgcolor=white width=1></td>";
+for ( my $i = 0; $i <= $#linksunten; $i += 2 ) {
+    $LABLE_LINKSUNTEN .= "<td class=boxlink> &nbsp; <a href=$linksunten[$i+1] style=\"text-decoration: none\">$linksunten[$i]</a> &nbsp; </td>";
+    $LABLE_LINKSUNTEN .= "<td bgcolor=white width=1></td>";
 
 }
 
@@ -265,8 +241,8 @@ my @schedule = ( 0, 24, 59, 84, 111, 137 );
 
 #saisonuebergang
 if ( $we2 == 34 ) {
-	@events1 = ( "", "Start der Auswertung", "Saisonwechsel",  "Tippabgabeschluss", "Start der Auswertung" );
-	@events2 = ( "", "Sonntag 23:45",        "Dienstag abend", "Freitag 18:00",     "Sonntag 23:45" );
+    @events1 = ( "", "Start der Auswertung", "Saisonwechsel",  "Tippabgabeschluss", "Start der Auswertung" );
+    @events2 = ( "", "Sonntag 23:45",        "Dienstag abend", "Freitag 18:00",     "Sonntag 23:45" );
 }
 
 ( my $sec, my $min, my $stunde, my $mday, my $mon, my $jahr, my $wday, my $yday, my $isdst ) = localtime();
@@ -286,7 +262,7 @@ my $LABEL_DATE = "$heute[$wday], $mday.$mon.$jahr<br>$stunde:$min Uhr";
 my $exact = ( $wday * 24 ) + $stunde;
 my $nr    = 0;
 foreach my $t (@schedule) {
-	if ( $exact > $t ) { $nr++; }
+    if ( $exact > $t ) { $nr++; }
 }
 my $nevent = $nr;
 
@@ -305,8 +281,7 @@ close(A);
 my $LABEL_BOX1 = "Spieltag $we-$en<br>$saison_title<br>Tippabgabe $status";
 my $LABEL_BOX2 = "<br>Trainer online: $onl<br>Trainer bisher: $acg";
 my $LABEL_BOX3 = "$events1[$nevent]<br>$events2[$nevent]<br>";
-my $LABEL_BOX4 =
-"DFB-Pokal: $cup_dfb_name[$rrunde-1]<br>Amateur-Pokal: $cup_btm_name[$rrunde-1]<br>TMI Pokal: $cup_tmi_name[$rrunde-1]";
+my $LABEL_BOX4 = "DFB-Pokal: $cup_dfb_name[$rrunde-1]<br>Amateur-Pokal: $cup_btm_name[$rrunde-1]<br>TMI Pokal: $cup_tmi_name[$rrunde-1]";
 my $LABEL_BOX5 = "Champ. League: $cup_cl_name[$rrunde-1]<br>UEFA Cup: $cup_uefa_name[$rrunde-1]<br><br>";
 my $LABEL_BOX6 = "Jetzt <a href=https://fussballheuteimtv.de>Fussball Heute <br>im TV</a> schauen<br><br>";
 
@@ -427,7 +402,7 @@ print '
 						';
 
 if ( $session->isUserAuthenticated() ) {
-	print '
+    print '
 								<table cellspacing="0" cellpadding="0" border="0">				
 								<tr> 
 									
@@ -445,7 +420,7 @@ if ( $session->isUserAuthenticated() ) {
 
 }
 else {
-	print '
+    print '
 						<table cellspacing="0" cellpadding="0" border="0">				
 							
 								<tr> 
@@ -454,8 +429,7 @@ else {
 									<form action=/cgi-mod/btm/login.pl method="post">
 									<td style="padding-left: 100px;" nowrap="nowrap">
 									<input class=top style="background-image: url(/img/trainer.gif);" type=text name="email" size=32 value="'
-	  . $trainer
-	  . '"/> &nbsp; </td>
+        . $trainer . '"/> &nbsp; </td>
 								</tr>
 
 								<tr>
@@ -983,7 +957,9 @@ print '
 
 <p style="font-face:tahoma,verdana;font-size:10px;color:darkgrey;padding-top:-10px;text-align:center;width:800px;">
 
-<a href="https://www.overlyzer.com/de/wettanbieter/">Overlyzer Wettanbieter Vergleich</a> | <a href="https://www.ispo.com/sportwetten/">www.ispo.com/sportwetten/</a> | <a style="color:darkgrey" href="https://livevoetbalkijkenvandaag.nl/champions-league-live-stream">Champions League</a> | <a style="color:darkgrey" href="https://www.fussball-liveticker.eu/fussball-ergebnisse-gestern">Fussball Ergebnisse Gestern</a></p>
+<!-- https://www.overlyzer.com/de/wettanbieter/">Overlyzer Wettanbieter Vergleich | -->
+
+<a href="https://www.ispo.com/sportwetten/">www.ispo.com/sportwetten/</a> | <a style="color:darkgrey" href="https://livevoetbalkijkenvandaag.nl/champions-league-live-stream">Champions League</a> | <a style="color:darkgrey" href="https://www.fussball-liveticker.eu/fussball-ergebnisse-gestern">Fussball Ergebnisse Gestern</a></p>
 
 
 ' . $page_footer . '
@@ -992,44 +968,43 @@ print '
 exit;
 
 sub getTableHtml {
-	my $text;
-	my $name  = shift;
-	my $array = shift;
+    my $text;
+    my $name  = shift;
+    my $array = shift;
 
-	my @array = @{$array};
-	$text = "
+    my @array = @{$array};
+    $text = "
 <table class=infoinner width=190><tr><td class=infoinner><b>";
 
-	$text .= "<img src=/img/3.gif>";
+    $text .= "<img src=/img/3.gif>";
 
-	$text .= " $name</b></td></tr></table><br><table border=0 cellpadding=0 cellspacing=0>";
+    $text .= " $name</b></td></tr></table><br><table border=0 cellpadding=0 cellspacing=0>";
 
-	for ( my $i = 0 ; $i <= $#array ; $i++ ) {
-		$text .= "<tr><td width=3/>";
-		my @tmp = @{ $array[$i] };
+    for ( my $i = 0; $i <= $#array; $i++ ) {
+        $text .= "<tr><td width=3/>";
+        my @tmp = @{ $array[$i] };
 
-		for ( my $j = 0 ; $j <= $#tmp ; $j++ ) {
+        for ( my $j = 0; $j <= $#tmp; $j++ ) {
 
-			next if ( $name eq "Neuste Anmeldungen" && $j == 2 );
-			$text .=
-" <td nowrap=nowrap height=12><span style=\"line-height:16px;\"><font size=1 face=tahoma> $array[$i][$j] &nbsp;</span> </td>";
+            next if ( $name eq "Neuste Anmeldungen" && $j == 2 );
+            $text .= " <td nowrap=nowrap height=12><span style=\"line-height:16px;\"><font size=1 face=tahoma> $array[$i][$j] &nbsp;</span> </td>";
 
-		}
-		$text .= "</tr>";
-	}
-	$text .= "</tr></table></body></html>";
-	return $text;
+        }
+        $text .= "</tr>";
+    }
+    $text .= "</tr></table></body></html>";
+    return $text;
 }
 
 sub getFlagToLiga() {
-	my $liga = shift;
+    my $liga = shift;
 
-	( my $rr, my $joke ) = split( / /, $liga );
-	if ( $rr eq "San" )  { $rr = "San Marino" }
-	if ( $rr eq "Nord" ) { $rr = "Nord Irland" }
+    ( my $rr, my $joke ) = split( / /, $liga );
+    if ( $rr eq "San" )  { $rr = "San Marino" }
+    if ( $rr eq "Nord" ) { $rr = "Nord Irland" }
 
-	my $flag = $flag_hash{$rr};
-	if ( $flag eq "" ) { $flag = "de" }
-	return $flag;
+    my $flag = $flag_hash{$rr};
+    if ( $flag eq "" ) { $flag = "de" }
+    return $flag;
 
 }
