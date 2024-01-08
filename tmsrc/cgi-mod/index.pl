@@ -958,7 +958,7 @@ print '
 <p style="font-face:tahoma,verdana;font-size:10px;color:darkgrey;padding-top:-10px;text-align:center;width:800px;">
 
 <!-- https://www.overlyzer.com/de/wettanbieter/">Overlyzer Wettanbieter Vergleich | -->
-<a href="https://kickwelt.de">kickwelt.de/</a> | <a href="https://www.ispo.com/sportwetten/">www.ispo.com/sportwetten/</a> | <a style="color:darkgrey" href="https://livevoetbalkijkenvandaag.nl/champions-league-live-stream">Champions League</a> | <a style="color:darkgrey" href="https://www.fussball-liveticker.eu/fussball-ergebnisse-gestern">Fussball Ergebnisse Gestern</a></p>
+<a href="https://kickwelt.de">kickwelt.de</a> | <a href="https://www.ispo.com/sportwetten/">www.ispo.com/sportwetten/</a> | <a style="color:darkgrey" href="https://livevoetbalkijkenvandaag.nl/champions-league-live-stream">Champions League</a> | <a style="color:darkgrey" href="https://www.fussball-liveticker.eu/fussball-ergebnisse-gestern">Fussball Ergebnisse Gestern</a></p>
 
 
 ' . $page_footer . '
