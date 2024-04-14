@@ -33,7 +33,6 @@ print "
     googletag.defineSlot('/22495599872/de-tm-300x250-hp', [300, 250], 'div-gpt-ad-1630770174437-0').addService(googletag.pubads());
     googletag.defineSlot('/22495599872/DE-TM-300x600-HP', [300, 600], 'div-gpt-ad-1631234661433-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
-    googletag.pubads().set('page_url', 'https://elitegol-tv.es/');
     googletag.enableServices();
   });
 </script>
