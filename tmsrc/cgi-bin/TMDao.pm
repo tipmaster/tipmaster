@@ -6,11 +6,6 @@
 =head1 SYNOPSIS
 	TM DAO
 	
-=head1 Author
-	Thomas (thomas@socapro.com)
-
-=head1 COPYRIGHT
-	Copyright SocaPro Inc
 	Created Jun 15, 2015
 	
 =cut

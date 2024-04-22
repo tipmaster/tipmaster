@@ -1,8 +1,7 @@
 =head1 Author
         Bodo Pfannenschwarz (dev@bodopfannenschwarz.de)
 
-=head1 COPYRIGHT
-        Copyright SocaPro Inc
+
         Created Jun 15, 2015
 
 =cut

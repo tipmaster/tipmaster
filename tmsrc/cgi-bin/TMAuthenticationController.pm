@@ -6,11 +6,8 @@
 =head1 SYNOPSIS
 	Authentication Controller
 	
-=head1 Author
-	Thomas Prommer (thomas@socapro.com)
 
 =head1 COPYRIGHT
-	Copyright SocaPro Inc
 	Created Jun 7, 2015
 
 =cut

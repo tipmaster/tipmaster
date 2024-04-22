@@ -5,14 +5,12 @@
 =head1 SYNOPSIS
 	TBD
 	
-=head1 AUTHOR
-	admin@socapro.com
+
 
 =head1 CHANGELOG
 	2015-06-09 Thomas: Added Session Management
 
-=head1 COPYRIGHT
-	Copyright (c) 2015, SocaPro Inc.
+
 	Created 2015-06-09
 
 =cut
@@ -915,7 +913,7 @@ print '
 						</tr></table> 
 						
 						</td><td class=impressum align=center>
-						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Copyright 1998-2023 - <a style="color:white" href="http://www.socapro.com" rel="nofollow">SocaPro Inc.</a> </b>
+						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Copyright 1998-2024 - The Flywheel Corporation</b>
 			
 			
 						
