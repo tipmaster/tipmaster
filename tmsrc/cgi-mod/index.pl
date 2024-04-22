@@ -913,7 +913,7 @@ print '
 						</tr></table> 
 						
 						</td><td class=impressum align=center>
-						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Copyright 1998-2024 - The Flywheel Corporation</b>
+						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Copyright 1998-2024 - The Flywheel</b>
 			
 			
 						
