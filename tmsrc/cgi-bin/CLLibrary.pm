@@ -156,10 +156,11 @@ sub getTimeLimit {
         # adjustment for saisons. 2013 had 5 saisons, 2014 had 6 seasons, 2015 had 5 seasons.
         # on every year switch, increase lfdsais by the number of saisons
         # could be automated one day
-        $lfdsais +=56;
-        my $weekctr = ($lfdsais*9)+425+46+2+55+54+5+2+2+6+1;   
+        $lfdsais +=61;
+        my $weekctr = ($lfdsais*9)+425+46+2+55+54+5+2+2+6+2;   
 	#2017-12-20: Added 2 weeks XMas break
 	#2018-12-27: Added 1 week of XMas break
+	#2023-12-30: Added 1 week of XMas break
         #####
 
         my $winterzeit = 0;
@@ -182,6 +183,12 @@ sub getTimeLimit {
            $winterzeit = 1;
         }
         if ($nowtime > 1667080800 && $nowtime < 1679785200) { #Oct 30 - Mar 26 2023
+           $winterzeit = 1;
+        }
+        if ($nowtime > 1698682849 && $nowtime < 1711898449) { #Oct 30 - Mar 26 2024
+           $winterzeit = 1;
+        }
+        if ($nowtime > 1730046049 && $nowtime < 1743348049) { #Oct 30 - Mar 26 2025
            $winterzeit = 1;
         }
 
