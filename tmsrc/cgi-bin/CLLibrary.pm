@@ -355,7 +355,7 @@ sub loadTranslationHashes {
 	  if ($entries[0] =~ /x(\d+)/) {
 	 	$key1 = $1;
 	  }
-	  if ($key1 == "01" or $key1 == "02" or $key1 == "03" or $key1 == "12" or $key1 == "27" or $key1 == "60") {
+	  if ($key1 == "01" or $key1 == "02" or $key1 == "03" or $key1 == "12" or $key1 == "26" or $key1 == "60") {
 		for (1..18) {
 		  my $subkey1 = $entries[($_-1)*3+1];
 		$subkey1 =~ s/\s*$//g;
