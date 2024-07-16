@@ -50,6 +50,7 @@ if ( $method eq "delete_adress" ) { &delete_adress }
 if ( $method eq "show_inbox" ) { &show }
 if ( $method eq "show_outbox" ) { &show }
 
+print '<!doctype html><html lang="de"><head><meta charset="UTF-8">';
 if ( $login == 0 ) {
 print "<title>Message - InBox $trainer</title>\n";
 $datei = "/tmdata/tmi/newmail/".$trainer;
@@ -58,7 +59,7 @@ unlink ($datei);
 print "<title>Message - InBox LogIn</title>\n";
 
 }
-
+print '</head>';
 print "<body bgcolor=white text=black><p align=left>\n";
 
 require "/tmapp/tmsrc/cgi-bin/tag.pl" ;
@@ -544,6 +545,8 @@ $outbox_new=$outbox_new . $add . '&' ;
 
 ################################ SHOW ############################
 sub show {
+print '<!doctype html><html lang="de"><head><meta charset="UTF-8"></head>';
+
 print "<body bgcolor=white text=black><p align=left>\n";
 
 open(D2,"/tmdata/tmi/history.txt");

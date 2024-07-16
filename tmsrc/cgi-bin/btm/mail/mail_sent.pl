@@ -212,6 +212,10 @@ $datei = '/tmdata/btm/mail/nummer_db.txt' ;
 open (D1 , "$datei") ;
 $zahl_db = <D1> ;
 close (D1);
+
+print $zahl_db.' - '.$versuche;
+print 'AAAA';
+
 $versuche++;
 if (( $zahl_db < 10 ) and ( $versuche <20)) { goto herel; }
 if ($versuche>18) {
@@ -224,9 +228,6 @@ print D1 "$zahl_db";
 $zahl_db--;
 flock(D1,8);
 close (D1);
-
-
-
 
 
 if ( $message eq "liga" ) { $oo = 1 }
@@ -248,14 +249,13 @@ $absender=$xx;
 
 #Nachricht in DB schreiben	
 $er=0;
-$text_db=$text;
-$text_db=~s/\n/<br>/g;
-$text_db=~s/'/`/g; # FIXME: Das sieht erstmal sicher aus, ist aber nicht unüberwindlich. Besser mit placeholders arbeiten.
-$subject=~s/'/`/g;
 
-      $sql = "INSERT INTO box VALUES ($zahl_db,'BTM','$trainer','$xx','$subject','$text_db','$wt $xd$tag.$xe$mon.$jahr','$xc$std:$xb$min:$xa$sek',$oo)";
-      $sth = $dbh->prepare($sql);
-      $sth->execute() || ( $er=1 );
+# Parameter-Binding 'escaped' den Userinput automatisch, so ist das kein Einfallstor mehr.
+# Je nach DB-Encoding könnten die Codierungsprobleme damit auch behoben sein.
+$sql = "INSERT INTO box VALUES ($zahl_db,'TMI','$trainer','$xx', ?, ?, '$wt $xd$tag.$xe$mon.$jahr','$xc$std:$xb$min:$xa$sek',$oo)";
+$sth = $dbh->prepare($sql);
+$sth->execute( $subject, $text ) || ($er=1);
+$sth->finish();
 
 if ( $er == 1 ) {
 print "Versenden der Nachricht nicht moeglich : $DBI::errstr<br>$sql";

@@ -25,6 +25,7 @@ require "/tmapp/tmsrc/cgi-bin/tmi/saison.pl";
 	`rm /tmdata/tmi/archiv/$old`;
 	`mkdir /tmdata/tmi/archiv/$old/`;
 	`mkdir /tmdata/tmi/archiv/$old/pokal/`;
+	`mkdir /tmdata/tmi/archiv/$old/nm/`;
 	`ln -s /tmdata/tmi /tmdata/tmi/archiv/$new`;
 
 	`cp /tmdata/tmi/DAT*.TXT /tmdata/tmi/archiv/$old/`;
@@ -35,7 +36,7 @@ require "/tmapp/tmsrc/cgi-bin/tmi/saison.pl";
 	`cp /tmdata/tmi/final.txt /tmdata/tmi/archiv/$old/`;
 	`cp /tmdata/tmi/archiv/022/datum.txt /tmdata/tmi/archiv/$old/`;
 	`cp /tmdata/tmi/pokal/*.* /tmdata/tmi/archiv/$old/pokal/`;
-	`cp /tmdata/tmi/nm/*-[1-9].txt /tmdata/tmi/archiv/$old/`;
+	`cp /tmdata/tmi/nm/*-[1-9].txt /tmdata/tmi/archiv/$old/nm/`;
 	`cp /tmdata/tmi/zat*.txt /tmdata/tmi/archiv/$old/`;
 
 	print "... beendet.";
@@ -140,7 +141,7 @@ print "... beendet.";
 	#reset rights - problem occurredd fter git trainsition, tp, Aug-24-2105
 
 `chmod -R 755 /tmdata`;
-`chown -R lighttpd:lighttpd /tmdata`;
+`chmod -R 755 /tmdata`;
 
 exit;
 

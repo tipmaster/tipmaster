@@ -6,12 +6,14 @@
 =head1 SYNOPSIS
 	TBD
 	
-
+=head1 AUTHOR
+	admin@socapro.com
 
 =head1 CHANGELOG
 	2015-06-09 Thomas: Added Session Management
 
-
+=head1 COPYRIGHT
+	Copyright (c) 2015, SocaPro Inc.
 	Created 2015-06-09
 
 =cut
@@ -45,6 +47,7 @@ if ( $method eq "delete_adress" ) { &delete_adress }
 if ( $method eq "show_inbox" ) { &show }
 if ( $method eq "show_outbox" ) { &show }
 
+print '<!doctype html><html lang="de"><head><meta charset="UTF-8">';
 if ( $login == 0 ) {
 print "<title>Message - InBox $trainer</title>\n";
 
@@ -54,15 +57,12 @@ unlink($datei);
 print "<title>Message - InBox LogIn</title>\n";
 
 }
-
+print '</head>';
 print "<body bgcolor=white text=black><p align=left>\n";
 
 require "/tmapp/tmsrc/cgi-bin/tag.pl" ;
 require "/tmapp/tmsrc/cgi-bin/tag_small.pl" ;
 
-
-
-print "</center>";
 
 require "/tmapp/tmsrc/cgi-bin/loc.pl" ;
 
@@ -538,6 +538,8 @@ $outbox_new=$outbox_new . $add . '&' ;
 
 ################################ SHOW ############################
 sub show {
+print '<!doctype html><html lang="de"><head><meta charset="UTF-8"></head>';
+
 print "<body bgcolor=white text=black><p align=left>\n";
 
 open(D2,"/tmdata/btm/history.txt");

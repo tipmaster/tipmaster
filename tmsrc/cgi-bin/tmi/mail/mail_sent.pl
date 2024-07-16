@@ -74,7 +74,7 @@ exit ;
 
 if ( ($ab > 700 ) )  { 
 print "<body bgcolor=#eeeeee text=black><font face=verdana size=1 color=Red>";
-print "Der Text Ihrer Message ist leider zu lang. Ihre Message konnte nicht gesendet werden .<br>Aufgrund der bergenzten Serverkapazitaten und Erfahrungen aus der Vergangenheit<br>darf der Text maximal 700 Zeichen enthalten ( ihre Nachricht enthielt $ab Zeichen ).<br><br>Bitte kehren Sie ueber Ihren Browser zurueck und kuerzen Sie Ihre Message ...";
+print "Der Text Ihrer Message ist leider zu lang. Ihre Message konnte nicht gesendet werden .<br>Aufgrund der begrenzten Serverkapazitaten und Erfahrungen aus der Vergangenheit<br>darf der Text maximal 700 Zeichen enthalten ( ihre Nachricht enthielt $ab Zeichen ).<br><br>Bitte kehren Sie ueber Ihren Browser zurueck und kuerzen Sie Ihre Message ...";
 
 exit ;
 }
@@ -94,24 +94,6 @@ print"  </script>\n";
 
 exit ;
 }
-
-if ($text =~ /[\<\>]/) {
-
-print "<body bgcolor=#eeeeee text=black><font face=verdana size=1 color=red>";
-print "Ihr Message Text hat ungueltige Zeichen enthalten . Ihre Message konnte nicht gesendet werden .<br>Bitte verzichten Sie auf Umlaute und weitere Sonderzeichen ...<br><br>Sie werden weitergeleitet ...";
-print "<form name=Testform action=/cgi-bin/tmi/mail/mailbox.pl method=post></form>";
-print "<script language=JavaScript>\n";
-print"   function AbGehts()\n";
-print"   {\n";
-print"    document.Testform.submit();\n";
-print"    }\n";
-print"   window.setTimeout(\"AbGehts()\",10000);\n";
-print"  </script>\n";
-
-exit ;
-}
-
-
 
 
 ($sek, $min, $std, $tag, $mon, $jahr , $wo) =  localtime(time+0);
@@ -244,15 +226,12 @@ if ( $message eq "konkurrenz" ) { $xx = "$auswahl_trainer[1]" }
 
 #Nachricht in DB schreiben	
 
-$text_db=$text;
-$text_db=~s/\n/<br>/g;
-$text_db=~s/'/`/g;
-$subject=~s/'/`/g;
-
-      $sql = "INSERT INTO box VALUES ($zahl_db,'TMI','$trainer','$xx','$subject','$text_db','$wt $xd$tag.$xe$mon.$jahr','$xc$std:$xb$min:$xa$sek',$oo)";
-      $sth = $dbh->prepare($sql);
-      $sth->execute() || ($er=1);
-      $sth->finish();
+# Parameter-Binding 'escaped' den Userinput automatisch, so ist das kein Einfallstor mehr.
+# Je nach DB-Encoding könnten die Codierungsprobleme damit auch behoben sein.
+$sql = "INSERT INTO box VALUES ($zahl_db,'TMI','$trainer','$xx', ?, ?, '$wt $xd$tag.$xe$mon.$jahr','$xc$std:$xb$min:$xa$sek',$oo)";
+$sth = $dbh->prepare($sql);
+$sth->execute( $subject, $text ) || ($er=1);
+$sth->finish();
 
 if ( $er == 1 ) {
 print "Versenden der Nachricht nicht moeglich : $DBI::errstr<br>$sql";
