@@ -1182,7 +1182,11 @@ sub banner_gross {
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
     googletag.defineSlot('/22495599872/DE-TM-970x250-SUBPAGE', [970, 250], 'div-gpt-ad-1631234964627-0').addService(googletag.pubads());
-    googletag.pubads().enableSingleRequest();
+    
+    googletag.pubads().setTargeting('sitelanguage', ['de']);
+    googletag.pubads().setTargeting('platform', ['tm']);
+    googletag.pubads().setTargeting('page', ['TM_PAGE']);
+    googletag.pubads().setTargeting('approval', ['1']);
     googletag.enableServices();
   });
 </script>
@@ -1204,6 +1208,10 @@ sub banner_left {
     googletag.defineSlot('/22495599872/de-tm-300x250-hp', [300, 250], 'div-gpt-ad-1630770174437-0').addService(googletag.pubads());
      googletag.defineSlot('/22495599872/DE-TM-300x600-HP', [300, 600], 'div-gpt-ad-1631234661433-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
+    googletag.pubads().setTargeting('sitelanguage', ['de']);
+    googletag.pubads().setTargeting('platform', ['tm']);
+    googletag.pubads().setTargeting('page', ['TM_PAGE']);
+    googletag.pubads().setTargeting('approval', ['1']);
     googletag.enableServices();
   });
 </script>
@@ -1231,6 +1239,10 @@ sub banner_rectangle {
   googletag.cmd.push(function() {
     googletag.defineSlot('/22495599872/de-tm-300x250-loginpage', [300, 250], 'div-gpt-ad-1630161760304-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
+    googletag.pubads().setTargeting('sitelanguage', ['de']);
+    googletag.pubads().setTargeting('platform', ['tm']);
+    googletag.pubads().setTargeting('page', ['TM_PAGE']);
+    googletag.pubads().setTargeting('approval', ['1']);
     googletag.enableServices();
   });
 </script>
@@ -1254,7 +1266,11 @@ sub banner_bottom {
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
    googletag.defineSlot('/22495599872/DE-TM-970x250-SUBPAGE-BOTTOM', [970, 250], 'div-gpt-ad-1631235278221-0').addService(googletag.pubads());
-    googletag.pubads().enableSingleRequest();
+    
+    googletag.pubads().setTargeting('sitelanguage', ['de']);
+    googletag.pubads().setTargeting('platform', ['tm']);
+    googletag.pubads().setTargeting('page', ['TM_PAGE']);
+    googletag.pubads().setTargeting('approval', ['1']);
     googletag.enableServices();
   });
 </script>

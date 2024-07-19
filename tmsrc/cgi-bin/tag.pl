@@ -42,6 +42,10 @@ print "
   googletag.cmd.push(function() {
     googletag.defineSlot('/22495599872/DE-TM-970x250-SUBPAGE', [970, 250], 'div-gpt-ad-1631234964627-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
+	googletag.pubads().setTargeting('sitelanguage', ['de']);
+    googletag.pubads().setTargeting('platform', ['tm']);
+    googletag.pubads().setTargeting('page', ['TM_PAGE']);
+    googletag.pubads().setTargeting('approval', ['1']);
     googletag.enableServices();
   });
 </script>
