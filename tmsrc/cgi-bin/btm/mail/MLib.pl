@@ -25,7 +25,7 @@ sub openDB {
     $host = "localhost"; 
     $user = $ENV{DB_USER};
     $password = $ENV{DB_PASSWORD};
-    $dbh = DBI->connect("DBI:mysql:database=$db;host=$host",
+    $dbh = DBI->connect("DBI:MariaDB:database=$db;host=$host",
 			$user, $password, {RaiseError => 1, PrintError => 1}) || die "Database connection not made";
     
 }

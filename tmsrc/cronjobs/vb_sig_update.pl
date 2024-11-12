@@ -159,7 +159,7 @@ sub openDB {
     my $host = "localhost";
     my $user = $options->getProperty("db.user");;
     my $password = $options->getProperty("db.password");;
-    $dbh = DBI->connect("DBI:mysql:database=$db;host=$host",
+    $dbh = DBI->connect("DBI:MariaDB:database=$db;host=$host",
                         $user, $password, {RaiseError => 0, PrintError => 0});
     }
 

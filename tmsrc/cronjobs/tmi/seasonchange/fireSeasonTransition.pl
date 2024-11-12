@@ -141,7 +141,6 @@ print "... beendet.";
 	#reset rights - problem occurredd fter git trainsition, tp, Aug-24-2105
 
 `chmod -R 755 /tmdata`;
-`chmod -R 755 /tmdata`;
 
 exit;
 
