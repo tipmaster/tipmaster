@@ -1,3 +1,4 @@
+tmstatic/www/img/chart/
 tmsrc/cronjobs/tmi/seasonchange/swechsel/
 tmsrc/cronjobs/btm/seasonchange/swechsel/
 deploy.sh
