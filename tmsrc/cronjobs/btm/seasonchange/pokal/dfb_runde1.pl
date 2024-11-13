@@ -2,7 +2,7 @@
 $pp=1;
 rand();
 
-require "readout_qu_nr.pl";
+require "/tmapp/tmsrc/cronjobs/btm/seasonchange/pokal/readout_qu_nr.pl";
 
 open(F,">/tmdata/btm/pokal/pokal_dfb.txt");
 for ($x=1;$x<=5;$x++){
