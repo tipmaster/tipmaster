@@ -22,86 +22,86 @@ print "\n\nSaisonumstellung von $old -> $new [ <- richtige Saisonkuerzel ? nur d
 print "Sichere Saisondaten in /tmdata/btm/archiv/$old/\n";
 print "Setze Softlink /tmdata/btm/archiv/$new/ -> /tmdata/btm\n";
 
-`rm /tmdata/btm/archiv/$old`;
-`mkdir /tmdata/btm/archiv/$old/`;
-`mkdir /tmdata/btm/archiv/$old/pokal/`;
-`ln -s /tmdata/btm /tmdata/btm/archiv/$new`;
+if (0) {
+    `rm /tmdata/btm/archiv/$old`;
+    `mkdir /tmdata/btm/archiv/$old/`;
+    `mkdir /tmdata/btm/archiv/$old/pokal/`;
+    `ln -s /tmdata/btm /tmdata/btm/archiv/$new`;
 
-`cp /tmdata/btm/DAT*.TXT /tmdata/btm/archiv/$old/`;
-`mv /tmdata/btm/formular*.t* /tmdata/btm/archiv/$old/`;
-`cp /tmdata/btm/spieltag.txt /tmdata/btm/archiv/$old/`;
-`cp /tmdata/btm/history.txt /tmdata/btm/archiv/$old/`;
-`cp /tmdata/btm/heer.txt /tmdata/btm/archiv/$old/`;
-`cp /tmdata/btm/finals.txt /tmdata/btm/archiv/$old/`;
-`cp /tmdata/btm/archiv/022/datum.txt /tmdata/btm/archiv/$old/`;
-`cp /tmdata/btm/pokal/*.* /tmdata/btm/archiv/$old/pokal/`;
-`cp /tmdata/btm/zat*.* /tmdata/btm/archiv/$old/`;
+    `cp /tmdata/btm/DAT*.TXT /tmdata/btm/archiv/$old/`;
+    `mv /tmdata/btm/formular*.t* /tmdata/btm/archiv/$old/`;
+    `cp /tmdata/btm/spieltag.txt /tmdata/btm/archiv/$old/`;
+    `cp /tmdata/btm/history.txt /tmdata/btm/archiv/$old/`;
+    `cp /tmdata/btm/heer.txt /tmdata/btm/archiv/$old/`;
+    `cp /tmdata/btm/finals.txt /tmdata/btm/archiv/$old/`;
+    `cp /tmdata/btm/archiv/022/datum.txt /tmdata/btm/archiv/$old/`;
+    `cp /tmdata/btm/pokal/*.* /tmdata/btm/archiv/$old/pokal/`;
+    `cp /tmdata/btm/zat*.* /tmdata/btm/archiv/$old/`;
 
-print "... beendet.";
+    print "... beendet.";
 
-print "Loesche temporaere Save Dateien + Neuaufsetzung Freundschaftspiele und Job Boerse Wechselliste\n";
-`rm /tmdata/btm/boerse_[0-9].txt`;
-`rm /tmdata/btm/error_tips_*.txt`;
-`rm /tmdata/btm/history_s*_*.txt`;
-`rm /tmdata/btm/exdat/*.*`;
+    print "Loesche temporaere Save Dateien + Neuaufsetzung Freundschaftspiele und Job Boerse Wechselliste\n";
+    `rm /tmdata/btm/boerse_[0-9].txt`;
+    `rm /tmdata/btm/error_tips_*.txt`;
+    `rm /tmdata/btm/history_s*_*.txt`;
+    `rm /tmdata/btm/exdat/*.*`;
 
-`mv /tmdata/btm/friendly/friendly.txt /tmdata/btm/friendly/friendly$old.txt`;
-`cp /tmdata/btm/friendly/nummer_init.txt /tmdata/btm/friendly/nummer.txt`;
-`mv /tmdata/btm/wechsel.txt /tmdata/btm/wechsel$old.txt`;
+    `mv /tmdata/btm/friendly/friendly.txt /tmdata/btm/friendly/friendly$old.txt`;
+    `cp /tmdata/btm/friendly/nummer_init.txt /tmdata/btm/friendly/nummer.txt`;
+    `mv /tmdata/btm/wechsel.txt /tmdata/btm/wechsel$old.txt`;
 
-print "... beendet.";
+    print "... beendet.";
 
-print "Zippe Tipdaten Dateien aus /tmdata/btm/tipos nach /tmdata/btm/tipos$old.zip \n";
-`zip /tmdata/btm/tipos$old.zip /tmdata/btm/tipos/*.TXT`;
-print "... beendet.";
+    print "Zippe Tipdaten Dateien aus /tmdata/btm/tipos nach /tmdata/btm/tipos$old.zip \n";
+    `zip /tmdata/btm/tipos$old.zip /tmdata/btm/tipos/*.TXT`;
+    print "... beendet.";
 
-print "Loesche Dateien aus /tmdata/btm/tipos und Tipfiles aus /tmdata/btm/tips/*/  \n";
-`rm /tmdata/btm/tipos/*.*`;
-`rm /tmdata/btm/tips/1/*`;
-print "Sp.1 geloescht ...\n";
-`rm /tmdata/btm/tips/5/*`;
-print "Sp.5 geloescht ...\n";
-`rm /tmdata/btm/tips/9/*`;
-print "Sp.9 geloescht ...\n";
-`rm /tmdata/btm/tips/13/*`;
-print "Sp.13 geloescht ...\n";
-`rm /tmdata/btm/tips/17/*`;
-print "Sp.17 geloescht ...\n";
-`rm /tmdata/btm/tips/21/*`;
-print "Sp.21 geloescht ...\n";
-`rm /tmdata/btm/tips/25/*`;
-print "Sp.25 geloescht ...\n";
-`rm /tmdata/btm/tips/29/*`;
-print "Sp.29 geloescht ...\n";
-`rm /tmdata/btm/tips/33/*`;
-print "Sp.33 geloescht ...\n";
-`rm -r /tmdata/btm/pokal/tips/`;
-print "Loesche Pokaltips ...\n";
-`rm /tmdata/btm/pokal/pokal_qu[1-7].txt`;
-print "Loesche Pokalquoten ...\n";
-`mkdir /tmdata/btm/pokal/tips/`;
-`chown lighttpd /tmdata/btm/pokal/tips/`;
-`chgrp lighttpd /tmdata/btm/pokal/tips/`;
+    print "Loesche Dateien aus /tmdata/btm/tipos und Tipfiles aus /tmdata/btm/tips/*/  \n";
+    `rm /tmdata/btm/tipos/*.*`;
+    `rm /tmdata/btm/tips/1/*`;
+    print "Sp.1 geloescht ...\n";
+    `rm /tmdata/btm/tips/5/*`;
+    print "Sp.5 geloescht ...\n";
+    `rm /tmdata/btm/tips/9/*`;
+    print "Sp.9 geloescht ...\n";
+    `rm /tmdata/btm/tips/13/*`;
+    print "Sp.13 geloescht ...\n";
+    `rm /tmdata/btm/tips/17/*`;
+    print "Sp.17 geloescht ...\n";
+    `rm /tmdata/btm/tips/21/*`;
+    print "Sp.21 geloescht ...\n";
+    `rm /tmdata/btm/tips/25/*`;
+    print "Sp.25 geloescht ...\n";
+    `rm /tmdata/btm/tips/29/*`;
+    print "Sp.29 geloescht ...\n";
+    `rm /tmdata/btm/tips/33/*`;
+    print "Sp.33 geloescht ...\n";
+    `rm -r /tmdata/btm/pokal/tips/`;
+    print "Loesche Pokaltips ...\n";
+    `rm /tmdata/btm/pokal/pokal_qu[1-7].txt`;
+    print "Loesche Pokalquoten ...\n";
+    `mkdir /tmdata/btm/pokal/tips/`;
+    `chown lighttpd /tmdata/btm/pokal/tips/`;
+    `chgrp lighttpd /tmdata/btm/pokal/tips/`;
 
-print "... beendet.";
+    print "... beendet.";
 
-print "Verschiebe Aktionen der 'Big Mama' /tmdata/btm/db/spiele.txt\n";
+    print "Verschiebe Aktionen der 'Big Mama' /tmdata/btm/db/spiele.txt\n";
 
-`mv /tmdata/btm/db/spiele_old.txt /tmdata/btm/db/spiele_old_$vold.txt`;
-`mv /tmdata/btm/db/spiele.txt /tmdata/btm/db/spiele_old.txt`;
-print "... beendet.";
-
+    `mv /tmdata/btm/db/spiele_old.txt /tmdata/btm/db/spiele_old_$vold.txt`;
+    `mv /tmdata/btm/db/spiele.txt /tmdata/btm/db/spiele_old.txt`;
+    print "... beendet.";
+}
 print "Schreibe Vereinshistorien\n";
-require "ns_sai_history.pl";
+require "/tmapp/tmsrc/cronjobs/btm/seasonchange/ns_sai_history.pl";
 
 print "Erstelle neue history.txt und lege Sie ab in /tmapp/tmsrc/cronjobs/btm/seasonchange/\n";
-require "ns_sai_wechsel.pl";
+require "/tmapp/tmsrc/cronjobs/btm/seasonchange/ns_sai_wechsel.pl";
 
 print "Setze die /tmdata/btm/DAT*.TXT Dateien auf Saisonbeginn \n";
-require "sai_neudat.pl";
+require "/tmapp/tmsrc/cronjobs/btm/seasonchange/sai_neudat.pl";
 
-print
-  "Setze Saisonvariablen auf Saisonstart ( Spielrunde = 1 , Tipabgabe ab Sp.1 , Saisonnr ++ , Pokalrunde =1 etc. ) \n";
+print "Setze Saisonvariablen auf Saisonstart ( Spielrunde = 1 , Tipabgabe ab Sp.1 , Saisonnr ++ , Pokalrunde =1 etc. ) \n";
 open( D1, ">/tmdata/btm/tip_datum.txt" );
 print D1 "1";
 close(D1);
@@ -129,21 +129,20 @@ print "... beendet.";
 `chown -R lighttpd:lighttpd /tmdata`;
 `chmod -R 755 /tmdata`;
 
-
-`perl /tmapp/tmsrc/cronjobs/btm/heer.pl &`;                          # berechnet Tabellenplazierung fuer Job-Boerse etc.
-`perl /tmapp/tmsrc/cronjobs/btm/seasonchange/erfolge_readout.pl &`;  # bisherige deutsche meister werden ausgelesen
+`perl /tmapp/tmsrc/cronjobs/btm/heer.pl &`;                               # berechnet Tabellenplazierung fuer Job-Boerse etc.
+`perl /tmapp/tmsrc/cronjobs/btm/seasonchange/erfolge_readout.pl &`;       # bisherige deutsche meister werden ausgelesen
 `perl /tmapp/tmsrc/cronjobs/btm/seasonchange/dfb_winner_readout.pl &`;    # bisherige dfb pokalsieger werden ausgelesen
 
-`nice -15 perl /tmapp/tmsrc/cronjobs/btm/db/stats_ns.pl &`; #coach histopry
+`nice -15 perl /tmapp/tmsrc/cronjobs/btm/db/stats_ns.pl &`;               #coach histopry
 `nice -15 perl /tmapp/tmsrc/cronjobs/btm/db/top_award.pl &`;
 
-	#reset rights - problem occurredd fter git trainsition, tp, Aug-24-2105
+#reset rights - problem occurredd fter git trainsition, tp, Aug-24-2105
 `chmod -R 755 /tmdata`;
 `chown -R lighttpd:lighttpd /tmdata`;
 exit;
 
 sub break {
-	print "\n[ Fortfahren ? Weiter mit Enter ]\n\n";
-	$a = <stdin>;
-	print "<br><br>";
+    print "\n[ Fortfahren ? Weiter mit Enter ]\n\n";
+    $a = <stdin>;
+    print "<br><br>";
 }
