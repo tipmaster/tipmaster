@@ -3,7 +3,7 @@
 use JSON qw(to_json);
 use CGI;
 
-do 'library.pl';
+do './library.pl';
 
 my $query = new CGI;
 #print $query->header(-type=>'application/json');
