@@ -22,7 +22,6 @@ print "\n\nSaisonumstellung von $old -> $new [ <- richtige Saisonkuerzel ? nur d
 print "Sichere Saisondaten in /tmdata/btm/archiv/$old/\n";
 print "Setze Softlink /tmdata/btm/archiv/$new/ -> /tmdata/btm\n";
 
-if (0) {
     `rm /tmdata/btm/archiv/$old`;
     `mkdir /tmdata/btm/archiv/$old/`;
     `mkdir /tmdata/btm/archiv/$old/pokal/`;
@@ -91,7 +90,7 @@ if (0) {
     `mv /tmdata/btm/db/spiele_old.txt /tmdata/btm/db/spiele_old_$vold.txt`;
     `mv /tmdata/btm/db/spiele.txt /tmdata/btm/db/spiele_old.txt`;
     print "... beendet.";
-}
+
 print "Schreibe Vereinshistorien\n";
 require "/tmapp/tmsrc/cronjobs/btm/seasonchange/ns_sai_history.pl";
 
