@@ -91,6 +91,7 @@ print "Setze Softlink /tmdata/btm/archiv/$new/ -> /tmdata/btm\n";
     `mv /tmdata/btm/db/spiele.txt /tmdata/btm/db/spiele_old.txt`;
     print "... beendet.";
 
+
 print "Schreibe Vereinshistorien\n";
 require "/tmapp/tmsrc/cronjobs/btm/seasonchange/ns_sai_history.pl";
 

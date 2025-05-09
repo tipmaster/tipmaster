@@ -830,7 +830,7 @@ print '
 <ul>
 <b>Deutsch</b>
 <li><a href="https://www.fussball-liveticker.eu">fussball-liveticker.eu</a></li>
-<li><a href="https://fussballlivestreams.de">fussballlivestreams.de</a></li>
+<li><a href="https://fussballlivestreamtv.de">fussballlivestreamtv.de</a></li>
 <li><a href="https://fussballlivestream-legal.de">fussballlivestream-legal.de</a></li>
 <li><a href="https://fussballprognose.de">fussballprognose.de</a></li>
 <li><a href="https://hesgoalalternative.de">hesgoalalternative.de</a></li>

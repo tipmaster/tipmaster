@@ -1009,7 +1009,7 @@ print <<"(END ERROR HTML)";
 	"/cgi-bin/list.pl?id=links",
 
 	"https://www.fussball-liveticker.eu",
-	"https://fussballlivestreams.de",
+	"https://fussballlivestreamtv.de",
 	"https://fussballheuteimtv.de",
 	"mailto:info\@tipmaster.de"
 );
