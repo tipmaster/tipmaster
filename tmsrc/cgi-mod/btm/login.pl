@@ -875,7 +875,7 @@ print <<"(END ERROR HTML)";
 
 	"https://www.fussball-liveticker.eu",
 	"https://fussballlivestreamtv.de",
-	"https://fussballheuteimtv.de",
+	"https://fussballliveticker.de",
 	"mailto:info\@tipmaster.de",
 	""
 );

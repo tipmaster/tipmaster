@@ -281,7 +281,7 @@ my $LABEL_BOX2 = "<br>Trainer online: $onl<br>Trainer bisher: $acg";
 my $LABEL_BOX3 = "$events1[$nevent]<br>$events2[$nevent]<br>";
 my $LABEL_BOX4 = "DFB-Pokal: $cup_dfb_name[$rrunde-1]<br>Amateur-Pokal: $cup_btm_name[$rrunde-1]<br>TMI Pokal: $cup_tmi_name[$rrunde-1]";
 my $LABEL_BOX5 = "Champ. League: $cup_cl_name[$rrunde-1]<br>UEFA Cup: $cup_uefa_name[$rrunde-1]<br><br>";
-my $LABEL_BOX6 = "Jetzt <a href=https://fussballheuteimtv.de>Fussball Heute <br>im TV</a> schauen<br><br>";
+my $LABEL_BOX6 = "Jetzt <a href=https://fussballliveticker.de>Fussball Heute <br>im TV</a> schauen<br><br>";
 
 #my $LABEL_BOX6 = "<span style=\"color:red\">Derzeit gibt es Login-Probleme. Wir arbeiten dran!</span><br><br>";
 #my $LABEL_BOX6 = "Winterpause bis 6.1.12<br><br>";
